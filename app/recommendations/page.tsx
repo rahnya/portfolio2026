@@ -77,7 +77,7 @@ export default function RecommendationsPage() {
         {/* CV Download CTA */}
         <div className="mt-12 text-center p-8 bg-[#183153]/20 border border-white/5 rounded-2xl">
           <p className="font-body text-white/50 mb-4">Looking for the full CV?</p>
-          <a href="/cv/cv.pdf" download
+          <a href="/cv/CV_Rahnya.pdf" download
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF3B8D] hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200">
             <Download className="w-4 h-4" />
             {t.nav.cv}

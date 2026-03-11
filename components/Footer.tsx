@@ -59,7 +59,7 @@ export default function Footer() {
           <div>
             <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">Downloads</p>
             <div className="flex flex-col gap-2">
-              <a href="/cv/cv.pdf" download
+              <a href="/cv/CV_Rahnya.pdf" download
                 className="font-body text-sm text-white/40 hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit">
                 {t.nav.cv}
                 <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-y-0.5 group-hover:translate-y-0 translate-x-0.5 group-hover:translate-x-0 transition-all duration-200" />

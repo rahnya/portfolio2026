@@ -87,7 +87,7 @@ function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
             <a
-              href="/cv/cv.pdf"
+              href="/cv/CV_Rahnya.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 border border-white/15 hover:border-white/30 text-white/80 hover:text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:bg-white/5"
             >
@@ -458,7 +458,7 @@ function CTABanner() {
                 {t.nav.recommendations}
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <a href="/cv/cv.pdf" download
+              <a href="/cv/CV_Rahnya.pdf" download
                 className="inline-flex items-center gap-2 px-6 py-3 border border-white/15 hover:border-white/30 text-white/80 hover:text-white font-body font-medium text-sm rounded-xl transition-all duration-200">
                 <Download className="w-4 h-4" />
                 {t.nav.cv}

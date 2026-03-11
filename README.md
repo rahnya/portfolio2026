@@ -47,9 +47,9 @@ portfolio/
 │
 ├── public/
 │   └── cv/                     # Place CV and recommendation PDFs here
-│       ├── cv.pdf
-│       ├── recommendation-laurent.pdf
-│       └── recommendation-mercier.pdf
+│       ├── CV_Rahnya.pdf.pdf
+│       ├── recommendation-martin.pdf
+│       └── recommendation-tozza.pdf
 │
 └── styles/
     └── globals.css             # Global styles, animations, fonts
