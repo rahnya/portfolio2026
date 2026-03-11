@@ -31,7 +31,7 @@ export default function ContactPage() {
 
   const contacts = [
     { icon: <Mail className="w-5 h-5" />, label: "Email", value: "rahnyapro@gmail.com", href: "mailto:rahnyapro@gmail.com", color: "#FF3B8D" },
-    { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", value: "linkedin.com/in/rahnya-lanyeri", href: "https://www.linkedin.com/in/rahnya-lanyeri", color: "#0077B5" },
+    { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", value: "https://www.linkedin.com/in/rahnya-lanyeri/", href: "https://www.linkedin.com/in/rahnya-lanyeri", color: "#0077B5" },
     { icon: <Github className="w-5 h-5" />, label: "GitHub", value: "github.com/rahnya", href: "  https://github.com/rahnya", color: "#ffffff" },
     { icon: <BehanceIcon />, label: "Behance", value: "behance.net/rahnya_lanyeri", href: "https://www.behance.net/rahnya_lanyeri", color: "#1769FF" },
   ];

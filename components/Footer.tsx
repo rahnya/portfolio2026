@@ -21,15 +21,15 @@ export default function Footer() {
               Developer & Interface Designer.<br />Building at the intersection of code and craft.
             </p>
             <div className="flex items-center gap-3 mt-6">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+              <a href="  https://github.com/rahnya" target="_blank" rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200">
                 <Github className="w-4 h-4" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/rahnya-lanyeri/" target="_blank" rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="https://behance.net" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.behance.net/rahnya_lanyeri" target="_blank" rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200">
                 <span className="text-xs font-bold">Be</span>
               </a>
