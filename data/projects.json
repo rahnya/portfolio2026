@@ -1,0 +1,817 @@
+[
+  {
+    "slug": "flightfootprint",
+    "categories": ["data", "uxui"],
+    "color": "#FFC72C",
+    "en": {
+      "title": "FlightFootprint",
+      "description": "A real-time aviation environmental impact tracker that visualizes flights over Europe and estimates their fuel consumption and CO₂ emissions.",
+      "shortDescription": "Real-time flight visualization and CO₂ impact estimation.",
+      "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
+      "features": [
+        "Live aircraft tracking over Europe",
+        "Fuel burn estimation based on aircraft type",
+        "CO₂ emissions estimation",
+        "Interactive map visualization",
+        "Data exploration dashboard"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "FlightFootprint",
+      "description": "Un outil de visualisation de l’impact environnemental de l’aviation en temps réel, permettant d’estimer la consommation de carburant et les émissions de CO₂ des vols.",
+      "shortDescription": "Visualisation des vols et estimation des émissions CO₂.",
+      "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
+      "features": [
+        "Suivi des avions en temps réel",
+        "Estimation de la consommation de carburant",
+        "Calcul des émissions de CO₂",
+        "Carte interactive",
+        "Exploration des données de vols"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "visio-conference-app",
+    "categories": ["web"],
+    "color": "#183153",
+    "en": {
+      "title": "Web Video Conference Platform",
+      "description": "A web-based video conferencing platform allowing users to create and join virtual meetings directly from their browser.",
+      "shortDescription": "Browser-based video conferencing platform.",
+      "technologies": ["Node.js", "Express", "Socket.io", "WebRTC", "Docker"],
+      "features": [
+        "Peer-to-peer video communication",
+        "Meeting room creation",
+        "Real-time messaging",
+        "Screen sharing support",
+        "Dockerized backend deployment"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Plateforme de visioconférence",
+      "description": "Une plateforme web de visioconférence permettant de créer et rejoindre des réunions directement depuis le navigateur.",
+      "shortDescription": "Application web de visioconférence.",
+      "technologies": ["Node.js", "Express", "Socket.io", "WebRTC", "Docker"],
+      "features": [
+        "Communication vidéo peer-to-peer",
+        "Création de salles de réunion",
+        "Messagerie en temps réel",
+        "Partage d’écran",
+        "Backend dockerisé"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "code-ton-territoire",
+    "categories": ["hackathon"],
+    "color": "#2E7D32",
+    "en": {
+      "title": "Code Ton Territoire",
+      "description": "A hackathon project built during the Nuit du Code 2026 in collaboration with Crédit Agricole. The platform aims to make local initiatives visible and connect citizens with projects that impact their territory.",
+      "shortDescription": "Hackathon platform to visualize and support local community initiatives.",
+      "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
+      "features": [
+        "Interactive map showing local initiatives and funded projects",
+        "Citizen reporting system to suggest local needs or issues",
+        "Visual dashboard presenting the impact of projects on the territory",
+        "Real-time updates of ongoing and upcoming initiatives",
+        "Simple UX designed for accessibility and community engagement"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Code Ton Territoire",
+      "description": "Projet réalisé lors de la Nuit du Code 2026 avec le Crédit Agricole. La plateforme vise à rendre visible l’impact des initiatives locales et à connecter les citoyens avec les projets de leur territoire.",
+      "shortDescription": "Plateforme hackathon pour visualiser et soutenir les initiatives locales.",
+      "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
+      "features": [
+        "Carte interactive présentant les projets et initiatives locales",
+        "Système permettant aux citoyens de signaler des besoins sur le territoire",
+        "Dashboard visuel montrant l’impact des actions locales",
+        "Suivi des projets en cours et à venir",
+        "Interface simple favorisant l’engagement citoyen"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "ampa-animal-adoption",
+    "categories": ["web"],
+    "color": "#25cdd0",
+    "en": {
+      "title": "Ampa — Animal Adoption Platform",
+      "description": "A digital platform designed to simplify the adoption of animals from shelters. The project focuses on improving the connection between shelters and adopters through intuitive search, clear profiles, and a modern user experience.",
+      "shortDescription": "UX/UI and web platform to improve animal adoption processes.",
+      "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
+      "features": [
+        "Animal search with filters (species, age, location)",
+        "Detailed animal profiles with photos and health info",
+        "Shelter profiles and contact system",
+        "Mobile-first responsive design",
+        "Accessible and friendly user interface"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Ampa — Plateforme d’adoption animale",
+      "description": "Une plateforme digitale conçue pour simplifier l’adoption d’animaux depuis les refuges. Le projet vise à améliorer la mise en relation entre refuges et adoptants grâce à une recherche intuitive et une expérience utilisateur moderne.",
+      "shortDescription": "Plateforme web UX/UI pour améliorer l’adoption d’animaux.",
+      "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
+      "features": [
+        "Recherche d’animaux avec filtres",
+        "Fiches détaillées des animaux",
+        "Profils de refuges",
+        "Design responsive mobile-first",
+        "Interface accessible et intuitive"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "personal-portfolio",
+    "categories": ["web"],
+    "color": "#FF96B3",
+    "en": {
+      "title": "Developer Portfolio",
+      "description": "A modern developer portfolio designed to showcase projects, technical skills, and design work.",
+      "shortDescription": "Personal portfolio built with Next.js.",
+      "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "features": [
+        "Project case studies",
+        "Bilingual interface (EN / FR)",
+        "Dynamic project pages",
+        "Responsive design",
+        "Dark modern UI"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Portfolio développeuse",
+      "description": "Un portfolio moderne conçu pour présenter mes projets, mes compétences techniques et mes travaux de design.",
+      "shortDescription": "Portfolio personnel développé avec Next.js.",
+      "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "features": [
+        "Présentation détaillée des projets",
+        "Interface bilingue",
+        "Pages projets dynamiques",
+        "Design responsive",
+        "Interface moderne"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "seo-content-strategy",
+    "categories": ["professional"],
+    "color": "#FE8A5A",
+    "en": {
+      "title": "SEO & Content Strategy",
+      "description": "Professional experience developing SEO strategies, creating optimized web content, and improving website visibility.",
+      "shortDescription": "SEO strategy and web content optimization.",
+      "technologies": ["SEO", "Google Analytics", "WordPress", "Content Strategy"],
+      "features": [
+        "Keyword research and SEO strategy",
+        "Content writing and optimization",
+        "Technical SEO improvements",
+        "Performance monitoring",
+        "Client presentations and reporting"
+      ],
+      "githubUrl": null,
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Stratégie SEO & contenu",
+      "description": "Expérience professionnelle en stratégie SEO, rédaction web et optimisation de la visibilité des sites.",
+      "shortDescription": "Optimisation SEO et stratégie de contenu.",
+      "technologies": ["SEO", "Google Analytics", "WordPress", "Content Strategy"],
+      "features": [
+        "Recherche de mots-clés",
+        "Rédaction web optimisée",
+        "Optimisation technique SEO",
+        "Suivi des performances",
+        "Présentation des résultats"
+      ],
+      "githubUrl": null,
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "mmi-decouvertes",
+    "categories": ["school"],
+    "color": "#D0A8BC",
+    "en": {
+      "title": "MMI Découvertes Website",
+      "description": "My first web development project created during the first semester of the BUT MMI program. The goal was to design and build a functional travel agency website using only HTML and CSS.",
+      "shortDescription": "First web project: travel agency website built with HTML and CSS.",
+      "technologies": ["HTML", "CSS"],
+      "features": [
+        "Travel destinations and offers pages",
+        "Interactive contact page with embedded map",
+        "Shopping cart with subtotal calculation",
+        "English version of the website"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Site web MMI Découvertes",
+      "description": "Mon premier projet de développement web réalisé au semestre 1 du BUT MMI. L’objectif était de concevoir un site fonctionnel pour une agence de voyages en HTML et CSS.",
+      "shortDescription": "Premier site web réalisé en HTML et CSS.",
+      "technologies": ["HTML", "CSS"],
+      "features": [
+        "Pages destinations et offres",
+        "Formulaire de contact avec carte interactive",
+        "Panier avec calcul des sous-totaux",
+        "Version anglaise du site"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "1ris-agency-website",
+    "categories": ["school"],
+    "color": "#C58AFF",
+    "en": {
+      "title": "1ris Communication Agency Website",
+      "description": "A collaborative project focused on building a complete website for a fictional communication agency, integrating responsive design and interactive features.",
+      "shortDescription": "Agency website built with responsive design and JavaScript features.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "features": [
+        "Responsive layout with Flexbox and media queries",
+        "Dark mode implementation",
+        "English localization",
+        "Blog content and team presentation pages"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Site de l'agence 1ris",
+      "description": "Projet collaboratif consistant à développer un site web pour une agence de communication fictive, fidèle aux maquettes et intégrant des fonctionnalités interactives.",
+      "shortDescription": "Site d'agence avec responsivité et fonctionnalités JavaScript.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "features": [
+        "Design responsive avec Flexbox et media queries",
+        "Mode sombre",
+        "Version anglaise",
+        "Articles de blog et pages équipe"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "laravel-blog-platform",
+    "categories": ["school"],
+    "color": "#FF3B8D",
+    "en": {
+      "title": "Laravel Blog Platform",
+      "description": "A full blog platform built with Laravel featuring a customizable admin panel and user role management.",
+      "shortDescription": "Full blog platform with Laravel and admin dashboard.",
+      "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
+      "features": [
+        "Custom admin dashboard",
+        "User roles and permissions",
+        "Article submission and moderation",
+        "Database management with MySQL"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Blog avec back-office Laravel",
+      "description": "Plateforme de blog complète développée avec Laravel et un back-office personnalisable grâce à Filament.",
+      "shortDescription": "Blog avec interface d'administration personnalisée.",
+      "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
+      "features": [
+        "Back-office personnalisable",
+        "Gestion des rôles utilisateurs",
+        "Soumission et validation d’articles",
+        "Base de données MySQL"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "internship-management-app",
+    "categories": ["school"],
+    "color": "#3BA1FF",
+    "en": {
+      "title": "Internship Management Application",
+      "description": "A web application developed to manage university internships, including database interactions and dynamic data display using APIs.",
+      "shortDescription": "Web platform for managing university internships.",
+      "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+      "features": [
+        "Internship database management",
+        "Dynamic data display with API calls",
+        "Internship listing and search",
+        "Relational database restructuring"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Application de gestion des stages",
+      "description": "Application web développée pour gérer les stages universitaires, avec une base de données MySQL et des appels API pour l'affichage dynamique.",
+      "shortDescription": "Plateforme web de gestion des stages.",
+      "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+      "features": [
+        "Gestion d'une base de données de stages",
+        "Affichage dynamique via API",
+        "Recherche et consultation des stages",
+        "Refonte de la structure de la base de données"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "ai-agents-workflow",
+    "categories": ["school"],
+    "color": "#6B5CFF",
+    "en": {
+      "title": "AI Agents Workflow",
+      "description": "Development of conversational AI agents capable of assisting with different digital tasks using structured prompts and automation workflows.",
+      "shortDescription": "Conversational AI agents for task automation.",
+      "technologies": ["Ollama", "n8n", "JavaScript", "AI Agents"],
+      "features": [
+        "Multi-agent architecture",
+        "Task automation workflows",
+        "Custom conversational logic",
+        "Integration with automation tools"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Agents conversationnels IA",
+      "description": "Développement d’agents conversationnels capables d’automatiser certaines tâches grâce à des logiques de prompts et des workflows automatisés.",
+      "shortDescription": "Agents IA conversationnels pour automatisation.",
+      "technologies": ["Ollama", "n8n", "JavaScript"],
+      "features": [
+        "Architecture multi-agents",
+        "Automatisation de tâches",
+        "Logiques conversationnelles personnalisées",
+        "Intégration avec des workflows"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "inflation-dataviz",
+    "categories": ["school"],
+    "color": "#FFC72C",
+    "en": {
+      "title": "Inflation Data Visualization",
+      "description": "A data journalism project exploring the impact of inflation on food consumption through visual storytelling and motion design.",
+      "shortDescription": "Data journalism project with infographic and motion design.",
+      "technologies": ["After Effects", "Illustration", "Data Visualization"],
+      "features": [
+        "Journalistic infographic poster",
+        "Data storytelling",
+        "Motion design animation",
+        "Visual exploration of economic data"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Datavisualisation de l’inflation",
+      "description": "Projet de data journalisme explorant l’impact de l’inflation sur la consommation alimentaire à travers une affiche et une vidéo en motion design.",
+      "shortDescription": "Projet de datavisualisation journalistique.",
+      "technologies": ["After Effects", "Illustration", "Data Visualization"],
+      "features": [
+        "Affiche journalistique",
+        "Storytelling par les données",
+        "Animation en motion design",
+        "Analyse visuelle de données économiques"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "virtual-travel-chair",
+    "categories": ["school"],
+    "color": "#8A6F9B",
+    "en": {
+      "title": "Virtual Travel Chair",
+      "description": "Concept design of an innovative chair designed to enhance virtual reality experiences, combining ergonomics, immersive interaction and sustainable design.",
+      "shortDescription": "Concept design of a VR-enhanced chair.",
+      "technologies": ["Concept Design", "Product Design", "Business Model"],
+      "features": [
+        "Concept for a VR-compatible chair",
+        "Product positioning and distribution strategy",
+        "Pitch presentation and communication strategy",
+        "Sustainability considerations"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Virtual Travel Chair",
+      "description": "Conception d’un objet innovant visant à améliorer l’expérience de réalité virtuelle grâce à une chaise immersive.",
+      "shortDescription": "Concept de chaise immersive pour la VR.",
+      "technologies": ["Concept Design", "Product Design", "Business Model"],
+      "features": [
+        "Conception d’un objet VR innovant",
+        "Étude des applications et débouchés",
+        "Pitch commercial",
+        "Réflexion sur l’impact écologique"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "porquerolles-digital-watch",
+    "categories": ["school"],
+    "color": "#4DB6AC",
+    "en": {
+      "title": "Porquerolles Festival Digital Strategy",
+      "description": "A digital communication strategy project developed for the Porquerolles Film Festival based on competitive analysis and social media trends.",
+      "shortDescription": "Digital communication strategy for a film festival.",
+      "technologies": ["Digital Strategy", "Social Media", "Communication Audit"],
+      "features": [
+        "Competitive digital analysis",
+        "Social media strategy for TikTok and Twitter",
+        "Audience targeting",
+        "Content strategy proposals"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Veille numérique – Festival de Porquerolles",
+      "description": "Projet de stratégie de communication digitale pour le festival de cinéma de Porquerolles basé sur une veille numérique et une analyse concurrentielle.",
+      "shortDescription": "Stratégie digitale pour un festival de cinéma.",
+      "technologies": ["Stratégie Digitale", "Réseaux Sociaux", "Audit"],
+      "features": [
+        "Analyse concurrentielle",
+        "Stratégie TikTok et Twitter",
+        "Définition de publics cibles",
+        "Proposition de contenus"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "merry-cashmas-reportage",
+    "categories": ["school"],
+    "color": "#FF7043",
+    "en": {
+      "title": "Merry Cashmas Reportage",
+      "description": "Short video reportage exploring the theme of commercial Christmas, filmed with DSLR equipment and edited in Premiere Pro.",
+      "shortDescription": "Video reportage about consumerism during Christmas.",
+      "technologies": ["DSLR Filming", "Premiere Pro", "Video Editing"],
+      "features": [
+        "Interview filming",
+        "Video editing and sound mixing",
+        "Visual storytelling",
+        "Broadcast in amphitheater presentation"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Reportage vidéo Merry Cashmas",
+      "description": "Reportage vidéo autour du thème du Noël commercial, tourné avec un DSLR et monté sous Premiere Pro.",
+      "shortDescription": "Reportage vidéo sur la consommation à Noël.",
+      "technologies": ["Tournage DSLR", "Premiere Pro"],
+      "features": [
+        "Tournage d'interview",
+        "Montage vidéo et mixage audio",
+        "Storytelling visuel",
+        "Projection en amphithéâtre"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "mmi-30-years-communication",
+    "categories": ["school"],
+    "color": "#BA68C8",
+    "en": {
+      "title": "MMI 30 Years Communication Project",
+      "description": "Communication project created for the 30th anniversary of the MMI program, including editorial content and visual design.",
+      "shortDescription": "Editorial and visual communication for MMI anniversary.",
+      "technologies": ["InDesign", "Editorial Writing", "Graphic Design"],
+      "features": [
+        "Editorial article on program evolution",
+        "Historical timeline design",
+        "Graphic layout respecting event identity"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Communication – 30 ans MMI",
+      "description": "Projet de communication réalisé pour les 30 ans de la formation MMI incluant un article éditorial et une frise chronologique.",
+      "shortDescription": "Article et frise chronologique pour les 30 ans MMI.",
+      "technologies": ["InDesign", "Rédaction", "Graphisme"],
+      "features": [
+        "Rédaction d’un article",
+        "Recherche et témoignages",
+        "Conception d’une frise chronologique"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "weather-app-design",
+    "categories": ["school"],
+    "color": "#64B5F6",
+    "en": {
+      "title": "Weather App UX/UI Design",
+      "description": "UX/UI design project focused on redesigning a weather application with improved information hierarchy and micro-interactions.",
+      "shortDescription": "Weather app UX/UI redesign.",
+      "technologies": ["Figma", "UX Design", "UI Animation"],
+      "features": [
+        "Complete weather app interface",
+        "Design system and visual identity",
+        "Micro-interactions for weather states",
+        "Prototype presentation video"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Application météo UX/UI",
+      "description": "Projet de conception UX/UI visant à repenser une application météo avec une meilleure hiérarchisation de l'information.",
+      "shortDescription": "Maquettes UX/UI d’une application météo.",
+      "technologies": ["Figma", "UX Design", "UI Animation"],
+      "features": [
+        "Maquettes complètes d'application",
+        "Charte graphique",
+        "Micro-animations météo",
+        "Prototype interactif"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "crossy-road-ux-powerups",
+    "categories": ["school"],
+    "color": "#FFD54F",
+    "en": {
+      "title": "Crossy Road UX Power-ups",
+      "description": "UX gaming project imagining new gameplay mechanics and power-ups for the mobile game Crossy Road.",
+      "shortDescription": "UX concept for new game mechanics.",
+      "technologies": ["UX Design", "Game Design"],
+      "features": [
+        "New gameplay power-up concept",
+        "Gameplay sketches and flow",
+        "Pitch presentation",
+        "UX evaluation based on existing mechanics"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Super-pouvoirs pour Crossy Road",
+      "description": "Projet UX gaming imaginant de nouveaux super-pouvoirs et mécaniques de jeu pour Crossy Road.",
+      "shortDescription": "Concept UX pour un jeu mobile.",
+      "technologies": ["UX Design", "Game Design"],
+      "features": [
+        "Concept de gameplay",
+        "Croquis d’interactions",
+        "Présentation type appel d’offres",
+        "Analyse UX du jeu existant"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "scrum-learning-platform",
+    "categories": ["school"],
+    "color": "#81C784",
+    "en": {
+      "title": "Scrum Learning Website",
+      "description": "Educational website designed to explain Scrum methodology through interactive content and quizzes.",
+      "shortDescription": "Interactive educational website about Scrum.",
+      "technologies": ["PHP", "HTML", "CSS"],
+      "features": [
+        "Scrum methodology explanation pages",
+        "Interactive quizzes",
+        "Mind map summarizing Scrum roles",
+        "Educational navigation design"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Site pédagogique Scrum",
+      "description": "Site éducatif conçu pour expliquer la méthode Scrum à travers des contenus pédagogiques et des quiz.",
+      "shortDescription": "Site pédagogique sur la méthode Scrum.",
+      "technologies": ["PHP", "HTML", "CSS"],
+      "features": [
+        "Pages explicatives Scrum",
+        "QCM d'entraînement",
+        "Carte mentale du framework",
+        "Navigation pédagogique"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  }, 
+  {
+    "slug": "logo-jingle-animation",
+    "categories": ["school"],
+    "color": "#FF8A65",
+    "en": {
+      "title": "Logo Jingle Animation",
+      "description": "Motion design project animating a logo with synchronized sound and visual transitions.",
+      "shortDescription": "Animated logo jingle using Blender.",
+      "technologies": ["Blender", "Premiere Pro"],
+      "features": [
+        "3D logo animation",
+        "Visual effects synchronization",
+        "Sound design integration",
+        "Video export for branding"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Jingle animé de logo",
+      "description": "Projet de motion design consistant à animer un logo avec des effets visuels synchronisés avec le son.",
+      "shortDescription": "Animation de logo en motion design.",
+      "technologies": ["Blender", "Premiere Pro"],
+      "features": [
+        "Animation 3D du logo",
+        "Transitions visuelles dynamiques",
+        "Synchronisation image / son",
+        "Export vidéo final"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "mmi-lan-event",
+    "categories": ["school"],
+    "color": "#9575CD",
+    "en": {
+      "title": "MMI LAN Event Organization",
+      "description": "Participation in the organization and communication of the MMI LAN gaming event.",
+      "shortDescription": "Student gaming event organization and communication.",
+      "technologies": ["Event Communication", "Social Media", "Email Marketing"],
+      "features": [
+        "Event communication strategy",
+        "Email campaign creation",
+        "Social media content",
+        "Event management on-site"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Organisation de la MMI LAN",
+      "description": "Participation à l'organisation et à la communication d'un événement gaming étudiant à l’IUT.",
+      "shortDescription": "Organisation et communication événementielle.",
+      "technologies": ["Communication événementielle", "Emailing", "Réseaux sociaux"],
+      "features": [
+        "Communication de l'événement",
+        "Création d'emailing",
+        "Contenus réseaux sociaux",
+        "Gestion événementielle"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "website-competitive-audit",
+    "categories": ["school"],
+    "color": "#90A4AE",
+    "en": {
+      "title": "Website Competitive Audit",
+      "description": "Competitive analysis of digital platforms during an internship to support communication strategy decisions.",
+      "shortDescription": "Competitive website analysis.",
+      "technologies": ["SEO Analysis", "UX Audit", "Performance Analysis"],
+      "features": [
+        "Competitive website review",
+        "SEO and UX analysis",
+        "Strategic recommendations",
+        "Communication insights"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Audit concurrentiel de sites web",
+      "description": "Analyse concurrentielle de sites web réalisée en stage pour alimenter une stratégie de communication.",
+      "shortDescription": "Audit SEO et UX de sites concurrents.",
+      "technologies": ["Audit SEO", "Analyse UX", "Analyse performance"],
+      "features": [
+        "Analyse de sites concurrents",
+        "Étude SEO et ergonomie",
+        "Recommandations stratégiques",
+        "Synthèse pour plan de communication"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "communication-plan-project",
+    "categories": ["school"],
+    "color": "#F06292",
+    "en": {
+      "title": "Communication Plan Development",
+      "description": "Development of a communication strategy based on prior competitive audits and audience analysis.",
+      "shortDescription": "Strategic communication planning.",
+      "technologies": ["Communication Strategy", "Marketing"],
+      "features": [
+        "Audience analysis",
+        "Social media launch strategy",
+        "SEO considerations",
+        "Strategic communication planning"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Plan de communication",
+      "description": "Conception d'un plan de communication basé sur l'analyse d'audits concurrents et la définition de cibles.",
+      "shortDescription": "Stratégie de communication digitale.",
+      "technologies": ["Stratégie de communication", "Marketing"],
+      "features": [
+        "Analyse des cibles",
+        "Stratégie réseaux sociaux",
+        "Optimisation SEO",
+        "Plan de communication global"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "css-aurora",
+    "color": "#8A6F9B",
+    "en": {
+      "title": "CSS Aurora Borealis",
+      "description": "A pure CSS experiment recreating the northern lights effect using layered gradients, blur filters, and animation keyframes.",
+      "idea": "I wanted to push CSS animations to their limits by recreating a natural phenomenon. The challenge was achieving organic movement with pure CSS — no JavaScript, no canvas.",
+      "codeSnippet": ".aurora {\n  background: conic-gradient(\n    from 180deg at 50% 50%,\n    #8A6F9B 0deg,\n    #183153 90deg,\n    #FF3B8D 180deg,\n    #8A6F9B 360deg\n  );\n  filter: blur(40px);\n  animation: flow 8s ease infinite;\n}",
+      "tags": ["CSS", "Animation", "Experiment"]
+    },
+    "fr": {
+      "title": "Aurore Boréale CSS",
+      "description": "Une expérience CSS pure recréant l'effet des aurores boréales avec des gradients en couches, des filtres blur et des keyframes d'animation.",
+      "idea": "Je voulais pousser les animations CSS à leurs limites en recréant un phénomène naturel. Le défi était d'obtenir un mouvement organique en CSS pur — sans JavaScript, sans canvas.",
+      "codeSnippet": ".aurora {\n  background: conic-gradient(\n    from 180deg at 50% 50%,\n    #8A6F9B 0deg,\n    #183153 90deg,\n    #FF3B8D 180deg,\n    #8A6F9B 360deg\n  );\n  filter: blur(40px);\n  animation: flow 8s ease infinite;\n}",
+      "tags": ["CSS", "Animation", "Expérience"]
+    }
+  },
+  {
+    "slug": "generative-grid",
+    "color": "#FFC72C",
+    "en": {
+      "title": "Generative Grid System",
+      "description": "A JavaScript experiment generating unique geometric patterns using prime numbers and modular arithmetic.",
+      "idea": "Mathematics has intrinsic aesthetic beauty. This experiment maps prime number sequences onto a grid coordinate system, creating patterns that are both algorithmically determined and visually surprising.",
+      "codeSnippet": "function isPrime(n) {\n  for(let i = 2; i <= Math.sqrt(n); i++)\n    if(n % i === 0) return false;\n  return n > 1;\n}\n\nconst grid = Array.from({length: 64}, (_, i) => ({\n  active: isPrime(i + 1),\n  opacity: (i % 7) / 7\n}));",
+      "tags": ["JavaScript", "Generative Art", "Math"]
+    },
+    "fr": {
+      "title": "Système de Grille Générative",
+      "description": "Une expérience JavaScript générant des motifs géométriques uniques en utilisant les nombres premiers et l'arithmétique modulaire.",
+      "idea": "Les mathématiques ont une beauté esthétique intrinsèque. Cette expérience mappe des séquences de nombres premiers sur un système de coordonnées grille.",
+      "codeSnippet": "function isPrime(n) {\n  for(let i = 2; i <= Math.sqrt(n); i++)\n    if(n % i === 0) return false;\n  return n > 1;\n}\n\nconst grid = Array.from({length: 64}, (_, i) => ({\n  active: isPrime(i + 1),\n  opacity: (i % 7) / 7\n}));",
+      "tags": ["JavaScript", "Art Génératif", "Maths"]
+    }
+  },
+  {
+    "slug": "flight-tracker-api",
+    "color": "#183153",
+    "en": {
+      "title": "Live Flight Tracker",
+      "description": "A minimal flight tracking prototype pulling real-time data from OpenSky Network API and rendering aircraft positions on an SVG map.",
+      "idea": "Combining my passion for aviation with my interest in data visualization. The technical challenge was efficiently rendering 1000+ moving dots on an SVG without performance degradation.",
+      "codeSnippet": "const fetchFlights = async (bounds) => {\n  const { lamin, lomin, lamax, lomax } = bounds;\n  const res = await fetch(\n    `https://opensky-network.org/api/states/all\n    ?lamin=${lamin}&lomin=${lomin}\n    &lamax=${lamax}&lomax=${lomax}`\n  );\n  return res.json();\n};",
+      "tags": ["TypeScript", "API", "Aviation", "SVG"]
+    },
+    "fr": {
+      "title": "Tracker de Vols en Direct",
+      "description": "Un prototype de suivi de vols minimal récupérant des données en temps réel de l'API OpenSky Network.",
+      "idea": "Combiner ma passion pour l'aviation avec mon intérêt pour la visualisation de données. Le défi technique était de rendre efficacement 1000+ points en mouvement sur un SVG.",
+      "codeSnippet": "const fetchFlights = async (bounds) => {\n  const { lamin, lomin, lamax, lomax } = bounds;\n  const res = await fetch(\n    `https://opensky-network.org/api/states/all\n    ?lamin=${lamin}&lomin=${lomin}\n    &lamax=${lamax}&lomax=${lomax}`\n  );\n  return res.json();\n};",
+      "tags": ["TypeScript", "API", "Aviation", "SVG"]
+    }
+  },
+  {
+    "slug": "type-scramble",
+    "color": "#FF3B8D",
+    "en": {
+      "title": "Type Scramble Effect",
+      "description": "A text animation where characters randomly scramble before resolving to their final state — a common effect in sci-fi interfaces.",
+      "idea": "I love the aesthetic of decrypting text in movies. Building this taught me about requestAnimationFrame optimization and the importance of easing functions in perceived performance.",
+      "codeSnippet": "const scramble = (el, final, duration = 1000) => {\n  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';\n  let start = null;\n  const step = (ts) => {\n    if (!start) start = ts;\n    const progress = Math.min((ts - start) / duration, 1);\n    el.textContent = final.split('').map((c, i) => {\n      if (i < Math.floor(progress * final.length)) return c;\n      return chars[Math.floor(Math.random() * chars.length)];\n    }).join('');\n    if (progress < 1) requestAnimationFrame(step);\n  };\n  requestAnimationFrame(step);\n};",
+      "tags": ["JavaScript", "Animation", "Typography"]
+    },
+    "fr": {
+      "title": "Effet Scramble de Texte",
+      "description": "Une animation de texte où les caractères se brouillent aléatoirement avant de se résoudre en leur état final.",
+      "idea": "J'adore l'esthétique du déchiffrement de texte dans les films. Cela m'a appris l'optimisation de requestAnimationFrame et l'importance des fonctions d'easing.",
+      "codeSnippet": "const scramble = (el, final, duration = 1000) => {\n  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';\n  let start = null;\n  const step = (ts) => {\n    if (!start) start = ts;\n    const progress = Math.min((ts - start) / duration, 1);\n    el.textContent = final.split('').map((c, i) => {\n      if (i < Math.floor(progress * final.length)) return c;\n      return chars[Math.floor(Math.random() * chars.length)];\n    }).join('');\n    if (progress < 1) requestAnimationFrame(step);\n  };\n  requestAnimationFrame(step);\n};",
+      "tags": ["JavaScript", "Animation", "Typographie"]
+    }
+  }
+]

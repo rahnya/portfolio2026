@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Prof. Jean Christophe Habult",
+    "role": {
+      "en": "Head of MMI Department, IUT Toulon",
+      "fr": "Responsable du département MMI, IUT Toulon"
+    },
+    "text": {
+      "en": "Rahnya..?",
+      "fr": "Rahnya..?"
+    },
+    "filename": "recommendation-haubault.pdf"
+  },
+  {
+    "name": "Alexia Martin",
+    "role": {
+      "en": "Senior Lecturer in Anglophone World Civilization",
+      "fr": "Maître de Conférences en civilisation du monde anglophone et enseignante en anglais de spécialité"
+    },
+    "text": {
+      "en": "I am certain that Rahnya will be able to make good use of her skills and dedication in pursuing her master's studies",
+      "fr": "Je suis certaine que Rahnya saura mettre à profit ses compétences et son sérieux dans la poursuite de ses études en master"
+    },
+    "filename": "recommendation-martin.pdf"
+  },
+  {
+    "name": "Jean-René Tozza",
+    "role": {
+      "en": "Senior Developer",
+      "fr": "Développeur Senior"
+    },
+    "text": {
+      "en": "Rahnya..?",
+      "fr": "Rahnya..?"
+    },
+    "filename": "recommendation-tozza.pdf"
+  }
+]

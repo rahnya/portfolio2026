@@ -1,0 +1,172 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "lab": "Lab",
+      "appearances": "Appearances",
+      "contact": "Contact",
+      "cv": "Download CV",
+      "recommendations": "Recommendations"
+    },
+    "hero": {
+      "greeting": "Hello, I'm",
+      "name": "Rahnya Lanyeri",
+      "title": "Developer & UX/UI Designer",
+      "description": "I craft digital experiences at the intersection of code and design — building products that are both technically solid and visually compelling.",
+      "cta_projects": "View Projects",
+      "cta_cv": "Download CV",
+      "cta_contact": "Contact Me",
+      "available": "Available for opportunities"
+    },
+    "about": {
+      "title": "About Me",
+      "paragraph1": "I'm a BUT MMI student (Multimedia and Internet Professions) passionate about the full spectrum of digital creation — from writing clean, efficient code to crafting intuitive user interfaces.",
+      "paragraph2": "My work sits at the crossroads of development and design: I build things that function beautifully. I'm especially drawn to web applications, interactive experiences, and digital products that solve real problems.",
+      "paragraph3": "Outside of tech, I'm an aviation enthusiast — the discipline and precision of aerospace thinking deeply influences how I approach engineering challenges."
+    },
+    "skills": {
+      "title": "Skills & Tools",
+      "development": "Development",
+      "design": "Design",
+      "tools": "Tools"
+    },
+    "experience": {
+      "title": "Experience & Education"
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "A selection of work spanning web development, design, and data.",
+      "filter_all": "All",
+      "filter_web": "Web Development",
+      "filter_uxui": "UX/UI",
+      "filter_data": "Data / Python",
+      "filter_school": "School Projects",
+      "view_project": "View Project",
+      "github": "GitHub",
+      "live_demo": "Live Demo",
+      "technologies": "Technologies",
+      "features": "Key Features",
+      "screenshots": "Screenshots"
+    },
+    "lab": {
+      "title": "Lab",
+      "subtitle": "Experiments, prototypes, and explorations. This is where I break things on purpose.",
+      "code_snippet": "Code Snippet",
+      "idea": "The Idea"
+    },
+    "appearances": {
+      "title": "Appearances",
+      "subtitle": "Where you can find me — articles, videos, events, and showcases.",
+      "view": "View Appearance"
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "I'm always open to new opportunities, collaborations, and interesting conversations.",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "or": "Or reach me directly",
+      "placeholder_name": "Your name",
+      "placeholder_email": "your@email.com",
+      "placeholder_message": "Tell me about your project...",
+      "success": "Message sent! I'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "recommendations": {
+      "title": "Recommendation Letters",
+      "subtitle": "Testimonials and recommendation letters from professors and colleagues.",
+      "download": "Download PDF"
+    },
+    "footer": {
+      "made_with": "Crafted with precision by",
+      "rights": "All rights reserved."
+    }
+  },
+  "fr": {
+    "nav": {
+      "home": "Accueil",
+      "projects": "Projets",
+      "lab": "Lab",
+      "appearances": "Apparitions",
+      "contact": "Contact",
+      "cv": "Télécharger CV",
+      "recommendations": "Recommandations"
+    },
+    "hero": {
+      "greeting": "Bonjour, je suis",
+      "name": "Rahnya Lanyeri",
+      "title": "Développeuse et UX/UI Designer",
+      "description": "Je crée des expériences digitales à l'intersection du code et du design — des produits techniquement solides et visuellement impactants.",
+      "cta_projects": "Voir les Projets",
+      "cta_cv": "Télécharger CV",
+      "cta_contact": "Me Contacter",
+      "available": "Disponible pour des opportunités"
+    },
+    "about": {
+      "title": "À Propos",
+      "paragraph1": "Je suis étudiante en BUT MMI (Métiers du Multimédia et de l'Internet), passionnée par tout le spectre de la conception numérique — du code propre et efficace aux interfaces utilisateur intuitives.",
+      "paragraph2": "Mon travail se situe au carrefour du développement et du design : je construis des choses qui fonctionnent avec élégance. Je suis particulièrement attiré par les applications web, les expériences interactives et les produits digitaux qui résolvent de vrais problèmes.",
+      "paragraph3": "En dehors de la tech, je suis passionné d'aviation — la discipline et la précision de la pensée aérospatiale influencent profondément ma façon d'aborder les défis d'ingénierie."
+    },
+    "skills": {
+      "title": "Compétences & Outils",
+      "development": "Développement",
+      "design": "Design",
+      "tools": "Outils"
+    },
+    "experience": {
+      "title": "Expérience & Formation"
+    },
+    "projects": {
+      "title": "Projets",
+      "subtitle": "Une sélection de travaux couvrant le développement web, le design et la data.",
+      "filter_all": "Tous",
+      "filter_web": "Développement Web",
+      "filter_uxui": "UX/UI",
+      "filter_data": "Data / Python",
+      "filter_school": "Projets Scolaires",
+      "view_project": "Voir le Projet",
+      "github": "GitHub",
+      "live_demo": "Démo Live",
+      "technologies": "Technologies",
+      "features": "Fonctionnalités",
+      "screenshots": "Captures d'écran"
+    },
+    "lab": {
+      "title": "Lab",
+      "subtitle": "Expériences, prototypes et explorations. C'est ici que je casse les choses intentionnellement.",
+      "code_snippet": "Extrait de Code",
+      "idea": "L'Idée"
+    },
+    "appearances": {
+      "title": "Apparitions",
+      "subtitle": "Où me trouver — articles, vidéos, événements et présentations.",
+      "view": "Voir"
+    },
+    "contact": {
+      "title": "Me Contacter",
+      "subtitle": "Je suis toujours ouvert à de nouvelles opportunités, collaborations et conversations intéressantes.",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer",
+      "or": "Ou contactez-moi directement",
+      "placeholder_name": "Votre nom",
+      "placeholder_email": "votre@email.com",
+      "placeholder_message": "Parlez-moi de votre projet...",
+      "success": "Message envoyé ! Je vous répondrai bientôt.",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "recommendations": {
+      "title": "Lettres de Recommandation",
+      "subtitle": "Témoignages et lettres de recommandation de professeurs et collègues.",
+      "download": "Télécharger PDF"
+    },
+    "footer": {
+      "made_with": "Conçu avec précision par",
+      "rights": "Tous droits réservés."
+    }
+  }
+}

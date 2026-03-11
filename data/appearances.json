@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "iut-article-2024",
+    "type": "article",
+    "en": {
+      "title": "IUT Featured Student 2024",
+      "description": "Featured in the university's annual digital magazine highlighting outstanding student projects in the MMI program. My e-commerce dashboard project was selected as one of the top student works of the year.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "Read Article"
+    },
+    "fr": {
+      "title": "Étudiant en Vedette IUT 2024",
+      "description": "Mis en avant dans le magazine numérique annuel de l'université soulignant les projets étudiants exceptionnels du programme MMI.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "Lire l'Article"
+    }
+  },
+  {
+    "slug": "tech-conference-2023",
+    "type": "event",
+    "en": {
+      "title": "Tech Student Summit 2023",
+      "description": "Presented my aviation data visualization project at the regional Tech Student Summit. Delivered a 20-minute talk on using Python for data storytelling to an audience of 200+ students and professionals.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "View Event"
+    },
+    "fr": {
+      "title": "Tech Student Summit 2023",
+      "description": "Présenté mon projet de visualisation de données aviation au Tech Student Summit régional. Conférence de 20 minutes sur Python pour la data storytelling devant 200+ personnes.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "Voir l'Événement"
+    }
+  },
+  {
+    "slug": "youtube-tutorial",
+    "type": "video",
+    "en": {
+      "title": "Next.js Tutorial — YouTube",
+      "description": "Produced a comprehensive YouTube tutorial series on building modern web applications with Next.js and TypeScript. The series gathered 5,000+ views and positive feedback from the developer community.",
+      "externalUrl": "https://youtube.com",
+      "externalLabel": "Watch Video"
+    },
+    "fr": {
+      "title": "Tutoriel Next.js — YouTube",
+      "description": "Série de tutoriels YouTube sur le développement d'applications web modernes avec Next.js et TypeScript. La série a cumulé 5 000+ vues.",
+      "externalUrl": "https://youtube.com",
+      "externalLabel": "Regarder"
+    }
+  },
+  {
+    "slug": "hackathon-winner",
+    "type": "event",
+    "en": {
+      "title": "24H Hackathon — 1st Place",
+      "description": "Won first place at the university's 24-hour hackathon, building a real-time collaborative study tool with WebSockets. Competed against 12 teams of 3-4 students each.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "View Project"
+    },
+    "fr": {
+      "title": "Hackathon 24H — 1ère Place",
+      "description": "Premier prix au hackathon 24h de l'université, en construisant un outil d'étude collaboratif en temps réel avec WebSockets. Compétition contre 12 équipes.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "Voir le Projet"
+    }
+  },
+  {
+    "slug": "digital-installation",
+    "type": "installation",
+    "en": {
+      "title": "Interactive Digital Installation",
+      "description": "Created an interactive digital installation for the university's open day — a generative art piece that responds to visitor movement via webcam input, displayed on a 4m wide projection screen.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "Learn More"
+    },
+    "fr": {
+      "title": "Installation Numérique Interactive",
+      "description": "Création d'une installation numérique interactive pour la journée portes ouvertes de l'université — une pièce d'art génératif répondant aux mouvements des visiteurs via webcam, affichée sur un écran de projection de 4m.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "En Savoir Plus"
+    }
+  },
+  {
+    "slug": "podcast-interview",
+    "type": "podcast",
+    "en": {
+      "title": "DevTalks Podcast — Episode 42",
+      "description": "Invited as a guest on the DevTalks podcast to discuss the journey of a student developer, the importance of design thinking in engineering, and career paths in tech for MMI graduates.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "Listen Now"
+    },
+    "fr": {
+      "title": "Podcast DevTalks — Épisode 42",
+      "description": "Invité sur le podcast DevTalks pour discuter du parcours d'un développeur étudiant, de l'importance du design thinking en ingénierie et des débouchés MMI.",
+      "externalUrl": "https://example.com",
+      "externalLabel": "Écouter"
+    }
+  }
+]
