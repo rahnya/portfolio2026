@@ -253,7 +253,10 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/mmi-decouvertes.png"]
+      "screenshots": [
+        "/projects/mmi-decouvertes.png",
+        "/projects/agents.png"
+      ]
     }
   },
   {

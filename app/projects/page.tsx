@@ -79,17 +79,25 @@ export default function ProjectsPage() {
                 href={`/projects/${project.slug}`}
                 className="card-hover group relative bg-[#183153]/30 border border-white/8 rounded-2xl overflow-hidden hover:border-white/15"
               >
-                {/* Color splash thumbnail */}
+                {/* Thumbnail with screenshot or color splash */}
                 <div
-                  className="relative h-52 overflow-hidden"
+                  className="relative h-52 overflow-hidden bg-cover bg-center"
                   style={{ backgroundColor: `${project.color}15` }}
                 >
-                  <div
-                    className="absolute inset-0"
-                    style={{
-                      background: `radial-gradient(circle at 30% 50%, ${project.color}30 0%, transparent 70%)`,
-                    }}
-                  />
+                  {p.screenshots && p.screenshots[0] ? (
+                    <img
+                      src={p.screenshots[0]}
+                      alt={p.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        background: `radial-gradient(circle at 30% 50%, ${project.color}30 0%, transparent 70%)`,
+                      }}
+                    />
+                  )}
                   {/* Tech stack pills */}
                   <div className="absolute bottom-4 left-4 flex flex-wrap gap-1.5">
                     {p.technologies.slice(0, 3).map((tech) => (
