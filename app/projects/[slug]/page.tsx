@@ -10,6 +10,8 @@ import { ArrowLeft, Github, ExternalLink, CheckCircle2 } from "lucide-react";
 export default function ProjectDetailPage() {
   const params = useParams<{ slug: string }>();
   const { lang, t } = useLang();
+  const [lightbox, setLightbox] = React.useState<number | null>(null);
+
   const project = projectsData.find((p) => p.slug === params.slug);
   if (!project) notFound();
 
@@ -20,6 +22,8 @@ export default function ProjectDetailPage() {
     : (project as any).category
     ? [(project as any).category]
     : [];
+
+  const screenshots: string[] = Array.isArray(p.screenshots) ? p.screenshots : [];
 
   return (
     <div className="min-h-screen pt-24 pb-20 px-6">
@@ -72,6 +76,7 @@ export default function ProjectDetailPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Main */}
           <div className="md:col-span-2 space-y-10">
+
             {/* Description */}
             <div>
               <h2 className="font-display font-bold text-xl text-white mb-4">
@@ -98,23 +103,30 @@ export default function ProjectDetailPage() {
               </ul>
             </div>
 
-            {/* Screenshots placeholder */}
-            <div>
-              <h2 className="font-display font-bold text-xl text-white mb-4">
-                {t.projects.screenshots}
-              </h2>
-              <div className="grid grid-cols-2 gap-4">
-                {[1, 2].map((n) => (
-                  <div
-                    key={n}
-                    className="h-40 rounded-xl border border-white/8 flex items-center justify-center"
-                    style={{ backgroundColor: `${project.color}08` }}
-                  >
-                    <span className="font-mono text-xs text-white/20">Screenshot {n}</span>
-                  </div>
-                ))}
+            {/* Screenshots */}
+            {screenshots.length > 0 && (
+              <div>
+                <h2 className="font-display font-bold text-xl text-white mb-4">
+                  {t.projects.screenshots}
+                </h2>
+                <div className={`grid gap-4 ${screenshots.length === 1 ? "grid-cols-1" : "grid-cols-2"}`}>
+                  {screenshots.map((src, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setLightbox(i)}
+                      className="rounded-xl overflow-hidden border border-white/8 hover:border-white/25 transition-all duration-200 cursor-zoom-in group"
+                    >
+                      <img
+                        src={src}
+                        alt={`${p.title} ${i + 1}`}
+                        className="w-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                        style={{ maxHeight: "240px" }}
+                      />
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* Sidebar */}
@@ -169,6 +181,61 @@ export default function ProjectDetailPage() {
           </div>
         </div>
       </div>
+
+      {/* Lightbox */}
+      {lightbox !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
+          onClick={() => setLightbox(null)}
+        >
+          {/* Fermer */}
+          <button
+            onClick={() => setLightbox(null)}
+            className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors duration-200"
+          >
+            ✕
+          </button>
+
+          {/* Flèche gauche */}
+          {screenshots.length > 1 && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setLightbox((lightbox - 1 + screenshots.length) % screenshots.length);
+              }}
+              className="absolute left-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-2xl transition-colors duration-200"
+            >
+              ‹
+            </button>
+          )}
+
+          {/* Image */}
+          <img
+            src={screenshots[lightbox]}
+            alt=""
+            className="max-w-[90vw] max-h-[85vh] rounded-2xl object-contain shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+
+          {/* Flèche droite */}
+          {screenshots.length > 1 && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setLightbox((lightbox + 1) % screenshots.length);
+              }}
+              className="absolute right-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-2xl transition-colors duration-200"
+            >
+              ›
+            </button>
+          )}
+
+          {/* Compteur */}
+          <div className="absolute bottom-6 font-mono text-xs text-white/40">
+            {lightbox + 1} / {screenshots.length}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

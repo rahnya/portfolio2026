@@ -89,9 +89,9 @@
         "Real-time updates of ongoing and upcoming initiatives",
         "Simple UX designed for accessibility and community engagement"
       ],
-      "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": []
+      "githubUrl": "https://github.com/rahnya/CAcode.git",
+      "liveUrl": "https://ca-ndc.vercel.app",
+      "screenshots": ["projects/credit_agricole_technologies_et_services.png", "/projects/cacode2.png","/projects/cacode3.png","/projects/cacode4.png"]
     },
     "fr": {
       "title": "Code Ton Territoire",
@@ -105,9 +105,9 @@
         "Suivi des projets en cours et à venir",
         "Interface simple favorisant l’engagement citoyen"
       ],
-      "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": []
+      "githubUrl": "https://github.com/rahnya/CAcode.git",
+      "liveUrl": "https://ca-ndc.vercel.app",
+      "screenshots": ["projects/credit_agricole_technologies_et_services.png", "/projects/cacode2.png","/projects/cacode3.png","/projects/cacode4.png"]
     }
   },
   {
