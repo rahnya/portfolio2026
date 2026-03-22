@@ -3,6 +3,8 @@ import "@/styles/globals.css";
 import { LangProvider } from "@/components/LangContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from "next/script"
+import AnalyticsTracker from "@/components/AnalyticsTracker"
 
 export const metadata: Metadata = {
   title: "Lanyeri Rahnya — Full Stack Developer & Interface Designer",
@@ -25,10 +27,25 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#0D1B2A]">
         <LangProvider>
+          <AnalyticsTracker />
           <Navbar />
           <main>{children}</main>
           <Footer />
         </LangProvider>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-N4DJGHWE6D"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-N4DJGHWE6D');
+          `}
+        </Script>
       </body>
     </html>
   );

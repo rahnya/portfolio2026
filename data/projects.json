@@ -17,7 +17,7 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": []
+      "screenshots": ["/projects/FlightFootPrint.png","projects/ffp1.png", "projects/ffp2.png", "projects/ffp3.png", "projects/ffp4.png"]
     },
     "fr": {
       "title": "FlightFootprint",
@@ -38,7 +38,7 @@
   },
   {
     "slug": "visio-conference-app",
-    "categories": ["web"],
+    "categories": ["web","uxui","school"],
     "color": "#183153",
     "en": {
       "title": "Web Video Conference Platform",
@@ -75,7 +75,7 @@
   },
   {
     "slug": "code-ton-territoire",
-    "categories": ["hackathon"],
+    "categories": ["hackathon","uxui"],
     "color": "#2E7D32",
     "en": {
       "title": "Code Ton Territoire",
@@ -112,7 +112,7 @@
   },
   {
     "slug": "ampa-animal-adoption",
-    "categories": ["web"],
+    "categories": ["web","design"],
     "color": "#25cdd0",
     "en": {
       "title": "Ampa — Animal Adoption Platform",
@@ -222,8 +222,47 @@
     }
   },
   {
+    "slug": "tank-game-ui-unity",
+    "categories": ["school", "game"],
+    "color": "#7EC8E3",
+    "en": {
+      "title": "Tank Game UI & Unity Gameplay Adaptation",
+      "description": "This academic project combined UI/UX game design and gameplay development. First, we redesigned the interface and visual identity of an existing tank game by creating original mockups, defining a playful art direction, and imagining new mechanics such as power-ups and game states. Later, we rebuilt the gameplay using Unity based on a provided prototype, allowing us to understand game logic, interactions, and level flow.",
+      "shortDescription": "Game UI redesign and gameplay reconstruction using Unity.",
+      "technologies": ["Figma", "Unity", "C#", "Game Design"],
+      "features": [
+        "Complete UI mockups including loading screen, menu, tank selection, gameplay HUD and victory screens",
+        "Creation of a cohesive playful underwater art direction with custom visual components",
+        "Design of gameplay elements such as power-ups, pause states and multiplayer feedback",
+        "Understanding and reimplementation of an existing tank gameplay prototype in Unity",
+        "Integration of game interactions such as movement, shooting mechanics and win conditions",
+        "Work on player feedback and visual hierarchy for improved game readability"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
+      "screenshots": [ "projects/tank-accueil.png","/projects/jeu-tank-unity.png", "/projects/maquette-jeu tank.png", "projects/tank1.png", "projects/tank2.png"]
+    },
+    "fr": {
+      "title": "UI de jeu de tanks & adaptation gameplay sur Unity",
+      "description": "Ce projet académique mêlait game design et développement. Dans un premier temps, nous devions concevoir les maquettes complètes d’un jeu de tanks existant en proposant une nouvelle direction artistique et en imaginant des mécaniques supplémentaires comme des power-ups ou différents états de jeu. Dans un second temps, nous avons recréé le gameplay du jeu sur Unity à partir d’un prototype fourni, ce qui nous a permis de comprendre la logique de développement d’un jeu et ses interactions.",
+      "shortDescription": "Refonte UI d’un jeu et reconstruction du gameplay sur Unity.",
+      "technologies": ["Figma", "Unity", "C#", "Game Design"],
+      "features": [
+        "Conception de maquettes complètes : écran de chargement, menu, sélection de tank, HUD de jeu, pause et écrans de victoire",
+        "Création d’une direction artistique originale et cohérente dans un univers sous-marin ludique",
+        "Réflexion sur les mécaniques de jeu : power-ups, feedback joueur, multijoueur et états de jeu",
+        "Re-développement du gameplay sur Unity à partir de fichiers de base fournis par l’enseignante",
+        "Implémentation des interactions principales : déplacement, tir, collisions et conditions de victoire",
+        "Travail sur la lisibilité et la hiérarchie visuelle pour améliorer l’expérience joueur"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
+      "screenshots": [ "projects/tank-accueil.png","/projects/jeu-tank-unity.png", "/projects/maquette-jeu tank.png", "projects/tank1.png", "projects/tank2.png"]
+    }
+  },
+  {
     "slug": "mmi-decouvertes",
-    "categories": ["school"],
+    "categories": ["school","web"],
     "color": "#D0A8BC",
     "en": {
       "title": "MMI Découvertes Website",
@@ -253,15 +292,12 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": [
-        "/projects/mmi-decouvertes.png",
-        "/projects/agents.png"
-      ]
+      "screenshots": ["/projects/mmi-decouvertes.png"]
     }
   },
   {
     "slug": "1ris-agency-website",
-    "categories": ["school"],
+    "categories": ["school","web"],
     "color": "#C58AFF",
     "en": {
       "title": "1ris Communication Agency Website",
@@ -296,7 +332,7 @@
   },
   {
     "slug": "laravel-blog-platform",
-    "categories": ["school"],
+    "categories": ["school","web"],
     "color": "#FF3B8D",
     "en": {
       "title": "Laravel Blog Platform",
@@ -311,7 +347,7 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/laravel.png"]
+      "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
     },
     "fr": {
       "title": "Blog avec back-office Laravel",
@@ -326,12 +362,12 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/laravel.png"]
+      "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
     }
   },
   {
     "slug": "internship-management-app",
-    "categories": ["school"],
+    "categories": ["school","web","uxui"],
     "color": "#3BA1FF",
     "en": {
       "title": "Internship Management Application",
@@ -366,7 +402,7 @@
   },
   {
     "slug": "ai-agents-workflow",
-    "categories": ["school"],
+    "categories": ["school","web"],
     "color": "#6B5CFF",
     "en": {
       "title": "AI Agents Workflow",
@@ -401,7 +437,7 @@
   },
   {
     "slug": "inflation-dataviz",
-    "categories": ["school"],
+    "categories": ["school","data"],
     "color": "#FFC72C",
     "en": {
       "title": "Inflation Data Visualization",
@@ -436,7 +472,7 @@
   },
   {
     "slug": "virtual-travel-chair",
-    "categories": ["school"],
+    "categories": ["school","hackathon"],
     "color": "#8A6F9B",
     "en": {
       "title": "Virtual Travel Chair",
@@ -574,7 +610,7 @@
   },
   {
     "slug": "weather-app-design",
-    "categories": ["school"],
+    "categories": ["school","uxui","design"],
     "color": "#64B5F6",
     "en": {
       "title": "Weather App UX/UI Design",
@@ -609,7 +645,7 @@
   },
   {
     "slug": "crossy-road-ux-powerups",
-    "categories": ["school"],
+    "categories": ["school","uxui"],
     "color": "#FFD54F",
     "en": {
       "title": "Crossy Road UX Power-ups",
@@ -623,7 +659,7 @@
         "UX evaluation based on existing mechanics"
       ],
       "githubUrl": "",
-      "liveUrl": "/projects/CrossyRoad_BUT2_DEV_LANYERI_RAHNYA.pdf",
+      "liveUrl": "https://www.behance.net/gallery/246239095/Crossy-Road-ajout-de-super-pouvoirs",
       "screenshots": ["/projects/crossy.png"]
     },
     "fr": {
@@ -638,13 +674,13 @@
         "Analyse UX du jeu existant"
       ],
       "githubUrl": "",
-      "liveUrl": "/projects/CrossyRoad_BUT2_DEV_LANYERI_RAHNYA.pdf",
+      "liveUrl": "https://www.behance.net/gallery/246239095/Crossy-Road-ajout-de-super-pouvoirs",
       "screenshots": ["/projects/crossy.png"]
     }
   },
   {
     "slug": "scrum-learning-platform",
-    "categories": ["school"],
+    "categories": ["school","web"],
     "color": "#81C784",
     "en": {
       "title": "Scrum Learning Website",
@@ -679,7 +715,7 @@
   }, 
   {
     "slug": "logo-jingle-animation",
-    "categories": ["school"],
+    "categories": ["school","design"],
     "color": "#FF8A65",
     "en": {
       "title": "Logo Jingle Animation",
@@ -714,7 +750,7 @@
   },
   {
     "slug": "mmi-lan-event",
-    "categories": ["school"],
+    "categories": ["school","professional"],
     "color": "#9575CD",
     "en": {
       "title": "MMI LAN Event Organization",
@@ -749,7 +785,7 @@
   },
   {
     "slug": "website-competitive-audit",
-    "categories": ["school"],
+    "categories": ["school","professional","web"],
     "color": "#90A4AE",
     "en": {
       "title": "Website Competitive Audit",
@@ -784,7 +820,7 @@
   },
   {
     "slug": "communication-plan-project",
-    "categories": ["school"],
+    "categories": ["school","professional"],
     "color": "#F06292",
     "en": {
       "title": "Communication Plan Development",

@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { useLang } from "./LangContext";
 import { Github, Linkedin, ArrowUpRight } from "lucide-react";
+import { trackEvent } from "@/utils/trackEvent"
 
 export default function Footer() {
   const { t } = useLang();
@@ -22,15 +23,18 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 mt-6">
               <a href="  https://github.com/rahnya" target="_blank" rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200">
+                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200"
+                onClick={() => trackEvent("open_github", "engagement", "footer")}>
                 <Github className="w-4 h-4" />
               </a>
               <a href="https://www.linkedin.com/in/rahnya-lanyeri/" target="_blank" rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200">
+                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200"
+                onClick={() => trackEvent("open_linkedin", "engagement", "footer")}>
                 <Linkedin className="w-4 h-4" />
               </a>
               <a href="https://www.behance.net/rahnya_lanyeri" target="_blank" rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200">
+                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 transition-all duration-200"
+                onClick={() => trackEvent("open_behance", "engagement", "footer")}>
                 <span className="text-xs font-bold">Be</span>
               </a>
             </div>
@@ -60,12 +64,14 @@ export default function Footer() {
             <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">Downloads</p>
             <div className="flex flex-col gap-2">
               <a href="/cv/CV_Rahnya.pdf" download
-                className="font-body text-sm text-white/40 hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit">
+                className="font-body text-sm text-white/40 hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit"
+                onClick={() => trackEvent("open_cv", "engagement", "footer")}>
                 {t.nav.cv}
                 <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-y-0.5 group-hover:translate-y-0 translate-x-0.5 group-hover:translate-x-0 transition-all duration-200" />
               </a>
               <Link href="/recommendations"
-                className="font-body text-sm text-white/40 hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit">
+                className="font-body text-sm text-white/40 hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit"
+                onClick={() => trackEvent("open_recommendations", "engagement", "footer")}>
                 {t.nav.recommendations}
                 <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-200" />
               </Link>

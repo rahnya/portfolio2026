@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLang } from "./LangContext";
 import { Github, Linkedin, Menu, X } from "lucide-react";
+import { trackEvent } from "@/utils/trackEvent"
 
 const BehanceIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -71,15 +72,18 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           {/* Social icons */}
           <a href="https://github.com/rahnya" target="_blank" rel="noopener noreferrer"
-            className="text-white/50 hover:text-white transition-colors duration-200">
+            className="text-white/50 hover:text-white transition-colors duration-200"
+            onClick={() => trackEvent("open_github", "engagement", "navbar")}>
             <Github className="w-4 h-4" />
           </a>
           <a href="www.linkedin.com/in/rahnya-lanyeri" target="_blank" rel="noopener noreferrer"
-            className="text-white/50 hover:text-white transition-colors duration-200">
+            className="text-white/50 hover:text-white transition-colors duration-200"
+            onClick={() => trackEvent("open_linkedin", "engagement", "navbar")}>
             <Linkedin className="w-4 h-4" />
           </a>
           <a href="https://www.behance.net/rahnya_lanyeri" target="_blank" rel="noopener noreferrer"
-            className="text-white/50 hover:text-white transition-colors duration-200">
+            className="text-white/50 hover:text-white transition-colors duration-200"
+            onClick={() => trackEvent("open_behance", "engagement", "navbar")}>
             <BehanceIcon />
           </a>
 
@@ -140,11 +144,13 @@ export default function Navbar() {
             ))}
             <div className="flex items-center gap-4 pt-4 border-t border-white/10">
               <a href="  https://github.com/rahnya" target="_blank" rel="noopener noreferrer"
-                className="text-white/50 hover:text-white transition-colors duration-200">
+                className="text-white/50 hover:text-white transition-colors duration-200"
+                onClick={() => trackEvent("open_github", "engagement", "navbar")}>
                 <Github className="w-5 h-5" />
               </a>
               <a href="https://www.linkedin.com/in/rahnya-lanyeri" target="_blank" rel="noopener noreferrer"
-                className="text-white/50 hover:text-white transition-colors duration-200">
+                className="text-white/50 hover:text-white transition-colors duration-200"
+                onClick={() => trackEvent("open_linkedin", "engagement", "navbar")}>
                 <Linkedin className="w-5 h-5" />
               </a>
               <div className="ml-auto flex items-center gap-1 bg-white/5 rounded-full px-1 py-1 border border-white/10">
