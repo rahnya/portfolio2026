@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useLang } from "@/components/LangContext";
 import { Github, Linkedin, Mail, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 const BehanceIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -13,6 +14,7 @@ export default function ContactPage() {
   const { t } = useLang();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -24,9 +26,27 @@ export default function ContactPage() {
       setStatus("error");
       return;
     }
-    // Simulate send
-    setStatus("success");
-    setForm({ name: "", email: "", message: "" });
+  
+    setLoading(true);   // 🔹 on active le loader
+    setStatus("idle");  // 🔹 on reset le status
+  
+    emailjs.send(
+      'service_i9see4n', // ton service
+      'template_b45cwb9', // ton template
+      form,
+      'KOxrqs9MrABdI4Qqb' // ton clé publique
+    )
+    
+    .then(() => {
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+    })
+    .catch(() => {
+      setStatus("error");
+    })
+    .finally(() => {
+      setLoading(false);  // 🔹 on désactive le loader
+    });
   };
 
   const contacts = [
@@ -116,9 +136,14 @@ export default function ContactPage() {
 
               <button
                 onClick={handleSubmit}
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#FF3B8D] hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:shadow-[0_0_30px_rgba(255,59,141,0.25)] group mt-2"
+                disabled={loading}
+                className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#FF3B8D] hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:shadow-[0_0_30px_rgba(255,59,141,0.25)] group mt-2 ${loading ? "opacity-60 cursor-not-allowed" : ""}`}
               >
-                <Send className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+                {loading ? (
+                  <span className="animate-spin border-2 border-white/50 border-t-white w-4 h-4 rounded-full" />
+                ) : (
+                  <Send className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+                )}
                 {t.contact.send}
               </button>
             </div>
