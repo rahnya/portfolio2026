@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script"
 import AnalyticsTracker from "@/components/AnalyticsTracker"
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Lanyeri Rahnya — Full Stack Developer & Interface Designer",
@@ -25,6 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google-site-verification" content="4iKVP3WeVNyL4RrwzOvYrg_sTVCj_KmGc0fhaUdMNoE" />
+      </Head>
       <body className="bg-[#0D1B2A]">
         <LangProvider>
           <AnalyticsTracker />
