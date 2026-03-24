@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Lanyeri Rahnya — BUT MMI student, developer and interface designer passionate about building exceptional digital products.",
   keywords: ["developer", "designer", "portfolio", "Next.js", "TypeScript", "UX/UI"],
+  verification: {
+    google: "4iKVP3WeVNyL4RrwzOvYrg_sTVCj_KmGc0fhaUdMNoE"
+  },
   openGraph: {
     title: "Lanyeri Rahnya — Full Stack Developer & Interface Designer",
     description: "Portfolio of Lanyeri Rahnya",
@@ -26,9 +29,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="google-site-verification" content="4iKVP3WeVNyL4RrwzOvYrg_sTVCj_KmGc0fhaUdMNoE" />
-      </Head>
       <body className="bg-[#0D1B2A]">
         <LangProvider>
           <AnalyticsTracker />
