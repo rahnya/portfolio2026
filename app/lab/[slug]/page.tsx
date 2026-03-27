@@ -3,18 +3,15 @@ import React from "react";
 import Link from "next/link";
 import { useLang } from "@/components/LangContext";
 import labData from "@/data/lab.json";
-import { ArrowLeft, Github, ExternalLink, Zap } from "lucide-react";
-import { notFound } from "next/navigation";
+import { ArrowLeft, Zap } from "lucide-react";
+import { useParams } from "next/navigation";
 
-interface LabDetailPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function LabDetailPage({ params }: LabDetailPageProps) {
+export default function LabDetailPage() {
+  const params = useParams();
   const { t, lang } = useLang();
-  const item = labData.find((i: any) => i.slug === params.slug);
+  const slug = params?.slug as string;
+
+  const item = labData.find((i: any) => i.slug === slug);
 
   // Si l'item n'existe pas, affiche une page 404
   if (!item) {
@@ -26,7 +23,7 @@ export default function LabDetailPage({ params }: LabDetailPageProps) {
           </h1>
           <p className="text-white/50 mb-6">
             {lang === "en"
-              ? "Cet élément de lab n'existe pas."
+              ? "This lab item does not exist."
               : "Cet élément de lab n'existe pas."}
           </p>
           <Link
@@ -34,7 +31,7 @@ export default function LabDetailPage({ params }: LabDetailPageProps) {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#FF3B8D] text-white hover:bg-[#FF96B3] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            {lang === "en" ? "Retour au Lab" : "Retour au Lab"}
+            {lang === "en" ? "Back to Lab" : "Retour au Lab"}
           </Link>
         </div>
       </div>
@@ -128,7 +125,7 @@ export default function LabDetailPage({ params }: LabDetailPageProps) {
           <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-8 mb-8">
             <div className="flex items-center justify-between mb-3">
               <h3 className="font-display font-bold text-white">
-                {lang === "en" ? "Progression" : "Progression"}
+                {lang === "en" ? "Progress" : "Progression"}
               </h3>
               <span className="font-mono text-lg text-[#FF3B8D]">
                 {item.progress}%
@@ -151,7 +148,9 @@ export default function LabDetailPage({ params }: LabDetailPageProps) {
           <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-8 mb-8">
             <h3 className="font-display font-bold text-white mb-4 flex items-center gap-2">
               <Zap className="w-5 h-5 text-[#FF3B8D]" />
-              {lang === "en" ? "Compétences développées" : "Compétences développées"}
+              {lang === "en"
+                ? "Skills Developed"
+                : "Compétences développées"}
             </h3>
             <div className="flex flex-wrap gap-2">
               {content.skills.map((skill: string) => (
@@ -170,7 +169,7 @@ export default function LabDetailPage({ params }: LabDetailPageProps) {
         {item.tags && item.tags.length > 0 && (
           <div className="mb-8">
             <h3 className="font-mono text-xs text-white/50 uppercase tracking-widest mb-3">
-              Catégories
+              {lang === "en" ? "Categories" : "Catégories"}
             </h3>
             <div className="flex flex-wrap gap-2">
               {item.tags.map((tag: string) => (
@@ -193,14 +192,14 @@ export default function LabDetailPage({ params }: LabDetailPageProps) {
         <div className="mt-12 pt-8 border-t border-white/10">
           <p className="text-white/50 mb-4">
             {lang === "en"
-              ? "Intéressé par cette expérience ?"
+              ? "Interested in this project?"
               : "Intéressé par cette expérience ?"}
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#FF3B8D] text-white hover:bg-[#FF96B3] transition-colors font-body font-medium"
           >
-            {lang === "en" ? "Me contacter" : "Me contacter"} →
+            {lang === "en" ? "Contact me" : "Me contacter"} →
           </Link>
         </div>
       </div>
