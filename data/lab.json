@@ -1,74 +1,174 @@
 [
   {
-    "slug": "css-aurora",
-    "color": "#8A6F9B",
-    "en": {
-      "title": "CSS Aurora Borealis",
-      "description": "A pure CSS experiment recreating the northern lights effect using layered gradients, blur filters, and animation keyframes.",
-      "idea": "I wanted to push CSS animations to their limits by recreating a natural phenomenon. The challenge was achieving organic movement with pure CSS — no JavaScript, no canvas.",
-      "codeSnippet": ".aurora {\n  background: conic-gradient(\n    from 180deg at 50% 50%,\n    #8A6F9B 0deg,\n    #183153 90deg,\n    #FF3B8D 180deg,\n    #8A6F9B 360deg\n  );\n  filter: blur(40px);\n  animation: flow 8s ease infinite;\n}",
-      "tags": ["CSS", "Animation", "Experiment"]
-    },
-    "fr": {
-      "title": "Aurore Boréale CSS",
-      "description": "Une expérience CSS pure recréant l'effet des aurores boréales avec des gradients en couches, des filtres blur et des keyframes d'animation.",
-      "idea": "Je voulais pousser les animations CSS à leurs limites en recréant un phénomène naturel. Le défi était d'obtenir un mouvement organique en CSS pur — sans JavaScript, sans canvas.",
-      "codeSnippet": ".aurora {\n  background: conic-gradient(\n    from 180deg at 50% 50%,\n    #8A6F9B 0deg,\n    #183153 90deg,\n    #FF3B8D 180deg,\n    #8A6F9B 360deg\n  );\n  filter: blur(40px);\n  animation: flow 8s ease infinite;\n}",
-      "tags": ["CSS", "Animation", "Expérience"]
-    }
-  },
-  {
-    "slug": "generative-grid",
-    "color": "#FFC72C",
-    "en": {
-      "title": "Generative Grid System",
-      "description": "A JavaScript experiment generating unique geometric patterns using prime numbers and modular arithmetic.",
-      "idea": "Mathematics has intrinsic aesthetic beauty. This experiment maps prime number sequences onto a grid coordinate system, creating patterns that are both algorithmically determined and visually surprising.",
-      "codeSnippet": "function isPrime(n) {\n  for(let i = 2; i <= Math.sqrt(n); i++)\n    if(n % i === 0) return false;\n  return n > 1;\n}\n\nconst grid = Array.from({length: 64}, (_, i) => ({\n  active: isPrime(i + 1),\n  opacity: (i % 7) / 7\n}));",
-      "tags": ["JavaScript", "Generative Art", "Math"]
-    },
-    "fr": {
-      "title": "Système de Grille Générative",
-      "description": "Une expérience JavaScript générant des motifs géométriques uniques en utilisant les nombres premiers et l'arithmétique modulaire.",
-      "idea": "Les mathématiques ont une beauté esthétique intrinsèque. Cette expérience mappe des séquences de nombres premiers sur un système de coordonnées grille.",
-      "codeSnippet": "function isPrime(n) {\n  for(let i = 2; i <= Math.sqrt(n); i++)\n    if(n % i === 0) return false;\n  return n > 1;\n}\n\nconst grid = Array.from({length: 64}, (_, i) => ({\n  active: isPrime(i + 1),\n  opacity: (i % 7) / 7\n}));",
-      "tags": ["JavaScript", "Art Génératif", "Maths"]
-    }
-  },
-  {
-    "slug": "flight-tracker-api",
-    "color": "#183153",
-    "en": {
-      "title": "Live Flight Tracker",
-      "description": "A minimal flight tracking prototype pulling real-time data from OpenSky Network API and rendering aircraft positions on an SVG map.",
-      "idea": "Combining my passion for aviation with my interest in data visualization. The technical challenge was efficiently rendering 1000+ moving dots on an SVG without performance degradation.",
-      "codeSnippet": "const fetchFlights = async (bounds) => {\n  const { lamin, lomin, lamax, lomax } = bounds;\n  const res = await fetch(\n    `https://opensky-network.org/api/states/all\n    ?lamin=${lamin}&lomin=${lomin}\n    &lamax=${lamax}&lomax=${lomax}`\n  );\n  return res.json();\n};",
-      "tags": ["TypeScript", "API", "Aviation", "SVG"]
-    },
-    "fr": {
-      "title": "Tracker de Vols en Direct",
-      "description": "Un prototype de suivi de vols minimal récupérant des données en temps réel de l'API OpenSky Network.",
-      "idea": "Combiner ma passion pour l'aviation avec mon intérêt pour la visualisation de données. Le défi technique était de rendre efficacement 1000+ points en mouvement sur un SVG.",
-      "codeSnippet": "const fetchFlights = async (bounds) => {\n  const { lamin, lomin, lamax, lomax } = bounds;\n  const res = await fetch(\n    `https://opensky-network.org/api/states/all\n    ?lamin=${lamin}&lomin=${lomin}\n    &lamax=${lamax}&lomax=${lomax}`\n  );\n  return res.json();\n};",
-      "tags": ["TypeScript", "API", "Aviation", "SVG"]
-    }
-  },
-  {
-    "slug": "type-scramble",
+    "slug": "nlp-sentiment-analysis",
     "color": "#FF3B8D",
+    "tags": ["IA/Data", "Python"],
+    "type": "Exercice",
+    "status": "Complété",
     "en": {
-      "title": "Type Scramble Effect",
-      "description": "A text animation where characters randomly scramble before resolving to their final state — a common effect in sci-fi interfaces.",
-      "idea": "I love the aesthetic of decrypting text in movies. Building this taught me about requestAnimationFrame optimization and the importance of easing functions in perceived performance.",
-      "codeSnippet": "const scramble = (el, final, duration = 1000) => {\n  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';\n  let start = null;\n  const step = (ts) => {\n    if (!start) start = ts;\n    const progress = Math.min((ts - start) / duration, 1);\n    el.textContent = final.split('').map((c, i) => {\n      if (i < Math.floor(progress * final.length)) return c;\n      return chars[Math.floor(Math.random() * chars.length)];\n    }).join('');\n    if (progress < 1) requestAnimationFrame(step);\n  };\n  requestAnimationFrame(step);\n};",
-      "tags": ["JavaScript", "Animation", "Typography"]
+      "title": "NLP Sentiment Analysis",
+      "description": "Classification de sentiments sur tweets avec transformers. Modèle fine-tuné BERT pour détecter les émotions en temps réel.",
+      "skills": ["Python", "Transformers", "NLP", "ML"]
     },
     "fr": {
-      "title": "Effet Scramble de Texte",
-      "description": "Une animation de texte où les caractères se brouillent aléatoirement avant de se résoudre en leur état final.",
-      "idea": "J'adore l'esthétique du déchiffrement de texte dans les films. Cela m'a appris l'optimisation de requestAnimationFrame et l'importance des fonctions d'easing.",
-      "codeSnippet": "const scramble = (el, final, duration = 1000) => {\n  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';\n  let start = null;\n  const step = (ts) => {\n    if (!start) start = ts;\n    const progress = Math.min((ts - start) / duration, 1);\n    el.textContent = final.split('').map((c, i) => {\n      if (i < Math.floor(progress * final.length)) return c;\n      return chars[Math.floor(Math.random() * chars.length)];\n    }).join('');\n    if (progress < 1) requestAnimationFrame(step);\n  };\n  requestAnimationFrame(step);\n};",
-      "tags": ["JavaScript", "Animation", "Typographie"]
+      "title": "Analyse de sentiments NLP",
+      "description": "Classification de sentiments sur tweets avec transformers. Modèle fine-tuné BERT pour détecter les émotions en temps réel.",
+      "skills": ["Python", "Transformers", "NLP", "ML"]
+    }
+  },
+  {
+    "slug": "drone-collision-avoidance",
+    "color": "#FFC72C",
+    "tags": ["Aérien/Transport", "IA/Data"],
+    "type": "Prototype",
+    "status": "En cours",
+    "progress": 60,
+    "en": {
+      "title": "Drone Collision Avoidance System",
+      "description": "Système d'évitement d'obstacles pour drones autonomes utilisant la vision par ordinateur et des capteurs lidar.",
+      "skills": ["Computer Vision", "Robotics", "Python", "ROS"]
+    },
+    "fr": {
+      "title": "Système d'évitement de collision pour drone",
+      "description": "Système d'évitement d'obstacles pour drones autonomes utilisant la vision par ordinateur et des capteurs lidar.",
+      "skills": ["Computer Vision", "Robotics", "Python", "ROS"]
+    }
+  },
+  {
+    "slug": "react-performance-optimization",
+    "color": "#62E0D5",
+    "tags": ["Développement", "Apprentissage/Veille"],
+    "type": "Article",
+    "status": "Publié",
+    "en": {
+      "title": "React Performance Optimization Guide",
+      "description": "Guide complet sur l'optimisation des performances React : memoization, code splitting, lazy loading et profiling.",
+      "skills": ["React", "Performance", "Next.js"]
+    },
+    "fr": {
+      "title": "Guide d'optimisation des performances React",
+      "description": "Guide complet sur l'optimisation des performances React : memoization, code splitting, lazy loading et profiling.",
+      "skills": ["React", "Performance", "Next.js"]
+    }
+  },
+  {
+    "slug": "figma-design-system",
+    "color": "#A78BFA",
+    "tags": ["UX/IHM"],
+    "type": "Prototype",
+    "status": "Complété",
+    "en": {
+      "title": "Design System Figma",
+      "description": "Création d'un design system complet avec composants réutilisables, tokens de design et documentation interactive.",
+      "skills": ["Figma", "Design System", "UI/UX", "Component Library"]
+    },
+    "fr": {
+      "title": "Design System Figma",
+      "description": "Création d'un design system complet avec composants réutilisables, tokens de design et documentation interactive.",
+      "skills": ["Figma", "Design System", "UI/UX", "Component Library"]
+    }
+  },
+  {
+    "slug": "deep-learning-mooc",
+    "color": "#FF6B9D",
+    "tags": ["IA/Data", "Apprentissage/Veille"],
+    "type": "MOOC",
+    "status": "En cours",
+    "progress": 75,
+    "en": {
+      "title": "Deep Learning Specialization",
+      "description": "Cours complet d'Andrew Ng sur le deep learning : réseaux de neurones, CNN, RNN, et projets pratiques.",
+      "skills": ["Deep Learning", "TensorFlow", "Neural Networks", "Python"]
+    },
+    "fr": {
+      "title": "Spécialisation Deep Learning",
+      "description": "Cours complet d'Andrew Ng sur le deep learning : réseaux de neurones, CNN, RNN, et projets pratiques.",
+      "skills": ["Deep Learning", "TensorFlow", "Neural Networks", "Python"]
+    }
+  },
+  {
+    "slug": "aviation-data-dashboard",
+    "color": "#FFD93D",
+    "tags": ["Aérien/Transport", "IA/Data", "Développement"],
+    "type": "Prototype",
+    "status": "Complété",
+    "en": {
+      "title": "Aviation Data Dashboard",
+      "description": "Dashboard temps réel des données de vols : trajectoires, altitudes, vitesses. Visualisation avec D3.js et WebGL.",
+      "skills": ["D3.js", "Data Visualization", "React", "Real-time Data"]
+    },
+    "fr": {
+      "title": "Tableau de bord données aéronautiques",
+      "description": "Dashboard temps réel des données de vols : trajectoires, altitudes, vitesses. Visualisation avec D3.js et WebGL.",
+      "skills": ["D3.js", "Data Visualization", "React", "Real-time Data"]
+    }
+  },
+  {
+    "slug": "ux-testing-methodology",
+    "color": "#9D4EDD",
+    "tags": ["UX/IHM", "Apprentissage/Veille"],
+    "type": "Ressource",
+    "status": "Publié",
+    "en": {
+      "title": "UX Testing Methodology Guide",
+      "description": "Méthodologies complètes de test UX : user testing, A/B testing, heatmaps et métriques d'engagement.",
+      "skills": ["UX Research", "User Testing", "Analytics", "A/B Testing"]
+    },
+    "fr": {
+      "title": "Guide de méthodologie de test UX",
+      "description": "Méthodologies complètes de test UX : user testing, A/B testing, heatmaps et métriques d'engagement.",
+      "skills": ["UX Research", "User Testing", "Analytics", "A/B Testing"]
+    }
+  },
+  {
+    "slug": "typescript-advanced-patterns",
+    "color": "#3A86FF",
+    "tags": ["Développement", "Apprentissage/Veille"],
+    "type": "Article",
+    "status": "Publié",
+    "en": {
+      "title": "Advanced TypeScript Patterns",
+      "description": "Patterns avancés TypeScript : generics, decorators, conditional types et utility types pour du code type-safe.",
+      "skills": ["TypeScript", "Advanced Patterns", "OOP"]
+    },
+    "fr": {
+      "title": "Patterns TypeScript avancés",
+      "description": "Patterns avancés TypeScript : generics, decorators, conditional types et utility types pour du code type-safe.",
+      "skills": ["TypeScript", "Advanced Patterns", "OOP"]
+    }
+  },
+  {
+    "slug": "ml-pipeline-optimization",
+    "color": "#FB5607",
+    "tags": ["IA/Data"],
+    "type": "Exercice",
+    "status": "Complété",
+    "en": {
+      "title": "ML Pipeline Optimization",
+      "description": "Optimisation d'un pipeline ML complet : data preprocessing, feature engineering, model selection et hyperparameter tuning.",
+      "skills": ["MLOps", "Python", "Scikit-learn", "Data Engineering"]
+    },
+    "fr": {
+      "title": "Optimisation du pipeline ML",
+      "description": "Optimisation d'un pipeline ML complet : data preprocessing, feature engineering, model selection et hyperparameter tuning.",
+      "skills": ["MLOps", "Python", "Scikit-learn", "Data Engineering"]
+    }
+  },
+  {
+    "slug": "accessible-components-library",
+    "color": "#06FFA5",
+    "tags": ["UX/IHM", "Développement"],
+    "type": "Prototype",
+    "status": "Complété",
+    "en": {
+      "title": "Accessible Components Library",
+      "description": "Bibliothèque de composants React accessibles : ARIA labels, keyboard navigation, screen reader support.",
+      "skills": ["A11y", "React", "Accessibility", "Web Standards"]
+    },
+    "fr": {
+      "title": "Bibliothèque de composants accessibles",
+      "description": "Bibliothèque de composants React accessibles : ARIA labels, keyboard navigation, screen reader support.",
+      "skills": ["A11y", "React", "Accessibility", "Web Standards"]
     }
   }
 ]
