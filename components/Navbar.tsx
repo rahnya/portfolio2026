@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useLang } from "./LangContext";
 import { Github, Linkedin, Menu, X } from "lucide-react";
 import { trackEvent } from "@/utils/trackEvent"
+import ThemeToggle from "@/components/ThemeToggle";
 
 const BehanceIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -92,27 +93,14 @@ export default function Navbar() {
 
           {/* Lang switcher */}
           <div className="flex items-center gap-1 bg-white/5 rounded-full px-1 py-1 border border-white/10">
-            <button
-              onClick={() => setLang("en")}
-              className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
-                lang === "en"
-                  ? "bg-[#FF3B8D] text-white"
-                  : "text-white/50 hover:text-white"
-              }`}
-            >
-              EN
-            </button>
-            <button
-              onClick={() => setLang("fr")}
-              className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
-                lang === "fr"
-                  ? "bg-[#FF3B8D] text-white"
-                  : "text-white/50 hover:text-white"
-              }`}
-            >
-              FR
-            </button>
+            <button onClick={() => setLang("en")} className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+                lang === "en" ? "bg-[#FF3B8D] text-white" : "text-white/50 hover:text-white"
+              }`} > EN </button>
+            <button onClick={() => setLang("fr")} className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+                lang === "fr" ? "bg-[#FF3B8D] text-white" : "text-white/50 hover:text-white" }`} > FR </button>
           </div>
+
+          <ThemeToggle />
         </div>
 
         {/* Mobile menu button */}
@@ -162,6 +150,7 @@ export default function Navbar() {
                   className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${lang === "fr" ? "bg-[#FF3B8D] text-white" : "text-white/50"}`}>
                   FR
                 </button>
+                <ThemeToggle />
               </div>
             </div>
           </div>

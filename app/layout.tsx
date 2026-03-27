@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "@/components/ThemeContext";
 import "@/styles/globals.css";
 import { LangProvider } from "@/components/LangContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script"
 import AnalyticsTracker from "@/components/AnalyticsTracker"
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Lanyeri Rahnya — Full Stack Developer & Interface Designer",
   description:
-    "Portfolio of Lanyeri Rahnya — BUT MMI student, developer and interface designer passionate about building exceptional digital products.",
+"Portfolio of Lanyeri Rahnya — BUT MMI student, developer and interface designer passionate about building exceptional digital products.",
   keywords: ["developer", "designer", "portfolio", "Next.js", "TypeScript", "UX/UI"],
   verification: {
     google: "4iKVP3WeVNyL4RrwzOvYrg_sTVCj_KmGc0fhaUdMNoE"
@@ -28,14 +28,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-[#0D1B2A]">
-        <LangProvider>
-          <AnalyticsTracker />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </LangProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-white dark:bg-[#0D1B2A] transition-colors">
+        <ThemeProvider>
+          <LangProvider>
+            <AnalyticsTracker />
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </LangProvider>
+        </ThemeProvider>
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N4DJGHWE6D"
