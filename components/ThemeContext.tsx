@@ -11,15 +11,14 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("dark"); // sombre par défaut
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Récupère le thème sauvegardé ou utilise le préférence du système
+    // On récupère seulement le thème sauvegardé si l'utilisateur a déjà choisi
     const saved = localStorage.getItem("theme") as Theme | null;
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    
-    const initialTheme = saved || (prefersDark ? "dark" : "light");
+
+    const initialTheme = saved || "dark"; // sombre par défaut, pas de préférence système
     setTheme(initialTheme);
     applyTheme(initialTheme);
     setMounted(true);
@@ -42,6 +41,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   };
 
   if (!mounted) {
+    // on peut éventuellement afficher un loader ou juste rendre les enfants
     return <>{children}</>;
   }
 
