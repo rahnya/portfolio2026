@@ -2,99 +2,115 @@
   {
     "slug": "iut-sculpture-2023",
     "type": "article",
+    "color": "#FF3B8D",
     "en": {
       "title": "Sculpture & Volume Workshop — IUT Toulon",
       "description": "During my first year in the MMI program, I created a standout sculpture project. The workshop coordinator invited me to give an oral testimony about my work, alongside our teacher Raphael.",
       "externalUrl": "https://www.univ-tln.fr/Une-plongee-dans-l-art-avec-l-atelier-Sculpture-et-Volume-de-l.html",
       "externalLabel": "Read Article",
-      "screenshots": ["/projects/FlightFootPrint.png","projects/ffp1.png", "projects/ffp2.png", "projects/ffp3.png", "projects/ffp4.png"]
+      "screenshots": ["/projects/FlightFootPrint.png"]
     },
     "fr": {
       "title": "Atelier Sculpture & Volume — IUT Toulon",
       "description": "En première année MMI, j'ai réalisé un projet de sculpture remarquable. La coordinatrice de l'atelier m'a demandé un témoignage oral sur mon travail, aux côtés de notre enseignant Raphaël.",
       "externalUrl": "https://www.univ-tln.fr/Une-plongee-dans-l-art-avec-l-atelier-Sculpture-et-Volume-de-l.html",
       "externalLabel": "Lire l'Article",
-      "screenshots": ["/projects/FlightFootPrint.png","projects/ffp1.png", "projects/ffp2.png", "projects/ffp3.png", "projects/ffp4.png"]
+      "screenshots": ["/projects/FlightFootPrint.png"]
     }
   },
   {
-    "slug": "thotis-testimony",
+    "slug": "thotis-media",
     "type": "video",
+    "color": "#FFC72C",
     "en": {
       "title": "Thotis Media — TikTok/Instagram/YouTube",
       "description": "Featured in Thotis' media content, showcasing digital creativity and short-form storytelling. My work appeared both on TikTok and YouTube, reaching a diverse audience.",
       "externalUrl": "https://www.instagram.com/reel/DSZ_AalDFMX/",
-      "externalLabel": "Watch Video"
+      "externalLabel": "Watch Video",
+      "screenshots": []
     },
     "fr": {
       "title": "Thotis Media — TikTok/Instagram/YouTube",
       "description": "Mise en avant dans le contenu média de Thotis, illustrant créativité digitale et storytelling court. Mon travail est apparu sur TikTok et YouTube, touchant un large public.",
       "externalUrl": "https://www.instagram.com/reel/DSZ_AalDFMX/",
-      "externalLabel": "Regarder"
+      "externalLabel": "Regarder",
+      "screenshots": []
     }
   },
   {
-    "slug": "bde-trésorière-2024",
+    "slug": "bde-tresorier-2024",
     "type": "event",
+    "color": "#62E0D5",
     "en": {
       "title": "BDE MM'IN — Treasurer",
       "description": "Since the end of my first year, I have served as treasurer of the BDE MM'IN. I manage the budget, coordinate financial planning for events, and contribute to the student life experience.",
-      "externalUrl": "https://www.instagram.com/bde_mm_in/", 
-      "externalLabel": "View Page"
+      "externalUrl": "https://www.instagram.com/bde_mm_in/",
+      "externalLabel": "View Page",
+      "screenshots": []
     },
     "fr": {
       "title": "BDE MM'IN — Trésorière",
       "description": "Depuis la fin de ma première année, je suis trésorière du BDE MM'IN. Je gère le budget, coordonne la planification financière des événements et participe à la vie étudiante.",
-      "externalUrl": "hhttps://www.instagram.com/bde_mm_in/",
-      "externalLabel": "Voir la Page"
+      "externalUrl": "https://www.instagram.com/bde_mm_in/",
+      "externalLabel": "Voir la Page",
+      "screenshots": []
     }
   },
   {
     "slug": "toulan-lan-2023",
     "type": "event",
+    "color": "#A78BFA",
     "en": {
       "title": "TOULAN Association — MMI LAN",
       "description": "Served as secretary in TOULAN during my second year, helping organize the MMI LAN. Responsibilities included sponsor research and logistical support for the event.",
-      "externalUrl": "https://toulan.netlify.app", 
-      "externalLabel": "Learn More"
+      "externalUrl": "https://toulan.netlify.app",
+      "externalLabel": "Learn More",
+      "screenshots": []
     },
     "fr": {
       "title": "Association TOULAN — MMI LAN",
       "description": "Secrétaire dans l'association TOULAN en MMI2, j'ai contribué à l'organisation de la MMI LAN. Missions : recherche de sponsors et soutien logistique pour l'événement.",
       "externalUrl": "https://toulan.netlify.app",
-      "externalLabel": "En Savoir Plus"
+      "externalLabel": "En Savoir Plus",
+      "screenshots": []
     }
   },
   {
     "slug": "nuit-du-code-2024",
     "type": "event",
+    "color": "#FF6B9D",
     "en": {
       "title": "La Nuit Du Code",
       "description": "Participated in La Nuit Du Code, a student hackathon-style event. Built collaborative web tools and competed alongside multiple teams to deliver innovative solutions under time constraints.",
       "externalUrl": "https://www.lanuitducode.fr",
-      "externalLabel": "View Event"
+      "externalLabel": "View Event",
+      "screenshots": []
     },
     "fr": {
       "title": "La Nuit Du Code",
       "description": "Participation à La Nuit Du Code, un hackathon étudiant. Création d'outils web collaboratifs et compétition avec plusieurs équipes pour proposer des solutions innovantes en temps limité.",
       "externalUrl": "https://www.lanuitducode.fr",
-      "externalLabel": "Voir l'Événement"
+      "externalLabel": "Voir l'Événement",
+      "screenshots": []
     }
   },
   {
     "slug": "weproc-team-2024",
     "type": "company",
+    "color": "#FFD93D",
     "en": {
       "title": "Weproc — Team Introduction",
       "description": "Working at Weproc in a hybrid role (SEO, content, web development). Featured in an internal series presenting team members, highlighting collaborative projects and contributions to company growth.",
-      "externalUrl": "https://www.weproc.com", 
-      "externalLabel": "Learn More"
+      "externalUrl": "https://www.weproc.com",
+      "externalLabel": "Learn More",
+      "screenshots": []
     },
     "fr": {
       "title": "Weproc — Présentation de l'Équipe",
       "description": "Travail chez Weproc en rôle hybride (SEO, contenu, développement web). Mis en avant dans une série interne présentant les membres de l'équipe, leurs projets collaboratifs et leur contribution à la croissance de l'entreprise.",
       "externalUrl": "https://www.weproc.com",
-      "externalLabel": "En Savoir Plus"
+      "externalLabel": "En Savoir Plus",
+      "screenshots": []
     }
   }
 ]

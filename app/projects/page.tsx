@@ -41,18 +41,18 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6 bg-white dark:bg-[#0F2847] transition-colors">
+    <div className="min-h-screen pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
         <div className="mb-16">
-          <p className="font-mono text-xs text-orange-500 dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
+          <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">
             — Portfolio
           </p>
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-gray-900 dark:text-white mb-4">
+          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-white mb-4">
             {t.projects.title}
           </h1>
-          <p className="font-body text-gray-600 dark:text-white/50 text-lg max-w-2xl">
+          <p className="font-body text-white/50 text-lg max-w-2xl">
             {t.projects.subtitle}
           </p>
         </div>
@@ -65,8 +65,8 @@ export default function ProjectsPage() {
               onClick={() => setActive(f.key)}
               className={`font-mono text-xs px-4 py-2 rounded-full border transition-all duration-200 ${
                 active === f.key
-                  ? "bg-orange-500 dark:bg-[#FF3B8D] border-orange-500 dark:border-[#FF3B8D] text-white"
-                  : "border-gray-300 dark:border-white/10 text-gray-600 dark:text-white/50 hover:border-gray-400 dark:hover:border-white/20 hover:text-gray-900 dark:hover:text-white"
+                  ? "bg-[#FF3B8D] border-[#FF3B8D] text-white"
+                  : "border-white/10 text-white/50 hover:border-white/20 hover:text-white"
               }`}
             >
               {f.label}
@@ -84,7 +84,7 @@ export default function ProjectsPage() {
               <Link
                 key={project.slug}
                 href={`/projects/${project.slug}`}
-                className="card-hover group relative bg-gray-50 dark:bg-[#183153]/30 border border-gray-200 dark:border-white/8 rounded-2xl overflow-hidden hover:border-gray-300 dark:hover:border-white/15 transition-colors"
+                className="card-hover group relative bg-[#183153]/30 border border-white/8 rounded-2xl overflow-hidden hover:border-white/15"
               >
                 {/* Thumbnail with screenshot or color splash */}
                 <div
@@ -138,25 +138,25 @@ export default function ProjectsPage() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="font-display font-bold text-lg text-gray-900 dark:text-white mb-2 group-hover:text-orange-500 dark:group-hover:text-[#FF96B3] transition-colors duration-200">
+                  <h3 className="font-display font-bold text-lg text-white mb-2 group-hover:text-[#FF96B3] transition-colors duration-200">
                     {p.title}
                   </h3>
-                  <p className="font-body text-sm text-gray-600 dark:text-white/50 leading-relaxed line-clamp-2">
+                  <p className="font-body text-sm text-white/50 leading-relaxed line-clamp-2">
                     {p.shortDescription}
                   </p>
 
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="font-mono text-xs text-orange-500 dark:text-[#FF96B3] group-hover:text-orange-600 dark:group-hover:text-[#FF3B8D] transition-colors duration-200">
+                    <span className="font-mono text-xs text-[#FF96B3] group-hover:text-[#FF3B8D] transition-colors duration-200">
                       {t.projects.view_project} →
                     </span>
                     <div className="flex gap-2">
                       {p.githubUrl && (
-                        <span className="w-7 h-7 rounded-full border border-gray-300 dark:border-white/10 flex items-center justify-center text-gray-600 dark:text-white/30">
+                        <span className="w-7 h-7 rounded-full border border-white/10 flex items-center justify-center text-white/30">
                           <Github className="w-3 h-3" />
                         </span>
                       )}
                       {p.liveUrl && (
-                        <span className="w-7 h-7 rounded-full border border-gray-300 dark:border-white/10 flex items-center justify-center text-gray-600 dark:text-white/30">
+                        <span className="w-7 h-7 rounded-full border border-white/10 flex items-center justify-center text-white/30">
                           <ExternalLink className="w-3 h-3" />
                         </span>
                       )}
