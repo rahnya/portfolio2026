@@ -3,7 +3,7 @@
   {
     "slug": "epitech-coding-club",
     "color": "#00AEEF",
-    "tags": ["Development"],
+    "tags": ["Développement"],
     "type": "Prototype",
     "status": "Complété",
     "en": {
@@ -38,7 +38,7 @@
   {
     "slug": "multimodal-transport-simulator",
     "color": "#62E0D5",
-    "tags": ["Development", "UX/IHM", "Aérien/Transport"],
+    "tags": ["Développement", "UX/IHM", "Aérien/Transport"],
     "type": "Prototype",
     "status": "En cours",
     "en": {
@@ -55,7 +55,7 @@
   {
     "slug": "project-dashboard",
     "color": "#A78BFA",
-    "tags": ["Development", "UX/IHM", "Aérien/Transport"],
+    "tags": ["Développement", "UX/IHM", "Aérien/Transport"],
     "type": "Prototype",
     "progress":60,
     "status": "En cours",
@@ -153,7 +153,7 @@
   {
     "slug": "codepath",
     "color": "#3A86FF",
-    "tags": ["MOOC", "Development"],
+    "tags": ["MOOC", "Développement"],
     "type": "MOOC",
     "progress":0,
     "status": "Prévu",
@@ -193,7 +193,7 @@
   {
     "slug": "python-freecodecamp",
     "color": "#06FFA5",
-    "tags": ["MOOC", "Development", "Python"],
+    "tags": ["MOOC", "Développement", "Python"],
     "type": "MOOC",
     "progress":20,
     "status": "En cours",
@@ -213,7 +213,7 @@
   {
     "slug": "python-project",
     "color": "#06FFA5",
-    "tags": ["Development", "Python"],
+    "tags": ["Développement", "Python"],
     "type": "Prototype",
     "progress":0,
     "status": "En cours",
@@ -231,7 +231,7 @@
   {
     "slug": "c-programming-openclassrooms",
     "color": "#3A86FF",
-    "tags": ["MOOC", "Development", "C"],
+    "tags": ["MOOC", "Développement", "C"],
     "type": "MOOC",
     "progress":40,
     "status": "En cours",
@@ -251,7 +251,7 @@
   {
     "slug": "c-project",
     "color": "#3A86FF",
-    "tags": ["Development", "C"],
+    "tags": ["Développement", "C"],
     "type": "Prototype",
     "progress":0,
     "status": "En cours",
