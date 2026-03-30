@@ -5,7 +5,7 @@
     "color": "#FFC72C",
     "en": {
       "title": "FlightFootprint",
-      "description": "A real-time aviation environmental impact tracker that visualizes flights over Europe and estimates their fuel consumption and CO₂ emissions.",
+      "description": "FlightFootprint is a project combining data processing, web development, and visualization to make the environmental impact of air traffic more understandable in real time. The application uses data from the OpenSky API to track aircraft flying over Europe, then applies estimation models to calculate fuel consumption and CO₂ emissions based on aircraft type and characteristics. It features an interactive map to visualize live data, along with a data exploration interface. The project is part of a broader reflection on environmental transparency and data accessibility. It showcases my interest in aviation, data analysis, and environmental challenges, while demonstrating technical skills in backend development, data processing, and visualization.",      
       "shortDescription": "Real-time flight visualization and CO₂ impact estimation.",
       "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
       "features": [
@@ -21,7 +21,7 @@
     },
     "fr": {
       "title": "FlightFootprint",
-      "description": "Un outil de visualisation de l’impact environnemental de l’aviation en temps réel, permettant d’estimer la consommation de carburant et les émissions de CO₂ des vols.",
+      "description": "FlightFootprint est un projet mêlant data, développement web et visualisation, visant à rendre plus compréhensible l’impact environnemental du trafic aérien en temps réel. L’application s’appuie sur des données issues de l’OpenSky API pour suivre les avions en vol au-dessus de l’Europe, puis applique des modèles d’estimation pour calculer leur consommation de carburant et leurs émissions de CO₂ en fonction du type d’appareil et de ses caractéristiques. Le projet propose une carte interactive permettant de visualiser ces données en direct, ainsi qu’un espace d’exploration pour analyser les informations collectées. Il s’inscrit dans une réflexion plus globale sur la transparence des données environnementales et l’accessibilité de l’information. Ce projet illustre mon intérêt pour l’aéronautique, la data et les problématiques environnementales, tout en mobilisant des compétences techniques en backend, traitement de données et visualisation.",
       "shortDescription": "Visualisation des vols et estimation des émissions CO₂.",
       "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
       "features": [
@@ -79,7 +79,7 @@
     "color": "#2E7D32",
     "en": {
       "title": "Code Ton Territoire",
-      "description": "A hackathon project built during the Nuit du Code 2026 in collaboration with Crédit Agricole. The platform aims to make local initiatives visible and connect citizens with projects that impact their territory.",
+      "description": "Code Your Territory is a project carried out during the 2026 Code Night in collaboration with Crédit Agricole. The objective was to design a platform to promote local initiatives and strengthen the link between citizens and territorial projects. We envisioned an interface centered on an interactive map, highlighting funded or ongoing projects, as well as a system allowing citizens to report local needs or issues. The project emphasizes accessibility, data readability, and user engagement. It also includes a dashboard to visualize the concrete impact of actions on the territory. This hackathon allowed me to work in a team on a project with significant societal impact, while developing skills in full-stack development, UX/UI, and product design.",
       "shortDescription": "Hackathon platform to visualize and support local community initiatives.",
       "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
       "features": [
@@ -95,7 +95,7 @@
     },
     "fr": {
       "title": "Code Ton Territoire",
-      "description": "Projet réalisé lors de la Nuit du Code 2026 avec le Crédit Agricole. La plateforme vise à rendre visible l’impact des initiatives locales et à connecter les citoyens avec les projets de leur territoire.",
+      "description": "Code Ton Territoire est un projet réalisé lors de la Nuit du Code 2026 en collaboration avec le Crédit Agricole. L’objectif était de concevoir une plateforme permettant de valoriser les initiatives locales et de renforcer le lien entre citoyens et projets territoriaux. Nous avons imaginé une interface centrée sur une carte interactive, mettant en avant les projets financés ou en cours, ainsi qu’un système permettant aux citoyens de signaler des besoins ou problématiques locales. Le projet met l’accent sur l’accessibilité, la lisibilité des données et l’engagement utilisateur. Il intègre également un dashboard permettant de visualiser l’impact concret des actions sur le territoire. Ce hackathon m’a permis de travailler en équipe sur un projet à fort enjeu sociétal, tout en développant des compétences en développement full-stack, UX/UI et conception de produit",
       "shortDescription": "Plateforme hackathon pour visualiser et soutenir les initiatives locales.",
       "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
       "features": [
@@ -132,7 +132,7 @@
     },
     "fr": {
       "title": "Ampa — Plateforme d’adoption animale",
-      "description": "Une plateforme digitale conçue pour simplifier l’adoption d’animaux depuis les refuges. Le projet vise à améliorer la mise en relation entre refuges et adoptants grâce à une recherche intuitive et une expérience utilisateur moderne.",
+      "description": "Ampa is a digital platform project dedicated to animal adoption, designed to improve the connection between shelters and adopters. The project stems from the observation that adoption processes are often complex, opaque, and fragmented. The objective was therefore to completely rethink the user experience by offering a clear, accessible interface centered on user needs. The platform allows users to search for animals according to various criteria, access detailed profiles, and discover shelters, all while facilitating contact. Particular attention was paid to design, accessibility, and the mobile experience. This project is a key element of my portfolio, combining UX/UI design, branding, and development, with a user-centered approach and comprehensive product planning.",
       "shortDescription": "Plateforme web UX/UI pour améliorer l’adoption d’animaux.",
       "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
       "features": [
@@ -153,7 +153,7 @@
     "color": "#FF96B3",
     "en": {
       "title": "Developer Portfolio",
-      "description": "A modern developer portfolio designed to showcase projects, technical skills, and design work.",
+      "description": "This portfolio is a central project in my career, designed as a presentation tool but also as a complete user experience. Developed with Next.js, React, and TypeScript, it showcases my projects, skills, and visual style through a modern, responsive, and bilingual interface. Particular attention has been paid to the design, navigation, and overall consistency of the experience. More than just a showcase website, this project reflects my approach to web development: a balance between technical aspects, aesthetics, and user experience. It evolves regularly, incorporating new features and experiments, particularly around 3D and immersive interactions.",
       "shortDescription": "Personal portfolio built with Next.js.",
       "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       "features": [
@@ -169,7 +169,7 @@
     },
     "fr": {
       "title": "Portfolio développeuse",
-      "description": "Un portfolio moderne conçu pour présenter mes projets, mes compétences techniques et mes travaux de design.",
+      "description": "Ce portfolio est un projet central de mon parcours, conçu comme un outil de présentation mais aussi comme une expérience utilisateur à part entière. Développé avec Next.js, React et TypeScript, il met en avant mes projets, mes compétences et mon univers visuel à travers une interface moderne, responsive et bilingue. Une attention particulière a été portée au design, à la navigation et à la cohérence globale de l’expérience. Au-delà d’un simple site vitrine, ce projet reflète ma manière de concevoir le développement web : un équilibre entre technique, esthétique et expérience utilisateur. Il évolue régulièrement, intégrant de nouvelles fonctionnalités et expérimentations, notamment autour de la 3D et des interactions immersives.",
       "shortDescription": "Portfolio personnel développé avec Next.js.",
       "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       "features": [
@@ -190,7 +190,7 @@
     "color": "#FE8A5A",
     "en": {
       "title": "SEO & Content Strategy",
-      "description": "Professional experience developing SEO strategies, creating optimized web content, and improving website visibility.",
+      "description": "This project brings together my professional experience in SEO and content strategy, developed in a real-world business context. I worked on keyword research, writing optimized content, and implementing technical optimizations to improve the organic search engine ranking of websites. I also monitored performance using analytical tools and participated in presenting the results to teams and clients. This work allowed me to develop a comprehensive understanding of the challenges of online visibility, combining strategy, technical aspects, and content production. It reflects my ability to work on concrete problems and deliver measurable solutions in a professional environment.",
       "shortDescription": "SEO strategy and web content optimization.",
       "technologies": ["SEO", "Google Analytics", "WordPress", "Content Strategy"],
       "features": [
@@ -206,7 +206,7 @@
     },
     "fr": {
       "title": "Stratégie SEO & contenu",
-      "description": "Expérience professionnelle en stratégie SEO, rédaction web et optimisation de la visibilité des sites.",
+      "description": "Ce projet regroupe mon expérience professionnelle en SEO et stratégie de contenu, développée dans un contexte réel en entreprise. J’ai travaillé sur la recherche de mots-clés, la rédaction de contenus optimisés, ainsi que sur des optimisations techniques visant à améliorer le référencement naturel des sites. J’ai également suivi les performances à l’aide d’outils analytiques et participé à la restitution des résultats auprès des équipes ou des clients. Ce travail m’a permis de développer une compréhension globale des enjeux de visibilité en ligne, en combinant stratégie, technique et production de contenu. Il reflète ma capacité à travailler sur des problématiques concrètes et à apporter des solutions mesurables dans un environnement professionnel.",
       "shortDescription": "Optimisation SEO et stratégie de contenu.",
       "technologies": ["SEO", "Google Analytics", "WordPress", "Content Strategy"],
       "features": [
@@ -227,7 +227,7 @@
     "color": "#7EC8E3",
     "en": {
       "title": "Tank Game UI & Unity Gameplay Adaptation",
-      "description": "This academic project combined UI/UX game design and gameplay development. First, we redesigned the interface and visual identity of an existing tank game by creating original mockups, defining a playful art direction, and imagining new mechanics such as power-ups and game states. Later, we rebuilt the gameplay using Unity based on a provided prototype, allowing us to understand game logic, interactions, and level flow.",
+      "description": "This academic project takes a dual approach: UX/UI design and a technical understanding of video game development. The goal was not simply to produce prototypes, but to rethink the overall player experience by focusing on readability, feedback, and engagement. In the first phase, we analyzed an existing game to identify its limitations in terms of interface and user experience. This led us to propose a new, coherent art direction, building a complete visual universe and considering how each interface element could improve game comprehension. In the second phase, the project shifted to a more technical dimension with the reconstruction of the gameplay using Unity. This step allowed me to better understand the constraints of game development: state management, interaction logic, action synchronization, and code structuring. This project taught me to bridge the gap between design and implementation, making me aware of the impact of UX choices on actual development. It reflects my ability to work on both design and development issues simultaneously. on their technical translation..",
       "shortDescription": "Game UI redesign and gameplay reconstruction using Unity.",
       "technologies": ["Figma", "Unity", "C#", "Game Design"],
       "features": [
@@ -244,7 +244,7 @@
     },
     "fr": {
       "title": "UI de jeu de tanks & adaptation gameplay sur Unity",
-      "description": "Ce projet académique mêlait game design et développement. Dans un premier temps, nous devions concevoir les maquettes complètes d’un jeu de tanks existant en proposant une nouvelle direction artistique et en imaginant des mécaniques supplémentaires comme des power-ups ou différents états de jeu. Dans un second temps, nous avons recréé le gameplay du jeu sur Unity à partir d’un prototype fourni, ce qui nous a permis de comprendre la logique de développement d’un jeu et ses interactions.",
+      "description": "Ce projet académique s’inscrit dans une double approche : conception UX/UI et compréhension technique du développement de jeux vidéo. L’objectif n’était pas seulement de produire des maquettes, mais de repenser l’expérience globale du joueur en travaillant sur la lisibilité, le feedback et l’engagement. Dans une première phase, nous avons analysé un jeu existant afin d’identifier ses limites en termes d’interface et d’expérience utilisateur. Cela nous a amenés à proposer une nouvelle direction artistique cohérente, en construisant un univers visuel complet et en réfléchissant à la manière dont chaque élément d’interface pouvait améliorer la compréhension du jeu. Dans un second temps, le projet a basculé vers une dimension plus technique avec la reconstitution du gameplay sous Unity. Cette étape m’a permis de mieux comprendre les contraintes du développement de jeu : gestion des états, logique d’interaction, synchronisation des actions et structuration du code. Ce projet m’a appris à faire le lien entre conception et implémentation, en prenant conscience des impacts des choix UX sur le développement réel. Il reflète ma capacité à travailler à la fois sur des problématiques de design et sur leur traduction technique..",
       "shortDescription": "Refonte UI d’un jeu et reconstruction du gameplay sur Unity.",
       "technologies": ["Figma", "Unity", "C#", "Game Design"],
       "features": [
@@ -266,7 +266,7 @@
     "color": "#D0A8BC",
     "en": {
       "title": "MMI Découvertes Website",
-      "description": "My first web development project created during the first semester of the BUT MMI program. The goal was to design and build a functional travel agency website using only HTML and CSS.",
+      "description": "This project represents my first concrete experience in web development, undertaken at the beginning of my Multimedia and Internet Technology (MMI) degree. The objective was to design a complete website using HTML and CSS, respecting a logical structure, content hierarchy, and navigation. Beyond the technical aspect, this project allowed me to understand the fundamental principles of the web: page organization, the importance of HTML semantics, style management, and basic concepts of responsive design. I also discovered the rigor necessary to produce a functional and coherent website, particularly in managing links, forms, and simple interactions. This project marks the starting point of my development journey and illustrates my progression from fundamental principles to more complex projects today.",
       "shortDescription": "First web project: travel agency website built with HTML and CSS.",
       "technologies": ["HTML", "CSS"],
       "features": [
@@ -281,7 +281,7 @@
     },
     "fr": {
       "title": "Site web MMI Découvertes",
-      "description": "Mon premier projet de développement web réalisé au semestre 1 du BUT MMI. L’objectif était de concevoir un site fonctionnel pour une agence de voyages en HTML et CSS.",
+      "description": "Ce projet représente ma première expérience concrète en développement web, réalisée au début de ma formation en BUT MMI. L’objectif était de concevoir un site complet en HTML et CSS, en respectant une logique de structure, de hiérarchie de contenu et de navigation. Au-delà de l’aspect technique, ce projet m’a permis de comprendre les bases fondamentales du web : organisation des pages, importance de la sémantique HTML, gestion des styles et premières notions de responsive design. J’ai également découvert la rigueur nécessaire pour produire un site fonctionnel et cohérent, notamment dans la gestion des liens, des formulaires et des interactions simples. Ce projet marque le point de départ de mon parcours en développement et illustre ma progression depuis des bases fondamentales jusqu’à des projets plus complexes aujourd’hui.",
       "shortDescription": "Premier site web réalisé en HTML et CSS.",
       "technologies": ["HTML", "CSS"],
       "features": [
@@ -301,7 +301,7 @@
     "color": "#C58AFF",
     "en": {
       "title": "1ris Communication Agency Website",
-      "description": "A collaborative project focused on building a complete website for a fictional communication agency, integrating responsive design and interactive features.",
+      "description": "This collaborative project aimed to simulate the creation of a website for a communications agency, reproducing a context similar to a real project with constraints and teamwork. We worked from mockups, which allowed me to better understand the translation of a design into code and the importance of visual fidelity. I also participated in the integration of interactive features using JavaScript, which marked an important step in my skills development. This project also made me more aware of team coordination, task allocation, and the need to maintain overall consistency in the code and design. It represents my first experience with collaborative work in web development.",
       "shortDescription": "Agency website built with responsive design and JavaScript features.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "features": [
@@ -316,7 +316,7 @@
     },
     "fr": {
       "title": "Site de l'agence 1ris",
-      "description": "Projet collaboratif consistant à développer un site web pour une agence de communication fictive, fidèle aux maquettes et intégrant des fonctionnalités interactives.",
+      "description": "Ce projet collaboratif avait pour objectif de simuler la création d’un site pour une agence de communication, en reproduisant un contexte proche d’un projet réel avec contraintes et travail en équipe. Nous avons travaillé à partir de maquettes, ce qui m’a permis de mieux comprendre la traduction d’un design en code et les enjeux de fidélité visuelle. J’ai également participé à l’intégration de fonctionnalités interactives en JavaScript, ce qui a marqué une étape importante dans ma montée en compétences. Ce projet m’a aussi sensibilisée à la coordination en équipe, à la répartition des tâches et à la nécessité de maintenir une cohérence globale dans le code et le design. Il représente une première approche du travail collaboratif en développement web.",
       "shortDescription": "Site d'agence avec responsivité et fonctionnalités JavaScript.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "features": [
@@ -336,7 +336,7 @@
     "color": "#FF3B8D",
     "en": {
       "title": "Laravel Blog Platform",
-      "description": "A full blog platform built with Laravel featuring a customizable admin panel and user role management.",
+      "description": "This project involved developing a complete blogging platform with a content management system. The goal was to understand how a dynamic web application based on a structured backend framework works. With Laravel, I discovered the principles of MVC development, route management, controller and model management, as well as interaction with a relational database. Implementing a back office also allowed me to consider the user experience on the administration side, which is often neglected but essential. This project allowed me to take a technical leap forward by moving from front-end development to a full-stack approach, with a better understanding of the architecture of a complete web application.",
       "shortDescription": "Full blog platform with Laravel and admin dashboard.",
       "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
       "features": [
@@ -351,7 +351,7 @@
     },
     "fr": {
       "title": "Blog avec back-office Laravel",
-      "description": "Plateforme de blog complète développée avec Laravel et un back-office personnalisable grâce à Filament.",
+      "description": "Ce projet consistait à développer une plateforme de blog complète avec un système de gestion de contenu. L’objectif était de comprendre le fonctionnement d’une application web dynamique reposant sur un framework backend structuré. J’ai découvert avec Laravel les principes du développement MVC, la gestion des routes, des contrôleurs et des modèles, ainsi que l’interaction avec une base de données relationnelle. La mise en place d’un back-office m’a également permis de réfléchir à l’expérience utilisateur côté administration, souvent négligée mais essentielle. Ce projet m’a permis de franchir un cap technique en passant d’un développement front-end à une logique full-stack, avec une meilleure compréhension de l’architecture d’une application web complète.",
       "shortDescription": "Blog avec interface d'administration personnalisée.",
       "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
       "features": [
@@ -371,7 +371,7 @@
     "color": "#3BA1FF",
     "en": {
       "title": "Internship Management Application",
-      "description": "A web application developed to manage university internships, including database interactions and dynamic data display using APIs.",
+      "description": "This project aimed to design an application to efficiently manage university internships by structuring and utilizing data from a relational database. One of the main challenges was designing and reorganizing the database to make it consistent, usable, and scalable. I also worked on communication between the front-end and back-end via API calls, which allowed me to better understand data flow within a web application. This project confronted me with concrete problems in data management and query optimization, while strengthening my skills in logical structuring and dynamic web development.",
       "shortDescription": "Web platform for managing university internships.",
       "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
       "features": [
@@ -386,7 +386,7 @@
     },
     "fr": {
       "title": "Application de gestion des stages",
-      "description": "Application web développée pour gérer les stages universitaires, avec une base de données MySQL et des appels API pour l'affichage dynamique.",
+      "description": "Ce projet visait à concevoir une application permettant de gérer efficacement les stages universitaires, en structurant et en exploitant des données issues d’une base relationnelle. L’un des enjeux principaux était la conception et la réorganisation de la base de données afin de la rendre cohérente, exploitable et évolutive. J’ai également travaillé sur la communication entre le front-end et le back-end via des appels API, ce qui m’a permis de mieux comprendre la circulation des données dans une application web. Ce projet m’a confrontée à des problématiques concrètes de gestion de données et d’optimisation des requêtes, tout en renforçant mes compétences en structuration logique et en développement web dynamique.",
       "shortDescription": "Plateforme web de gestion des stages.",
       "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
       "features": [
@@ -406,7 +406,7 @@
     "color": "#6B5CFF",
     "en": {
       "title": "AI Agents Workflow",
-      "description": "Development of conversational AI agents capable of assisting with different digital tasks using structured prompts and automation workflows.",
+      "description": "This project explores the development of conversational agents capable of automating tasks through structured workflows. The objective was to understand how to orchestrate several specialized agents to meet diverse needs. I worked on designing conversational logic, structuring prompts and defining the roles of each agent. Integration with automation tools like n8n allowed me to connect these agents to concrete actions, going beyond simple conversation. This project is part of a broader reflection on the evolution of user interfaces and the role of artificial intelligence in process automation. It demonstrates my ability to explore emerging technologies and integrate them into functional systems.",
       "shortDescription": "Conversational AI agents for task automation.",
       "technologies": ["Ollama", "n8n", "JavaScript", "AI Agents"],
       "features": [
@@ -421,7 +421,7 @@
     },
     "fr": {
       "title": "Agents conversationnels IA",
-      "description": "Développement d’agents conversationnels capables d’automatiser certaines tâches grâce à des logiques de prompts et des workflows automatisés.",
+      "description": "Ce projet explore le développement d’agents conversationnels capables d’automatiser des tâches à travers des workflows structurés. L’objectif était de comprendre comment orchestrer plusieurs agents spécialisés pour répondre à des besoins variés. J’ai travaillé sur la conception de logiques conversationnelles, en structurant les prompts et en définissant les rôles de chaque agent. L’intégration avec des outils d’automatisation comme n8n m’a permis de connecter ces agents à des actions concrètes, allant au-delà de la simple conversation. Ce projet s’inscrit dans une réflexion plus large sur l’évolution des interfaces utilisateur et sur le rôle des intelligences artificielles dans l’automatisation des processus. Il montre ma capacité à explorer des technologies émergentes et à les intégrer dans des systèmes fonctionnels.",
       "shortDescription": "Agents IA conversationnels pour automatisation.",
       "technologies": ["Ollama", "n8n", "JavaScript"],
       "features": [
@@ -441,7 +441,7 @@
     "color": "#FFC72C",
     "en": {
       "title": "Inflation Data Visualization",
-      "description": "A data journalism project exploring the impact of inflation on food consumption through visual storytelling and motion design.",
+      "description": "This data journalism project aimed to make a complex economic phenomenon understandable: the impact of inflation on food consumption. I worked on selecting, interpreting, and narrating the data, seeking to transform numerical information into a clear and engaging visual narrative. The challenge was to find a balance between the rigor of the information and accessibility for the general public. The motion design dimension added an extra layer by dynamizing the data and guiding the reader. This project allowed me to develop a storytelling approach applied to data, halfway between design, information, and pedagogy.",
       "shortDescription": "Data journalism project with infographic and motion design.",
       "technologies": ["After Effects", "Illustration", "Data Visualization"],
       "features": [
@@ -456,7 +456,7 @@
     },
     "fr": {
       "title": "Datavisualisation de l’inflation",
-      "description": "Projet de data journalisme explorant l’impact de l’inflation sur la consommation alimentaire à travers une affiche et une vidéo en motion design.",
+      "description": "Ce projet de data journalisme avait pour objectif de rendre compréhensible un phénomène économique complexe : l’impact de l’inflation sur la consommation alimentaire. J’ai travaillé sur la sélection, l’interprétation et la mise en récit des données, en cherchant à transformer des informations chiffrées en une narration visuelle claire et engageante. L’enjeu était de trouver un équilibre entre rigueur de l’information et accessibilité pour le grand public. La dimension motion design a ajouté une couche supplémentaire en permettant de dynamiser les données et de guider la lecture. Ce projet m’a permis de développer une approche storytelling appliquée à la data, à mi-chemin entre design, information et pédagogie.",
       "shortDescription": "Projet de datavisualisation journalistique.",
       "technologies": ["After Effects", "Illustration", "Data Visualization"],
       "features": [
@@ -476,7 +476,7 @@
     "color": "#8A6F9B",
     "en": {
       "title": "Virtual Travel Chair",
-      "description": "Concept design of an innovative chair designed to enhance virtual reality experiences, combining ergonomics, immersive interaction and sustainable design.",
+      "description": "This design project explores the creation of an innovative object intended to enhance the virtual reality experience. The objective was to develop a product that is functional, immersive, and economically viable. We worked on the overall user experience, imagining how the chair could be integrated into different VR uses. Particular attention was paid to ergonomics, interaction, and consistency between the physical product and the digital experience. The project also included strategic thinking: positioning, target audience, business model, and environmental impact. It allowed me to develop a more holistic vision of design, going beyond the interface to consider a product as a whole.",
       "shortDescription": "Concept design of a VR-enhanced chair.",
       "technologies": ["Concept Design", "Product Design", "Business Model"],
       "features": [
@@ -491,7 +491,7 @@
     },
     "fr": {
       "title": "Virtual Travel Chair",
-      "description": "Conception d’un objet innovant visant à améliorer l’expérience de réalité virtuelle grâce à une chaise immersive.",
+      "description": "Ce projet de conception explore la création d’un objet innovant destiné à améliorer l’expérience de réalité virtuelle. L’objectif était de réfléchir à un produit à la fois fonctionnel, immersif et viable d’un point de vue économique. Nous avons travaillé sur l’expérience utilisateur globale, en imaginant comment la chaise pouvait s’intégrer dans différents usages de la VR. Une attention particulière a été portée à l’ergonomie, à l’interaction et à la cohérence entre le produit physique et l’expérience numérique. Le projet incluait également une réflexion stratégique : positionnement, cible, modèle économique et impact environnemental. Il m’a permis de développer une vision plus globale du design, en allant au-delà de l’interface pour penser un produit dans son ensemble.",
       "shortDescription": "Concept de chaise immersive pour la VR.",
       "technologies": ["Concept Design", "Product Design", "Business Model"],
       "features": [
@@ -511,8 +511,7 @@
     "color": "#4DB6AC",
     "en": {
       "title": "Porquerolles Festival Digital Strategy",
-      "description": "A digital communication strategy project developed for the Porquerolles Film Festival based on competitive analysis and social media trends.",
-      "shortDescription": "Digital communication strategy for a film festival.",
+      "description": "This project involved developing a digital communication strategy for the Porquerolles Film Festival, based on competitive analysis and trend monitoring. I worked on identifying the positioning of similar players in order to propose a differentiating strategy adapted to new uses, particularly on social media. The objective was to understand how a cultural event can gain visibility in a saturated digital environment. This project allowed me to develop a strategic approach, combining analysis, marketing thinking, and concrete proposals.",      "shortDescription": "Digital communication strategy for a film festival.",
       "technologies": ["Digital Strategy", "Social Media", "Communication Audit"],
       "features": [
         "Competitive digital analysis",
@@ -526,7 +525,7 @@
     },
     "fr": {
       "title": "Veille numérique – Festival de Porquerolles",
-      "description": "Projet de stratégie de communication digitale pour le festival de cinéma de Porquerolles basé sur une veille numérique et une analyse concurrentielle.",
+      "description": "Ce projet consistait à élaborer une stratégie de communication digitale pour le festival de cinéma de Porquerolles, en s’appuyant sur une analyse concurrentielle et une veille des tendances. J’ai travaillé sur l’identification des positionnements des acteurs similaires, afin de proposer une stratégie différenciante et adaptée aux nouveaux usages, notamment sur les réseaux sociaux. L’objectif était de comprendre comment un événement culturel peut se rendre visible dans un environnement digital saturé. Ce projet m’a permis de développer une approche stratégique, en combinant analyse, réflexion marketing et propositions concrètes.",
       "shortDescription": "Stratégie digitale pour un festival de cinéma.",
       "technologies": ["Stratégie Digitale", "Réseaux Sociaux", "Audit"],
       "features": [
@@ -546,7 +545,7 @@
     "color": "#FF7043",
     "en": {
       "title": "Merry Cashmas Reportage",
-      "description": "Short video reportage exploring the theme of commercial Christmas, filmed with DSLR equipment and edited in Premiere Pro.",
+      "description": "This video reportage project addresses the theme of commercial Christmas through a critical and narrative approach. The objective was to produce structured audiovisual content, combining interviews, illustrative images, and editing. I participated in the various stages of production: preparation, filming, framing, sound recording, and editing. This project allowed me to understand the constraints of the video format, particularly managing rhythm, narration, and visual coherence. It represents my first immersion in audiovisual production, developing both technical skills and a sensitivity to storytelling.",
       "shortDescription": "Video reportage about consumerism during Christmas.",
       "technologies": ["DSLR Filming", "Premiere Pro", "Video Editing"],
       "features": [
@@ -561,7 +560,7 @@
     },
     "fr": {
       "title": "Reportage vidéo Merry Cashmas",
-      "description": "Reportage vidéo autour du thème du Noël commercial, tourné avec un DSLR et monté sous Premiere Pro.",
+      "description": "Ce projet de reportage vidéo aborde la thématique du Noël commercial à travers une approche critique et narrative. L’objectif était de produire un contenu audiovisuel structuré, mêlant interviews, images d’illustration et montage. J’ai participé aux différentes étapes de production : préparation, tournage, cadrage, prise de son et montage. Ce projet m’a permis de comprendre les contraintes du format vidéo, notamment la gestion du rythme, de la narration et de la cohérence visuelle. Il représente une première immersion dans la production audiovisuelle, en développant à la fois des compétences techniques et une sensibilité au storytelling.",
       "shortDescription": "Reportage vidéo sur la consommation à Noël.",
       "technologies": ["Tournage DSLR", "Premiere Pro"],
       "features": [
@@ -581,8 +580,7 @@
     "color": "#BA68C8",
     "en": {
       "title": "MMI 30 Years Communication Project",
-      "description": "Communication project created for the 30th anniversary of the MMI program, including editorial content and visual design.",
-      "shortDescription": "Editorial and visual communication for MMI anniversary.",
+      "description": "This project is part of the communication surrounding the 30th anniversary of the MMI training program. The objective was to produce editorial and visual content that would trace the evolution of the program. I worked on information research, content structuring, and graphic design. The challenge was to make the information clear, attractive, and accessible, while respecting the visual identity of the event. This project allowed me to develop my writing, summarizing, and layout skills in a context combining communication and design.",      "shortDescription": "Editorial and visual communication for MMI anniversary.",
       "technologies": ["InDesign", "Editorial Writing", "Graphic Design"],
       "features": [
         "Editorial article on program evolution",
@@ -595,7 +593,7 @@
     },
     "fr": {
       "title": "Communication – 30 ans MMI",
-      "description": "Projet de communication réalisé pour les 30 ans de la formation MMI incluant un article éditorial et une frise chronologique.",
+      "description": "Ce projet s’inscrit dans le cadre de la communication autour des 30 ans de la formation MMI. L’objectif était de produire un contenu éditorial et visuel permettant de retracer l’évolution de la formation. J’ai travaillé sur la recherche d’informations, la structuration du contenu et la mise en forme graphique. L’enjeu était de rendre l’information claire, attractive et accessible, tout en respectant l’identité visuelle de l’événement. Ce projet m’a permis de développer mes compétences en rédaction, en synthèse et en mise en page, dans un contexte mêlant communication et design.",
       "shortDescription": "Article et frise chronologique pour les 30 ans MMI.",
       "technologies": ["InDesign", "Rédaction", "Graphisme"],
       "features": [
@@ -614,7 +612,7 @@
     "color": "#64B5F6",
     "en": {
       "title": "Weather App UX/UI Design",
-      "description": "UX/UI design project focused on redesigning a weather application with improved information hierarchy and micro-interactions.",
+      "description": "This UX/UI design project aimed to redesign a weather application by improving the hierarchy of information and the clarity of the interface. I worked on the organization of the content, identifying the essential information for the user and simplifying access to it. Particular attention was paid to micro-interactions to make the experience more intuitive and enjoyable. This project allowed me to deepen my understanding of data-driven interfaces, where readability and speed of comprehension are essential.",
       "shortDescription": "Weather app UX/UI redesign.",
       "technologies": ["Figma", "UX Design", "UI Animation"],
       "features": [
@@ -629,7 +627,7 @@
     },
     "fr": {
       "title": "Application météo UX/UI",
-      "description": "Projet de conception UX/UI visant à repenser une application météo avec une meilleure hiérarchisation de l'information.",
+      "description": "Ce projet de design UX/UI avait pour objectif de repenser une application météo en améliorant la hiérarchisation de l’information et la clarté de l’interface. J’ai travaillé sur l’organisation des contenus, en identifiant les informations essentielles pour l’utilisateur et en simplifiant leur accès. Une attention particulière a été portée aux micro-interactions, afin de rendre l’expérience plus intuitive et agréable. Ce projet m’a permis d’approfondir ma réflexion sur les interfaces orientées données, où la lisibilité et la rapidité de compréhension sont essentielles.",      
       "shortDescription": "Maquettes UX/UI d’une application météo.",
       "technologies": ["Figma", "UX Design", "UI Animation"],
       "features": [
@@ -649,7 +647,7 @@
     "color": "#FFD54F",
     "en": {
       "title": "Crossy Road UX Power-ups",
-      "description": "UX gaming project imagining new gameplay mechanics and power-ups for the mobile game Crossy Road.",
+      "description": "This project involves imagining new gameplay mechanics for Crossy Road, respecting the existing game logic while introducing new elements. I analyzed the current mechanics to understand what makes them effective, then proposed improvements in the form of power-ups and new interactions. The goal was to enhance player engagement without altering the original experience. This work allowed me to develop a UX approach applied to game design, reflecting on how mechanics influence user behavior and experience.",
       "shortDescription": "UX concept for new game mechanics.",
       "technologies": ["UX Design", "Game Design"],
       "features": [
@@ -664,7 +662,7 @@
     },
     "fr": {
       "title": "Super-pouvoirs pour Crossy Road",
-      "description": "Projet UX gaming imaginant de nouveaux super-pouvoirs et mécaniques de jeu pour Crossy Road.",
+      "description": "Ce projet consiste à imaginer de nouvelles mécaniques de jeu pour Crossy Road, en s’inscrivant dans la logique existante du jeu tout en apportant de la nouveauté. J’ai analysé les mécaniques actuelles pour comprendre ce qui fait leur efficacité, puis proposé des améliorations sous forme de power-ups et de nouvelles interactions. L’objectif était de renforcer l’engagement joueur sans dénaturer l’expérience originale. Ce travail m’a permis de développer une approche UX appliquée au game design, en réfléchissant à la manière dont les mécaniques influencent le comportement et l’expérience utilisateur.",
       "shortDescription": "Concept UX pour un jeu mobile.",
       "technologies": ["UX Design", "Game Design"],
       "features": [
@@ -684,7 +682,7 @@
     "color": "#81C784",
     "en": {
       "title": "Scrum Learning Website",
-      "description": "Educational website designed to explain Scrum methodology through interactive content and quizzes.",
+      "description": "This educational project aims to make the Scrum method accessible through an interactive website. The objective was to transform theoretical content into a clear and engaging learning experience. I worked on structuring the information, simplifying sometimes complex concepts and making them understandable through interactive media. This project allowed me to develop a user-centered approach in an educational context, emphasizing pedagogy, clarity, and the learning experience.",
       "shortDescription": "Interactive educational website about Scrum.",
       "technologies": ["PHP", "HTML", "CSS"],
       "features": [
@@ -699,7 +697,7 @@
     },
     "fr": {
       "title": "Site pédagogique Scrum",
-      "description": "Site éducatif conçu pour expliquer la méthode Scrum à travers des contenus pédagogiques et des quiz.",
+      "description": "Ce projet pédagogique vise à rendre accessible la méthode Scrum à travers un site interactif. L’objectif était de transformer un contenu théorique en une expérience d’apprentissage claire et engageante. J’ai travaillé sur la structuration des informations, en simplifiant des concepts parfois complexes et en les rendant compréhensibles grâce à des supports interactifs. Ce projet m’a permis de développer une approche centrée utilisateur dans un contexte éducatif, en mettant l’accent sur la pédagogie, la clarté et l’expérience d’apprentissage.",
       "shortDescription": "Site pédagogique sur la méthode Scrum.",
       "technologies": ["PHP", "HTML", "CSS"],
       "features": [
