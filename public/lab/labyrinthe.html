@@ -254,7 +254,7 @@ const ROOMS = [
 
   { id:'contact',    name:'Contact',            sub:'Travaillons ensemble', type:'contact',    pos:[0,0,80],    color:0xEEEEFF, shape:'paper',
     icon:'📧', desc:'Disponible pour des missions freelance, des collaborations créatives ou des opportunités en équipe.',
-    tags:['rahnya@portfolio.dev','GitHub: @rahnya','LinkedIn: /in/rahnya'], conns:['skills'] },
+    tags:['rahnyapro@gmail.com','GitHub: @rahnya','LinkedIn: /in/rahnya'], conns:['skills'] },
 
   { id:'freelance',  name:'Expérience Freelance',sub:'Missions clients',    type:'freelance',  pos:[80,0,-40],  color:0x8A6F9B, shape:'briefcase',
     icon:'💼', desc:'Missions freelance : conception et développement pour des clients variés. Direction artistique, intégration, SEO et accompagnement.',
@@ -277,7 +277,7 @@ const ROOMS = [
     tags:['Presse','Podcast','Conférence','Articles'], conns:['hub','skills'] },
 
   { id:'easter',     name:'??? Salle Secrète',  sub:'Easter Egg ✦',         type:'easter',     pos:[120,0,-40], color:0xFF3B8D, shape:'egg',
-    icon:'🥚', desc:'Félicitations ! Vous avez trouvé la salle secrète. Ce portfolio 3D est lui-même un projet Experiments — Three.js vanilla, zéro framework. La boucle est bouclée ✦',
+    icon:'🥚', desc:'Félicitations ! Vous avez trouvé la salle secrète. Ainsi je peux vous confier que j\'ai potentiellement déjà une offre de staga (voir alternance) si je suis admise dans votre formation ! (P-S : Ce portfolio 3D est lui-même un projet Experiments — Three.js vanilla, zéro framework.)',
     tags:['Three.js','WebGL','∞ Inception','You found it!'], hidden:true, conns:['experiments'] }
 ];
 
@@ -644,7 +644,7 @@ function triggerPortal(color){
 /* ── PANEL CONTENT BUILDERS ──────────── */
 function buildProjectCards(projects,accentColor){
   return `<div class="proj-cards">${projects.map(p=>`
-    <a class="proj-card" href="${p.link}" target="_blank" rel="noopener" ;showNotif('→ Lien portfolio : ${p.title}')">
+    <a class="proj-card" href="${p.link}" target="_blank" rel="noopener" ;onclick="showNotif('→ Lien portfolio : ${p.title}')">
       ${p.img 
         ? `<img class="proj-card-img" src="${p.img}" alt="${p.title}">`
         : `<div class="proj-card-img-placeholder">📁</div>`
@@ -669,15 +669,15 @@ function buildContactForm(){
 
 function buildGallery(){
   const items=[
-    {emoji:'🎙️',label:'Podcast Dev & Design\n"UI Stories"',caption:'Épisode #42 — Créer du beau avec du code'},
-    {emoji:'📰',label:'Article Medium\n"3D portfolios"',caption:'Les nouvelles tendances portfolios 2024'},
+    {emoji:'🎙️',label:'Témoignage sur ma formation pour Thotis"',caption:'BUT MMI  : témoignage par une étudiante de 3e année',link:'https://www.youtube.com/watch?v=MhuDBgArMYQ'},
+    {emoji:'📰',label:'Article par l Université de Toulon"',caption:'Atelier Sculpture & Volume — IUT Toulon',link:'https://www.univ-tln.fr/Une-plongee-dans-l-art-avec-l-atelier-Sculpture-et-Volume-de-l.html'},
     {emoji:'🎤',label:'Conférence Web\nDevoxx Paris',caption:'Workshop "Three.js pour les designers"'},
     {emoji:'✍️',label:'Blog Smashing\nMagazine',caption:'Invited post: "CSS Artistry"'},
     {emoji:'📺',label:'Interview YouTube\n"Code & Café"',caption:'Spécial parcours atypique devs'},
     {emoji:'🏆',label:'Prix Design\nAwwwards HM',caption:'Honorable Mention — ce portfolio !'},
   ];
   return `<div class="gallery-grid">${items.map((it,i)=>`
-    <a class="gallery-item" href="#appearance-${i}" target="_blank" rel="noopener" onclick="event.preventDefault();showNotif('→ Ouverture : ${it.caption.replace(/'/g,"\\'")}')">
+    <a class="gallery-item" href="${it.link}" target="_blank" rel="noopener" onclick="showNotif('→ Ouverture : ${it.caption.replace(/'/g,"\\'")}')">
       <div class="gallery-placeholder">
         <div class="gallery-placeholder-inner">
           <span style="font-size:2rem">${it.emoji}</span>
