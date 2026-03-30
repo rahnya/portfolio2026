@@ -33,7 +33,7 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": []
+      "screenshots": ["/projects/FlightFootPrint.png","projects/ffp1.png", "projects/ffp2.png", "projects/ffp3.png", "projects/ffp4.png"]
     }
   },
   {
@@ -128,7 +128,7 @@
       ],
       "githubUrl": "",
       "liveUrl": "Dossier_intelligence_collective_entre hommes_et_machines.pdf",
-      "screenshots": []
+      "screenshots": ["projects/intelligence_collective_dossier.png"]
     },
     "fr": {
       "title": "Intelligence collective : humains & machines",
@@ -144,7 +144,7 @@
       ],
       "githubUrl": "",
       "liveUrl": "Dossier_intelligence_collective_entre hommes_et_machines.pdf",
-      "screenshots": []
+      "screenshots": ["projects/intelligence_collective_dossier.png"]
     }
   },
   {
@@ -165,7 +165,7 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://www.epitech.eu/ecole-informatique-apres-bac/egalite-diversite-dans-la-tech/",
-      "screenshots": []
+      "screenshots": ["projects/epitech_club_coding.png"]
     },
     "fr": {
       "title": "Participation au Coding Club Epitech",
@@ -181,44 +181,188 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://www.epitech.eu/ecole-informatique-apres-bac/egalite-diversite-dans-la-tech/",
-      "screenshots": []
+      "screenshots": ["projects/epitech_club_coding.png"]
     }
   },
   {
-    "slug": "ampa-animal-adoption",
-    "categories": ["web","design"],
-    "color": "#25cdd0",
+    "slug": "ai-eprocurement-seo-article",
+    "categories": ["professional", "seo", "content"],
+    "color": "#FF6F61",
     "en": {
-      "title": "Ampa — Animal Adoption Platform",
-      "description": "A digital platform designed to simplify the adoption of animals from shelters. The project focuses on improving the connection between shelters and adopters through intuitive search, clear profiles, and a modern user experience.",
-      "shortDescription": "UX/UI and web platform to improve animal adoption processes.",
-      "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
+      "title": "AI & e-Procurement SEO Article",
+      "description": "As part of my work-study position as a Webmaster & SEO Content Manager, I wrote an in-depth article focused on the impact of artificial intelligence in e-procurement. The objective was to create high-value content combining SEO performance and educational clarity on a technical topic. The article explores how AI transforms procurement processes, including automation, predictive analysis, supplier management, and decision-making optimization. It was designed to target strategic keywords while remaining accessible to a professional audience. This project highlights my ability to translate complex subjects into structured, engaging, and optimized content, while aligning with business and visibility objectives.",
+      "shortDescription": "SEO article on AI applications in e-procurement.",
+      "technologies": ["SEO", "Content Writing", "Keyword Research", "WordPress"],
       "features": [
-        "Animal search with filters (species, age, location)",
-        "Detailed animal profiles with photos and health info",
-        "Shelter profiles and contact system",
-        "Mobile-first responsive design",
-        "Accessible and friendly user interface"
+        "Writing long-form SEO-optimized content",
+        "Popularization of complex AI concepts",
+        "Keyword targeting and search intent alignment",
+        "Structured article with clear hierarchy (Hn, readability)",
+        "Professional B2B content strategy"
       ],
       "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": []
+      "liveUrl": "https://blog.weproc.com/general/ia-eprocurement-guide/",
+      "screenshots": ["projects/article_weproc.png"]
     },
     "fr": {
-      "title": "Ampa — Plateforme d’adoption animale",
-      "description": "Ampa is a digital platform project dedicated to animal adoption, designed to improve the connection between shelters and adopters. The project stems from the observation that adoption processes are often complex, opaque, and fragmented. The objective was therefore to completely rethink the user experience by offering a clear, accessible interface centered on user needs. The platform allows users to search for animals according to various criteria, access detailed profiles, and discover shelters, all while facilitating contact. Particular attention was paid to design, accessibility, and the mobile experience. This project is a key element of my portfolio, combining UX/UI design, branding, and development, with a user-centered approach and comprehensive product planning.",
-      "shortDescription": "Plateforme web UX/UI pour améliorer l’adoption d’animaux.",
-      "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
+      "title": "Article SEO – IA & e-procurement",
+      "description": "Dans le cadre de mon alternance en tant que webmaster éditorial / content manager SEO, j’ai rédigé un article approfondi portant sur l’impact de l’intelligence artificielle dans l’e-procurement. L’objectif était de produire un contenu à forte valeur ajoutée, à la fois performant en SEO et pédagogique sur un sujet technique. L’article explore les transformations apportées par l’IA dans les processus d’achat : automatisation, analyse prédictive, gestion des fournisseurs et aide à la décision. Il a été conçu pour répondre à des intentions de recherche précises tout en restant accessible à une audience professionnelle. Ce projet met en avant ma capacité à vulgariser des sujets complexes, structurer l’information et produire du contenu optimisé en cohérence avec des enjeux business.",
+      "shortDescription": "Article SEO sur l’IA appliquée à l’e-procurement.",
+      "technologies": ["SEO", "Rédaction web", "Recherche de mots-clés", "WordPress"],
       "features": [
-        "Recherche d’animaux avec filtres",
-        "Fiches détaillées des animaux",
-        "Profils de refuges",
-        "Design responsive mobile-first",
-        "Interface accessible et intuitive"
+        "Rédaction d’un article long format optimisé SEO",
+        "Vulgarisation de concepts complexes liés à l’IA",
+        "Travail sur l’intention de recherche et les mots-clés",
+        "Structuration claire (titres, lisibilité, hiérarchie)",
+        "Contenu à destination d’une audience B2B"
       ],
       "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": []
+      "liveUrl": "https://blog.weproc.com/general/ia-eprocurement-guide/",
+      "screenshots": ["projects/article_weproc.png"]
+    }
+  },
+  {
+    "slug": "internship-management-app",
+    "categories": ["school","web","uxui"],
+    "color": "#3BA1FF",
+    "en": {
+      "title": "Internship Management Application",
+      "description": "This project aimed to design an application to efficiently manage university internships by structuring and utilizing data from a relational database. One of the main challenges was designing and reorganizing the database to make it consistent, usable, and scalable. I also worked on communication between the front-end and back-end via API calls, which allowed me to better understand data flow within a web application. This project confronted me with concrete problems in data management and query optimization, while strengthening my skills in logical structuring and dynamic web development.",
+      "shortDescription": "Web platform for managing university internships.",
+      "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+      "features": [
+        "Internship database management",
+        "Dynamic data display with API calls",
+        "Internship listing and search",
+        "Relational database restructuring"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": ["/projects/appli-stage.png"]
+    },
+    "fr": {
+      "title": "Application de gestion des stages",
+      "description": "Ce projet visait à concevoir une application permettant de gérer efficacement les stages universitaires, en structurant et en exploitant des données issues d’une base relationnelle. L’un des enjeux principaux était la conception et la réorganisation de la base de données afin de la rendre cohérente, exploitable et évolutive. J’ai également travaillé sur la communication entre le front-end et le back-end via des appels API, ce qui m’a permis de mieux comprendre la circulation des données dans une application web. Ce projet m’a confrontée à des problématiques concrètes de gestion de données et d’optimisation des requêtes, tout en renforçant mes compétences en structuration logique et en développement web dynamique.",
+      "shortDescription": "Plateforme web de gestion des stages.",
+      "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+      "features": [
+        "Gestion d'une base de données de stages",
+        "Affichage dynamique via API",
+        "Recherche et consultation des stages",
+        "Refonte de la structure de la base de données"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": ["/projects/appli-stage.png"]
+    }
+  },
+  {
+    "slug": "ai-agents-workflow",
+    "categories": ["school","web"],
+    "color": "#6B5CFF",
+    "en": {
+      "title": "AI Agents Workflow",
+      "description": "This project explores the development of conversational agents capable of automating tasks through structured workflows. The objective was to understand how to orchestrate several specialized agents to meet diverse needs. I worked on designing conversational logic, structuring prompts and defining the roles of each agent. Integration with automation tools like n8n allowed me to connect these agents to concrete actions, going beyond simple conversation. This project is part of a broader reflection on the evolution of user interfaces and the role of artificial intelligence in process automation. It demonstrates my ability to explore emerging technologies and integrate them into functional systems.",
+      "shortDescription": "Conversational AI agents for task automation.",
+      "technologies": ["Ollama", "n8n", "JavaScript", "AI Agents"],
+      "features": [
+        "Multi-agent architecture",
+        "Task automation workflows",
+        "Custom conversational logic",
+        "Integration with automation tools"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": ["/projects/agents.png"]
+    },
+    "fr": {
+      "title": "Agents conversationnels IA",
+      "description": "Ce projet explore le développement d’agents conversationnels capables d’automatiser des tâches à travers des workflows structurés. L’objectif était de comprendre comment orchestrer plusieurs agents spécialisés pour répondre à des besoins variés. J’ai travaillé sur la conception de logiques conversationnelles, en structurant les prompts et en définissant les rôles de chaque agent. L’intégration avec des outils d’automatisation comme n8n m’a permis de connecter ces agents à des actions concrètes, allant au-delà de la simple conversation. Ce projet s’inscrit dans une réflexion plus large sur l’évolution des interfaces utilisateur et sur le rôle des intelligences artificielles dans l’automatisation des processus. Il montre ma capacité à explorer des technologies émergentes et à les intégrer dans des systèmes fonctionnels.",
+      "shortDescription": "Agents IA conversationnels pour automatisation.",
+      "technologies": ["Ollama", "n8n", "JavaScript"],
+      "features": [
+        "Architecture multi-agents",
+        "Automatisation de tâches",
+        "Logiques conversationnelles personnalisées",
+        "Intégration avec des workflows"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": ["/projects/agents.png"]
+    }
+  },
+  {
+    "slug": "laravel-blog-platform",
+    "categories": ["school","web"],
+    "color": "#FF3B8D",
+    "en": {
+      "title": "Laravel Blog Platform",
+      "description": "This project involved developing a complete blogging platform with a content management system. The goal was to understand how a dynamic web application based on a structured backend framework works. With Laravel, I discovered the principles of MVC development, route management, controller and model management, as well as interaction with a relational database. Implementing a back office also allowed me to consider the user experience on the administration side, which is often neglected but essential. This project allowed me to take a technical leap forward by moving from front-end development to a full-stack approach, with a better understanding of the architecture of a complete web application.",
+      "shortDescription": "Full blog platform with Laravel and admin dashboard.",
+      "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
+      "features": [
+        "Custom admin dashboard",
+        "User roles and permissions",
+        "Article submission and moderation",
+        "Database management with MySQL"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
+    },
+    "fr": {
+      "title": "Blog avec back-office Laravel",
+      "description": "Ce projet consistait à développer une plateforme de blog complète avec un système de gestion de contenu. L’objectif était de comprendre le fonctionnement d’une application web dynamique reposant sur un framework backend structuré. J’ai découvert avec Laravel les principes du développement MVC, la gestion des routes, des contrôleurs et des modèles, ainsi que l’interaction avec une base de données relationnelle. La mise en place d’un back-office m’a également permis de réfléchir à l’expérience utilisateur côté administration, souvent négligée mais essentielle. Ce projet m’a permis de franchir un cap technique en passant d’un développement front-end à une logique full-stack, avec une meilleure compréhension de l’architecture d’une application web complète.",
+      "shortDescription": "Blog avec interface d'administration personnalisée.",
+      "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
+      "features": [
+        "Back-office personnalisable",
+        "Gestion des rôles utilisateurs",
+        "Soumission et validation d’articles",
+        "Base de données MySQL"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
+    }
+  },
+  {
+    "slug": "tank-game-ui-unity",
+    "categories": ["school", "game"],
+    "color": "#7EC8E3",
+    "en": {
+      "title": "Tank Game UI & Unity Gameplay Adaptation",
+      "description": "This academic project takes a dual approach: UX/UI design and a technical understanding of video game development. The goal was not simply to produce prototypes, but to rethink the overall player experience by focusing on readability, feedback, and engagement. In the first phase, we analyzed an existing game to identify its limitations in terms of interface and user experience. This led us to propose a new, coherent art direction, building a complete visual universe and considering how each interface element could improve game comprehension. In the second phase, the project shifted to a more technical dimension with the reconstruction of the gameplay using Unity. This step allowed me to better understand the constraints of game development: state management, interaction logic, action synchronization, and code structuring. This project taught me to bridge the gap between design and implementation, making me aware of the impact of UX choices on actual development. It reflects my ability to work on both design and development issues simultaneously. on their technical translation..",
+      "shortDescription": "Game UI redesign and gameplay reconstruction using Unity.",
+      "technologies": ["Figma", "Unity", "C#", "Game Design"],
+      "features": [
+        "Complete UI mockups including loading screen, menu, tank selection, gameplay HUD and victory screens",
+        "Creation of a cohesive playful underwater art direction with custom visual components",
+        "Design of gameplay elements such as power-ups, pause states and multiplayer feedback",
+        "Understanding and reimplementation of an existing tank gameplay prototype in Unity",
+        "Integration of game interactions such as movement, shooting mechanics and win conditions",
+        "Work on player feedback and visual hierarchy for improved game readability"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
+      "screenshots": [ "projects/tank-accueil.png","/projects/jeu-tank-unity.png", "/projects/maquette-jeu tank.png", "projects/tank1.png", "projects/tank2.png"]
+    },
+    "fr": {
+      "title": "UI de jeu de tanks & adaptation gameplay sur Unity",
+      "description": "Ce projet académique s’inscrit dans une double approche : conception UX/UI et compréhension technique du développement de jeux vidéo. L’objectif n’était pas seulement de produire des maquettes, mais de repenser l’expérience globale du joueur en travaillant sur la lisibilité, le feedback et l’engagement. Dans une première phase, nous avons analysé un jeu existant afin d’identifier ses limites en termes d’interface et d’expérience utilisateur. Cela nous a amenés à proposer une nouvelle direction artistique cohérente, en construisant un univers visuel complet et en réfléchissant à la manière dont chaque élément d’interface pouvait améliorer la compréhension du jeu. Dans un second temps, le projet a basculé vers une dimension plus technique avec la reconstitution du gameplay sous Unity. Cette étape m’a permis de mieux comprendre les contraintes du développement de jeu : gestion des états, logique d’interaction, synchronisation des actions et structuration du code. Ce projet m’a appris à faire le lien entre conception et implémentation, en prenant conscience des impacts des choix UX sur le développement réel. Il reflète ma capacité à travailler à la fois sur des problématiques de design et sur leur traduction technique..",
+      "shortDescription": "Refonte UI d’un jeu et reconstruction du gameplay sur Unity.",
+      "technologies": ["Figma", "Unity", "C#", "Game Design"],
+      "features": [
+        "Conception de maquettes complètes : écran de chargement, menu, sélection de tank, HUD de jeu, pause et écrans de victoire",
+        "Création d’une direction artistique originale et cohérente dans un univers sous-marin ludique",
+        "Réflexion sur les mécaniques de jeu : power-ups, feedback joueur, multijoueur et états de jeu",
+        "Re-développement du gameplay sur Unity à partir de fichiers de base fournis par l’enseignante",
+        "Implémentation des interactions principales : déplacement, tir, collisions et conditions de victoire",
+        "Travail sur la lisibilité et la hiérarchie visuelle pour améliorer l’expérience joueur"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
+      "screenshots": [ "projects/tank-accueil.png","/projects/jeu-tank-unity.png", "/projects/maquette-jeu tank.png", "projects/tank1.png", "projects/tank2.png"]
     }
   },
   {
@@ -296,44 +440,183 @@
     }
   },
   {
-    "slug": "tank-game-ui-unity",
-    "categories": ["school", "game"],
-    "color": "#7EC8E3",
+    "slug": "ampa-animal-adoption",
+    "categories": ["web","design"],
+    "color": "#25cdd0",
     "en": {
-      "title": "Tank Game UI & Unity Gameplay Adaptation",
-      "description": "This academic project takes a dual approach: UX/UI design and a technical understanding of video game development. The goal was not simply to produce prototypes, but to rethink the overall player experience by focusing on readability, feedback, and engagement. In the first phase, we analyzed an existing game to identify its limitations in terms of interface and user experience. This led us to propose a new, coherent art direction, building a complete visual universe and considering how each interface element could improve game comprehension. In the second phase, the project shifted to a more technical dimension with the reconstruction of the gameplay using Unity. This step allowed me to better understand the constraints of game development: state management, interaction logic, action synchronization, and code structuring. This project taught me to bridge the gap between design and implementation, making me aware of the impact of UX choices on actual development. It reflects my ability to work on both design and development issues simultaneously. on their technical translation..",
-      "shortDescription": "Game UI redesign and gameplay reconstruction using Unity.",
-      "technologies": ["Figma", "Unity", "C#", "Game Design"],
+      "title": "Ampa — Animal Adoption Platform",
+      "description": "A digital platform designed to simplify the adoption of animals from shelters. The project focuses on improving the connection between shelters and adopters through intuitive search, clear profiles, and a modern user experience.",
+      "shortDescription": "UX/UI and web platform to improve animal adoption processes.",
+      "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
       "features": [
-        "Complete UI mockups including loading screen, menu, tank selection, gameplay HUD and victory screens",
-        "Creation of a cohesive playful underwater art direction with custom visual components",
-        "Design of gameplay elements such as power-ups, pause states and multiplayer feedback",
-        "Understanding and reimplementation of an existing tank gameplay prototype in Unity",
-        "Integration of game interactions such as movement, shooting mechanics and win conditions",
-        "Work on player feedback and visual hierarchy for improved game readability"
+        "Animal search with filters (species, age, location)",
+        "Detailed animal profiles with photos and health info",
+        "Shelter profiles and contact system",
+        "Mobile-first responsive design",
+        "Accessible and friendly user interface"
       ],
       "githubUrl": "",
-      "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
-      "screenshots": [ "projects/tank-accueil.png","/projects/jeu-tank-unity.png", "/projects/maquette-jeu tank.png", "projects/tank1.png", "projects/tank2.png"]
+      "liveUrl": null,
+      "screenshots": []
     },
     "fr": {
-      "title": "UI de jeu de tanks & adaptation gameplay sur Unity",
-      "description": "Ce projet académique s’inscrit dans une double approche : conception UX/UI et compréhension technique du développement de jeux vidéo. L’objectif n’était pas seulement de produire des maquettes, mais de repenser l’expérience globale du joueur en travaillant sur la lisibilité, le feedback et l’engagement. Dans une première phase, nous avons analysé un jeu existant afin d’identifier ses limites en termes d’interface et d’expérience utilisateur. Cela nous a amenés à proposer une nouvelle direction artistique cohérente, en construisant un univers visuel complet et en réfléchissant à la manière dont chaque élément d’interface pouvait améliorer la compréhension du jeu. Dans un second temps, le projet a basculé vers une dimension plus technique avec la reconstitution du gameplay sous Unity. Cette étape m’a permis de mieux comprendre les contraintes du développement de jeu : gestion des états, logique d’interaction, synchronisation des actions et structuration du code. Ce projet m’a appris à faire le lien entre conception et implémentation, en prenant conscience des impacts des choix UX sur le développement réel. Il reflète ma capacité à travailler à la fois sur des problématiques de design et sur leur traduction technique..",
-      "shortDescription": "Refonte UI d’un jeu et reconstruction du gameplay sur Unity.",
-      "technologies": ["Figma", "Unity", "C#", "Game Design"],
+      "title": "Ampa — Plateforme d’adoption animale",
+      "description": "Ampa is a digital platform project dedicated to animal adoption, designed to improve the connection between shelters and adopters. The project stems from the observation that adoption processes are often complex, opaque, and fragmented. The objective was therefore to completely rethink the user experience by offering a clear, accessible interface centered on user needs. The platform allows users to search for animals according to various criteria, access detailed profiles, and discover shelters, all while facilitating contact. Particular attention was paid to design, accessibility, and the mobile experience. This project is a key element of my portfolio, combining UX/UI design, branding, and development, with a user-centered approach and comprehensive product planning.",
+      "shortDescription": "Plateforme web UX/UI pour améliorer l’adoption d’animaux.",
+      "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
       "features": [
-        "Conception de maquettes complètes : écran de chargement, menu, sélection de tank, HUD de jeu, pause et écrans de victoire",
-        "Création d’une direction artistique originale et cohérente dans un univers sous-marin ludique",
-        "Réflexion sur les mécaniques de jeu : power-ups, feedback joueur, multijoueur et états de jeu",
-        "Re-développement du gameplay sur Unity à partir de fichiers de base fournis par l’enseignante",
-        "Implémentation des interactions principales : déplacement, tir, collisions et conditions de victoire",
-        "Travail sur la lisibilité et la hiérarchie visuelle pour améliorer l’expérience joueur"
+        "Recherche d’animaux avec filtres",
+        "Fiches détaillées des animaux",
+        "Profils de refuges",
+        "Design responsive mobile-first",
+        "Interface accessible et intuitive"
       ],
       "githubUrl": "",
-      "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
-      "screenshots": [ "projects/tank-accueil.png","/projects/jeu-tank-unity.png", "/projects/maquette-jeu tank.png", "projects/tank1.png", "projects/tank2.png"]
+      "liveUrl": null,
+      "screenshots": []
     }
   },
+  {
+    "slug": "inflation-dataviz",
+    "categories": ["school","data"],
+    "color": "#FFC72C",
+    "en": {
+      "title": "Inflation Data Visualization",
+      "description": "This data journalism project aimed to make a complex economic phenomenon understandable: the impact of inflation on food consumption. I worked on selecting, interpreting, and narrating the data, seeking to transform numerical information into a clear and engaging visual narrative. The challenge was to find a balance between the rigor of the information and accessibility for the general public. The motion design dimension added an extra layer by dynamizing the data and guiding the reader. This project allowed me to develop a storytelling approach applied to data, halfway between design, information, and pedagogy.",
+      "shortDescription": "Data journalism project with infographic and motion design.",
+      "technologies": ["After Effects", "Illustration", "Data Visualization"],
+      "features": [
+        "Journalistic infographic poster",
+        "Data storytelling",
+        "Motion design animation",
+        "Visual exploration of economic data"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": ["/projects/Affiche_Datavisualisation.png"]
+    },
+    "fr": {
+      "title": "Datavisualisation de l’inflation",
+      "description": "Ce projet de data journalisme avait pour objectif de rendre compréhensible un phénomène économique complexe : l’impact de l’inflation sur la consommation alimentaire. J’ai travaillé sur la sélection, l’interprétation et la mise en récit des données, en cherchant à transformer des informations chiffrées en une narration visuelle claire et engageante. L’enjeu était de trouver un équilibre entre rigueur de l’information et accessibilité pour le grand public. La dimension motion design a ajouté une couche supplémentaire en permettant de dynamiser les données et de guider la lecture. Ce projet m’a permis de développer une approche storytelling appliquée à la data, à mi-chemin entre design, information et pédagogie.",
+      "shortDescription": "Projet de datavisualisation journalistique.",
+      "technologies": ["After Effects", "Illustration", "Data Visualization"],
+      "features": [
+        "Affiche journalistique",
+        "Storytelling par les données",
+        "Animation en motion design",
+        "Analyse visuelle de données économiques"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "screenshots": ["/projects/Affiche_Datavisualisation.png"]
+    }
+  },
+  {
+    "slug": "crossy-road-ux-powerups",
+    "categories": ["school","uxui"],
+    "color": "#FFD54F",
+    "en": {
+      "title": "Crossy Road UX Power-ups",
+      "description": "This project involves imagining new gameplay mechanics for Crossy Road, respecting the existing game logic while introducing new elements. I analyzed the current mechanics to understand what makes them effective, then proposed improvements in the form of power-ups and new interactions. The goal was to enhance player engagement without altering the original experience. This work allowed me to develop a UX approach applied to game design, reflecting on how mechanics influence user behavior and experience.",
+      "shortDescription": "UX concept for new game mechanics.",
+      "technologies": ["UX Design", "Game Design"],
+      "features": [
+        "New gameplay power-up concept",
+        "Gameplay sketches and flow",
+        "Pitch presentation",
+        "UX evaluation based on existing mechanics"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://www.behance.net/gallery/246239095/Crossy-Road-ajout-de-super-pouvoirs",
+      "screenshots": ["/projects/crossy.png"]
+    },
+    "fr": {
+      "title": "Super-pouvoirs pour Crossy Road",
+      "description": "Ce projet consiste à imaginer de nouvelles mécaniques de jeu pour Crossy Road, en s’inscrivant dans la logique existante du jeu tout en apportant de la nouveauté. J’ai analysé les mécaniques actuelles pour comprendre ce qui fait leur efficacité, puis proposé des améliorations sous forme de power-ups et de nouvelles interactions. L’objectif était de renforcer l’engagement joueur sans dénaturer l’expérience originale. Ce travail m’a permis de développer une approche UX appliquée au game design, en réfléchissant à la manière dont les mécaniques influencent le comportement et l’expérience utilisateur.",
+      "shortDescription": "Concept UX pour un jeu mobile.",
+      "technologies": ["UX Design", "Game Design"],
+      "features": [
+        "Concept de gameplay",
+        "Croquis d’interactions",
+        "Présentation type appel d’offres",
+        "Analyse UX du jeu existant"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://www.behance.net/gallery/246239095/Crossy-Road-ajout-de-super-pouvoirs",
+      "screenshots": ["/projects/crossy.png"]
+    }
+  },
+  {
+    "slug": "weather-app-design",
+    "categories": ["school","uxui","design"],
+    "color": "#64B5F6",
+    "en": {
+      "title": "Weather App UX/UI Design",
+      "description": "This UX/UI design project aimed to redesign a weather application by improving the hierarchy of information and the clarity of the interface. I worked on the organization of the content, identifying the essential information for the user and simplifying access to it. Particular attention was paid to micro-interactions to make the experience more intuitive and enjoyable. This project allowed me to deepen my understanding of data-driven interfaces, where readability and speed of comprehension are essential.",
+      "shortDescription": "Weather app UX/UI redesign.",
+      "technologies": ["Figma", "UX Design", "UI Animation"],
+      "features": [
+        "Complete weather app interface",
+        "Design system and visual identity",
+        "Micro-interactions for weather states",
+        "Prototype presentation video"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": ["/projects/meteo.png"]
+    },
+    "fr": {
+      "title": "Application météo UX/UI",
+      "description": "Ce projet de design UX/UI avait pour objectif de repenser une application météo en améliorant la hiérarchisation de l’information et la clarté de l’interface. J’ai travaillé sur l’organisation des contenus, en identifiant les informations essentielles pour l’utilisateur et en simplifiant leur accès. Une attention particulière a été portée aux micro-interactions, afin de rendre l’expérience plus intuitive et agréable. Ce projet m’a permis d’approfondir ma réflexion sur les interfaces orientées données, où la lisibilité et la rapidité de compréhension sont essentielles.",      
+      "shortDescription": "Maquettes UX/UI d’une application météo.",
+      "technologies": ["Figma", "UX Design", "UI Animation"],
+      "features": [
+        "Maquettes complètes d'application",
+        "Charte graphique",
+        "Micro-animations météo",
+        "Prototype interactif"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": ["/projects/meteo.png"]
+    }
+  },
+  {
+    "slug": "virtual-travel-chair",
+    "categories": ["school","hackathon"],
+    "color": "#8A6F9B",
+    "en": {
+      "title": "Virtual Travel Chair",
+      "description": "This design project explores the creation of an innovative object intended to enhance the virtual reality experience. The objective was to develop a product that is functional, immersive, and economically viable. We worked on the overall user experience, imagining how the chair could be integrated into different VR uses. Particular attention was paid to ergonomics, interaction, and consistency between the physical product and the digital experience. The project also included strategic thinking: positioning, target audience, business model, and environmental impact. It allowed me to develop a more holistic vision of design, going beyond the interface to consider a product as a whole.",
+      "shortDescription": "Concept design of a VR-enhanced chair.",
+      "technologies": ["Concept Design", "Product Design", "Business Model"],
+      "features": [
+        "Concept for a VR-compatible chair",
+        "Product positioning and distribution strategy",
+        "Pitch presentation and communication strategy",
+        "Sustainability considerations"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": ["/projects/vr-chair.png"]
+    },
+    "fr": {
+      "title": "Virtual Travel Chair",
+      "description": "Ce projet de conception explore la création d’un objet innovant destiné à améliorer l’expérience de réalité virtuelle. L’objectif était de réfléchir à un produit à la fois fonctionnel, immersif et viable d’un point de vue économique. Nous avons travaillé sur l’expérience utilisateur globale, en imaginant comment la chaise pouvait s’intégrer dans différents usages de la VR. Une attention particulière a été portée à l’ergonomie, à l’interaction et à la cohérence entre le produit physique et l’expérience numérique. Le projet incluait également une réflexion stratégique : positionnement, cible, modèle économique et impact environnemental. Il m’a permis de développer une vision plus globale du design, en allant au-delà de l’interface pour penser un produit dans son ensemble.",
+      "shortDescription": "Concept de chaise immersive pour la VR.",
+      "technologies": ["Concept Design", "Product Design", "Business Model"],
+      "features": [
+        "Conception d’un objet VR innovant",
+        "Étude des applications et débouchés",
+        "Pitch commercial",
+        "Réflexion sur l’impact écologique"
+      ],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": ["/projects/vr-chair.png"]
+    }
+  },
+
   {
     "slug": "mmi-decouvertes",
     "categories": ["school","web"],
@@ -402,181 +685,6 @@
       "githubUrl": "",
       "liveUrl": "",
       "screenshots": ["/projects/agence-1ris-site.png"]
-    }
-  },
-  {
-    "slug": "laravel-blog-platform",
-    "categories": ["school","web"],
-    "color": "#FF3B8D",
-    "en": {
-      "title": "Laravel Blog Platform",
-      "description": "This project involved developing a complete blogging platform with a content management system. The goal was to understand how a dynamic web application based on a structured backend framework works. With Laravel, I discovered the principles of MVC development, route management, controller and model management, as well as interaction with a relational database. Implementing a back office also allowed me to consider the user experience on the administration side, which is often neglected but essential. This project allowed me to take a technical leap forward by moving from front-end development to a full-stack approach, with a better understanding of the architecture of a complete web application.",
-      "shortDescription": "Full blog platform with Laravel and admin dashboard.",
-      "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
-      "features": [
-        "Custom admin dashboard",
-        "User roles and permissions",
-        "Article submission and moderation",
-        "Database management with MySQL"
-      ],
-      "githubUrl": "",
-      "liveUrl": "",
-      "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
-    },
-    "fr": {
-      "title": "Blog avec back-office Laravel",
-      "description": "Ce projet consistait à développer une plateforme de blog complète avec un système de gestion de contenu. L’objectif était de comprendre le fonctionnement d’une application web dynamique reposant sur un framework backend structuré. J’ai découvert avec Laravel les principes du développement MVC, la gestion des routes, des contrôleurs et des modèles, ainsi que l’interaction avec une base de données relationnelle. La mise en place d’un back-office m’a également permis de réfléchir à l’expérience utilisateur côté administration, souvent négligée mais essentielle. Ce projet m’a permis de franchir un cap technique en passant d’un développement front-end à une logique full-stack, avec une meilleure compréhension de l’architecture d’une application web complète.",
-      "shortDescription": "Blog avec interface d'administration personnalisée.",
-      "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
-      "features": [
-        "Back-office personnalisable",
-        "Gestion des rôles utilisateurs",
-        "Soumission et validation d’articles",
-        "Base de données MySQL"
-      ],
-      "githubUrl": "",
-      "liveUrl": "",
-      "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
-    }
-  },
-  {
-    "slug": "internship-management-app",
-    "categories": ["school","web","uxui"],
-    "color": "#3BA1FF",
-    "en": {
-      "title": "Internship Management Application",
-      "description": "This project aimed to design an application to efficiently manage university internships by structuring and utilizing data from a relational database. One of the main challenges was designing and reorganizing the database to make it consistent, usable, and scalable. I also worked on communication between the front-end and back-end via API calls, which allowed me to better understand data flow within a web application. This project confronted me with concrete problems in data management and query optimization, while strengthening my skills in logical structuring and dynamic web development.",
-      "shortDescription": "Web platform for managing university internships.",
-      "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
-      "features": [
-        "Internship database management",
-        "Dynamic data display with API calls",
-        "Internship listing and search",
-        "Relational database restructuring"
-      ],
-      "githubUrl": "",
-      "liveUrl": "",
-      "screenshots": ["/projects/appli-stage.png"]
-    },
-    "fr": {
-      "title": "Application de gestion des stages",
-      "description": "Ce projet visait à concevoir une application permettant de gérer efficacement les stages universitaires, en structurant et en exploitant des données issues d’une base relationnelle. L’un des enjeux principaux était la conception et la réorganisation de la base de données afin de la rendre cohérente, exploitable et évolutive. J’ai également travaillé sur la communication entre le front-end et le back-end via des appels API, ce qui m’a permis de mieux comprendre la circulation des données dans une application web. Ce projet m’a confrontée à des problématiques concrètes de gestion de données et d’optimisation des requêtes, tout en renforçant mes compétences en structuration logique et en développement web dynamique.",
-      "shortDescription": "Plateforme web de gestion des stages.",
-      "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
-      "features": [
-        "Gestion d'une base de données de stages",
-        "Affichage dynamique via API",
-        "Recherche et consultation des stages",
-        "Refonte de la structure de la base de données"
-      ],
-      "githubUrl": "",
-      "liveUrl": "",
-      "screenshots": ["/projects/appli-stage.png"]
-    }
-  },
-  {
-    "slug": "ai-agents-workflow",
-    "categories": ["school","web"],
-    "color": "#6B5CFF",
-    "en": {
-      "title": "AI Agents Workflow",
-      "description": "This project explores the development of conversational agents capable of automating tasks through structured workflows. The objective was to understand how to orchestrate several specialized agents to meet diverse needs. I worked on designing conversational logic, structuring prompts and defining the roles of each agent. Integration with automation tools like n8n allowed me to connect these agents to concrete actions, going beyond simple conversation. This project is part of a broader reflection on the evolution of user interfaces and the role of artificial intelligence in process automation. It demonstrates my ability to explore emerging technologies and integrate them into functional systems.",
-      "shortDescription": "Conversational AI agents for task automation.",
-      "technologies": ["Ollama", "n8n", "JavaScript", "AI Agents"],
-      "features": [
-        "Multi-agent architecture",
-        "Task automation workflows",
-        "Custom conversational logic",
-        "Integration with automation tools"
-      ],
-      "githubUrl": "",
-      "liveUrl": "",
-      "screenshots": ["/projects/agents.png"]
-    },
-    "fr": {
-      "title": "Agents conversationnels IA",
-      "description": "Ce projet explore le développement d’agents conversationnels capables d’automatiser des tâches à travers des workflows structurés. L’objectif était de comprendre comment orchestrer plusieurs agents spécialisés pour répondre à des besoins variés. J’ai travaillé sur la conception de logiques conversationnelles, en structurant les prompts et en définissant les rôles de chaque agent. L’intégration avec des outils d’automatisation comme n8n m’a permis de connecter ces agents à des actions concrètes, allant au-delà de la simple conversation. Ce projet s’inscrit dans une réflexion plus large sur l’évolution des interfaces utilisateur et sur le rôle des intelligences artificielles dans l’automatisation des processus. Il montre ma capacité à explorer des technologies émergentes et à les intégrer dans des systèmes fonctionnels.",
-      "shortDescription": "Agents IA conversationnels pour automatisation.",
-      "technologies": ["Ollama", "n8n", "JavaScript"],
-      "features": [
-        "Architecture multi-agents",
-        "Automatisation de tâches",
-        "Logiques conversationnelles personnalisées",
-        "Intégration avec des workflows"
-      ],
-      "githubUrl": "",
-      "liveUrl": "",
-      "screenshots": ["/projects/agents.png"]
-    }
-  },
-  {
-    "slug": "inflation-dataviz",
-    "categories": ["school","data"],
-    "color": "#FFC72C",
-    "en": {
-      "title": "Inflation Data Visualization",
-      "description": "This data journalism project aimed to make a complex economic phenomenon understandable: the impact of inflation on food consumption. I worked on selecting, interpreting, and narrating the data, seeking to transform numerical information into a clear and engaging visual narrative. The challenge was to find a balance between the rigor of the information and accessibility for the general public. The motion design dimension added an extra layer by dynamizing the data and guiding the reader. This project allowed me to develop a storytelling approach applied to data, halfway between design, information, and pedagogy.",
-      "shortDescription": "Data journalism project with infographic and motion design.",
-      "technologies": ["After Effects", "Illustration", "Data Visualization"],
-      "features": [
-        "Journalistic infographic poster",
-        "Data storytelling",
-        "Motion design animation",
-        "Visual exploration of economic data"
-      ],
-      "githubUrl": "",
-      "liveUrl": "",
-      "screenshots": ["/projects/Affiche_Datavisualisation.png"]
-    },
-    "fr": {
-      "title": "Datavisualisation de l’inflation",
-      "description": "Ce projet de data journalisme avait pour objectif de rendre compréhensible un phénomène économique complexe : l’impact de l’inflation sur la consommation alimentaire. J’ai travaillé sur la sélection, l’interprétation et la mise en récit des données, en cherchant à transformer des informations chiffrées en une narration visuelle claire et engageante. L’enjeu était de trouver un équilibre entre rigueur de l’information et accessibilité pour le grand public. La dimension motion design a ajouté une couche supplémentaire en permettant de dynamiser les données et de guider la lecture. Ce projet m’a permis de développer une approche storytelling appliquée à la data, à mi-chemin entre design, information et pédagogie.",
-      "shortDescription": "Projet de datavisualisation journalistique.",
-      "technologies": ["After Effects", "Illustration", "Data Visualization"],
-      "features": [
-        "Affiche journalistique",
-        "Storytelling par les données",
-        "Animation en motion design",
-        "Analyse visuelle de données économiques"
-      ],
-      "githubUrl": "",
-      "liveUrl": "",
-      "screenshots": ["/projects/Affiche_Datavisualisation.png"]
-    }
-  },
-  {
-    "slug": "virtual-travel-chair",
-    "categories": ["school","hackathon"],
-    "color": "#8A6F9B",
-    "en": {
-      "title": "Virtual Travel Chair",
-      "description": "This design project explores the creation of an innovative object intended to enhance the virtual reality experience. The objective was to develop a product that is functional, immersive, and economically viable. We worked on the overall user experience, imagining how the chair could be integrated into different VR uses. Particular attention was paid to ergonomics, interaction, and consistency between the physical product and the digital experience. The project also included strategic thinking: positioning, target audience, business model, and environmental impact. It allowed me to develop a more holistic vision of design, going beyond the interface to consider a product as a whole.",
-      "shortDescription": "Concept design of a VR-enhanced chair.",
-      "technologies": ["Concept Design", "Product Design", "Business Model"],
-      "features": [
-        "Concept for a VR-compatible chair",
-        "Product positioning and distribution strategy",
-        "Pitch presentation and communication strategy",
-        "Sustainability considerations"
-      ],
-      "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": ["/projects/vr-chair.png"]
-    },
-    "fr": {
-      "title": "Virtual Travel Chair",
-      "description": "Ce projet de conception explore la création d’un objet innovant destiné à améliorer l’expérience de réalité virtuelle. L’objectif était de réfléchir à un produit à la fois fonctionnel, immersif et viable d’un point de vue économique. Nous avons travaillé sur l’expérience utilisateur globale, en imaginant comment la chaise pouvait s’intégrer dans différents usages de la VR. Une attention particulière a été portée à l’ergonomie, à l’interaction et à la cohérence entre le produit physique et l’expérience numérique. Le projet incluait également une réflexion stratégique : positionnement, cible, modèle économique et impact environnemental. Il m’a permis de développer une vision plus globale du design, en allant au-delà de l’interface pour penser un produit dans son ensemble.",
-      "shortDescription": "Concept de chaise immersive pour la VR.",
-      "technologies": ["Concept Design", "Product Design", "Business Model"],
-      "features": [
-        "Conception d’un objet VR innovant",
-        "Étude des applications et débouchés",
-        "Pitch commercial",
-        "Réflexion sur l’impact écologique"
-      ],
-      "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": ["/projects/vr-chair.png"]
     }
   },
   {
@@ -681,76 +789,6 @@
     }
   },
   {
-    "slug": "weather-app-design",
-    "categories": ["school","uxui","design"],
-    "color": "#64B5F6",
-    "en": {
-      "title": "Weather App UX/UI Design",
-      "description": "This UX/UI design project aimed to redesign a weather application by improving the hierarchy of information and the clarity of the interface. I worked on the organization of the content, identifying the essential information for the user and simplifying access to it. Particular attention was paid to micro-interactions to make the experience more intuitive and enjoyable. This project allowed me to deepen my understanding of data-driven interfaces, where readability and speed of comprehension are essential.",
-      "shortDescription": "Weather app UX/UI redesign.",
-      "technologies": ["Figma", "UX Design", "UI Animation"],
-      "features": [
-        "Complete weather app interface",
-        "Design system and visual identity",
-        "Micro-interactions for weather states",
-        "Prototype presentation video"
-      ],
-      "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": ["/projects/meteo.png"]
-    },
-    "fr": {
-      "title": "Application météo UX/UI",
-      "description": "Ce projet de design UX/UI avait pour objectif de repenser une application météo en améliorant la hiérarchisation de l’information et la clarté de l’interface. J’ai travaillé sur l’organisation des contenus, en identifiant les informations essentielles pour l’utilisateur et en simplifiant leur accès. Une attention particulière a été portée aux micro-interactions, afin de rendre l’expérience plus intuitive et agréable. Ce projet m’a permis d’approfondir ma réflexion sur les interfaces orientées données, où la lisibilité et la rapidité de compréhension sont essentielles.",      
-      "shortDescription": "Maquettes UX/UI d’une application météo.",
-      "technologies": ["Figma", "UX Design", "UI Animation"],
-      "features": [
-        "Maquettes complètes d'application",
-        "Charte graphique",
-        "Micro-animations météo",
-        "Prototype interactif"
-      ],
-      "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": ["/projects/meteo.png"]
-    }
-  },
-  {
-    "slug": "crossy-road-ux-powerups",
-    "categories": ["school","uxui"],
-    "color": "#FFD54F",
-    "en": {
-      "title": "Crossy Road UX Power-ups",
-      "description": "This project involves imagining new gameplay mechanics for Crossy Road, respecting the existing game logic while introducing new elements. I analyzed the current mechanics to understand what makes them effective, then proposed improvements in the form of power-ups and new interactions. The goal was to enhance player engagement without altering the original experience. This work allowed me to develop a UX approach applied to game design, reflecting on how mechanics influence user behavior and experience.",
-      "shortDescription": "UX concept for new game mechanics.",
-      "technologies": ["UX Design", "Game Design"],
-      "features": [
-        "New gameplay power-up concept",
-        "Gameplay sketches and flow",
-        "Pitch presentation",
-        "UX evaluation based on existing mechanics"
-      ],
-      "githubUrl": "",
-      "liveUrl": "https://www.behance.net/gallery/246239095/Crossy-Road-ajout-de-super-pouvoirs",
-      "screenshots": ["/projects/crossy.png"]
-    },
-    "fr": {
-      "title": "Super-pouvoirs pour Crossy Road",
-      "description": "Ce projet consiste à imaginer de nouvelles mécaniques de jeu pour Crossy Road, en s’inscrivant dans la logique existante du jeu tout en apportant de la nouveauté. J’ai analysé les mécaniques actuelles pour comprendre ce qui fait leur efficacité, puis proposé des améliorations sous forme de power-ups et de nouvelles interactions. L’objectif était de renforcer l’engagement joueur sans dénaturer l’expérience originale. Ce travail m’a permis de développer une approche UX appliquée au game design, en réfléchissant à la manière dont les mécaniques influencent le comportement et l’expérience utilisateur.",
-      "shortDescription": "Concept UX pour un jeu mobile.",
-      "technologies": ["UX Design", "Game Design"],
-      "features": [
-        "Concept de gameplay",
-        "Croquis d’interactions",
-        "Présentation type appel d’offres",
-        "Analyse UX du jeu existant"
-      ],
-      "githubUrl": "",
-      "liveUrl": "https://www.behance.net/gallery/246239095/Crossy-Road-ajout-de-super-pouvoirs",
-      "screenshots": ["/projects/crossy.png"]
-    }
-  },
-  {
     "slug": "scrum-learning-platform",
     "categories": ["school","web"],
     "color": "#81C784",
@@ -837,7 +875,7 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/site-lan.png","/projects/mmi-lan-2.png","/projects/mmi-lan-3.png"]
+      "screenshots": ["/projects/mmi-lan-2.png","/projects/site-lan.png","/projects/mmi-lan-3.png"]
     },
     "fr": {
       "title": "Organisation de la MMI LAN",
@@ -852,7 +890,7 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/site-lan.png","/projects/mmi-lan-2.png","/projects/mmi-lan-3.png"]
+      "screenshots": ["/projects/mmi-lan-2.png", "/projects/site-lan.png","/projects/mmi-lan-3.png"]
     }
   },
   {
