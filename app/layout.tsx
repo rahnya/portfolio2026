@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Lanyeri Rahnya — Full Stack Developer & Interface Designer",
   description:
 "Portfolio of Lanyeri Rahnya — BUT MMI student, developer and interface designer passionate about building exceptional digital products.",
+  icons:{
+    icon: "/favicon.png"
+  },
   keywords: ["developer", "designer", "portfolio", "Next.js", "TypeScript", "UX/UI"],
   verification: {
     google: "4iKVP3WeVNyL4RrwzOvYrg_sTVCj_KmGc0fhaUdMNoE"
