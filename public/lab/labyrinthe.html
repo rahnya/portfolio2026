@@ -240,8 +240,8 @@ const ROOMS = [
     icon:'✏️', desc:'Mes créations visuelles : identités de marque, charte graphique, supports print et digital. De l\'idée à la livraison.',
     tags:['Photoshop','Illustrator','Branding','Print'], conns:['devs','freelance'],
     projects:[
-      {title:'Branding Fictif',desc:'Identité complète : logo, palette, typographie, maquettes print et digital.',emoji:'🎨',link:'#branding'},
-      {title:'Campagne Social',desc:'Création d\'une campagne visuelle sur 3 plateformes pour une marque lifestyle.',emoji:'📱',link:'#social'}
+      {title:'Branding Fictif pour une plateforme d adoption',desc:'Identité complète : logo, palette, typographie, maquettes print et digital.',emoji:'🎨',link:'/projects/ampa-animal-adoption'},
+      {title:'Application météo',desc:'Création d\'une DA, avec charte graphique et maquettes, ainsi que les premières micro interactions.',emoji:'📱',link:'/projects/weather-app-design'}
     ] },
 
   { id:'ux',         name:'Process UX',         sub:'Ma méthode',           type:'ux',         pos:[-40,0,-40], color:0x8A6F9B, shape:'prism',
@@ -644,8 +644,11 @@ function triggerPortal(color){
 /* ── PANEL CONTENT BUILDERS ──────────── */
 function buildProjectCards(projects,accentColor){
   return `<div class="proj-cards">${projects.map(p=>`
-    <a class="proj-card" href="${p.link}" target="_blank" rel="noopener" onclick="event.preventDefault();showNotif('→ Lien portfolio : ${p.title}')">
-      <div class="proj-card-img-placeholder">${p.emoji}</div>
+    <a class="proj-card" href="${p.link}" target="_blank" rel="noopener" ;showNotif('→ Lien portfolio : ${p.title}')">
+      ${p.img 
+        ? `<img class="proj-card-img" src="${p.img}" alt="${p.title}">`
+        : `<div class="proj-card-img-placeholder">📁</div>`
+      }
       <div class="proj-card-title">${p.title}</div>
       <div class="proj-card-desc">${p.desc}</div>
       <span class="proj-card-link" style="color:${accentColor}">Voir le projet →</span>
