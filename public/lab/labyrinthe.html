@@ -226,7 +226,7 @@ const ROOMS = [
   { id:'docs',       name:'Documents',          sub:'CV & Recommandations', type:'docs',       pos:[-40,0,0],   color:0xFFC72C, shape:'envelope',
     icon:'📄', desc:'Retrouvez ici mon CV à jour et mes lettres de recommandation. Ces documents résument mon parcours, mes compétences et les retours de collaborateurs.',
     tags:['Curriculum Vitae','Lettres de reco','PDF'], conns:['hub','about'],
-    downloads:[{label:'📄 Télécharger mon CV', filename:'Rahnya_CV.pdf'},{label:'💌 Recommandations', filename:'Rahnya_Recommandations.pdf'}] },
+    downloads:[{label:'📄 Télécharger mon CV', filename:'../cv/CV_Rahnya.pdf'},{label:'💌 Recommandations', filename:'../cv/Lettres_de_recommandation_LANYERI_Rahnya.pdf'}] },
 
   { id:'devs',       name:'Projets Dev',        sub:'Développement & UX',   type:'dev',        pos:[40,0,0],    color:0x183153, shape:'computer',
     icon:'💻', desc:'Mes projets de développement full-stack, du frontend React aux APIs Node.js. Chaque projet est une exploration de nouvelles technologies et approches.',
@@ -715,9 +715,18 @@ function openPanel(room){
   // Actions
   const acts=document.getElementById('panel-actions');acts.innerHTML='';
   const cl=document.createElement('button');cl.className='panel-btn secondary';cl.textContent='✕ Fermer';cl.onclick=closePanel;acts.appendChild(cl);
-  if(room.downloads){room.downloads.forEach(dl=>{const b=document.createElement('button');b.className='panel-btn primary';b.textContent=dl.label;b.onclick=()=>{
-    const a=document.createElement('a');a.href='data:application/pdf;base64,JVBERi0xLjMK';a.download=dl.filename;a.click();showNotif('📥 '+dl.filename);
-  };acts.appendChild(b);});}
+  if(room.downloads){
+  room.downloads.forEach(dl=>{
+    const b=document.createElement('button');
+    b.className='panel-btn primary';
+    b.textContent=dl.label;
+    b.onclick=()=>{
+      window.open(dl.filename, '_blank');
+      showNotif('📄 Ouverture : ' + dl.filename);
+    };
+    acts.appendChild(b);
+  });
+}
 
   roomLabelEl.textContent=room.name;panelOverlay.classList.add('open');panelEl.classList.add('open');
   panelEl.scrollTop=0;
