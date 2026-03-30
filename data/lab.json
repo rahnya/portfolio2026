@@ -1,174 +1,239 @@
 [
   {
-    "slug": "nlp-sentiment-analysis",
-    "color": "#FF3B8D",
-    "tags": ["IA/Data", "Python"],
-    "type": "Exercice",
+    "slug": "flightfootprint",
+    "color": "#FFD93D",
+    "tags": ["Aérien/Transport", "UX/IHM", "Data"],
+    "type": "Prototype",
     "status": "Complété",
     "en": {
-      "title": "NLP Sentiment Analysis",
-      "description": "Classification de sentiments sur tweets avec transformers. Modèle fine-tuné BERT pour détecter les émotions en temps réel.",
-      "skills": ["Python", "Transformers", "NLP", "ML"]
+      "title": "FlightFootprint",
+      "description": "Visualisation des impacts carbone du transport aérien. Carte interactive des vols, filtrable par distance, type d’avion ou compagnie.",
+      "skills": ["Data Processing", "UX/UI Design", "Web Mapping", "Leaflet", "Mapbox", "Storytelling Visuel"]
     },
     "fr": {
-      "title": "Analyse de sentiments NLP",
-      "description": "Classification de sentiments sur tweets avec transformers. Modèle fine-tuné BERT pour détecter les émotions en temps réel.",
-      "skills": ["Python", "Transformers", "NLP", "ML"]
+      "title": "FlightFootprint",
+      "description": "Visualisation des impacts carbone du transport aérien. Carte interactive des vols, filtrable par distance, type d’avion ou compagnie.",
+      "skills": ["Data Processing", "UX/UI Design", "Web Mapping", "Leaflet", "Mapbox", "Storytelling Visuel"]
     }
   },
   {
-    "slug": "drone-collision-avoidance",
-    "color": "#FFC72C",
-    "tags": ["Aérien/Transport", "IA/Data"],
+    "slug": "multimodal-transport-simulator",
+    "color": "#62E0D5",
+    "tags": ["Développement", "UX/IHM", "Transport"],
     "type": "Prototype",
     "status": "En cours",
-    "progress": 60,
     "en": {
-      "title": "Drone Collision Avoidance System",
-      "description": "Système d'évitement d'obstacles pour drones autonomes utilisant la vision par ordinateur et des capteurs lidar.",
-      "skills": ["Computer Vision", "Robotics", "Python", "ROS"]
+      "title": "Multimodal Transport Simulator",
+      "description": "Interface interactive pour simuler différents itinéraires en transport (train, bus, avion, vélo) et comparer temps, coûts et impacts environnementaux.",
+      "skills": ["UX/UI Design", "Data Visualization", "Shortest Path Algorithms", "API Integration", "Front-end Development"]
     },
     "fr": {
-      "title": "Système d'évitement de collision pour drone",
-      "description": "Système d'évitement d'obstacles pour drones autonomes utilisant la vision par ordinateur et des capteurs lidar.",
-      "skills": ["Computer Vision", "Robotics", "Python", "ROS"]
+      "title": "Simulateur de trajet multimodal",
+      "description": "Interface interactive pour simuler différents itinéraires en transport (train, bus, avion, vélo) et comparer temps, coûts et impacts environnementaux.",
+      "skills": ["UX/UI Design", "Data Visualization", "Calcul d’algorithmes de plus court chemin", "Intégration API transport", "Développement Front-end"]
     }
   },
   {
-    "slug": "react-performance-optimization",
-    "color": "#62E0D5",
-    "tags": ["Développement", "Apprentissage/Veille"],
-    "type": "Article",
-    "status": "Publié",
-    "en": {
-      "title": "React Performance Optimization Guide",
-      "description": "Guide complet sur l'optimisation des performances React : memoization, code splitting, lazy loading et profiling.",
-      "skills": ["React", "Performance", "Next.js"]
-    },
-    "fr": {
-      "title": "Guide d'optimisation des performances React",
-      "description": "Guide complet sur l'optimisation des performances React : memoization, code splitting, lazy loading et profiling.",
-      "skills": ["React", "Performance", "Next.js"]
-    }
-  },
-  {
-    "slug": "figma-design-system",
+    "slug": "project-dashboard",
     "color": "#A78BFA",
-    "tags": ["UX/IHM"],
+    "tags": ["Développement", "UX/IHM", "Productivity"],
     "type": "Prototype",
+    "status": "En cours",
+    "en": {
+      "title": "Interactive Project Dashboard",
+      "description": "Tableau de bord web pour suivre l’avancement des tâches, deadlines et indicateurs clés, avec animations et filtres interactifs.",
+      "skills": ["React", "Vue", "State Management", "Charting", "UX/UI Design", "Interactive Front-end"]
+    },
+    "fr": {
+      "title": "Dashboard interactif pour suivi de projets",
+      "description": "Tableau de bord web pour suivre l’avancement des tâches, deadlines et indicateurs clés, avec animations et filtres interactifs.",
+      "skills": ["React", "Vue", "Gestion d’état", "Charting", "UX/UI Design", "Front-end interactif"]
+    }
+  },
+  {
+    "slug": "hci-fundamentals",
+    "color": "#FF3B8D",
+    "tags": ["MOOC", "UX/IHM"],
+    "type": "MOOC",
     "status": "Complété",
     "en": {
-      "title": "Design System Figma",
-      "description": "Création d'un design system complet avec composants réutilisables, tokens de design et documentation interactive.",
-      "skills": ["Figma", "Design System", "UI/UX", "Component Library"]
+      "title": "Human-Computer Interaction I: Fundamentals and Design Principles",
+      "description": "MOOC sur les principes fondamentaux de l’interaction homme-machine, conception centrée utilisateur et bonnes pratiques UX.",
+      "skills": ["UX/UI", "Design Principles", "HCI", "User-Centered Design"],
+      "link": "https://www.edx.org/learn/human-computer-interaction/the-georgia-institute-of-technology-human-computer-interaction-i-fundamentals-design-principles?irclickid=R8V20D2cFxyZWAzUwrzf6yKbUku1xjSUtWFzxU0&utm_source=affiliate&utm_medium=Class%20Central&utm_campaign=Harvard%27s%20Computer%20Science%20for%20Python%20Programming_&utm_content=TEXT_LINK&irgwc=1&afsrc=1"
     },
     "fr": {
-      "title": "Design System Figma",
-      "description": "Création d'un design system complet avec composants réutilisables, tokens de design et documentation interactive.",
-      "skills": ["Figma", "Design System", "UI/UX", "Component Library"]
+      "title": "Interaction Homme-Machine I : Fondamentaux et principes de conception",
+      "description": "MOOC sur les principes fondamentaux de l’interaction homme-machine, conception centrée utilisateur et bonnes pratiques UX.",
+      "skills": ["UX/UI", "Principes de design", "IHM", "Conception centrée utilisateur"],
+      "link": "https://www.edx.org/learn/human-computer-interaction/the-georgia-institute-of-technology-human-computer-interaction-i-fundamentals-design-principles?irclickid=R8V20D2cFxyZWAzUwrzf6yKbUku1xjSUtWFzxU0&utm_source=affiliate&utm_medium=Class%20Central&utm_campaign=Harvard%27s%20Computer%20Science%20for%20Python%20Programming_&utm_content=TEXT_LINK&irgwc=1&afsrc=1"
     }
   },
   {
-    "slug": "deep-learning-mooc",
-    "color": "#FF6B9D",
-    "tags": ["IA/Data", "Apprentissage/Veille"],
+    "slug": "ibm-data-science",
+    "color": "#FFC72C",
+    "tags": ["MOOC", "Data"],
     "type": "MOOC",
     "status": "En cours",
-    "progress": 75,
     "en": {
-      "title": "Deep Learning Specialization",
-      "description": "Cours complet d'Andrew Ng sur le deep learning : réseaux de neurones, CNN, RNN, et projets pratiques.",
-      "skills": ["Deep Learning", "TensorFlow", "Neural Networks", "Python"]
+      "title": "IBM Data Science Professional Certificate",
+      "description": "Formation complète en science des données : Python, SQL, data analysis, data visualization et machine learning.",
+      "skills": ["Python", "SQL", "Data Analysis", "Data Visualization", "Machine Learning"],
+      "link": "https://www.coursera.org/professional-certificates/ibm-data-science?utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_ibm-data-science_ibm_ftcof_professional-certificates_cx_dr_bau_gg_sem_pr_s1_en_m_hyb_24-02_x"
     },
     "fr": {
-      "title": "Spécialisation Deep Learning",
-      "description": "Cours complet d'Andrew Ng sur le deep learning : réseaux de neurones, CNN, RNN, et projets pratiques.",
-      "skills": ["Deep Learning", "TensorFlow", "Neural Networks", "Python"]
+      "title": "Certification Professionnelle Data Science IBM",
+      "description": "Formation complète en science des données : Python, SQL, analyse et visualisation de données, apprentissage automatique.",
+      "skills": ["Python", "SQL", "Analyse de données", "Visualisation de données", "Machine Learning"],
+      "link": "https://www.coursera.org/professional-certificates/ibm-data-science?utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_ibm-data-science_ibm_ftcof_professional-certificates_cx_dr_bau_gg_sem_pr_s1_en_m_hyb_24-02_x"
     }
   },
   {
-    "slug": "aviation-data-dashboard",
-    "color": "#FFD93D",
-    "tags": ["Aérien/Transport", "IA/Data", "Développement"],
-    "type": "Prototype",
-    "status": "Complété",
+    "slug": "uva-darden-designbiz",
+    "color": "#62E0D5",
+    "tags": ["MOOC", "Innovation"],
+    "type": "MOOC",
+    "status": "Prévu",
     "en": {
-      "title": "Aviation Data Dashboard",
-      "description": "Dashboard temps réel des données de vols : trajectoires, altitudes, vitesses. Visualisation avec D3.js et WebGL.",
-      "skills": ["D3.js", "Data Visualization", "React", "Real-time Data"]
+      "title": "Design Thinking for Business Innovation",
+      "description": "Cours sur la méthodologie Design Thinking pour innover et prototyper des solutions centrées utilisateur.",
+      "skills": ["Design Thinking", "Innovation", "Prototyping"],
+      "link": "https://www.coursera.org/learn/uva-darden-designbiz"
     },
     "fr": {
-      "title": "Tableau de bord données aéronautiques",
-      "description": "Dashboard temps réel des données de vols : trajectoires, altitudes, vitesses. Visualisation avec D3.js et WebGL.",
-      "skills": ["D3.js", "Data Visualization", "React", "Real-time Data"]
+      "title": "Design Thinking pour l’innovation business",
+      "description": "Cours sur la méthodologie Design Thinking pour innover et prototyper des solutions centrées utilisateur.",
+      "skills": ["Design Thinking", "Innovation", "Prototypage"],
+      "link": "https://www.coursera.org/learn/uva-darden-designbiz"
     }
   },
   {
-    "slug": "ux-testing-methodology",
-    "color": "#9D4EDD",
-    "tags": ["UX/IHM", "Apprentissage/Veille"],
-    "type": "Ressource",
-    "status": "Publié",
+    "slug": "anthropic-ai",
+    "color": "#FF6B9D",
+    "tags": ["MOOC", "IA"],
+    "type": "MOOC",
+    "status": "Prévu",
     "en": {
-      "title": "UX Testing Methodology Guide",
-      "description": "Méthodologies complètes de test UX : user testing, A/B testing, heatmaps et métriques d'engagement.",
-      "skills": ["UX Research", "User Testing", "Analytics", "A/B Testing"]
+      "title": "Anthropic AI Training",
+      "description": "Formations en ligne sur les fondamentaux de l’IA, sécurité et éthique des modèles.",
+      "skills": ["AI", "Ethics", "Safety"],
+      "link": "https://anthropic.skilljar.com"
     },
     "fr": {
-      "title": "Guide de méthodologie de test UX",
-      "description": "Méthodologies complètes de test UX : user testing, A/B testing, heatmaps et métriques d'engagement.",
-      "skills": ["UX Research", "User Testing", "Analytics", "A/B Testing"]
+      "title": "Formation IA Anthropic",
+      "description": "Formations en ligne sur les fondamentaux de l’IA, sécurité et éthique des modèles.",
+      "skills": ["IA", "Éthique", "Sécurité"],
+      "link": "https://anthropic.skilljar.com"
     }
   },
   {
-    "slug": "typescript-advanced-patterns",
+    "slug": "codepath",
     "color": "#3A86FF",
-    "tags": ["Développement", "Apprentissage/Veille"],
-    "type": "Article",
-    "status": "Publié",
+    "tags": ["MOOC", "Développement"],
+    "type": "MOOC",
+    "status": "Prévu",
     "en": {
-      "title": "Advanced TypeScript Patterns",
-      "description": "Patterns avancés TypeScript : generics, decorators, conditional types et utility types pour du code type-safe.",
-      "skills": ["TypeScript", "Advanced Patterns", "OOP"]
+      "title": "CodePath Courses",
+      "description": "Programmes intensifs de développement mobile, web et sécurité pour développeurs.",
+      "skills": ["Web Development", "Mobile Development", "Security"],
+      "link": "https://www.codepath.org"
     },
     "fr": {
-      "title": "Patterns TypeScript avancés",
-      "description": "Patterns avancés TypeScript : generics, decorators, conditional types et utility types pour du code type-safe.",
-      "skills": ["TypeScript", "Advanced Patterns", "OOP"]
+      "title": "Cours CodePath",
+      "description": "Programmes intensifs de développement mobile, web et sécurité pour développeurs.",
+      "skills": ["Développement Web", "Développement Mobile", "Sécurité"],
+      "link": "https://www.codepath.org"
     }
   },
   {
-    "slug": "ml-pipeline-optimization",
+    "slug": "sustainable-aviation",
     "color": "#FB5607",
-    "tags": ["IA/Data"],
-    "type": "Exercice",
-    "status": "Complété",
+    "tags": ["MOOC", "Aérien/Transport", "Innovation"],
+    "type": "MOOC",
+    "status": "Prévu",
     "en": {
-      "title": "ML Pipeline Optimization",
-      "description": "Optimisation d'un pipeline ML complet : data preprocessing, feature engineering, model selection et hyperparameter tuning.",
-      "skills": ["MLOps", "Python", "Scikit-learn", "Data Engineering"]
+      "title": "Sustainable Aviation Futures Masterclass",
+      "description": "Cours sur les stratégies et innovations pour un transport aérien durable.",
+      "skills": ["Sustainability", "Aviation", "Innovation"],
+      "link": "https://www.sustainableaviationfutures.com/training-courses/safmasterclass"
     },
     "fr": {
-      "title": "Optimisation du pipeline ML",
-      "description": "Optimisation d'un pipeline ML complet : data preprocessing, feature engineering, model selection et hyperparameter tuning.",
-      "skills": ["MLOps", "Python", "Scikit-learn", "Data Engineering"]
+      "title": "Masterclass Aviation Durable",
+      "description": "Cours sur les stratégies et innovations pour un transport aérien durable.",
+      "skills": ["Durabilité", "Aérien", "Innovation"],
+      "link": "https://www.sustainableaviationfutures.com/training-courses/safmasterclass"
     }
   },
   {
-    "slug": "accessible-components-library",
+    "slug": "python-freecodecamp",
     "color": "#06FFA5",
-    "tags": ["UX/IHM", "Développement"],
-    "type": "Prototype",
-    "status": "Complété",
+    "tags": ["MOOC", "Développement", "Python"],
+    "type": "MOOC",
+    "status": "En cours",
     "en": {
-      "title": "Accessible Components Library",
-      "description": "Bibliothèque de composants React accessibles : ARIA labels, keyboard navigation, screen reader support.",
-      "skills": ["A11y", "React", "Accessibility", "Web Standards"]
+      "title": "Python Programming",
+      "description": "Parcours FreeCodeCamp pour apprendre Python : syntaxe, structures de données, fonctions et projets pratiques.",
+      "skills": ["Python", "Data Structures", "Functions", "Algorithms", "Projects"],
+      "link": "https://www.freecodecamp.org/learn/python-v9/"
     },
     "fr": {
-      "title": "Bibliothèque de composants accessibles",
-      "description": "Bibliothèque de composants React accessibles : ARIA labels, keyboard navigation, screen reader support.",
-      "skills": ["A11y", "React", "Accessibility", "Web Standards"]
+      "title": "Apprentissage Python",
+      "description": "Parcours FreeCodeCamp pour apprendre Python : syntaxe, structures de données, fonctions et projets pratiques.",
+      "skills": ["Python", "Structures de données", "Fonctions", "Algorithmes", "Projets"],
+      "link": "https://www.freecodecamp.org/learn/python-v9/"
+    }
+  },
+  {
+    "slug": "python-project",
+    "color": "#06FFA5",
+    "tags": ["Prototype", "Développement", "Python"],
+    "type": "Prototype",
+    "status": "En cours",
+    "en": {
+      "title": "Python Automation Script",
+      "description": "Projet Python pour mettre en pratique les notions apprises : lecture/écriture de fichiers, traitement de données et automatisation de tâches.",
+      "skills": ["Python", "Data Processing", "Automation", "File Handling"]
+    },
+    "fr": {
+      "title": "Script Python d’automatisation",
+      "description": "Projet Python pour mettre en pratique les notions apprises : lecture/écriture de fichiers, traitement de données et automatisation de tâches.",
+      "skills": ["Python", "Traitement de données", "Automatisation", "Lecture/Écriture de fichiers"]
+    }
+  },
+  {
+    "slug": "c-programming-openclassrooms",
+    "color": "#3A86FF",
+    "tags": ["MOOC", "Développement", "C"],
+    "type": "MOOC",
+    "status": "En cours",
+    "en": {
+      "title": "Learn C Programming",
+      "description": "Cours OpenClassrooms pour apprendre les bases et concepts avancés de la programmation en C.",
+      "skills": ["C", "Algorithms", "Pointers", "Memory Management"],
+      "link": "https://openclassrooms.com/fr/courses/1894236-apprenez-a-programmer-en-c"
+    },
+    "fr": {
+      "title": "Apprendre à programmer en C",
+      "description": "Cours OpenClassrooms pour apprendre les bases et concepts avancés de la programmation en C.",
+      "skills": ["C", "Algorithmes", "Pointeurs", "Gestion de mémoire"],
+      "link": "https://openclassrooms.com/fr/courses/1894236-apprenez-a-programmer-en-c"
+    }
+  },
+  {
+    "slug": "c-project",
+    "color": "#3A86FF",
+    "tags": ["Prototype", "Développement", "C"],
+    "type": "Prototype",
+    "status": "En cours",
+    "en": {
+      "title": "Mini Game in C",
+      "description": "Petit jeu en C pour mettre en pratique les connaissances : gestion de mémoire, structures, fonctions et logique algorithmique.",
+      "skills": ["C", "Algorithms", "Memory Management", "Structures", "Functions"]
+    },
+    "fr": {
+      "title": "Mini-jeu en C",
+      "description": "Petit jeu en C pour mettre en pratique les connaissances : gestion de mémoire, structures, fonctions et logique algorithmique.",
+      "skills": ["C", "Algorithmes", "Gestion mémoire", "Structures", "Fonctions"]
     }
   }
 ]
