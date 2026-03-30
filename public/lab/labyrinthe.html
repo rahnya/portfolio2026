@@ -671,10 +671,10 @@ function buildGallery(){
   const items=[
     {emoji:'🎙️',label:'Témoignage sur ma formation pour Thotis"',caption:'BUT MMI  : témoignage par une étudiante de 3e année',link:'https://www.youtube.com/watch?v=MhuDBgArMYQ'},
     {emoji:'📰',label:'Article par l Université de Toulon"',caption:'Atelier Sculpture & Volume — IUT Toulon',link:'https://www.univ-tln.fr/Une-plongee-dans-l-art-avec-l-atelier-Sculpture-et-Volume-de-l.html'},
-    {emoji:'🎤',label:'Conférence Web\nDevoxx Paris',caption:'Workshop "Three.js pour les designers"'},
-    {emoji:'✍️',label:'Blog Smashing\nMagazine',caption:'Invited post: "CSS Artistry"'},
-    {emoji:'📺',label:'Interview YouTube\n"Code & Café"',caption:'Spécial parcours atypique devs'},
-    {emoji:'🏆',label:'Prix Design\nAwwwards HM',caption:'Honorable Mention — ce portfolio !'},
+    {emoji:'🏆',label:'Nuit Du Code',caption:'En vidéo on me voit prendre le lead sur le projet en regroupant ma team pour brainstorming', link:'https://isen-mediterranee.fr/la-nuit-du-code-2026-prend-de-lampleur-au-palais-neptune/'},
+    {emoji:'🎤',label:'Association TOULAN',caption:'Secrétaire de lassocitation, présentation du dossier de sponsoring aux prospects et gestion des contarts avec eux ensuite', link:'https://toulan.netlify.app/'},
+    {emoji:'📺',label:'BDE MM IN',caption:'Élue dans les conseils de vie étudiante, je prends part aux débats, et suis présente pourpromouvoir ma formation', link:'https://www.instagram.com/bde_mm_in/'},
+    {emoji:'✍️',label:'Weproc',caption:'Présentation des membres de l entreprise', link:'https://www.weproc.com/'},
   ];
   return `<div class="gallery-grid">${items.map((it,i)=>`
     <a class="gallery-item" href="${it.link}" target="_blank" rel="noopener" onclick="showNotif('→ Ouverture : ${it.caption.replace(/'/g,"\\'")}')">
