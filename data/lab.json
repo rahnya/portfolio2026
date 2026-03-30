@@ -1,4 +1,22 @@
 [
+  
+  {
+    "slug": "epitech-coding-club",
+    "color": "#00AEEF",
+    "tags": ["Development"],
+    "type": "Prototype",
+    "status": "Complété",
+    "en": {
+      "title": "Epitech Coding Club Participation",
+      "description": "This experience reflects my early engagement with programming through the Epitech Coding Club in Rennes. After choosing to stop my NSI specialization in high school, I wanted to stay connected to coding, which led me to join these workshops. The Coding Club is a series of free, hands-on programming sessions led by Epitech students, designed to introduce young people to development through concrete projects such as games, web applications, or interactive programs. Participating in these sessions allowed me to maintain and strengthen my interest in programming in a more practical and collaborative environment. Recently, the Epitech team reached out again, and I am now considering getting involved either as a participant or by helping animate workshops, contributing to making tech more accessible to others.",
+      "skills": ["Python", "HTML", "CSS", "JavaScript"]
+    },
+    "fr": {
+      "title": "Participation au Coding Club Epitech",
+      "description": "Cette expérience correspond à mon premier engagement personnel dans le développement en dehors du cadre scolaire, à travers le Coding Club d’Epitech à Rennes. Après avoir arrêté la spécialité NSI au lycée, j’ai ressenti le besoin de continuer à pratiquer le code, ce qui m’a amenée à rejoindre ces ateliers. Les Coding Clubs sont des sessions gratuites et pratiques, animées par des étudiants d’Epitech, qui permettent de découvrir la programmation à travers des projets concrets comme des jeux, des sites web ou des programmes interactifs. Cette expérience m’a permis de maintenir mon intérêt pour le développement tout en découvrant une approche plus libre, collaborative et orientée pratique. Récemment, l’équipe Epitech m’a recontactée, et je suis aujourd’hui ouverte à y participer de nouveau ou à contribuer à l’animation des ateliers.",
+      "skills": ["Data Processing", "UX/UI Design", "Web Mapping", "Leaflet", "Mapbox", "Storytelling Visuel"]
+    }
+  },
   {
     "slug": "flightfootprint",
     "color": "#FFD93D",
@@ -20,7 +38,7 @@
   {
     "slug": "multimodal-transport-simulator",
     "color": "#62E0D5",
-    "tags": ["Développement", "UX/IHM", "Aérien/Transport"],
+    "tags": ["Development", "UX/IHM", "Aérien/Transport"],
     "type": "Prototype",
     "status": "En cours",
     "en": {
@@ -37,7 +55,7 @@
   {
     "slug": "project-dashboard",
     "color": "#A78BFA",
-    "tags": ["Développement", "UX/IHM", "Aérien/Transport"],
+    "tags": ["Development", "UX/IHM", "Aérien/Transport"],
     "type": "Prototype",
     "progress":60,
     "status": "En cours",
@@ -135,7 +153,7 @@
   {
     "slug": "codepath",
     "color": "#3A86FF",
-    "tags": ["MOOC", "Développement"],
+    "tags": ["MOOC", "Development"],
     "type": "MOOC",
     "progress":0,
     "status": "Prévu",
@@ -175,7 +193,7 @@
   {
     "slug": "python-freecodecamp",
     "color": "#06FFA5",
-    "tags": ["MOOC", "Développement", "Python"],
+    "tags": ["MOOC", "Development", "Python"],
     "type": "MOOC",
     "progress":20,
     "status": "En cours",
@@ -195,7 +213,7 @@
   {
     "slug": "python-project",
     "color": "#06FFA5",
-    "tags": ["Développement", "Python"],
+    "tags": ["Development", "Python"],
     "type": "Prototype",
     "progress":0,
     "status": "En cours",
@@ -213,7 +231,7 @@
   {
     "slug": "c-programming-openclassrooms",
     "color": "#3A86FF",
-    "tags": ["MOOC", "Développement", "C"],
+    "tags": ["MOOC", "Development", "C"],
     "type": "MOOC",
     "progress":40,
     "status": "En cours",
@@ -233,7 +251,7 @@
   {
     "slug": "c-project",
     "color": "#3A86FF",
-    "tags": ["Développement", "C"],
+    "tags": ["Development", "C"],
     "type": "Prototype",
     "progress":0,
     "status": "En cours",

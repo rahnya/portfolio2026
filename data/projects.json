@@ -148,6 +148,43 @@
     }
   },
   {
+    "slug": "epitech-coding-club",
+    "categories": ["community", "tech", "education"],
+    "color": "#00AEEF",
+    "en": {
+      "title": "Epitech Coding Club Participation",
+      "description": "This experience reflects my early engagement with programming through the Epitech Coding Club in Rennes. After choosing to stop my NSI specialization in high school, I wanted to stay connected to coding, which led me to join these workshops. The Coding Club is a series of free, hands-on programming sessions led by Epitech students, designed to introduce young people to development through concrete projects such as games, web applications, or interactive programs. Participating in these sessions allowed me to maintain and strengthen my interest in programming in a more practical and collaborative environment. Recently, the Epitech team reached out again, and I am now considering getting involved either as a participant or by helping animate workshops, contributing to making tech more accessible to others.",
+      "shortDescription": "Coding workshops at Epitech to explore programming outside school.",
+      "technologies": ["Python", "HTML", "CSS", "JavaScript"],
+      "features": [
+        "Participation in hands-on coding workshops",
+        "Discovery of programming through practical projects",
+        "Learning in a collaborative and beginner-friendly environment",
+        "Exposure to multiple technologies (web, games, scripting)",
+        "Potential involvement in workshop facilitation"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://www.epitech.eu/ecole-informatique-apres-bac/egalite-diversite-dans-la-tech/",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Participation au Coding Club Epitech",
+      "description": "Cette expérience correspond à mon premier engagement personnel dans le développement en dehors du cadre scolaire, à travers le Coding Club d’Epitech à Rennes. Après avoir arrêté la spécialité NSI au lycée, j’ai ressenti le besoin de continuer à pratiquer le code, ce qui m’a amenée à rejoindre ces ateliers. Les Coding Clubs sont des sessions gratuites et pratiques, animées par des étudiants d’Epitech, qui permettent de découvrir la programmation à travers des projets concrets comme des jeux, des sites web ou des programmes interactifs. Cette expérience m’a permis de maintenir mon intérêt pour le développement tout en découvrant une approche plus libre, collaborative et orientée pratique. Récemment, l’équipe Epitech m’a recontactée, et je suis aujourd’hui ouverte à y participer de nouveau ou à contribuer à l’animation des ateliers.",
+      "shortDescription": "Ateliers de code Epitech pour continuer à programmer hors lycée.",
+      "technologies": ["Python", "HTML", "CSS", "JavaScript"],
+      "features": [
+        "Participation à des ateliers de programmation pratiques",
+        "Découverte du code via des projets concrets",
+        "Apprentissage dans un environnement collaboratif",
+        "Initiation à plusieurs technologies web et programmation",
+        "Possibilité de contribution à l’animation des ateliers"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://www.epitech.eu/ecole-informatique-apres-bac/egalite-diversite-dans-la-tech/",
+      "screenshots": []
+    }
+  },
+  {
     "slug": "ampa-animal-adoption",
     "categories": ["web","design"],
     "color": "#25cdd0",
