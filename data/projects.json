@@ -111,6 +111,43 @@
     }
   },
   {
+    "slug": "collective-intelligence-report",
+    "categories": ["school", "research"],
+    "color": "#6C63FF",
+    "en": {
+      "title": "Collective Intelligence: Humans & Machines",
+      "description": "This academic project explores the concept of collective intelligence between humans and machines through a structured research report. The objective was to analyze how collaboration between human capabilities and artificial intelligence systems can enhance decision-making, productivity, and innovation. The work combines theoretical analysis with concrete examples from various sectors such as healthcare, industry, and everyday technologies. It also critically examines the limitations of this collaboration, including ethical concerns, automation risks, and societal impacts. The project highlights the importance of regulation, human oversight, and responsible integration of AI systems. Carried out over a short period, hence the brief development of the subject which could have been explored in much greater depth.",
+      "shortDescription": "Research report on human-machine collective intelligence.",
+      "technologies": ["Research", "Writing", "Analysis", "Documentation"],
+      "features": [
+        "Structured research report with multiple sections",
+        "Analysis of real-world use cases (healthcare, industry, AI tools)",
+        "Critical reflection on limits and risks of AI collaboration",
+        "Discussion on ethics, regulation, and societal impact",
+        "Collaborative academic work"
+      ],
+      "githubUrl": "",
+      "liveUrl": "Dossier_intelligence_collective_entre hommes_et_machines.pdf",
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Intelligence collective : humains & machines",
+      "description": "Ce projet académique prend la forme d’un dossier de recherche explorant le concept d’intelligence collective entre humains et machines. L’objectif était d’analyser comment la collaboration entre les capacités humaines et les systèmes d’intelligence artificielle peut améliorer la prise de décision, la productivité et l’innovation. Le travail combine une analyse théorique avec des exemples concrets issus de différents secteurs comme la santé, l’industrie ou les outils du quotidien. Il propose également une réflexion critique sur les limites de cette collaboration, notamment les enjeux éthiques, les risques liés à l’automatisation et les impacts sociétaux. Le projet met en avant l’importance de l’encadrement, du rôle humain et d’une intégration responsable de l’IA. Réalisé sur une courte période, d'où le court développemen du sujet qui aurait pu être bien plus approfondi.",
+      "shortDescription": "Dossier de recherche sur l’intelligence collective homme-machine.",
+      "technologies": ["Recherche", "Rédaction", "Analyse", "Documentation"],
+      "features": [
+        "Dossier structuré (introduction, analyse, limites, encadrement)",
+        "Études de cas concrets (santé, industrie, IA du quotidien)",
+        "Réflexion critique sur les limites et dérives",
+        "Analyse des enjeux éthiques et réglementaires",
+        "Travail collaboratif académique"
+      ],
+      "githubUrl": "",
+      "liveUrl": "Dossier_intelligence_collective_entre hommes_et_machines.pdf",
+      "screenshots": []
+    }
+  },
+  {
     "slug": "ampa-animal-adoption",
     "categories": ["web","design"],
     "color": "#25cdd0",
