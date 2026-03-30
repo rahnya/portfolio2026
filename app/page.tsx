@@ -240,7 +240,7 @@ function LabyrinthTeaser() {
             <p className="font-body text-white/50 text-base max-w-xl leading-relaxed">{c.subtitle}</p>
           </div>
           <a
-            href="/lab/labyrinthe-3d/fullscreen"
+            href="/lab/labyrinthe.html"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[#FF3B8D]/30 bg-[#FF3B8D]/8 text-[#FF96B3] hover:bg-[#FF3B8D]/15 hover:border-[#FF3B8D]/50 font-body text-sm font-medium transition-all duration-200 group"
