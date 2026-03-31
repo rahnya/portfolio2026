@@ -1,14 +1,15 @@
 {
   "en": {
     "nav": {
-      "home": "Home",
-      "projects": "Projects",
-      "lab": "Lab",
-      "appearances": "Appearances",
-      "contact": "Contact",
-      "cv": "Download CV",
-      "recommendations": "Recommendations"
-    },
+    "home": "Home",
+    "projects": "Projects",
+    "lab": "Lab",
+    "pepite": "Pépite",
+    "appearances": "Appearances",
+    "contact": "Contact",
+    "cv": "Download CV",
+    "recommendations": "Recommendations"
+  },
     "hero": {
       "greeting": "Hello, I'm",
       "name": "Rahnya Lanyeri",
@@ -86,14 +87,15 @@
   },
   "fr": {
     "nav": {
-      "home": "Accueil",
-      "projects": "Projets",
-      "lab": "Lab",
-      "appearances": "Apparitions",
-      "contact": "Contact",
-      "cv": "Télécharger CV",
-      "recommendations": "Recommandations"
-    },
+    "home": "Accueil",
+    "projects": "Projets",
+    "lab": "Lab",
+    "pepite": "Pépite",
+    "appearances": "Apparitions",
+    "contact": "Contact",
+    "cv": "Télécharger CV",
+    "recommendations": "Recommandations"
+  },
     "hero": {
       "greeting": "Bonjour, je suis",
       "name": "Rahnya Lanyeri",
