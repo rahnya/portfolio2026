@@ -21,13 +21,13 @@ export default function RecommendationsPage() {
 
         {/* Header */}
         <div className="mb-16">
-          <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">
+          <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uuppercase tracking-widest mb-4">
             — Testimonials
           </p>
-          <h1 className="font-display font-extrabold text-5xl text-white mb-4">
+          <h1 className="font-display font-extrabold text-5xl text-[#0F2847] dark:text-white mb-4">
             {t.recommendations.title}
           </h1>
-          <p className="font-body text-white/50 text-lg">
+          <p className="font-body text-[#0F2847] dark:text-white/50 text-lg">
             {t.recommendations.subtitle}
           </p>
         </div>

@@ -62,13 +62,13 @@ export default function LabPage() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16">
-          <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">
+          <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
             — Lab & Expérimentations
           </p>
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-white mb-4">
+          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-[#0F2847] dark:text-white mb-4">
             {lang === "en" ? "Lab" : "Labo"}
           </h1>
-          <p className="font-body text-white/50 text-lg max-w-2xl">
+          <p className="font-body text-[#0F2847] dark:text-white/50 text-lg max-w-2xl">
             {lang === "en"
               ? "Explorations, learnings, and ongoing projects of a technology enthusiast. I'm still adding them; details on each training course taken/certification earned, as well as on each project, will be available by the end of the week (before April 5th)."
               : "Explorations, apprentissages et projets en cours d'une passionnée de technologie. Je suis encore en train de les ajouter, les détails sur chaque formation suivie/certification passée, ainsi que sur chaque projet sera diponible di'ci la fin de semaine (soit avant le 5 avril)"}

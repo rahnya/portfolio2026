@@ -50,7 +50,7 @@ export default function ContactPage() {
   };
 
   const contacts = [
-    { icon: <Mail className="w-5 h-5" />, label: "Email", value: "rahnyapro@gmail.com", href: "mailto:rahnyapro@gmail.com", color: "#FF3B8D" },
+    { icon: <Mail className="w-5 h-5" />, label: "Email", value: "rahnyapro@gmail.com", href: "mailto:rahnyapro@gmail.com", color: "#FF3B8D"},
     { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", value: "https://www.linkedin.com/in/rahnya-lanyeri/", href: "https://www.linkedin.com/in/rahnya-lanyeri", color: "#0077B5" },
     { icon: <Github className="w-5 h-5" />, label: "GitHub", value: "github.com/rahnya", href: "  https://github.com/rahnya", color: "#ffffff" },
     { icon: <BehanceIcon />, label: "Behance", value: "behance.net/rahnya_lanyeri", href: "https://www.behance.net/rahnya_lanyeri", color: "#1769FF" },
@@ -64,13 +64,13 @@ export default function ContactPage() {
 
         {/* Header */}
         <div className="mb-16">
-          <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">
+          <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
             — {t.contact.title}
           </p>
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-white mb-4">
+          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-[#0F2847] dark:text-white mb-4">
             {t.contact.title}
           </h1>
-          <p className="font-body text-white/50 text-lg max-w-xl">
+          <p className="font-body text-[#0F2847] dark:text-white/50 text-lg max-w-xl">
             {t.contact.subtitle}
           </p>
         </div>

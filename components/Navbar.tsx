@@ -26,9 +26,9 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "/", label: t.nav.home },
     { href: "/projects", label: t.nav.projects },
     { href: "/lab", label: t.nav.lab },
+    { href: "/pepite", label: t.nav.pepite },
     { href: "/appearances", label: t.nav.appearances },
     { href: "/contact", label: t.nav.contact },
   ];
@@ -47,6 +47,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2">
+          <img src="/favicon2.png" alt="Rahnya" className="w-6 h-6 rounded" />
           <span className="font-display font-bold text-xl text-white tracking-tight">
             Rahnya<span className="text-[#FF3B8D]">.</span>
           </span>
@@ -92,7 +93,7 @@ export default function Navbar() {
           <div className="w-px h-4 bg-white/10" />
 
           {/* Lang switcher */}
-          <div className="flex items-center gap-1 bg-white/5 rounded-full px-1 py-1 border border-white/10">
+          <div className="flex items-center gap-1 bg-white/5 rounded-full px-1 py-1 border dark:border-white/10">
             <button onClick={() => setLang("en")} className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
                 lang === "en" ? "bg-[#FF3B8D] text-white" : "text-white/50 hover:text-white"
               }`} > EN </button>

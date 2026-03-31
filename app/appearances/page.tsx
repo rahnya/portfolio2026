@@ -40,13 +40,13 @@ export default function AppearancesPage() {
 
         {/* Header */}
         <div className="mb-16">
-          <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">
+          <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
             — Press & Media
           </p>
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-white mb-4">
+          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-[#0F2847] dark:text-white mb-4">
             {t.appearances.title}
           </h1>
-          <p className="font-body text-white/50 text-lg max-w-2xl">
+          <p className="font-body text-[#0F2847] dark:text-white/50 text-lg max-w-2xl">
             {t.appearances.subtitle}
           </p>
         </div>
