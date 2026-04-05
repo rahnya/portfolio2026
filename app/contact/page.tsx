@@ -50,13 +50,16 @@ export default function ContactPage() {
   };
 
   const contacts = [
-    { icon: <Mail className="w-5 h-5" />, label: "Email", value: "rahnyapro@gmail.com", href: "mailto:rahnyapro@gmail.com", color: "#FF3B8D"},
+    { icon: <Mail className="w-5 h-5" />, label: "Email", value: "rahnyapro@gmail.com", href: "mailto:rahnyapro@gmail.com", color: "#FF6B35", darkColor: "#FF3B8D" },
     { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", value: "https://www.linkedin.com/in/rahnya-lanyeri/", href: "https://www.linkedin.com/in/rahnya-lanyeri", color: "#0077B5" },
     { icon: <Github className="w-5 h-5" />, label: "GitHub", value: "github.com/rahnya", href: "  https://github.com/rahnya", color: "#ffffff" },
     { icon: <BehanceIcon />, label: "Behance", value: "behance.net/rahnya_lanyeri", href: "https://www.behance.net/rahnya_lanyeri", color: "#1769FF" },
   ];
 
-  const inputClass = "w-full bg-[#183153]/30 border border-white/10 rounded-xl px-4 py-3 font-body text-sm text-white placeholder-white/25 focus:outline-none focus:border-[#FF3B8D]/50 focus:bg-[#183153]/50 transition-all duration-200";
+  const inputClass = "w-full bg-[#183153]/30 border border-white/10 rounded-xl px-4 py-3 font-body text-sm text-[#0F2847] dark:text-white placeholder-white/25 " +
+  "focus:outline-none " +
+  "focus:border-[#FF6B35] dark:focus:border-[#FF3B8D] " +
+  "focus:bg-[#183153]/50 dark:focus:bg-[#183153]/50 transition-all duration-200";
 
   return (
     <div className="min-h-screen pt-24 pb-20 px-6">
@@ -78,10 +81,10 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
           {/* Form */}
-          <div className="bg-[#183153]/20 border border-white/8 rounded-2xl p-8">
+          <div className="bg-[#0F2847]/20 dark:bg-[#183153]/20 border border-[#183153] border dark:border-white/8 rounded-2xl p-8">
             <div className="space-y-4">
               <div>
-                <label className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.name}
                 </label>
                 <input
@@ -94,7 +97,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.email}
                 </label>
                 <input
@@ -107,7 +110,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.message}
                 </label>
                 <textarea
@@ -137,7 +140,7 @@ export default function ContactPage() {
               <button
                 onClick={handleSubmit}
                 disabled={loading}
-                className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#FF3B8D] hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:shadow-[0_0_30px_rgba(255,59,141,0.25)] group mt-2 ${loading ? "opacity-60 cursor-not-allowed" : ""}`}
+                className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#FF6B35] dark:bg-[#FF3B8D] hover:bg-[#FF6B35]/90 dark:hover:bg-[#FF3B8D]/90  text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:shadow-[0_0_30px_rgba(255,59,141,0.25)] group mt-2 ${loading ? "opacity-60 cursor-not-allowed" : ""}`}
               >
                 {loading ? (
                   <span className="animate-spin border-2 border-white/50 border-t-white w-4 h-4 rounded-full" />
@@ -151,27 +154,20 @@ export default function ContactPage() {
 
           {/* Direct contacts */}
           <div className="flex flex-col justify-center space-y-4">
-            <p className="font-mono text-xs text-white/40 uppercase tracking-widest mb-2">
+            <p className="font-mono text-xs text-[#0F2847]/60 dark:text-white/40 uppercase tracking-widest mb-2">
               {t.contact.or}
             </p>
 
             {contacts.map((c, i) => (
-              <a
-                key={i}
-                href={c.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-hover group flex items-center gap-4 bg-[#183153]/20 border border-white/8 rounded-xl p-5 hover:border-white/15"
-              >
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-110"
-                  style={{ backgroundColor: `${c.color}15`, color: c.color }}
-                >
+              <a key={i} href={c.href} target="_blank" rel="noopener noreferrer" className="card-hover group flex items-center gap-4 bg-[#183153]/20 border border-white/8 rounded-xl p-5 hover:border-white/15">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-110" style={{ backgroundColor: `${c.color}15`, color: c.color }} >
                   {c.icon}
                 </div>
                 <div>
-                  <p className="font-mono text-xs text-white/40 uppercase tracking-wider">{c.label}</p>
-                  <p className="font-body text-sm text-white/80 group-hover:text-white transition-colors duration-200">
+                  <p className="font-mono text-xs text-white/40 dark:text-white/40  uppercase tracking-wider">
+                    {c.label}
+                  </p>
+                  <p className="font-body text-sm text-white/80 dark:text-white/80 group-hover:text-white transition-colors duration-200">
                     {c.value}
                   </p>
                 </div>
@@ -179,12 +175,12 @@ export default function ContactPage() {
             ))}
 
             {/* Availability note */}
-            <div className="mt-6 p-5 bg-[#FF3B8D]/5 border border-[#FF3B8D]/15 rounded-xl">
+            <div className="mt-6 p-5 bg-[#FF6B35]/5 dark:bg-[#FF3B8D]/5 border border-[#FF6B35]/15 border dark:border-[#FF3B8D]/15 rounded-xl">
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-2 h-2 rounded-full bg-[#FF3B8D] animate-pulse" />
-                <span className="font-mono text-xs text-[#FF96B3]">Currently Available</span>
+                <div className="w-2 h-2 rounded-full bg-[#FF6B35] dark:bg-[#FF3B8D] animate-pulse" />
+                <span className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D]">Currently Available</span>
               </div>
-              <p className="font-body text-xs text-white/40 leading-relaxed">
+              <p className="font-body text-xs text-[#FF6B35]/40 dark:text-white/40 leading-relaxed">
                 Open to internships, apprenticeships, and collaborative projects.
                 Typical response time: 24–48 hours.
               </p>
