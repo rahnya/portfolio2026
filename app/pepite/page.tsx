@@ -17,86 +17,80 @@ export default function PepitePage() {
     en: {
       title: "Pépite Méditerranée",
       subtitle: "Entrepreneurship & Innovation Hub",
-      hero: "Two ambitious projects reshaping how organizations think about wellbeing and digital transformation.",
-      cta: "Explore Projects",
+      hero: "Two ambitious projects transforming the way organizations think about well-being and digital transformation. It's where I develop my ideas, imagine solutions to real problems, and build businesses with a significant impact.",
+
+      intro: {
+        highlight: "Two complementary projects. One shared philosophy: solving problems that matter."
+      },
 
       projects: {
+        freelance: {
+          name: "Freelance Agency",
+          tagline: "High-quality web design & development for mission-driven organizations",
+          status: "Active - Taking Clients",
+
+          why: "The Problem",
+          whyText: "Nonprofits, associations, and early-stage startups need beautiful, functional websites. But traditional agencies charge €5k–€15k+ for a simple site. These organizations have limited budgets but big ambitions. They get stuck with templated solutions or outdated designs that undermine their credibility.",
+          solution: "The Solution",
+          solutionText: "I offer bespoke web design and development at sustainable, fair rates. Full UX/UI design process + clean code + collaborative workflow. For each project, clients also gain access to a curated network of specialists (photographers, copywriters, SEO experts) they can hire independently—building their own extended team.",
+          
+          team: "Rahnya (Full Stack Designer & Developer)",
+          impact: "Empowering social impact organizations with digital tools",
+        },
         snoozly: {
           name: "Snoozly",
           tagline: "Sleep pods for performance",
-          description:
-            "Innovative modular rest capsules designed for enterprises and universities. Addressing mental fatigue through micro-breaks and strategic recovery.",
-          highlights: [
-            "Connected sleep pods with smart access system",
-            "Automated hygiene & ventilation protocols",
-            "Location-based rental model (Sleep as a Service)",
-            "Eco-designed with FSC-certified materials",
-          ],
           status: "Prototype Phase",
+
+          why: "The Problem",
+          whyText: "Mental fatigue is structural in modern work and study environments. Stress, cognitive overload, and lack of recovery spaces directly impact both employee wellbeing and performance. Traditional solutions (gym memberships, meditation apps) don't address the root need: accessible rest.",
+          solution: "The Solution",
+          solutionText: "Snoozly deploys modular, connected sleep capsules designed for enterprises and universities. Each pod is a micro-recovery station—a 20-minute nap that resets mental clarity, reduces burnout risk, and improves focus. It's not a luxury; it's preventive health infrastructure.",
+
           team: "Rahnya (CTO), Mathilde (CRO), Luis Miguel (CFO)",
           impact:
             "Targeting 40 units deployed by Year 3 with +105k€ revenue projection",
-          cta: "View Business Plan",
-        },
-        freelance: {
-          name: "Freelance Agency",
-          tagline: "Affordable design & dev for social impact",
-          description:
-            "Boutique agency specializing in web design and development for nonprofits, associations, and early-stage startups. Building quality digital products without enterprise price tags.",
-          highlights: [
-            "Custom websites with full UX/UI design process",
-            "Affordable rates for mission-driven organizations",
-            "Collaborative workflow & brand consistency tools",
-            "Network of trusted specialists (photographers, copywriters, etc.)",
-          ],
-          status: "Active - Taking Clients",
-          team: "Rahnya (Full Stack Designer & Developer)",
-          impact: "Empowering social impact organizations with digital tools",
-          cta: "Start a Project",
-        },
+        }
       },
     },
 
     fr: {
       title: "Pépite Méditerranée",
       subtitle: "Hub Entrepreneurial & Innovation",
-      hero: "Deux projets ambitieux transformant la façon dont les organisations pensent le bien-être et la transformation digitale.",
-      cta: "Explorer les Projets",
+      hero: "Deux projets ambitieux transformant la façon dont les organisations pensent le bien-être et la transformation digitale. C'est là où je développe mes idées, où j'imagine des solutions à de vrais problèmes et construis des entreprises avec un impact significatif.",
+
+      intro: {
+        highlight: "Deux projets complémentaires. Une philosophie partagée : résoudre les problèmes qui comptent."
+      },
 
       projects: {
+        freelance: {
+          name: "Agence Freelance",
+          tagline: "Design web et développement de qualité pour organisations à mission",
+          status: "Actif - Accepte les Clients",
+
+          why: "Le Problème",
+          whyText: "Les organismes à but non lucratif, associations et startups ont besoin de beaux sites web fonctionnels. Mais les agences traditionnelles facturent 5k–15k€+ pour un simple site. Ces organisations ont des budgets limités mais de grandes ambitions. Elles sont coinçées avec des solutions templétées ou des designs obsolètes qui nuisent à leur crédibilité.",
+          solution: "La Solution",
+          solutionText: "Je propose du design web et du développement sur mesure à des tarifs justes et durables. Processus complet UX/UI + code propre + flux collaboratif. Pour chaque projet, les clients accèdent aussi à un réseau de spécialistes curés (photographes, rédacteurs, experts SEO) qu'ils peuvent embaucher directement—en construisant leur propre équipe étendue.",
+        
+          team: "Rahnya (Designer & Développeuse Full Stack)",
+          impact: "Donner aux organisations d'impact des outils digitaux",
+        },
         snoozly: {
           name: "Snoozly",
-          tagline: "Capsules de repos pour la performance",
-          description:
-            "Capsules de repos modulaires innovantes conçues pour les entreprises et universités. Répondre à la fatigue mentale par des micro-pauses et une récupération stratégique.",
-          highlights: [
-            "Capsules de sommeil connectées avec système d'accès intelligent",
-            "Protocoles d'hygiène & ventilation automatisés",
-            "Modèle de location par site (Sleep as a Service)",
-            "Éco-conçue avec matériaux FSC certifiés",
-          ],
+          tagline: "Repenser le bien-être au travail grâce à des capsules de sommeil intelligentes",
           status: "Phase Prototype",
+
+          why: "Le Problème",
+          whyText: "La fatigue mentale est structurelle dans les environnements de travail et d'étude modernes. Le stress, la surcharge cognitive et l'absence d'espaces de récupération impactent directement le bien-être et la performance. Les solutions traditionnelles (abonnements gym, apps de méditation) n'adressent pas le besoin fondamental : l'accès à du repos.",
+          solution: "La Solution",
+          solutionText: "Snoozly déploie des capsules de repos modulaires et connectées conçues pour les entreprises et universités. Chaque pod est une station de micro-récupération—une sieste de 20 minutes qui réinitialise la clarté mentale, réduit le risque de burnout et améliore la concentration. Ce n'est pas un luxe ; c'est une infrastructure de prévention santé.",
+          
           team: "Rahnya (CTO), Mathilde (CRO), Luis Miguel (CFO)",
           impact:
             "Ciblant 40 unités déployées à l'année 3 avec projection de +105k€ de revenus",
-          cta: "Voir le Business Plan",
-        },
-        freelance: {
-          name: "Agence Freelance",
-          tagline: "Design & dev abordable pour l'impact social",
-          description:
-            "Agence boutique spécialisée dans le design web et le développement pour organisations à but non lucratif, associations et startups en phase de démarrage.",
-          highlights: [
-            "Sites web personnalisés avec processus UX/UI complet",
-            "Tarifs abordables pour organisations à mission",
-            "Outils de flux collaboratif & cohérence de marque",
-            "Réseau de spécialistes validés (photographes, rédacteurs, etc.)",
-          ],
-          status: "Actif - Accepte les Clients",
-          team: "Rahnya (Designer & Développeuse Full Stack)",
-          impact: "Donner aux organisations d'impact des outils digitaux",
-          cta: "Lancer un Projet",
-        },
+        }
       },
     },
   };
@@ -107,49 +101,26 @@ export default function PepitePage() {
     projects[activeProject as keyof typeof projects];
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen pt-24 pb-20 px-6 ">
+      <div className="max-w-7xl mx-auto">
         {/* Hero */}
-        <div className="mb-32">
-          <div className="mb-8">
-            <span
-              className="inline-block font-mono text-xs px-4 py-2 rounded-full font-bold uppercase tracking-wider"
-              style={{ backgroundColor: `${primaryColor}20`, color: primaryColor }}
-            >
-              Side Projects
-            </span>
-          </div>
-
-          <h1 className="font-display font-extrabold text-6xl md:text-7xl lg:text-8xl text-white mb-6 leading-tight">
+        <div className="mb-16">
+          <p className="font-mono text-xs text-[#FF3B8D] dark:text-[#FF6B35] uppercase tracking-widest mb-4">
+            Side Projects
+          </p>
+          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-[#0F2847] dark:text-white mb-4">
             {current.title}
           </h1>
-
-          <p className="font-mono text-sm text-white/40 uppercase tracking-widest mb-8">
-            {current.subtitle}
-          </p>
-
-          <p className="font-body text-xl md:text-2xl text-white/70 max-w-3xl mb-12 leading-relaxed">
+          <p className="font-body text-[#0F2847] dark:text-white/50 text-lg max-w-2xl">
             {current.hero}
           </p>
-
-          <div className="flex gap-4 flex-wrap">
-            <a
-              href="#projects"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-body font-medium transition-all duration-300"
-              style={{ backgroundColor: primaryColor }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-            >
-              {current.cta}
-              <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
         </div>
+        
 
         {/* Projects Section */}
         <div id="projects" className="mb-32">
           {/* Toggle */}
-          <div className="flex gap-4 mb-16 border-b border-white/10 pb-8">
+          <div className="flex gap-4 my-4  border-white/10 ">
             {(["snoozly", "freelance"] as const).map((project) => (
               <button
                 key={project}
@@ -175,155 +146,34 @@ export default function PepitePage() {
             ))}
           </div>
 
-          {/* Project Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left - Content */}
+          {/* Why & Solution */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <div className="mb-6">
-                <span
-                  className="inline-block font-mono text-xs px-3 py-1 rounded-full font-bold mb-4"
-                  style={{
-                    backgroundColor: `${accentColor}20`,
-                    color: accentColor,
-                  }}
-                >
-                  {activeData.status}
-                </span>
-              </div>
-
-              <h2 className="font-display font-extrabold text-5xl text-white mb-3">
-                {activeData.name}
-              </h2>
-
-              <p
-                className="font-mono text-sm mb-8 uppercase tracking-wider"
-                style={{ color: primaryColor }}
-              >
-                {activeData.tagline}
-              </p>
-
-              <p className="font-body text-lg text-white/70 mb-8 leading-relaxed">
-                {activeData.description}
-              </p>
-
-              {/* Highlights */}
-              <div className="space-y-4 mb-8">
-                {activeData.highlights.map((highlight: string, idx: number) => (
-                  <div key={idx} className="flex gap-4">
-                    <Zap
-                      className="w-5 h-5 flex-shrink-0 mt-1"
-                      style={{ color: primaryColor }}
-                    />
-                    <p className="font-body text-white/60 text-sm">
-                      {highlight}
-                    </p>
-                  </div>
-                ))}
-              </div>
-
-              {/* Team & Impact */}
-              <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-6 mb-8">
-                <div className="mb-6">
-                  <p className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2">
-                    {lang === "en" ? "Team" : "Équipe"}
-                  </p>
-                  <p className="font-body text-white/80">{activeData.team}</p>
-                </div>
-                <div>
-                  <p className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2">
-                    {lang === "en" ? "Impact" : "Impact"}
-                  </p>
-                  <p className="font-body text-white/80">{activeData.impact}</p>
-                </div>
-              </div>
-
-              {/* CTA */}
-              <a
-                href={
-                  activeProject === "snoozly"
-                    ? "#"
-                    : "/contact"
-                }
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-body font-medium transition-all duration-300"
-                style={{ backgroundColor: accentColor }}
-                onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
-                onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-              >
-                {activeData.cta}
-                <ArrowRight className="w-4 h-4" />
-              </a>
+              <h3 className="font-display text-2xl font-bold mb-4"> {activeData.why}</h3>
+              <p className="font-body text-white/70 leading-relaxed">{activeData.whyText}</p>
             </div>
+            <div>
+              <h3 className="font-display text-2xl font-bold mb-4">{activeData.solution}</h3>
+              <p className="font-body text-white/70 leading-relaxed">{activeData.solutionText}</p>
+            </div>
+          </div>
 
-            {/* Right - Visual */}
-            <div className="relative h-96 lg:h-full min-h-96 rounded-3xl border border-white/8 overflow-hidden flex items-center justify-center"
-              style={{ backgroundColor: `${activeProject === "snoozly" ? "#62E0D5" : primaryColor}15` }}>
-              <div className="absolute inset-0 opacity-30"
-                style={{
-                  background: `radial-gradient(circle at 30% 50%, ${activeProject === "snoozly" ? "#62E0D5" : primaryColor}40 0%, transparent 70%)`,
-                }} />
-              <div className="relative z-10 text-center">
-                <div className="text-8xl mb-4">
-                  {activeProject === "snoozly" ? "💤" : "💻"}
-                </div>
-                <p className="font-display font-bold text-2xl text-white">
-                  {activeData.name}
+          {/* Team & Impact */}
+          <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-6 mt-12">
+            <div className="mb-6">
+              <p className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2">
+                {lang === "en" ? "Team" : "Équipe"}
+              </p>
+              <p className="font-body text-white/80">{activeData.team}</p>
+            </div>
+            <div>
+              <p className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2">
+                {lang === "en" ? "Impact" : "Impact"}
                 </p>
+                <p className="font-body text-white/80">{activeData.impact}</p>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Philosophy Section */}
-        <div className="mb-32">
-          <h2 className="font-display font-extrabold text-5xl text-white mb-16">
-            {lang === "en" ? "Pépite's Philosophy" : "La Philosophie de Pépite"}
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "🎯",
-                en: "Impact First",
-                fr: "L'impact d'abord",
-                desc_en:
-                  "Every project is about creating meaningful change, whether through wellness innovation or digital access.",
-                desc_fr:
-                  "Chaque projet vise à créer un changement significatif, à travers l'innovation bien-être ou l'accès digital.",
-              },
-              {
-                icon: "🔧",
-                en: "Practical Innovation",
-                fr: "Innovation Pratique",
-                desc_en:
-                  "Ideas that work. Prototypes that solve real problems. Solutions that scale.",
-                desc_fr:
-                  "Des idées qui marchent. Des prototypes qui résolvent de vrais problèmes. Des solutions qui grandissent.",
-              },
-              {
-                icon: "🌱",
-                en: "Sustainable Growth",
-                fr: "Croissance Durable",
-                desc_en:
-                  "Built on solid foundations. Long-term thinking. Real unit economics.",
-                desc_fr:
-                  "Construit sur des fondations solides. Pensée long terme. Vraie économie d'unité.",
-              },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-[#183153]/30 border border-white/8 rounded-2xl p-8 hover:border-white/15 transition-all"
-              >
-                <div className="text-5xl mb-4">{item.icon}</div>
-                <h3 className="font-display font-bold text-xl text-white mb-3">
-                  {lang === "en" ? item.en : item.fr}
-                </h3>
-                <p className="font-body text-sm text-white/60">
-                  {lang === "en" ? item.desc_en : item.desc_fr}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Final CTA */}
         <div
