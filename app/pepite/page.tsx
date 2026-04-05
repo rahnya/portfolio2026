@@ -104,7 +104,7 @@ export default function PepitePage() {
     <div className="min-h-screen pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Hero */}
-        <div className="mb-10">
+        <div className="mb-16">
           <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
           - Side Projects
           </p>
@@ -120,7 +120,7 @@ export default function PepitePage() {
         {/* Projects Section */}
         <div id="projects" className="mb-32">
           {/* Toggle */}
-          <div className="flex gap-4 my-6 border-[#0F2847]/10 dark:border-white/10 ">
+          <div className="flex gap-4 my-8 border-[#0F2847]/10 dark:border-white/10 ">
             {(["snoozly", "freelance"] as const).map((project) => (
               <button
                 key={project}
@@ -148,17 +148,17 @@ export default function PepitePage() {
           {/* Why & Solution */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h3 className="font-display text-2xl text-[#0F2847]/50 dark:text-white/50 font-bold mb-4"> {activeData.why}</h3>
+              <h3 className="font-display text-2xl text-[#0F2847] dark:text-white font-bold mb-4"> {activeData.why}</h3>
               <p className="font-body text-[#0F2847]/70 dark:text-white/70 leading-relaxed">{activeData.whyText}</p>
             </div>
             <div>
-              <h3 className="font-display text-2xl text-[#0F2847]/50 dark:text-white/50 font-bold mb-4">{activeData.solution}</h3>
+              <h3 className="font-display text-2xl text-[#0F2847] dark:text-white font-bold mb-4">{activeData.solution}</h3>
               <p className="font-body text-[#0F2847]/70 dark:text-white/70 leading-relaxed">{activeData.solutionText}</p>
             </div>
           </div>
 
           {/* Team & Impact */}
-          <div className="bg-[#F7F9FC] dark:bg-[#183153]/30 border border-[#0F2847]/10 dark:border-white/10 rounded-2xl p-6 mt-10">
+          <div className="bg-[#F7F9FC] dark:bg-[#183153]/30 border border-[#0F2847]/10 dark:border-white/10 rounded-2xl p-6 mt-6">
             <div className="mb-6">
               <p className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2">
                 {lang === "en" ? "Team" : "Équipe"}
