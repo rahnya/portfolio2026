@@ -17,7 +17,7 @@ export default function PepitePage() {
     en: {
       title: "Pépite",
       subtitle: "Entrepreneurship & Innovation Hub",
-      hero: "Two ambitious projects transforming the way organizations think about well-being and digital transformation. It's where I develop my ideas, imagine solutions to real problems, and build businesses with a significant impact.",
+      hero: "I develop my ideas, imagine solutions to real problems, and build businesses with a significant impact.",
 
       intro: {
         highlight: "Two complementary projects. One shared philosophy: solving problems that matter."
@@ -57,7 +57,7 @@ export default function PepitePage() {
     fr: {
       title: "Pépite",
       subtitle: "Hub Entrepreneurial & Innovation",
-      hero: "Deux projets ambitieux transformant la façon dont les organisations pensent le bien-être et la transformation digitale. C'est là où je développe mes idées, où j'imagine des solutions à de vrais problèmes et construis des entreprises avec un impact significatif.",
+      hero: "J'y développe mes idées, imagine des solutions à de vrais problèmes et construis des entreprises avec un impact significatif.",
 
       intro: {
         highlight: "Deux projets complémentaires. Une philosophie partagée : résoudre les problèmes qui comptent."
@@ -101,10 +101,10 @@ export default function PepitePage() {
     projects[activeProject as keyof typeof projects];
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6 ">
+    <div className="min-h-screen pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Hero */}
-        <div className="mb-16">
+        <div className="mb-10">
           <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
           - Side Projects
           </p>
@@ -120,7 +120,7 @@ export default function PepitePage() {
         {/* Projects Section */}
         <div id="projects" className="mb-32">
           {/* Toggle */}
-          <div className="flex gap-4 my-12 border-[#0F2847]/10 dark:border-white/10 ">
+          <div className="flex gap-4 my-6 border-[#0F2847]/10 dark:border-white/10 ">
             {(["snoozly", "freelance"] as const).map((project) => (
               <button
                 key={project}
@@ -148,17 +148,17 @@ export default function PepitePage() {
           {/* Why & Solution */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h3 className="font-display text-2xl text-[#0F2847] dark:text-white font-bold mb-4"> {activeData.why}</h3>
+              <h3 className="font-display text-2xl text-[#0F2847]/50 dark:text-white/50 font-bold mb-4"> {activeData.why}</h3>
               <p className="font-body text-[#0F2847]/70 dark:text-white/70 leading-relaxed">{activeData.whyText}</p>
             </div>
             <div>
-              <h3 className="font-display text-2xl text-[#0F2847] dark:text-white font-bold mb-4">{activeData.solution}</h3>
+              <h3 className="font-display text-2xl text-[#0F2847]/50 dark:text-white/50 font-bold mb-4">{activeData.solution}</h3>
               <p className="font-body text-[#0F2847]/70 dark:text-white/70 leading-relaxed">{activeData.solutionText}</p>
             </div>
           </div>
 
           {/* Team & Impact */}
-          <div className="bg-[#F7F9FC] dark:bg-[#183153]/30 border border-[#0F2847]/10 dark:border-white/10 rounded-2xl p-6 mt-12">
+          <div className="bg-[#F7F9FC] dark:bg-[#183153]/30 border border-[#0F2847]/10 dark:border-white/10 rounded-2xl p-6 mt-10">
             <div className="mb-6">
               <p className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2">
                 {lang === "en" ? "Team" : "Équipe"}
