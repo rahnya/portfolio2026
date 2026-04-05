@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useLang } from "@/components/LangContext";
 import { ArrowRight, Zap, Lightbulb, Users } from "lucide-react";
 
-const primaryColor = "#FF6B35";
-const accentColor = "#FF3B8D";
+const primaryColor = "#FF3B8D";
+const accentColor = "#FF6B35";
 
 export default function PepitePage() {
   const { lang } = useLang();
@@ -15,7 +15,7 @@ export default function PepitePage() {
 
   const content = {
     en: {
-      title: "Pépite Méditerranée",
+      title: "Pépite",
       subtitle: "Entrepreneurship & Innovation Hub",
       hero: "Two ambitious projects transforming the way organizations think about well-being and digital transformation. It's where I develop my ideas, imagine solutions to real problems, and build businesses with a significant impact.",
 
@@ -55,7 +55,7 @@ export default function PepitePage() {
     },
 
     fr: {
-      title: "Pépite Méditerranée",
+      title: "Pépite",
       subtitle: "Hub Entrepreneurial & Innovation",
       hero: "Deux projets ambitieux transformant la façon dont les organisations pensent le bien-être et la transformation digitale. C'est là où je développe mes idées, où j'imagine des solutions à de vrais problèmes et construis des entreprises avec un impact significatif.",
 
@@ -105,8 +105,8 @@ export default function PepitePage() {
       <div className="max-w-7xl mx-auto">
         {/* Hero */}
         <div className="mb-16">
-          <p className="font-mono text-xs text-[#FF3B8D] dark:text-[#FF6B35] uppercase tracking-widest mb-4">
-            Side Projects
+          <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
+          - Side Projects
           </p>
           <h1 className="font-display font-extrabold text-5xl md:text-6xl text-[#0F2847] dark:text-white mb-4">
             {current.title}
@@ -120,7 +120,7 @@ export default function PepitePage() {
         {/* Projects Section */}
         <div id="projects" className="mb-32">
           {/* Toggle */}
-          <div className="flex gap-4 my-4  border-white/10 ">
+          <div className="flex gap-4 my-12 border-[#0F2847]/10 dark:border-white/10 ">
             {(["snoozly", "freelance"] as const).map((project) => (
               <button
                 key={project}
@@ -130,16 +130,15 @@ export default function PepitePage() {
                 <span
                   className={`${
                     activeProject === project
-                      ? "text-white"
-                      : "text-white/30 hover:text-white/50"
+                      ? "text-[#0F2847] dark:text-white"
+                      : "text-[#0F2847]/30 hover:text-[#0F2847]/50 dark:text-white/30 dark:hover:text-white/50"
                   }`}
                 >
                   {projects[project as keyof typeof projects].name}
                 </span>
                 {activeProject === project && (
                   <div
-                    className="absolute bottom-0 left-0 h-1 w-full rounded-full"
-                    style={{ backgroundColor: primaryColor }}
+                    className="absolute bottom-0 left-0 h-1 w-full rounded-full bg-[#FF6B35] dark:bg-[#FF3B8D]"
                   />
                 )}
               </button>
@@ -149,53 +148,55 @@ export default function PepitePage() {
           {/* Why & Solution */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h3 className="font-display text-2xl font-bold mb-4"> {activeData.why}</h3>
-              <p className="font-body text-white/70 leading-relaxed">{activeData.whyText}</p>
+              <h3 className="font-display text-2xl text-[#0F2847] dark:text-white font-bold mb-4"> {activeData.why}</h3>
+              <p className="font-body text-[#0F2847]/70 dark:text-white/70 leading-relaxed">{activeData.whyText}</p>
             </div>
             <div>
-              <h3 className="font-display text-2xl font-bold mb-4">{activeData.solution}</h3>
-              <p className="font-body text-white/70 leading-relaxed">{activeData.solutionText}</p>
+              <h3 className="font-display text-2xl text-[#0F2847] dark:text-white font-bold mb-4">{activeData.solution}</h3>
+              <p className="font-body text-[#0F2847]/70 dark:text-white/70 leading-relaxed">{activeData.solutionText}</p>
             </div>
           </div>
 
           {/* Team & Impact */}
-          <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-6 mt-12">
+          <div className="bg-[#F7F9FC] dark:bg-[#183153]/30 border border-[#0F2847]/10 dark:border-white/10 rounded-2xl p-6 mt-12">
             <div className="mb-6">
-              <p className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2">
+              <p className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2">
                 {lang === "en" ? "Team" : "Équipe"}
               </p>
-              <p className="font-body text-white/80">{activeData.team}</p>
+              <p className="font-body text-[#0F2847]/80 dark:text-white/80">{activeData.team}</p>
             </div>
             <div>
-              <p className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2">
+              <p className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2">
                 {lang === "en" ? "Impact" : "Impact"}
                 </p>
-                <p className="font-body text-white/80">{activeData.impact}</p>
+                <p className="font-body text-[#0F2847] dark:text-white/80">{activeData.impact}</p>
               </div>
             </div>
           </div>
 
         {/* Final CTA */}
         <div
-          className="rounded-3xl p-16 text-center"
-          style={{ backgroundColor: `${primaryColor}10`, border: `1px solid ${primaryColor}20` }}
+          className="rounded-3xl p-16 text-center 
+                    bg-[#FF6B35]/10 dark:bg-[#FF3B8D]/10 
+                    border border-[#FF6B35]/20 dark:border-[#FF3B8D]/20"
         >
-          <h2 className="font-display font-bold text-3xl text-white mb-4">
+          <h2 className="font-display font-bold text-3xl text-[#0F2847] dark:text-white mb-4">
             {lang === "en"
               ? "Interested in collaborating?"
               : "Intéressé pour collaborer ?"}
           </h2>
-          <p className="font-body text-white/60 mb-8 max-w-2xl mx-auto">
+          <p className="font-body text-[#0F2847]/60 dark:text-white/60 mb-8 max-w-2xl mx-auto">
             {lang === "en"
               ? "Whether you're looking for sleep pod solutions, a web partner, or want to explore opportunities together."
               : "Que vous cherchiez des solutions de capsules de repos, un partenaire web, ou que vous exploriez des opportunités ensemble."}
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-body font-medium transition-all duration-300"
-            style={{ backgroundColor: primaryColor }}
-            onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
-            onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-body font-medium 
+                      text-white 
+                      bg-[#FF6B35] hover:bg-[#FF6B35]/90 
+                      dark:bg-[#FF3B8D] dark:hover:bg-[#FF3B8D]/90 
+                      transition-all duration-300"
           >
             {lang === "en" ? "Get in Touch" : "Me Contacter"}
             <ArrowRight className="w-4 h-4" />
