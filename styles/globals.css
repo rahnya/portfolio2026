@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  background-color: #0D1B2A;
   color: white;
   font-family: var(--font-dm-sans);
   -webkit-font-smoothing: antialiased;
@@ -29,13 +28,25 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  background: linear-gradient(to bottom, #555F6A, #606770);
+}
+
+.dark body {
+  background: #0D1B2A;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
+  background: #606770;
+}
+.dark ::-webkit-scrollbar-track {
   background: #0D1B2A;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #FF3B8D33;
   border-radius: 4px;

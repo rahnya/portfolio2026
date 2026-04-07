@@ -56,7 +56,7 @@ export default function ContactPage() {
     { icon: <BehanceIcon />, label: "Behance", value: "behance.net/rahnya_lanyeri", href: "https://www.behance.net/rahnya_lanyeri", color: "#1769FF" },
   ];
 
-  const inputClass = "w-full bg-[#183153]/30 border border-white/10 rounded-xl px-4 py-3 font-body text-sm text-[#0F2847] dark:text-white placeholder-white/25 " +
+  const inputClass = "w-full bg-[#183153]/30 border border-white/10 rounded-xl px-4 py-3 font-body text-sm text-white placeholder-white/25 " +
   "focus:outline-none " +
   "focus:border-[#FF6B35] dark:focus:border-[#FF3B8D] " +
   "focus:bg-[#183153]/50 dark:focus:bg-[#183153]/50 transition-all duration-200";
@@ -70,10 +70,10 @@ export default function ContactPage() {
           <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
             — {t.contact.title}
           </p>
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-[#0F2847] dark:text-white mb-4">
+          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-white mb-4">
             {t.contact.title}
           </h1>
-          <p className="font-body text-[#0F2847] dark:text-white/50 text-lg max-w-xl">
+          <p className="font-body text-white/50 text-lg max-w-xl">
             {t.contact.subtitle}
           </p>
         </div>
@@ -81,10 +81,10 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
           {/* Form */}
-          <div className="bg-[#0F2847]/20 dark:bg-[#183153]/20 border border-[#183153] border dark:border-white/8 rounded-2xl p-8">
+          <div className="bg-[#183153]/20 border border-white/8 rounded-2xl p-8">
             <div className="space-y-4">
               <div>
-                <label className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.name}
                 </label>
                 <input
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.email}
                 </label>
                 <input
@@ -110,7 +110,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="font-mono text-xs text-[#0F2847]/40 dark:text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-mono text-xs text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.message}
                 </label>
                 <textarea
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
           {/* Direct contacts */}
           <div className="flex flex-col justify-center space-y-4">
-            <p className="font-mono text-xs text-[#0F2847]/60 dark:text-white/40 uppercase tracking-widest mb-2">
+            <p className="font-mono text-xs text-white/40 uppercase tracking-widest mb-2">
               {t.contact.or}
             </p>
 
@@ -180,7 +180,7 @@ export default function ContactPage() {
                 <div className="w-2 h-2 rounded-full bg-[#FF6B35] dark:bg-[#FF3B8D] animate-pulse" />
                 <span className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D]">Currently Available</span>
               </div>
-              <p className="font-body text-xs text-[#FF6B35]/40 dark:text-white/40 leading-relaxed">
+              <p className="font-body text-xs text-white/40 leading-relaxed">
                 Open to internships, apprenticeships, and collaborative projects.
                 Typical response time: 24–48 hours.
               </p>

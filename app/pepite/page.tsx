@@ -108,10 +108,10 @@ export default function PepitePage() {
           <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
           - Side Projects
           </p>
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-[#0F2847] dark:text-white mb-4">
+          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-white mb-4">
             {current.title}
           </h1>
-          <p className="font-body text-[#0F2847] dark:text-white/50 text-lg max-w-2xl">
+          <p className="font-body text-text-white/10 text-lg max-w-2xl">
             {current.hero}
           </p>
         </div>
@@ -120,7 +120,7 @@ export default function PepitePage() {
         {/* Projects Section */}
         <div id="projects" className="mb-32">
           {/* Toggle */}
-          <div className="flex gap-4 my-8 border-[#0F2847]/10 dark:border-white/10 ">
+          <div className="flex gap-4 my-8 border-white/10 ">
             {(["snoozly", "freelance"] as const).map((project) => (
               <button
                 key={project}
@@ -130,8 +130,8 @@ export default function PepitePage() {
                 <span
                   className={`${
                     activeProject === project
-                      ? "text-[#0F2847] dark:text-white"
-                      : "text-[#0F2847]/30 hover:text-[#0F2847]/50 dark:text-white/30 dark:hover:text-white/50"
+                      ? "text-white"
+                      : "text-white/30 hover:text-white/50"
                   }`}
                 >
                   {projects[project as keyof typeof projects].name}
@@ -148,12 +148,12 @@ export default function PepitePage() {
           {/* Why & Solution */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h3 className="font-display text-2xl text-[#0F2847] dark:text-white font-bold mb-4"> {activeData.why}</h3>
-              <p className="font-body text-[#0F2847]/70 dark:text-white/70 leading-relaxed">{activeData.whyText}</p>
+              <h3 className="font-display text-2xl text-white font-bold mb-4"> {activeData.why}</h3>
+              <p className="font-body text-white/70 leading-relaxed">{activeData.whyText}</p>
             </div>
             <div>
-              <h3 className="font-display text-2xl text-[#0F2847] dark:text-white font-bold mb-4">{activeData.solution}</h3>
-              <p className="font-body text-[#0F2847]/70 dark:text-white/70 leading-relaxed">{activeData.solutionText}</p>
+              <h3 className="font-display text-2xl text-white font-bold mb-4">{activeData.solution}</h3>
+              <p className="font-body text-white/70 leading-relaxed">{activeData.solutionText}</p>
             </div>
           </div>
 
@@ -180,12 +180,12 @@ export default function PepitePage() {
                     bg-[#FF6B35]/10 dark:bg-[#FF3B8D]/10 
                     border border-[#FF6B35]/20 dark:border-[#FF3B8D]/20"
         >
-          <h2 className="font-display font-bold text-3xl text-[#0F2847] dark:text-white mb-4">
+          <h2 className="font-display font-bold text-3xl text-white mb-4">
             {lang === "en"
               ? "Interested in collaborating?"
               : "Intéressé pour collaborer ?"}
           </h2>
-          <p className="font-body text-[#0F2847]/60 dark:text-white/60 mb-8 max-w-2xl mx-auto">
+          <p className="font-body text-white/60 mb-8 max-w-2xl mx-auto">
             {lang === "en"
               ? "Whether you're looking for sleep pod solutions, a web partner, or want to explore opportunities together."
               : "Que vous cherchiez des solutions de capsules de repos, un partenaire web, ou que vous exploriez des opportunités ensemble."}

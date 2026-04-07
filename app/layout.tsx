@@ -32,8 +32,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-white dark:bg-[#0D1B2A] transition-colors">
-        <ThemeProvider>
+    <body className="transition-colors">
+      <ThemeProvider>
           <LangProvider>
             <AnalyticsTracker />
             <Navbar />
