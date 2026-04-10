@@ -10,6 +10,8 @@ type Category = "all" | "web" | "uxui" | "data" | "school";
 export default function ProjectsPage() {
   const { t, lang } = useLang();
   const [active, setActive] = useState<Category>("all");
+  type ButSkill = "tous" | "développer" | "concevoir" | "exprimer" | "comprendre" | "entreprendre";
+const [butSkill, setButSkill] = useState<ButSkill>("tous");
   const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
 
   const getCategories = (project: any): string[] => {
@@ -31,9 +33,16 @@ export default function ProjectsPage() {
   ];
 
   const filtered = projectsData.filter((p) => {
-    if (active === "all") return true;
     const categories = getCategories(p);
-    return categories.includes(active);
+    if (active === "all") return true;
+    if (!categories.includes(active)) return false;
+  
+    // Filtre secondaire uniquement pour l'onglet school
+    if (active === "school" && butSkill !== "tous") {
+      const skills: string[] = (p as any).butSkills ?? [];
+      return skills.includes(butSkill);
+    }
+    return true;
   });
 
   const handleImageError = (slug: string) => {
@@ -73,7 +82,24 @@ export default function ProjectsPage() {
             </button>
           ))}
         </div>
-
+        {/* Filtres BUT — visibles uniquement dans l'onglet School */}
+        {active === "school" && (
+          <div className="flex flex-wrap gap-2 mb-12 -mt-6 pl-1 border-l-2 border-[#FF3B8D]/30">
+            {(["tous", "développer", "concevoir", "exprimer", "comprendre", "entreprendre"] as ButSkill[]).map((skill) => (
+              <button
+                key={skill}
+                onClick={() => setButSkill(skill)}
+                className={`font-mono text-xs px-3 py-1.5 rounded-full border transition-all duration-200 capitalize ${
+                  butSkill === skill
+                    ? "bg-[#FF6B35] border-[#FF6B35] text-white"
+                    : "border-white/10 text-white/40 hover:border-white/20 hover:text-white"
+                }`}
+              >
+                {skill}
+              </button>
+            ))}
+          </div>
+        )}
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((project) => {

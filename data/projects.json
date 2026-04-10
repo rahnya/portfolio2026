@@ -2,6 +2,7 @@
   {
     "slug": "flightfootprint",
     "categories": ["data", "uxui"],
+    "butSkills": ["développer", "concevoir"],
     "color": "#FFC72C",
     "en": {
       "title": "FlightFootprint",
@@ -39,6 +40,7 @@
   {
     "slug": "visio-conference-app",
     "categories": ["web","uxui","school"],
+    "butSkills": ["développer", "concevoir"],
     "color": "#183153",
     "en": {
       "title": "Web Video Conference Platform",
@@ -76,6 +78,7 @@
   {
     "slug": "code-ton-territoire",
     "categories": ["hackathon","uxui"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#2E7D32",
     "en": {
       "title": "Code Ton Territoire",
@@ -113,6 +116,7 @@
   {
     "slug": "collective-intelligence-report",
     "categories": ["school", "research"],
+    "butSkills": ["comprendre", "exprimer"],
     "color": "#6C63FF",
     "en": {
       "title": "Collective Intelligence: Humans & Machines",
@@ -150,6 +154,7 @@
   {
     "slug": "epitech-coding-club",
     "categories": ["community", "tech", "education"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#00AEEF",
     "en": {
       "title": "Epitech Coding Club Participation",
@@ -187,6 +192,7 @@
   {
     "slug": "ai-eprocurement-seo-article",
     "categories": ["professional", "seo", "content"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#FF6F61",
     "en": {
       "title": "AI & e-Procurement SEO Article",
@@ -224,6 +230,7 @@
   {
     "slug": "internship-management-app",
     "categories": ["school","web","uxui"],
+    "butSkills": ["développer", "concevoir"],
     "color": "#3BA1FF",
     "en": {
       "title": "Internship Management Application",
@@ -259,6 +266,7 @@
   {
     "slug": "ai-agents-workflow",
     "categories": ["school","web"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#6B5CFF",
     "en": {
       "title": "AI Agents Workflow",
@@ -294,6 +302,7 @@
   {
     "slug": "laravel-blog-platform",
     "categories": ["school","web"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#FF3B8D",
     "en": {
       "title": "Laravel Blog Platform",
@@ -329,6 +338,7 @@
   {
     "slug": "tank-game-ui-unity",
     "categories": ["school", "game"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#7EC8E3",
     "en": {
       "title": "Tank Game UI & Unity Gameplay Adaptation",
@@ -368,6 +378,7 @@
   {
     "slug": "personal-portfolio",
     "categories": ["web"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#FF96B3",
     "en": {
       "title": "Developer Portfolio",
@@ -405,6 +416,7 @@
   {
     "slug": "seo-content-strategy",
     "categories": ["professional"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#FE8A5A",
     "en": {
       "title": "SEO & Content Strategy",
@@ -442,6 +454,7 @@
   {
     "slug": "ampa-animal-adoption",
     "categories": ["web","design"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#25cdd0",
     "en": {
       "title": "Ampa — Animal Adoption Platform",
@@ -479,6 +492,7 @@
   {
     "slug": "inflation-dataviz",
     "categories": ["school","data"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#FFC72C",
     "en": {
       "title": "Inflation Data Visualization",
@@ -514,6 +528,7 @@
   {
     "slug": "crossy-road-ux-powerups",
     "categories": ["school","uxui"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#FFD54F",
     "en": {
       "title": "Crossy Road UX Power-ups",
@@ -549,6 +564,7 @@
   {
     "slug": "weather-app-design",
     "categories": ["school","uxui","design"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#64B5F6",
     "en": {
       "title": "Weather App UX/UI Design",
@@ -584,6 +600,7 @@
   {
     "slug": "virtual-travel-chair",
     "categories": ["school","hackathon"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#8A6F9B",
     "en": {
       "title": "Virtual Travel Chair",
@@ -620,6 +637,7 @@
   {
     "slug": "mmi-decouvertes",
     "categories": ["school","web"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#D0A8BC",
     "en": {
       "title": "MMI Découvertes Website",
@@ -655,6 +673,7 @@
   {
     "slug": "1ris-agency-website",
     "categories": ["school","web"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#C58AFF",
     "en": {
       "title": "1ris Communication Agency Website",
@@ -690,6 +709,7 @@
   {
     "slug": "porquerolles-digital-watch",
     "categories": ["school"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#4DB6AC",
     "en": {
       "title": "Porquerolles Festival Digital Strategy",
@@ -724,6 +744,7 @@
   {
     "slug": "merry-cashmas-reportage",
     "categories": ["school"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#FF7043",
     "en": {
       "title": "Merry Cashmas Reportage",
@@ -759,6 +780,7 @@
   {
     "slug": "mmi-30-years-communication",
     "categories": ["school"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#BA68C8",
     "en": {
       "title": "MMI 30 Years Communication Project",
@@ -791,6 +813,7 @@
   {
     "slug": "scrum-learning-platform",
     "categories": ["school","web"],
+    "butSkills": ["comprendre", "exprimer"],
     "color": "#81C784",
     "en": {
       "title": "Scrum Learning Website",
@@ -826,6 +849,7 @@
   {
     "slug": "logo-jingle-animation",
     "categories": ["school","design"],
+    "butSkills": ["exprimer", "concevoir"],
     "color": "#FF8A65",
     "en": {
       "title": "Logo Jingle Animation",
@@ -861,6 +885,7 @@
   {
     "slug": "mmi-lan-event",
     "categories": ["school","professional"],
+    "butSkills": ["entreprendre", "comprendre"],
     "color": "#9575CD",
     "en": {
       "title": "MMI LAN Event Organization",
@@ -896,6 +921,7 @@
   {
     "slug": "website-competitive-audit",
     "categories": ["school","professional","web"],
+    "butSkills": ["entreprendre", "comprendre"],
     "color": "#90A4AE",
     "en": {
       "title": "Website Competitive Audit",
@@ -931,6 +957,7 @@
   {
     "slug": "communication-plan-project",
     "categories": ["school","professional"],
+    "butSkills": ["entreprendre", "comprendre"],
     "color": "#F06292",
     "en": {
       "title": "Communication Plan Development",
