@@ -41,7 +41,14 @@ export default function RootLayout({
             <Footer />
           </LangProvider>
         </ThemeProvider>
-
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function() {
+              const theme = localStorage.getItem('theme');
+              if (theme === 'dark') document.documentElement.classList.add('dark');
+            })();`,
+          }}
+        />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N4DJGHWE6D"
