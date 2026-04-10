@@ -24,6 +24,10 @@ export default function ProjectDetailPage() {
     : [];
 
   const screenshots: string[] = Array.isArray(p.screenshots) ? p.screenshots : [];
+  const context: string = (p as any).context ?? "";
+  const role: string = (p as any).role ?? "";
+  const selfEvaluation: string = (p as any).selfEvaluation ?? "";
+  const butSkills: string[] = (project as any).butSkills ?? [];
 
   return (
     <div className="min-h-screen pt-24 pb-20 px-6">
@@ -77,13 +81,33 @@ export default function ProjectDetailPage() {
           {/* Main */}
           <div className="md:col-span-2 space-y-10">
 
-            {/* Description */}
+          {/* Contexte */}
+          {context && (
             <div>
               <h2 className="font-display font-bold text-xl text-white mb-4">
-                Description
+                {lang === "fr" ? "Contexte" : "Context"}
               </h2>
-              <p className="font-body text-white/60 leading-relaxed">{p.description}</p>
+              <p className="font-body text-white/60 leading-relaxed">{context}</p>
             </div>
+          )}
+
+          {/* Description */}
+          <div>
+            <h2 className="font-display font-bold text-xl text-white mb-4">
+              Description
+            </h2>
+            <p className="font-body text-white/60 leading-relaxed">{p.description}</p>
+          </div>
+
+          {/* Mon rôle */}
+          {role && (
+          <div>
+            <h2 className="font-display font-bold text-xl text-white mb-4">
+              {lang === "fr" ? "Mon rôle" : "My role"}
+            </h2>
+            <p className="font-body text-white/60 leading-relaxed">{role}</p>
+          </div>
+        )}
 
             {/* Features */}
             <div>
@@ -148,6 +172,25 @@ export default function ProjectDetailPage() {
               </div>
             </div>
 
+            {/* Apprentissages critiques BUT */}
+            {butSkills.length > 0 && (
+              <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-6">
+                <h3 className="font-display font-bold text-sm text-white mb-4 uppercase tracking-wider">
+                  {lang === "fr" ? "Compétences BUT" : "BUT Skills"}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {butSkills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="font-mono text-xs px-3 py-1 rounded-full capitalize"
+                      style={{ backgroundColor: `${project.color}20`, color: project.color }}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
             {/* Links */}
             <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-6 space-y-3">
               <h3 className="font-display font-bold text-sm text-white mb-4 uppercase tracking-wider">

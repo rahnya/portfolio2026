@@ -6,7 +6,10 @@
     "color": "#FFC72C",
     "en": {
       "title": "FlightFootprint",
-      "description": "FlightFootprint is a project combining data processing, web development, and visualization to make the environmental impact of air traffic more understandable in real time. The application uses data from the OpenSky API to track aircraft flying over Europe, then applies estimation models to calculate fuel consumption and CO₂ emissions based on aircraft type and characteristics. It features an interactive map to visualize live data, along with a data exploration interface. The project is part of a broader reflection on environmental transparency and data accessibility. It showcases my interest in aviation, data analysis, and environmental challenges, while demonstrating technical skills in backend development, data processing, and visualization.",      
+      "description": "",
+      "context": "I wanted to try my hand at using an API and real-time data visualization. And I took the opportunity to combine that with my passion for aeronautics. FlightFootprint is a project combining data processing, web development, and visualization to make the environmental impact of air traffic more understandable in real time. The application uses data from the OpenSky API to track aircraft flying over Europe, then applies estimation models to calculate fuel consumption and CO₂ emissions based on aircraft type and characteristics. It features an interactive map to visualize live data, along with a data exploration interface. The project is part of a broader reflection on environmental transparency and data accessibility.",
+      "role": "I managed the API integration, data processing and display on the interface. I also worked on the calculation logic and the presentation of results to make them understandable.",
+      "selfEvaluation": "This project helped me better understand the use of APIs and the management of external data. Compared to BUT 2, I feel more comfortable structuring code and integrating third-party services. In hindsight, I could have improved error handling and optimized the user experience to make the application more robust.",
       "shortDescription": "Real-time flight visualization and CO₂ impact estimation.",
       "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
       "features": [
@@ -22,7 +25,10 @@
     },
     "fr": {
       "title": "FlightFootprint",
-      "description": "FlightFootprint est un projet mêlant data, développement web et visualisation, visant à rendre plus compréhensible l’impact environnemental du trafic aérien en temps réel. L’application s’appuie sur des données issues de l’OpenSky API pour suivre les avions en vol au-dessus de l’Europe, puis applique des modèles d’estimation pour calculer leur consommation de carburant et leurs émissions de CO₂ en fonction du type d’appareil et de ses caractéristiques. Le projet propose une carte interactive permettant de visualiser ces données en direct, ainsi qu’un espace d’exploration pour analyser les informations collectées. Il s’inscrit dans une réflexion plus globale sur la transparence des données environnementales et l’accessibilité de l’information. Ce projet illustre mon intérêt pour l’aéronautique, la data et les problématiques environnementales, tout en mobilisant des compétences techniques en backend, traitement de données et visualisation.",
+      "description": "",
+      "context": "Envie de m'essayer à l'utilisation d'une API et de la visualisation de données en temps réel. Et j'en ai profité pour mixer cela à ma passion pour l'aéronautique. FlightFootprint est un projet mêlant data, développement web et visualisation, visant à rendre plus compréhensible l'impact environnemental du trafic aérien en temps réel. L'application s'appuie sur des données issues de l'OpenSky API pour suivre les avions en vol au-dessus de l'Europe, puis applique des modèles d'estimation pour calculer leur consommation de carburant et leurs émissions de CO₂ en fonction du type d'appareil et de ses caractéristiques. Le projet propose une carte interactive permettant de visualiser ces données en direct, ainsi qu'un espace d'exploration pour analyser les informations collectées. Il s'inscrit dans une réflexion plus globale sur la transparence des données environnementales et l'accessibilité de l'information.",
+      "role": "J'ai géré l'intégration de l'API, le traitement des données et leur affichage côté interface. J'ai également travaillé sur la logique de calcul et sur la présentation des résultats pour qu'ils soient compréhensibles.",
+      "selfEvaluation": "Ce projet m'a permis de mieux comprendre l'utilisation des API et la gestion des données externes. Par rapport au BUT 2, je suis plus à l'aise dans la structuration du code et l'intégration de services tiers. Avec le recul, j'aurais pu améliorer la gestion des erreurs et optimiser l'expérience utilisateur pour rendre l'application plus robuste.",
       "shortDescription": "Visualisation des vols et estimation des émissions CO₂.",
       "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
       "features": [
@@ -45,6 +51,9 @@
     "en": {
       "title": "Web Video Conference Platform",
       "description": "A web-based video conferencing platform allowing users to create and join virtual meetings directly from their browser.",
+      "context": "In semester 5, I participated in a SAÉ focused on developing a real-time video conferencing application. The goal was to design a functional solution allowing multiple users to communicate via audio and video, using modern web technologies. This project involved a higher level of complexity than previous ones, particularly due to real-time stream management and synchronized interactions between users. We worked with a tech stack composed of Node.js, Express, Socket.io and WebRTC, while integrating Docker for environment management.",
+      "role": "I was mainly involved in setting up real-time communication between users. I participated in the server configuration with Express, as well as the integration of Socket.io to manage real-time data exchanges. I also contributed to the implementation of WebRTC for audio and video stream transmission, which required me to understand peer-to-peer connections and signaling mechanisms. Finally, I participated in testing and debugging phases, notably to resolve connection issues between users.",
+      "selfEvaluation": "This project marks a real step forward compared to my previous web development experiences. Unlike BUT 2 projects, I worked here on a more complex architecture integrating real-time and multimedia streams. I particularly developed my ability to understand advanced technologies like WebRTC, even if my command of them is still partial. In hindsight, with the skills acquired in BUT 3, I could have better structured the code and anticipated some connection management issues.",
       "shortDescription": "Browser-based video conferencing platform.",
       "technologies": ["Node.js", "Express", "Socket.io", "WebRTC", "Docker"],
       "features": [
@@ -61,13 +70,16 @@
     "fr": {
       "title": "Plateforme de visioconférence",
       "description": "Une plateforme web de visioconférence permettant de créer et rejoindre des réunions directement depuis le navigateur.",
+      "context": "Au semestre 5, j'ai participé à une SAÉ centrée sur le développement d'une application de visioconférence en temps réel. L'objectif était de concevoir une solution fonctionnelle permettant à plusieurs utilisateurs de communiquer via audio et vidéo, en s'appuyant sur des technologies modernes du web. Ce projet s'inscrivait dans une montée en complexité par rapport aux projets précédents, notamment en raison de la gestion des flux temps réel et des interactions synchronisées entre utilisateurs. Nous avons travaillé avec un stack technique composé de Node.js, Express, Socket.io et WebRTC, tout en intégrant Docker pour la gestion de l'environnement.",
+      "role": "Je me suis principalement impliquée dans la mise en place de la communication temps réel entre les utilisateurs. J'ai participé à la configuration du serveur avec Express, ainsi qu'à l'intégration de Socket.io pour gérer les échanges de données en temps réel. J'ai également contribué à l'implémentation de WebRTC pour la transmission des flux audio et vidéo, ce qui m'a demandé de comprendre le fonctionnement des connexions peer-to-peer et des mécanismes de signalisation. Enfin, j'ai participé aux phases de test et de débogage pour résoudre des problèmes de connexion entre utilisateurs.",
+      "selfEvaluation": "Ce projet marque une réelle progression par rapport à mes expériences précédentes en développement web. Contrairement aux projets de BUT 2, j'ai ici travaillé sur une architecture plus complexe intégrant du temps réel et des flux multimédias. J'ai particulièrement développé ma capacité à comprendre des technologies avancées comme WebRTC, même si leur prise en main reste encore partielle. Avec le recul, et grâce aux compétences acquises en BUT 3, j'aurais pu mieux structurer le code et anticiper certains problèmes liés à la gestion des connexions.",
       "shortDescription": "Application web de visioconférence.",
       "technologies": ["Node.js", "Express", "Socket.io", "WebRTC", "Docker"],
       "features": [
         "Communication vidéo peer-to-peer",
         "Création de salles de réunion",
         "Messagerie en temps réel",
-        "Partage d’écran",
+        "Partage d'écran",
         "Backend dockerisé"
       ],
       "githubUrl": "",
@@ -82,7 +94,10 @@
     "color": "#2E7D32",
     "en": {
       "title": "Code Ton Territoire",
-      "description": "Code Your Territory is a project carried out during the 2026 Code Night in collaboration with Crédit Agricole. The objective was to design a platform to promote local initiatives and strengthen the link between citizens and territorial projects. We envisioned an interface centered on an interactive map, highlighting funded or ongoing projects, as well as a system allowing citizens to report local needs or issues. The project emphasizes accessibility, data readability, and user engagement. It also includes a dashboard to visualize the concrete impact of actions on the territory. This hackathon allowed me to work in a team on a project with significant societal impact, while developing skills in full-stack development, UX/UI, and product design.",
+      "description": "Code Your Territory is a project carried out during the 2026 Code Night in collaboration with Crédit Agricole. The objective was to design a platform to promote local initiatives and strengthen the link between citizens and territorial projects.",
+      "context": "This project was created during the 2026 Code Night in collaboration with Crédit Agricole. The objective was to design a platform to promote local initiatives and strengthen the link between citizens and territorial projects. We envisioned an interface centered on an interactive map, highlighting funded or ongoing projects, as well as a system allowing citizens to report local needs or issues.",
+      "role": "I contributed to both UX/UI design and full-stack development. I worked on the interactive map integration, the citizen reporting interface, and the overall visual consistency of the platform. I also participated in the team coordination during the hackathon.",
+      "selfEvaluation": "This hackathon allowed me to work under pressure on a project with significant societal impact. The time constraint forced me to prioritize features and make quick decisions. In hindsight, I would have liked to refine the UX and add more filtering options on the map.",
       "shortDescription": "Hackathon platform to visualize and support local community initiatives.",
       "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
       "features": [
@@ -98,15 +113,18 @@
     },
     "fr": {
       "title": "Code Ton Territoire",
-      "description": "Code Ton Territoire est un projet réalisé lors de la Nuit du Code 2026 en collaboration avec le Crédit Agricole. L’objectif était de concevoir une plateforme permettant de valoriser les initiatives locales et de renforcer le lien entre citoyens et projets territoriaux. Nous avons imaginé une interface centrée sur une carte interactive, mettant en avant les projets financés ou en cours, ainsi qu’un système permettant aux citoyens de signaler des besoins ou problématiques locales. Le projet met l’accent sur l’accessibilité, la lisibilité des données et l’engagement utilisateur. Il intègre également un dashboard permettant de visualiser l’impact concret des actions sur le territoire. Ce hackathon m’a permis de travailler en équipe sur un projet à fort enjeu sociétal, tout en développant des compétences en développement full-stack, UX/UI et conception de produit",
+      "description": "Code Ton Territoire est un projet réalisé lors de la Nuit du Code 2026 en collaboration avec le Crédit Agricole. L'objectif était de concevoir une plateforme permettant de valoriser les initiatives locales et de renforcer le lien entre citoyens et projets territoriaux.",
+      "context": "Ce projet a été réalisé lors de la Nuit du Code 2026 en collaboration avec le Crédit Agricole. L'objectif était de concevoir une plateforme permettant de valoriser les initiatives locales et de renforcer le lien entre citoyens et projets territoriaux. Nous avons imaginé une interface centrée sur une carte interactive, mettant en avant les projets financés ou en cours, ainsi qu'un système permettant aux citoyens de signaler des besoins ou problématiques locales.",
+      "role": "J'ai contribué à la fois à la conception UX/UI et au développement full-stack. J'ai travaillé sur l'intégration de la carte interactive, l'interface de signalement citoyen et la cohérence visuelle globale de la plateforme. J'ai également participé à la coordination de l'équipe durant le hackathon.",
+      "selfEvaluation": "Ce hackathon m'a permis de travailler sous pression sur un projet à fort enjeu sociétal. La contrainte de temps m'a obligée à prioriser les fonctionnalités et à prendre des décisions rapides. Avec le recul, j'aurais aimé affiner l'UX et ajouter davantage d'options de filtrage sur la carte.",
       "shortDescription": "Plateforme hackathon pour visualiser et soutenir les initiatives locales.",
       "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
       "features": [
         "Carte interactive présentant les projets et initiatives locales",
         "Système permettant aux citoyens de signaler des besoins sur le territoire",
-        "Dashboard visuel montrant l’impact des actions locales",
+        "Dashboard visuel montrant l'impact des actions locales",
         "Suivi des projets en cours et à venir",
-        "Interface simple favorisant l’engagement citoyen"
+        "Interface simple favorisant l'engagement citoyen"
       ],
       "githubUrl": "https://github.com/rahnya/CAcode.git",
       "liveUrl": "https://ca-ndc.vercel.app",
@@ -120,7 +138,10 @@
     "color": "#6C63FF",
     "en": {
       "title": "Collective Intelligence: Humans & Machines",
-      "description": "This academic project explores the concept of collective intelligence between humans and machines through a structured research report. The objective was to analyze how collaboration between human capabilities and artificial intelligence systems can enhance decision-making, productivity, and innovation. The work combines theoretical analysis with concrete examples from various sectors such as healthcare, industry, and everyday technologies. It also critically examines the limitations of this collaboration, including ethical concerns, automation risks, and societal impacts. The project highlights the importance of regulation, human oversight, and responsible integration of AI systems. Carried out over a short period, hence the brief development of the subject which could have been explored in much greater depth.",
+      "description": "This academic project explores the concept of collective intelligence between humans and machines through a structured research report.",
+      "context": "This academic project takes the form of a research report exploring the concept of collective intelligence between humans and machines. The objective was to analyze how collaboration between human capabilities and artificial intelligence systems can enhance decision-making, productivity, and innovation. The work combines theoretical analysis with concrete examples from various sectors such as healthcare, industry, and everyday technologies. Carried out over a short period, which explains the somewhat brief development of the subject.",
+      "role": "I co-authored the research report, contributing to the theoretical analysis sections and the critical reflection on limits and risks of AI collaboration. I also participated in the selection of real-world use cases and the structuring of the document.",
+      "selfEvaluation": "This project helped me develop a more critical eye on AI and its societal implications. I would have liked more time to deepen the study and explore more diverse case studies. The collaboration was rewarding and helped me structure a complex subject clearly.",
       "shortDescription": "Research report on human-machine collective intelligence.",
       "technologies": ["Research", "Writing", "Analysis", "Documentation"],
       "features": [
@@ -136,8 +157,11 @@
     },
     "fr": {
       "title": "Intelligence collective : humains & machines",
-      "description": "Ce projet académique prend la forme d’un dossier de recherche explorant le concept d’intelligence collective entre humains et machines. L’objectif était d’analyser comment la collaboration entre les capacités humaines et les systèmes d’intelligence artificielle peut améliorer la prise de décision, la productivité et l’innovation. Le travail combine une analyse théorique avec des exemples concrets issus de différents secteurs comme la santé, l’industrie ou les outils du quotidien. Il propose également une réflexion critique sur les limites de cette collaboration, notamment les enjeux éthiques, les risques liés à l’automatisation et les impacts sociétaux. Le projet met en avant l’importance de l’encadrement, du rôle humain et d’une intégration responsable de l’IA. Réalisé sur une courte période, d'où le court développemen du sujet qui aurait pu être bien plus approfondi.",
-      "shortDescription": "Dossier de recherche sur l’intelligence collective homme-machine.",
+      "description": "Ce projet académique prend la forme d'un dossier de recherche explorant le concept d'intelligence collective entre humains et machines.",
+      "context": "Ce projet académique prend la forme d'un dossier de recherche explorant le concept d'intelligence collective entre humains et machines. L'objectif était d'analyser comment la collaboration entre les capacités humaines et les systèmes d'intelligence artificielle peut améliorer la prise de décision, la productivité et l'innovation. Le travail combine une analyse théorique avec des exemples concrets issus de différents secteurs comme la santé, l'industrie ou les outils du quotidien. Réalisé sur une courte période, d'où le court développement du sujet qui aurait pu être bien plus approfondi.",
+      "role": "J'ai co-rédigé le dossier de recherche, en contribuant aux sections d'analyse théorique et à la réflexion critique sur les limites et dérives de la collaboration IA. J'ai également participé à la sélection des études de cas et à la structuration du document.",
+      "selfEvaluation": "Ce projet m'a permis de développer un regard plus critique sur l'IA et ses implications sociétales. J'aurais aimé disposer de plus de temps pour approfondir le sujet et explorer des cas plus variés. La collaboration a été enrichissante et m'a aidée à structurer un sujet complexe de manière claire.",
+      "shortDescription": "Dossier de recherche sur l'intelligence collective homme-machine.",
       "technologies": ["Recherche", "Rédaction", "Analyse", "Documentation"],
       "features": [
         "Dossier structuré (introduction, analyse, limites, encadrement)",
@@ -158,7 +182,10 @@
     "color": "#00AEEF",
     "en": {
       "title": "Epitech Coding Club Participation",
-      "description": "This experience reflects my early engagement with programming through the Epitech Coding Club in Rennes. After choosing to stop my NSI specialization in high school, I wanted to stay connected to coding, which led me to join these workshops. The Coding Club is a series of free, hands-on programming sessions led by Epitech students, designed to introduce young people to development through concrete projects such as games, web applications, or interactive programs. Participating in these sessions allowed me to maintain and strengthen my interest in programming in a more practical and collaborative environment. Recently, the Epitech team reached out again, and I am now considering getting involved either as a participant or by helping animate workshops, contributing to making tech more accessible to others.",
+      "description": "This experience reflects my early engagement with programming through the Epitech Coding Club in Rennes.",
+      "context": "After choosing to stop my NSI specialization in high school, I wanted to stay connected to coding, which led me to join these workshops. The Coding Club is a series of free, hands-on programming sessions led by Epitech students, designed to introduce young people to development through concrete projects such as games, web applications, or interactive programs.",
+      "role": "I participated in the hands-on workshops, discovering programming through practical projects. Recently, the Epitech team reached out again, and I am now considering getting involved either as a participant or by helping animate workshops, contributing to making tech more accessible to others.",
+      "selfEvaluation": "This experience helped me maintain and strengthen my interest in programming in a more practical and collaborative environment. It confirmed my desire to pursue a technical path and opened me to a community-driven approach to learning.",
       "shortDescription": "Coding workshops at Epitech to explore programming outside school.",
       "technologies": ["Python", "HTML", "CSS", "JavaScript"],
       "features": [
@@ -174,7 +201,10 @@
     },
     "fr": {
       "title": "Participation au Coding Club Epitech",
-      "description": "Cette expérience correspond à mon premier engagement personnel dans le développement en dehors du cadre scolaire, à travers le Coding Club d’Epitech à Rennes. Après avoir arrêté la spécialité NSI au lycée, j’ai ressenti le besoin de continuer à pratiquer le code, ce qui m’a amenée à rejoindre ces ateliers. Les Coding Clubs sont des sessions gratuites et pratiques, animées par des étudiants d’Epitech, qui permettent de découvrir la programmation à travers des projets concrets comme des jeux, des sites web ou des programmes interactifs. Cette expérience m’a permis de maintenir mon intérêt pour le développement tout en découvrant une approche plus libre, collaborative et orientée pratique. Récemment, l’équipe Epitech m’a recontactée, et je suis aujourd’hui ouverte à y participer de nouveau ou à contribuer à l’animation des ateliers.",
+      "description": "Cette expérience correspond à mon premier engagement personnel dans le développement en dehors du cadre scolaire, à travers le Coding Club d'Epitech à Rennes.",
+      "context": "Après avoir arrêté la spécialité NSI au lycée, j'ai ressenti le besoin de continuer à pratiquer le code, ce qui m'a amenée à rejoindre ces ateliers. Les Coding Clubs sont des sessions gratuites et pratiques, animées par des étudiants d'Epitech, qui permettent de découvrir la programmation à travers des projets concrets comme des jeux, des sites web ou des programmes interactifs.",
+      "role": "J'ai participé aux ateliers pratiques, en découvrant la programmation à travers des projets concrets. Récemment, l'équipe Epitech m'a recontactée, et je suis aujourd'hui ouverte à y participer de nouveau ou à contribuer à l'animation des ateliers.",
+      "selfEvaluation": "Cette expérience m'a permis de maintenir mon intérêt pour le développement tout en découvrant une approche plus libre, collaborative et orientée pratique. Elle a confirmé mon envie de poursuivre une voie technique et m'a ouverte à un apprentissage en communauté.",
       "shortDescription": "Ateliers de code Epitech pour continuer à programmer hors lycée.",
       "technologies": ["Python", "HTML", "CSS", "JavaScript"],
       "features": [
@@ -182,7 +212,7 @@
         "Découverte du code via des projets concrets",
         "Apprentissage dans un environnement collaboratif",
         "Initiation à plusieurs technologies web et programmation",
-        "Possibilité de contribution à l’animation des ateliers"
+        "Possibilité de contribution à l'animation des ateliers"
       ],
       "githubUrl": "",
       "liveUrl": "https://www.epitech.eu/ecole-informatique-apres-bac/egalite-diversite-dans-la-tech/",
@@ -196,7 +226,10 @@
     "color": "#FF6F61",
     "en": {
       "title": "AI & e-Procurement SEO Article",
-      "description": "As part of my work-study position as a Webmaster & SEO Content Manager, I wrote an in-depth article focused on the impact of artificial intelligence in e-procurement. The objective was to create high-value content combining SEO performance and educational clarity on a technical topic. The article explores how AI transforms procurement processes, including automation, predictive analysis, supplier management, and decision-making optimization. It was designed to target strategic keywords while remaining accessible to a professional audience. This project highlights my ability to translate complex subjects into structured, engaging, and optimized content, while aligning with business and visibility objectives.",
+      "description": "As part of my work-study position as a Webmaster & SEO Content Manager, I wrote an in-depth article focused on the impact of artificial intelligence in e-procurement.",
+      "context": "In the context of my alternance as a webmaster and SEO content manager, I was tasked with producing high-value content combining SEO performance and educational clarity on a complex technical topic. The article was designed to target strategic keywords while remaining accessible to a professional B2B audience.",
+      "role": "I researched the subject, structured the article and wrote the entire content. I worked on keyword targeting, search intent alignment and Hn hierarchy to optimize both readability and SEO performance. I then published and formatted the article on WordPress.",
+      "selfEvaluation": "This mission strengthened my ability to translate complex technical topics into clear, engaging and optimized content. I became more comfortable working with SEO constraints while preserving editorial quality. I could have gone further in the internal linking strategy to improve page authority.",
       "shortDescription": "SEO article on AI applications in e-procurement.",
       "technologies": ["SEO", "Content Writing", "Keyword Research", "WordPress"],
       "features": [
@@ -212,15 +245,18 @@
     },
     "fr": {
       "title": "Article SEO – IA & e-procurement",
-      "description": "Dans le cadre de mon alternance en tant que webmaster éditorial / content manager SEO, j’ai rédigé un article approfondi portant sur l’impact de l’intelligence artificielle dans l’e-procurement. L’objectif était de produire un contenu à forte valeur ajoutée, à la fois performant en SEO et pédagogique sur un sujet technique. L’article explore les transformations apportées par l’IA dans les processus d’achat : automatisation, analyse prédictive, gestion des fournisseurs et aide à la décision. Il a été conçu pour répondre à des intentions de recherche précises tout en restant accessible à une audience professionnelle. Ce projet met en avant ma capacité à vulgariser des sujets complexes, structurer l’information et produire du contenu optimisé en cohérence avec des enjeux business.",
-      "shortDescription": "Article SEO sur l’IA appliquée à l’e-procurement.",
+      "description": "Dans le cadre de mon alternance en tant que webmaster éditorial / content manager SEO, j'ai rédigé un article approfondi portant sur l'impact de l'intelligence artificielle dans l'e-procurement.",
+      "context": "Dans le cadre de mon alternance en tant que webmaster et content manager SEO, j'avais pour mission de produire des contenus à forte valeur ajoutée, à la fois performants en SEO et pédagogiques sur des sujets techniques. Cet article devait répondre à des intentions de recherche précises tout en restant accessible à une audience professionnelle B2B.",
+      "role": "J'ai réalisé la recherche sur le sujet, structuré l'article et rédigé l'intégralité du contenu. J'ai travaillé sur le ciblage des mots-clés, l'alignement avec les intentions de recherche et la hiérarchie des titres pour optimiser à la fois la lisibilité et le référencement. J'ai ensuite publié et mis en forme l'article sur WordPress.",
+      "selfEvaluation": "Cette mission a renforcé ma capacité à vulgariser des sujets techniques complexes tout en produisant un contenu clair, engageant et optimisé. Je suis plus à l'aise avec les contraintes SEO sans sacrifier la qualité éditoriale. J'aurais pu aller plus loin dans la stratégie de maillage interne pour améliorer l'autorité de la page.",
+      "shortDescription": "Article SEO sur l'IA appliquée à l'e-procurement.",
       "technologies": ["SEO", "Rédaction web", "Recherche de mots-clés", "WordPress"],
       "features": [
-        "Rédaction d’un article long format optimisé SEO",
-        "Vulgarisation de concepts complexes liés à l’IA",
-        "Travail sur l’intention de recherche et les mots-clés",
+        "Rédaction d'un article long format optimisé SEO",
+        "Vulgarisation de concepts complexes liés à l'IA",
+        "Travail sur l'intention de recherche et les mots-clés",
         "Structuration claire (titres, lisibilité, hiérarchie)",
-        "Contenu à destination d’une audience B2B"
+        "Contenu à destination d'une audience B2B"
       ],
       "githubUrl": "",
       "liveUrl": "https://blog.weproc.com/general/ia-eprocurement-guide/",
@@ -234,7 +270,10 @@
     "color": "#3BA1FF",
     "en": {
       "title": "Internship Management Application",
-      "description": "This project aimed to design an application to efficiently manage university internships by structuring and utilizing data from a relational database. One of the main challenges was designing and reorganizing the database to make it consistent, usable, and scalable. I also worked on communication between the front-end and back-end via API calls, which allowed me to better understand data flow within a web application. This project confronted me with concrete problems in data management and query optimization, while strengthening my skills in logical structuring and dynamic web development.",
+      "description": "This project aimed to design an application to efficiently manage university internships by structuring and utilizing data from a relational database.",
+      "context": "During a supervised project in semester 3, we developed a web application to manage university internships. The professor provided us with a MySQL database, from which we designed the interface in PHP, HTML, CSS and JS. In semester 4, this project was picked up again to rebuild the database and introduce APIs.",
+      "role": "I managed the front-end structure of forms and displays. In S4, I restructured the database to make it more functional, then implemented API calls to dynamically display internships. I also participated in the local project configuration and its organization via Git.",
+      "selfEvaluation": "This project gave me a better understanding of server-side data processing logic and front-to-back communication. I particularly progressed in anticipating relationships between tables. If I were to do it again, I would think in terms of API from the very start.",
       "shortDescription": "Web platform for managing university internships.",
       "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
       "features": [
@@ -243,13 +282,16 @@
         "Internship listing and search",
         "Relational database restructuring"
       ],
-      "githubUrl": "",
+      "githubUrl": "https://github.com/rahnya/APPLI-STAGE",
       "liveUrl": "",
       "screenshots": ["/projects/appli-stage.png"]
     },
     "fr": {
       "title": "Application de gestion des stages",
-      "description": "Ce projet visait à concevoir une application permettant de gérer efficacement les stages universitaires, en structurant et en exploitant des données issues d’une base relationnelle. L’un des enjeux principaux était la conception et la réorganisation de la base de données afin de la rendre cohérente, exploitable et évolutive. J’ai également travaillé sur la communication entre le front-end et le back-end via des appels API, ce qui m’a permis de mieux comprendre la circulation des données dans une application web. Ce projet m’a confrontée à des problématiques concrètes de gestion de données et d’optimisation des requêtes, tout en renforçant mes compétences en structuration logique et en développement web dynamique.",
+      "description": "Ce projet visait à concevoir une application permettant de gérer efficacement les stages universitaires, en structurant et en exploitant des données issues d'une base relationnelle.",
+      "context": "Lors d'un projet encadré au semestre 3, nous avons développé une application web pour gérer les stages universitaires. Le professeur nous a fourni une base de données MySQL, à partir de laquelle nous avons conçu l'interface en PHP, HTML, CSS et JS. Au semestre 4, ce projet a été repris pour refondre la base de données et introduire les API.",
+      "role": "J'ai géré la structure front-end des formulaires et affichages. Au S4, j'ai restructuré la base de données pour la rendre plus fonctionnelle, puis implémenté des appels API pour afficher dynamiquement les stages. J'ai aussi participé à la configuration locale du projet et à son organisation via Git.",
+      "selfEvaluation": "Ce projet m'a donné une meilleure vision de la logique de traitement des données côté serveur et de la communication entre le front et le back. J'ai particulièrement progressé dans ma manière d'anticiper les relations entre tables. Si c'était à refaire, je penserais dès le départ en API.",
       "shortDescription": "Plateforme web de gestion des stages.",
       "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
       "features": [
@@ -258,7 +300,7 @@
         "Recherche et consultation des stages",
         "Refonte de la structure de la base de données"
       ],
-      "githubUrl": "",
+      "githubUrl": "https://github.com/rahnya/APPLI-STAGE",
       "liveUrl": "",
       "screenshots": ["/projects/appli-stage.png"]
     }
@@ -270,7 +312,10 @@
     "color": "#6B5CFF",
     "en": {
       "title": "AI Agents Workflow",
-      "description": "This project explores the development of conversational agents capable of automating tasks through structured workflows. The objective was to understand how to orchestrate several specialized agents to meet diverse needs. I worked on designing conversational logic, structuring prompts and defining the roles of each agent. Integration with automation tools like n8n allowed me to connect these agents to concrete actions, going beyond simple conversation. This project is part of a broader reflection on the evolution of user interfaces and the role of artificial intelligence in process automation. It demonstrates my ability to explore emerging technologies and integrate them into functional systems.",
+      "description": "This project explores the development of conversational agents capable of automating tasks through structured workflows.",
+      "context": "Recently, I worked on developing conversational AI agents capable of responding to specific requests. The goal was to design a relevant and efficient interaction between the user and the system through well-defined scenarios. Our teacher wanted them to be useful to us afterwards. It was during this practical work that we learned to use Ollama. This also served us later to create workflows on n8n, where we could use our agents directly for more advanced work.",
+      "role": "I defined the conversational logic, developed the interface, and participated in script integration. I also tested the agents on several use cases to evaluate their clarity and usefulness, then iterated based on feedback. I conceived my agents as members of an MMI agency: a front developer, a back developer, a community manager, etc. This way, for quick tasks, I can automate part of the work to speed things up.",
+      "selfEvaluation": "This project helped me deepen my understanding of rich user-side interactions. I felt comfortable with the development tools, but I could have anticipated more error cases to reinforce the user experience. My current work could still be improved: the agent's response currently includes all its reasoning before the actual answer, which could be improved for user experience.",
       "shortDescription": "Conversational AI agents for task automation.",
       "technologies": ["Ollama", "n8n", "JavaScript", "AI Agents"],
       "features": [
@@ -285,7 +330,10 @@
     },
     "fr": {
       "title": "Agents conversationnels IA",
-      "description": "Ce projet explore le développement d’agents conversationnels capables d’automatiser des tâches à travers des workflows structurés. L’objectif était de comprendre comment orchestrer plusieurs agents spécialisés pour répondre à des besoins variés. J’ai travaillé sur la conception de logiques conversationnelles, en structurant les prompts et en définissant les rôles de chaque agent. L’intégration avec des outils d’automatisation comme n8n m’a permis de connecter ces agents à des actions concrètes, allant au-delà de la simple conversation. Ce projet s’inscrit dans une réflexion plus large sur l’évolution des interfaces utilisateur et sur le rôle des intelligences artificielles dans l’automatisation des processus. Il montre ma capacité à explorer des technologies émergentes et à les intégrer dans des systèmes fonctionnels.",
+      "description": "Ce projet explore le développement d'agents conversationnels capables d'automatiser des tâches à travers des workflows structurés.",
+      "context": "Récemment, j'ai eu comme travail le développement d'agents conversationnels (IA) permettant de répondre à des demandes spécifiques. Le but était de concevoir une interaction pertinente et efficace entre l'utilisateur et le système à travers des scénarios bien définis. Notre professeur souhaitait qu'ils puissent nous être utiles par la suite. C'est lors de ce TP que nous avons appris à utiliser Ollama. Cela nous a aussi servi par la suite à créer des workflows sur n8n, où nous pouvions utiliser nos agents directement pour un travail plus poussé.",
+      "role": "J'ai défini les logiques conversationnelles, développé l'interface, et participé à l'intégration des scripts. J'ai également testé les agents sur plusieurs cas d'usage pour en évaluer la clarté et l'utilité, puis itéré en fonction des retours. J'ai pensé mes agents comme les membres d'une agence MMI : un développeur front, un back, un CM etc. Ainsi pour des travaux rapides, je peux automatiser une partie pour accélérer.",
+      "selfEvaluation": "Ce projet m'a permis d'approfondir ma compréhension des interactions riches côté utilisateur. Je me suis sentie à l'aise avec les outils de développement, mais j'aurais pu anticiper davantage les cas d'erreur pour renforcer l'expérience utilisateur. Mon travail actuel pourrait tout de même être amélioré : actuellement la réponse de mon agent comporte toute sa réflexion avant la réponse, ce qui pourrait être amélioré pour l'expérience utilisateur.",
       "shortDescription": "Agents IA conversationnels pour automatisation.",
       "technologies": ["Ollama", "n8n", "JavaScript"],
       "features": [
@@ -306,7 +354,10 @@
     "color": "#FF3B8D",
     "en": {
       "title": "Laravel Blog Platform",
-      "description": "This project involved developing a complete blogging platform with a content management system. The goal was to understand how a dynamic web application based on a structured backend framework works. With Laravel, I discovered the principles of MVC development, route management, controller and model management, as well as interaction with a relational database. Implementing a back office also allowed me to consider the user experience on the administration side, which is often neglected but essential. This project allowed me to take a technical leap forward by moving from front-end development to a full-stack approach, with a better understanding of the architecture of a complete web application.",
+      "description": "This project involved developing a complete blogging platform with a content management system.",
+      "context": "In semester 4, as part of a backend-focused practical course, we designed a complete blog using Laravel and Filament. The objective was to create a functional site with a customizable back-office for users.",
+      "role": "This was an individual project. I therefore handled the entire backend development with Laravel, and then integrated Filament for a better visual experience. It was my first project with these tools, after getting to grips with them in the previous practical session. I also structured user roles in the administration. The database was linked to phpMyAdmin. Visitors can submit an article proposal, which the admin will then validate for publication.",
+      "selfEvaluation": "This project helped me understand how modern frameworks work. I could have improved the code documentation to facilitate handover, but overall I am very proud of this project. Building this backend reminded me of a semester 2 project where we also had to create an admin space. I especially notice how much simpler the code is to maintain, and how much better the experience is too.",
       "shortDescription": "Full blog platform with Laravel and admin dashboard.",
       "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
       "features": [
@@ -321,13 +372,16 @@
     },
     "fr": {
       "title": "Blog avec back-office Laravel",
-      "description": "Ce projet consistait à développer une plateforme de blog complète avec un système de gestion de contenu. L’objectif était de comprendre le fonctionnement d’une application web dynamique reposant sur un framework backend structuré. J’ai découvert avec Laravel les principes du développement MVC, la gestion des routes, des contrôleurs et des modèles, ainsi que l’interaction avec une base de données relationnelle. La mise en place d’un back-office m’a également permis de réfléchir à l’expérience utilisateur côté administration, souvent négligée mais essentielle. Ce projet m’a permis de franchir un cap technique en passant d’un développement front-end à une logique full-stack, avec une meilleure compréhension de l’architecture d’une application web complète.",
+      "description": "Ce projet consistait à développer une plateforme de blog complète avec un système de gestion de contenu.",
+      "context": "Au semestre 4, dans le cadre d'un TP dédié au back-end, nous avons conçu un blog complet en utilisant Laravel et Filament. L'objectif était de créer un site fonctionnel avec un back-office personnalisable pour les utilisateurs.",
+      "role": "C'était un travail individuel. Je me suis donc chargée de l'entièreté du développement back avec Laravel, et de l'intégration de Filament ensuite pour un meilleur visuel. Pour ma part ce fut le premier projet réalisé avec ces outils, après les avoir pris en main au TP précédent. Il y a aussi eu la structuration des rôles utilisateurs dans l'administration. La base de données était liée à phpMyAdmin. Les visiteurs peuvent soumettre une proposition d'article, que l'admin validera par la suite pour qu'il soit publié.",
+      "selfEvaluation": "Ce projet m'a permis de comprendre la façon dont fonctionnent les frameworks modernes. J'aurais pu améliorer la documentation du code pour faciliter la passation, mais sinon je suis très fière de ce projet. La réalisation de ce back m'a rappelé un projet du semestre 2 où nous avions dû faire un espace admin aussi. Je remarque surtout comme le code de celui-ci est bien plus simple à maintenir, et que l'expérience est meilleure elle aussi.",
       "shortDescription": "Blog avec interface d'administration personnalisée.",
       "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
       "features": [
         "Back-office personnalisable",
         "Gestion des rôles utilisateurs",
-        "Soumission et validation d’articles",
+        "Soumission et validation d'articles",
         "Base de données MySQL"
       ],
       "githubUrl": "",
@@ -342,7 +396,10 @@
     "color": "#7EC8E3",
     "en": {
       "title": "Tank Game UI & Unity Gameplay Adaptation",
-      "description": "This academic project takes a dual approach: UX/UI design and a technical understanding of video game development. The goal was not simply to produce prototypes, but to rethink the overall player experience by focusing on readability, feedback, and engagement. In the first phase, we analyzed an existing game to identify its limitations in terms of interface and user experience. This led us to propose a new, coherent art direction, building a complete visual universe and considering how each interface element could improve game comprehension. In the second phase, the project shifted to a more technical dimension with the reconstruction of the gameplay using Unity. This step allowed me to better understand the constraints of game development: state management, interaction logic, action synchronization, and code structuring. This project taught me to bridge the gap between design and implementation, making me aware of the impact of UX choices on actual development. It reflects my ability to work on both design and development issues simultaneously. on their technical translation..",
+      "description": "This academic project takes a dual approach: UX/UI design and a technical understanding of video game development.",
+      "context": "This project was part of a UX/UI gaming-oriented course where we were asked to redesign a game's interface and recreate its gameplay in Unity. The goal was not simply to produce prototypes, but to rethink the overall player experience by focusing on readability, feedback, and engagement.",
+      "role": "I analyzed the existing game to identify its limitations in terms of interface and user experience. I then proposed a new coherent art direction, building a complete visual universe and designing all interface screens on Figma. In a second phase, I worked on reconstructing the gameplay in Unity, implementing movement, shooting mechanics and win conditions.",
+      "selfEvaluation": "This project taught me to bridge the gap between design and implementation, making me aware of the impact of UX choices on actual development. I would have liked to push the 3D effects and Unity interactions further, but the dual scope of the project was very enriching.",
       "shortDescription": "Game UI redesign and gameplay reconstruction using Unity.",
       "technologies": ["Figma", "Unity", "C#", "Game Design"],
       "features": [
@@ -359,16 +416,19 @@
     },
     "fr": {
       "title": "UI de jeu de tanks & adaptation gameplay sur Unity",
-      "description": "Ce projet académique s’inscrit dans une double approche : conception UX/UI et compréhension technique du développement de jeux vidéo. L’objectif n’était pas seulement de produire des maquettes, mais de repenser l’expérience globale du joueur en travaillant sur la lisibilité, le feedback et l’engagement. Dans une première phase, nous avons analysé un jeu existant afin d’identifier ses limites en termes d’interface et d’expérience utilisateur. Cela nous a amenés à proposer une nouvelle direction artistique cohérente, en construisant un univers visuel complet et en réfléchissant à la manière dont chaque élément d’interface pouvait améliorer la compréhension du jeu. Dans un second temps, le projet a basculé vers une dimension plus technique avec la reconstitution du gameplay sous Unity. Cette étape m’a permis de mieux comprendre les contraintes du développement de jeu : gestion des états, logique d’interaction, synchronisation des actions et structuration du code. Ce projet m’a appris à faire le lien entre conception et implémentation, en prenant conscience des impacts des choix UX sur le développement réel. Il reflète ma capacité à travailler à la fois sur des problématiques de design et sur leur traduction technique..",
-      "shortDescription": "Refonte UI d’un jeu et reconstruction du gameplay sur Unity.",
+      "description": "Ce projet académique s'inscrit dans une double approche : conception UX/UI et compréhension technique du développement de jeux vidéo.",
+      "context": "Ce projet s'inscrivait dans un cours UX/UI orienté gaming où nous devions repenser l'interface d'un jeu et recréer son gameplay sous Unity. L'objectif n'était pas seulement de produire des maquettes, mais de repenser l'expérience globale du joueur en travaillant sur la lisibilité, le feedback et l'engagement.",
+      "role": "J'ai analysé le jeu existant afin d'identifier ses limites en termes d'interface et d'expérience utilisateur. J'ai ensuite proposé une nouvelle direction artistique cohérente, construit un univers visuel complet et conçu tous les écrans d'interface sur Figma. Dans un second temps, j'ai travaillé à la reconstitution du gameplay sous Unity, en implémentant les déplacements, les mécaniques de tir et les conditions de victoire.",
+      "selfEvaluation": "Ce projet m'a appris à faire le lien entre conception et implémentation, en prenant conscience des impacts des choix UX sur le développement réel. J'aurais aimé pousser davantage les effets 3D et les interactions Unity, mais la double dimension du projet était très enrichissante.",
+      "shortDescription": "Refonte UI d'un jeu et reconstruction du gameplay sur Unity.",
       "technologies": ["Figma", "Unity", "C#", "Game Design"],
       "features": [
         "Conception de maquettes complètes : écran de chargement, menu, sélection de tank, HUD de jeu, pause et écrans de victoire",
-        "Création d’une direction artistique originale et cohérente dans un univers sous-marin ludique",
+        "Création d'une direction artistique originale et cohérente dans un univers sous-marin ludique",
         "Réflexion sur les mécaniques de jeu : power-ups, feedback joueur, multijoueur et états de jeu",
-        "Re-développement du gameplay sur Unity à partir de fichiers de base fournis par l’enseignante",
+        "Re-développement du gameplay sur Unity à partir de fichiers de base fournis par l'enseignante",
         "Implémentation des interactions principales : déplacement, tir, collisions et conditions de victoire",
-        "Travail sur la lisibilité et la hiérarchie visuelle pour améliorer l’expérience joueur"
+        "Travail sur la lisibilité et la hiérarchie visuelle pour améliorer l'expérience joueur"
       ],
       "githubUrl": "",
       "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
@@ -382,7 +442,10 @@
     "color": "#FF96B3",
     "en": {
       "title": "Developer Portfolio",
-      "description": "This portfolio is a central project in my career, designed as a presentation tool but also as a complete user experience. Developed with Next.js, React, and TypeScript, it showcases my projects, skills, and visual style through a modern, responsive, and bilingual interface. Particular attention has been paid to the design, navigation, and overall consistency of the experience. More than just a showcase website, this project reflects my approach to web development: a balance between technical aspects, aesthetics, and user experience. It evolves regularly, incorporating new features and experiments, particularly around 3D and immersive interactions.",
+      "description": "This portfolio is a central project in my career, designed as a presentation tool but also as a complete user experience.",
+      "context": "Developed with Next.js, React, and TypeScript, this portfolio showcases my projects, skills, and visual style through a modern, responsive, and bilingual interface. More than just a showcase website, this project reflects my approach to web development: a balance between technical aspects, aesthetics, and user experience.",
+      "role": "I designed and developed the entire portfolio from scratch: architecture, design system, animations, bilingual routing and dynamic project pages. I also handled the data structure via a JSON file to make content management easier.",
+      "selfEvaluation": "This project is the one I keep improving the most. It evolves regularly and reflects my current level at any given moment. I would like to integrate more immersive interactions (3D, scroll animations) to push the experience further.",
       "shortDescription": "Personal portfolio built with Next.js.",
       "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       "features": [
@@ -398,7 +461,10 @@
     },
     "fr": {
       "title": "Portfolio développeuse",
-      "description": "Ce portfolio est un projet central de mon parcours, conçu comme un outil de présentation mais aussi comme une expérience utilisateur à part entière. Développé avec Next.js, React et TypeScript, il met en avant mes projets, mes compétences et mon univers visuel à travers une interface moderne, responsive et bilingue. Une attention particulière a été portée au design, à la navigation et à la cohérence globale de l’expérience. Au-delà d’un simple site vitrine, ce projet reflète ma manière de concevoir le développement web : un équilibre entre technique, esthétique et expérience utilisateur. Il évolue régulièrement, intégrant de nouvelles fonctionnalités et expérimentations, notamment autour de la 3D et des interactions immersives.",
+      "description": "Ce portfolio est un projet central de mon parcours, conçu comme un outil de présentation mais aussi comme une expérience utilisateur à part entière.",
+      "context": "Développé avec Next.js, React et TypeScript, il met en avant mes projets, mes compétences et mon univers visuel à travers une interface moderne, responsive et bilingue. Au-delà d'un simple site vitrine, ce projet reflète ma manière de concevoir le développement web : un équilibre entre technique, esthétique et expérience utilisateur.",
+      "role": "J'ai conçu et développé l'intégralité du portfolio from scratch : architecture, design system, animations, routing bilingue et pages projets dynamiques. J'ai également géré la structure des données via un fichier JSON pour faciliter la gestion du contenu.",
+      "selfEvaluation": "C'est le projet que j'améliore le plus régulièrement. Il évolue au fil du temps et reflète mon niveau à chaque instant. J'aimerais intégrer davantage d'interactions immersives (3D, animations au scroll) pour pousser l'expérience encore plus loin.",
       "shortDescription": "Portfolio personnel développé avec Next.js.",
       "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       "features": [
@@ -420,7 +486,10 @@
     "color": "#FE8A5A",
     "en": {
       "title": "SEO & Content Strategy",
-      "description": "This project brings together my professional experience in SEO and content strategy, developed in a real-world business context. I worked on keyword research, writing optimized content, and implementing technical optimizations to improve the organic search engine ranking of websites. I also monitored performance using analytical tools and participated in presenting the results to teams and clients. This work allowed me to develop a comprehensive understanding of the challenges of online visibility, combining strategy, technical aspects, and content production. It reflects my ability to work on concrete problems and deliver measurable solutions in a professional environment.",
+      "description": "This project brings together my professional experience in SEO and content strategy, developed in a real-world business context.",
+      "context": "As part of my alternance, I worked on website development under WordPress, content integration, SEO optimization and interface design. I was also led to collaborate with different profiles (design, marketing, clients), which required me to adapt my communication and understand expressed needs.",
+      "role": "I worked on keyword research, writing optimized content, and implementing technical optimizations to improve organic search rankings. I also monitored performance using analytical tools and participated in presenting results to teams and clients.",
+      "selfEvaluation": "This experience represents an important step in my training as it confronted me with concrete professional situations. I gained in autonomy, rigor and adaptability. I think I can still improve my time management and deepen certain technical aspects to be more efficient and proactive.",
       "shortDescription": "SEO strategy and web content optimization.",
       "technologies": ["SEO", "Google Analytics", "WordPress", "Content Strategy"],
       "features": [
@@ -436,7 +505,10 @@
     },
     "fr": {
       "title": "Stratégie SEO & contenu",
-      "description": "Ce projet regroupe mon expérience professionnelle en SEO et stratégie de contenu, développée dans un contexte réel en entreprise. J’ai travaillé sur la recherche de mots-clés, la rédaction de contenus optimisés, ainsi que sur des optimisations techniques visant à améliorer le référencement naturel des sites. J’ai également suivi les performances à l’aide d’outils analytiques et participé à la restitution des résultats auprès des équipes ou des clients. Ce travail m’a permis de développer une compréhension globale des enjeux de visibilité en ligne, en combinant stratégie, technique et production de contenu. Il reflète ma capacité à travailler sur des problématiques concrètes et à apporter des solutions mesurables dans un environnement professionnel.",
+      "description": "Ce projet regroupe mon expérience professionnelle en SEO et stratégie de contenu, développée dans un contexte réel en entreprise.",
+      "context": "Dans le cadre de mon alternance, j'intervenais sur le développement de sites sous WordPress, l'intégration de contenus, l'optimisation SEO et la conception d'interfaces. J'étais également amenée à collaborer avec différents profils (design, marketing, clients), ce qui m'obligeait à adapter ma communication et à comprendre les besoins exprimés.",
+      "role": "J'ai travaillé sur la recherche de mots-clés, la rédaction de contenus optimisés, ainsi que sur des optimisations techniques visant à améliorer le référencement naturel des sites. J'ai également suivi les performances à l'aide d'outils analytiques et participé à la restitution des résultats auprès des équipes ou des clients.",
+      "selfEvaluation": "Cette expérience représente une étape importante dans ma formation car elle me confronte à des situations professionnelles concrètes. J'ai gagné en autonomie, en rigueur et en capacité d'adaptation. Je pense pouvoir encore améliorer ma gestion du temps et approfondir certains aspects techniques pour être plus efficace et proactive dans les projets.",
       "shortDescription": "Optimisation SEO et stratégie de contenu.",
       "technologies": ["SEO", "Google Analytics", "WordPress", "Content Strategy"],
       "features": [
@@ -458,7 +530,10 @@
     "color": "#25cdd0",
     "en": {
       "title": "Ampa — Animal Adoption Platform",
-      "description": "A digital platform designed to simplify the adoption of animals from shelters. The project focuses on improving the connection between shelters and adopters through intuitive search, clear profiles, and a modern user experience.",
+      "description": "A digital platform designed to simplify the adoption of animals from shelters.",
+      "context": "This project stems from the observation that adoption processes are often complex, opaque, and fragmented. The objective was to completely rethink the user experience by offering a clear, accessible interface centered on user needs. The platform allows users to search for animals according to various criteria, access detailed profiles, and discover shelters, all while facilitating contact.",
+      "role": "I handled the UX/UI design phase entirely: user research, moodboard, design system, wireframes and final mockups on Figma. I also started the development with Next.js, focusing on the responsive architecture and the animal search interface.",
+      "selfEvaluation": "This project is a key element of my portfolio as it combines UX/UI design, branding and development with a user-centered approach. I would like to continue developing it to reach a functional prototype that could be tested with real users.",
       "shortDescription": "UX/UI and web platform to improve animal adoption processes.",
       "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
       "features": [
@@ -473,12 +548,15 @@
       "screenshots": []
     },
     "fr": {
-      "title": "Ampa — Plateforme d’adoption animale",
-      "description": "Ampa is a digital platform project dedicated to animal adoption, designed to improve the connection between shelters and adopters. The project stems from the observation that adoption processes are often complex, opaque, and fragmented. The objective was therefore to completely rethink the user experience by offering a clear, accessible interface centered on user needs. The platform allows users to search for animals according to various criteria, access detailed profiles, and discover shelters, all while facilitating contact. Particular attention was paid to design, accessibility, and the mobile experience. This project is a key element of my portfolio, combining UX/UI design, branding, and development, with a user-centered approach and comprehensive product planning.",
-      "shortDescription": "Plateforme web UX/UI pour améliorer l’adoption d’animaux.",
+      "title": "Ampa — Plateforme d'adoption animale",
+      "description": "Ampa est un projet de plateforme numérique dédiée à l'adoption animale, pensée pour améliorer le lien entre refuges et adoptants.",
+      "context": "Ce projet part du constat que les processus d'adoption sont souvent complexes, opaques et fragmentés. L'objectif était de repenser entièrement l'expérience utilisateur en proposant une interface claire, accessible et centrée sur les besoins des utilisateurs. La plateforme permet de rechercher des animaux selon différents critères, d'accéder à des fiches détaillées et de découvrir les refuges, tout en facilitant le contact.",
+      "role": "J'ai pris en charge l'intégralité de la phase UX/UI design : recherche utilisateur, moodboard, design system, wireframes et maquettes finales sur Figma. J'ai également démarré le développement avec Next.js, en me concentrant sur l'architecture responsive et l'interface de recherche des animaux.",
+      "selfEvaluation": "Ce projet est un élément clé de mon portfolio car il combine conception UX/UI, branding et développement avec une approche centrée utilisateur. J'aimerais continuer à le développer pour aboutir à un prototype fonctionnel testable avec de vrais utilisateurs.",
+      "shortDescription": "Plateforme web UX/UI pour améliorer l'adoption d'animaux.",
       "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
       "features": [
-        "Recherche d’animaux avec filtres",
+        "Recherche d'animaux avec filtres",
         "Fiches détaillées des animaux",
         "Profils de refuges",
         "Design responsive mobile-first",
@@ -496,7 +574,10 @@
     "color": "#FFC72C",
     "en": {
       "title": "Inflation Data Visualization",
-      "description": "This data journalism project aimed to make a complex economic phenomenon understandable: the impact of inflation on food consumption. I worked on selecting, interpreting, and narrating the data, seeking to transform numerical information into a clear and engaging visual narrative. The challenge was to find a balance between the rigor of the information and accessibility for the general public. The motion design dimension added an extra layer by dynamizing the data and guiding the reader. This project allowed me to develop a storytelling approach applied to data, halfway between design, information, and pedagogy.",
+      "description": "This data journalism project aimed to make a complex economic phenomenon understandable: the impact of inflation on food consumption.",
+      "context": "In semester 3, as part of a data visualization project, our group chose an article from Ouest-France on inflation in France and the drop in food consumption. We identified several key data sets. From these, we produced original dataviz photographs and created a journalistic poster combining text, data, and visuals. In parallel, a second deliverable was a motion design video based on more personal data.",
+      "role": "I participated in writing the journalistic text for the poster and in creating visuals, both photographically and through graphic tools. For the video, I selected the data and worked on the animated illustration in After Effects. I was also responsible for the graphic and narrative consistency between the poster and the video.",
+      "selfEvaluation": "This project allowed me to combine skills in journalism, graphic design, and data analysis. I became aware of the importance of adapting visual treatment to the target audience and developed my visual storytelling skills. In hindsight, I could have better anticipated the technical constraints of motion design to achieve smoother animation.",
       "shortDescription": "Data journalism project with infographic and motion design.",
       "technologies": ["After Effects", "Illustration", "Data Visualization"],
       "features": [
@@ -510,8 +591,11 @@
       "screenshots": ["/projects/Affiche_Datavisualisation.png"]
     },
     "fr": {
-      "title": "Datavisualisation de l’inflation",
-      "description": "Ce projet de data journalisme avait pour objectif de rendre compréhensible un phénomène économique complexe : l’impact de l’inflation sur la consommation alimentaire. J’ai travaillé sur la sélection, l’interprétation et la mise en récit des données, en cherchant à transformer des informations chiffrées en une narration visuelle claire et engageante. L’enjeu était de trouver un équilibre entre rigueur de l’information et accessibilité pour le grand public. La dimension motion design a ajouté une couche supplémentaire en permettant de dynamiser les données et de guider la lecture. Ce projet m’a permis de développer une approche storytelling appliquée à la data, à mi-chemin entre design, information et pédagogie.",
+      "title": "Datavisualisation de l'inflation",
+      "description": "Ce projet de data journalisme avait pour objectif de rendre compréhensible un phénomène économique complexe : l'impact de l'inflation sur la consommation alimentaire.",
+      "context": "Au semestre 3, dans le cadre d'un projet de data visualisation, notre groupe a choisi un article de Ouest-France sur l'inflation en France et la baisse de consommation alimentaire. Nous avons identifié plusieurs ensembles de données clés. À partir de celles-ci, nous avons produit des photos de dataviz originales et créé une affiche journalistique rassemblant texte, données, et visuels. En parallèle, un second livrable consistait en une vidéo en motion design basée sur un jeu de données plus personnel.",
+      "role": "J'ai participé à la rédaction du texte journalistique de l'affiche ainsi qu'à la création de visuels, que ce soit en photo ou via des outils graphiques. Pour la vidéo, j'ai sélectionné les données et travaillé sur l'illustration animée dans After Effects. J'ai aussi été responsable de la cohérence graphique et narrative entre l'affiche et la vidéo.",
+      "selfEvaluation": "Ce projet m'a permis d'allier des compétences en journalisme, graphisme, et analyse de données. J'ai pris conscience de l'importance d'adapter le traitement visuel à l'audience cible et j'ai développé mes compétences en storytelling visuel. Avec le recul, j'aurais pu mieux anticiper les contraintes techniques du motion design pour gagner en fluidité dans l'animation.",
       "shortDescription": "Projet de datavisualisation journalistique.",
       "technologies": ["After Effects", "Illustration", "Data Visualization"],
       "features": [
@@ -532,7 +616,10 @@
     "color": "#FFD54F",
     "en": {
       "title": "Crossy Road UX Power-ups",
-      "description": "This project involves imagining new gameplay mechanics for Crossy Road, respecting the existing game logic while introducing new elements. I analyzed the current mechanics to understand what makes them effective, then proposed improvements in the form of power-ups and new interactions. The goal was to enhance player engagement without altering the original experience. This work allowed me to develop a UX approach applied to game design, reflecting on how mechanics influence user behavior and experience.",
+      "description": "This project involves imagining new gameplay mechanics for Crossy Road, respecting the existing game logic while introducing new elements.",
+      "context": "As part of the UX/UI gaming-oriented course, we had to imagine power-ups added to the game Crossy Road. After developing our concept, we participated in a simulated pitch with an oral presentation.",
+      "role": "I imagined the power-up concept, created the associated gameplay sketches. I also designed the slides to make my proposal as impactful as possible. I tested the game extensively in its different modes, characters and scenarios, then reflected on what my power-ups would look like, how to collect and activate them in ways that fit the game's existing habits. I used the UX Gaming course to ensure I wasn't disrupting the gameplay experience. I also created sprints to understand the character movement that would need to be developed.",
+      "selfEvaluation": "This project made me work on a more playful target audience, which was very enriching. The format constraint (express pitch) taught me to get to the point, but I would have liked to add a clickable prototype to better illustrate my vision beyond the static images (even if the sprint helped).",
       "shortDescription": "UX concept for new game mechanics.",
       "technologies": ["UX Design", "Game Design"],
       "features": [
@@ -547,13 +634,16 @@
     },
     "fr": {
       "title": "Super-pouvoirs pour Crossy Road",
-      "description": "Ce projet consiste à imaginer de nouvelles mécaniques de jeu pour Crossy Road, en s’inscrivant dans la logique existante du jeu tout en apportant de la nouveauté. J’ai analysé les mécaniques actuelles pour comprendre ce qui fait leur efficacité, puis proposé des améliorations sous forme de power-ups et de nouvelles interactions. L’objectif était de renforcer l’engagement joueur sans dénaturer l’expérience originale. Ce travail m’a permis de développer une approche UX appliquée au game design, en réfléchissant à la manière dont les mécaniques influencent le comportement et l’expérience utilisateur.",
+      "description": "Ce projet consiste à imaginer de nouvelles mécaniques de jeu pour Crossy Road, en s'inscrivant dans la logique existante du jeu tout en apportant de la nouveauté.",
+      "context": "Dans le cadre du cours UX/UI orienté gaming, nous avons dû imaginer des super-pouvoirs ajoutés au jeu Crossy Road. Après avoir travaillé notre concept, nous avons participé à un appel d'offres simulé avec une présentation orale.",
+      "role": "J'ai imaginé le concept du super-pouvoir, réalisé les croquis de gameplay associés. J'ai également conçu les slides pour rendre ma proposition la plus percutante possible. J'ai testé le jeu, les différents modes, personnages, scénarios, puis réfléchi à ce que prendraient mes super-pouvoirs, le moyen de les collecter et les activer en correspondant bien aux habitudes de ce jeu. J'ai réutilisé le cours d'UX Gaming pour vérifier que je ne perturbais pas l'expérience de jeu. Il a aussi fallu créer des sprints pour comprendre le mouvement du personnage qui devra être développé.",
+      "selfEvaluation": "Ce projet m'a fait travailler sur une cible plus ludique, ce qui a été très enrichissant. La contrainte de format (appel d'offre express) m'a appris à aller à l'essentiel, mais j'aurais aimé ajouter un prototype cliquable pour mieux illustrer ma vision en dehors des images statiques (même si le sprint a aidé).",
       "shortDescription": "Concept UX pour un jeu mobile.",
       "technologies": ["UX Design", "Game Design"],
       "features": [
         "Concept de gameplay",
-        "Croquis d’interactions",
-        "Présentation type appel d’offres",
+        "Croquis d'interactions",
+        "Présentation type appel d'offres",
         "Analyse UX du jeu existant"
       ],
       "githubUrl": "",
@@ -568,7 +658,10 @@
     "color": "#64B5F6",
     "en": {
       "title": "Weather App UX/UI Design",
-      "description": "This UX/UI design project aimed to redesign a weather application by improving the hierarchy of information and the clarity of the interface. I worked on the organization of the content, identifying the essential information for the user and simplifying access to it. Particular attention was paid to micro-interactions to make the experience more intuitive and enjoyable. This project allowed me to deepen my understanding of data-driven interfaces, where readability and speed of comprehension are essential.",
+      "description": "This UX/UI design project aimed to redesign a weather application by improving the hierarchy of information and the clarity of the interface.",
+      "context": "In semester 3, we were asked to create mockups for a complete weather application. This work involved UX/UI design of the interface and the integration of animations to simulate transitions between screens.",
+      "role": "After consulting existing apps, I designed a moodboard and defined the app's graphic charter from it. I then listed the required elements for a weather app and the additional features I could add. I designed the main screens on Figma, created micro-animations for weather states (rain, sun, etc.) and an hour-by-hour view designed as a clickable clock. I also presented the application through a short promotional explainer video.",
+      "selfEvaluation": "This experience helped me strengthen my UI skills and learn to visually prioritize weather information. Although I could have applied myself more on the aesthetics of certain elements (correct typography, finishing illustrations), I learned a lot about visual accessibility and how to create components and animations in Figma.",
       "shortDescription": "Weather app UX/UI redesign.",
       "technologies": ["Figma", "UX Design", "UI Animation"],
       "features": [
@@ -583,8 +676,11 @@
     },
     "fr": {
       "title": "Application météo UX/UI",
-      "description": "Ce projet de design UX/UI avait pour objectif de repenser une application météo en améliorant la hiérarchisation de l’information et la clarté de l’interface. J’ai travaillé sur l’organisation des contenus, en identifiant les informations essentielles pour l’utilisateur et en simplifiant leur accès. Une attention particulière a été portée aux micro-interactions, afin de rendre l’expérience plus intuitive et agréable. Ce projet m’a permis d’approfondir ma réflexion sur les interfaces orientées données, où la lisibilité et la rapidité de compréhension sont essentielles.",      
-      "shortDescription": "Maquettes UX/UI d’une application météo.",
+      "description": "Ce projet de design UX/UI avait pour objectif de repenser une application météo en améliorant la hiérarchisation de l'information et la clarté de l'interface.",
+      "context": "Au semestre 3, nous avons été amenés à créer des maquettes d'une application météo complète. Ce travail comportait la conception UX/UI de l'interface et l'intégration d'animations pour simuler les transitions entre les écrans.",
+      "role": "Après avoir consulté ce qui se faisait déjà, j'ai conçu un premier moodboard et défini grâce à cela la charte graphique de l'application. Puis j'ai listé les éléments obligatoires à une application météo et les autres fonctionnalités que je pourrais ajouter. Ensuite seulement, je me suis occupée de concevoir les écrans principaux sur Figma et réalisé des micro-animations pour les états météo (pluie, soleil, etc.), et l'heure par heure que j'ai conçu comme une horloge cliquable. J'ai également présenté l'application par une petite publicité / explainer vidéo.",
+      "selfEvaluation": "Cette expérience m'a permis de renforcer mes compétences UI et d'apprendre à hiérarchiser visuellement l'information météo. Bien que j'aurais pu m'appliquer un peu plus sur l'esthétique des éléments (application des bonnes typographies, bien terminer les dessins etc), j'ai beaucoup appris sur l'accessibilité visuelle et la façon de créer des composants et des animations sur Figma.",
+      "shortDescription": "Maquettes UX/UI d'une application météo.",
       "technologies": ["Figma", "UX Design", "UI Animation"],
       "features": [
         "Maquettes complètes d'application",
@@ -604,7 +700,10 @@
     "color": "#8A6F9B",
     "en": {
       "title": "Virtual Travel Chair",
-      "description": "This design project explores the creation of an innovative object intended to enhance the virtual reality experience. The objective was to develop a product that is functional, immersive, and economically viable. We worked on the overall user experience, imagining how the chair could be integrated into different VR uses. Particular attention was paid to ergonomics, interaction, and consistency between the physical product and the digital experience. The project also included strategic thinking: positioning, target audience, business model, and environmental impact. It allowed me to develop a more holistic vision of design, going beyond the interface to consider a product as a whole.",
+      "description": "This design project explores the creation of an innovative object intended to enhance the virtual reality experience.",
+      "context": "As part of the SAE 102 and 106 in semester 1, the three of us embarked on creating an innovative object. Our mission was to develop a commercial pitch, design all the object's features, and define technical aspects such as dimensions, materials and the business model, while taking ecological criteria into account. A specification document had been established and had to be respected. We innovated by improving on existing products, designing a chair to accompany virtual reality headsets.",
+      "role": "In this project, I took charge of the pitch section concerning the application potential, distribution methods and communication strategies. My role was to analyze the different outlets for our innovative object, define the most appropriate distribution channels, and present the communication methods we considered most effective to promote our product.",
+      "selfEvaluation": "This experience allowed me to put my knowledge of communication strategy and marketing into practice. However, I think I could have deepened my research on market trends and consumer needs to refine our strategies. With semester 2 knowledge, I could have better used data analysis tools to make more informed decisions about our product's business model.",
       "shortDescription": "Concept design of a VR-enhanced chair.",
       "technologies": ["Concept Design", "Product Design", "Business Model"],
       "features": [
@@ -619,21 +718,23 @@
     },
     "fr": {
       "title": "Virtual Travel Chair",
-      "description": "Ce projet de conception explore la création d’un objet innovant destiné à améliorer l’expérience de réalité virtuelle. L’objectif était de réfléchir à un produit à la fois fonctionnel, immersif et viable d’un point de vue économique. Nous avons travaillé sur l’expérience utilisateur globale, en imaginant comment la chaise pouvait s’intégrer dans différents usages de la VR. Une attention particulière a été portée à l’ergonomie, à l’interaction et à la cohérence entre le produit physique et l’expérience numérique. Le projet incluait également une réflexion stratégique : positionnement, cible, modèle économique et impact environnemental. Il m’a permis de développer une vision plus globale du design, en allant au-delà de l’interface pour penser un produit dans son ensemble.",
+      "description": "Ce projet de conception explore la création d'un objet innovant destiné à améliorer l'expérience de réalité virtuelle.",
+      "context": "Dans le cadre des SAE 102 et 106 du semestre 1, nous nous sommes lancés à trois dans la création d'un objet innovant. Notre mission consistait à élaborer un pitch commercial, à concevoir toutes les fonctionnalités de l'objet, ainsi qu'à définir les aspects techniques tels que les dimensions, les matériaux et le business model, tout en tenant compte de critères écologiques. Un cahier des charges avait été établi et devait être respecté. Nous sommes allés vers l'innovation dans l'aspect améliorer l'existant en concevant une chaise accompagnant les casques de réalité virtuelle.",
+      "role": "Dans ce projet, j'ai pris en charge la partie du pitch concernant le potentiel d'application, les moyens de distribution et les stratégies de communication. Mon rôle était d'analyser les différents débouchés pour notre objet innovant, de définir les canaux de distribution les plus appropriés, et de présenter les moyens de communication nous paraissant les plus efficaces pour promouvoir notre produit.",
+      "selfEvaluation": "Cette expérience m'a permis de mettre en pratique mes connaissances en stratégie de communication et marketing. Cependant, je pense que j'aurais pu approfondir mes recherches sur les tendances du marché et les besoins des consommateurs pour affiner nos stratégies. Avec les connaissances du semestre 2, j'aurais pu mieux utiliser les outils d'analyse de données pour prendre des décisions plus éclairées concernant le business model de notre produit.",
       "shortDescription": "Concept de chaise immersive pour la VR.",
       "technologies": ["Concept Design", "Product Design", "Business Model"],
       "features": [
-        "Conception d’un objet VR innovant",
+        "Conception d'un objet VR innovant",
         "Étude des applications et débouchés",
         "Pitch commercial",
-        "Réflexion sur l’impact écologique"
+        "Réflexion sur l'impact écologique"
       ],
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": ["/projects/vr-chair.png"]
     }
   },
-
   {
     "slug": "mmi-decouvertes",
     "categories": ["school","web"],
@@ -641,7 +742,10 @@
     "color": "#D0A8BC",
     "en": {
       "title": "MMI Découvertes Website",
-      "description": "This project represents my first concrete experience in web development, undertaken at the beginning of my Multimedia and Internet Technology (MMI) degree. The objective was to design a complete website using HTML and CSS, respecting a logical structure, content hierarchy, and navigation. Beyond the technical aspect, this project allowed me to understand the fundamental principles of the web: page organization, the importance of HTML semantics, style management, and basic concepts of responsive design. I also discovered the rigor necessary to produce a functional and coherent website, particularly in managing links, forms, and simple interactions. This project marks the starting point of my development journey and illustrates my progression from fundamental principles to more complex projects today.",
+      "description": "This project represents my first concrete experience in web development, undertaken at the beginning of my Multimedia and Internet Technology (MMI) degree.",
+      "context": "In semester 1, I designed and developed the website 'MMI Découvertes' for a travel agency as part of SAÉ 1.05 at the IUT, working in a group of 5, with the goal of creating a functional site compliant with standards. It included tabs for options, destinations, featured offers, a contact page with an interactive map, and a shopping cart with total and subtotal calculations. We were required to code in HTML and CSS only. This project allowed me to reuse and expand my web development skills.",
+      "role": "I was responsible for the 'Options' tab and the English version of the website, as well as the Contact page that my classmate had not completed. I handled the integration of the interactive map for the travel location on the form of that page.",
+      "selfEvaluation": "With my S2 knowledge, I could have managed flexbox better, for example. The responsiveness of our pages would also have been better. But I think my work was suited to what was expected for a first-year S1 student.",
       "shortDescription": "First web project: travel agency website built with HTML and CSS.",
       "technologies": ["HTML", "CSS"],
       "features": [
@@ -656,7 +760,10 @@
     },
     "fr": {
       "title": "Site web MMI Découvertes",
-      "description": "Ce projet représente ma première expérience concrète en développement web, réalisée au début de ma formation en BUT MMI. L’objectif était de concevoir un site complet en HTML et CSS, en respectant une logique de structure, de hiérarchie de contenu et de navigation. Au-delà de l’aspect technique, ce projet m’a permis de comprendre les bases fondamentales du web : organisation des pages, importance de la sémantique HTML, gestion des styles et premières notions de responsive design. J’ai également découvert la rigueur nécessaire pour produire un site fonctionnel et cohérent, notamment dans la gestion des liens, des formulaires et des interactions simples. Ce projet marque le point de départ de mon parcours en développement et illustre ma progression depuis des bases fondamentales jusqu’à des projets plus complexes aujourd’hui.",
+      "description": "Ce projet représente ma première expérience concrète en développement web, réalisée au début de ma formation en BUT MMI.",
+      "context": "Au semestre 1, j'ai conçu et développé le site Web « MMI Découvertes » pour une agence de voyages dans le cadre de la SAÉ 1.05 à l'IUT en groupe de 5, dans le but de créer un site fonctionnel et conforme aux normes. Il comprenait des onglets pour les options, les destinations, les offres phares, la page contact avec une carte interactive, et un panier d'achats avec un total et des sous-totaux. Nous étions obligés de coder en HTML et CSS uniquement. Ce projet m'a permis de réutiliser et d'élargir mes compétences en développement Web.",
+      "role": "J'étais responsable de l'onglet « Options » et de la version anglaise du site web, ainsi que de la page Contact que mon camarade n'avait pas achevée. Je me suis occupée de l'intégration de la carte interactive pour le lieu de voyage sur le formulaire de cette page.",
+      "selfEvaluation": "Avec mes connaissances du S2, j'aurais pu mieux gérer les flexbox par exemple. La responsivité de nos pages aurait été meilleure aussi. Mais je pense que mon travail était adapté à ce qui était demandé pour une première année S1.",
       "shortDescription": "Premier site web réalisé en HTML et CSS.",
       "technologies": ["HTML", "CSS"],
       "features": [
@@ -677,7 +784,10 @@
     "color": "#C58AFF",
     "en": {
       "title": "1ris Communication Agency Website",
-      "description": "This collaborative project aimed to simulate the creation of a website for a communications agency, reproducing a context similar to a real project with constraints and teamwork. We worked from mockups, which allowed me to better understand the translation of a design into code and the importance of visual fidelity. I also participated in the integration of interactive features using JavaScript, which marked an important step in my skills development. This project also made me more aware of team coordination, task allocation, and the need to maintain overall consistency in the code and design. It represents my first experience with collaborative work in web development.",
+      "description": "This collaborative project aimed to simulate the creation of a website for a communications agency.",
+      "context": "In semester 2, I participated in developing the website for a fictitious communication agency as part of SAÉ 2.02 at the IUT, in a group of 4. The goal was to create a functional site visually faithful to our mockups. The site included several sections, an English version, an interactive JavaScript mode, and blog articles. This project allowed me to apply my web development skills while also learning to model data and use a web hosting service.",
+      "role": "I handled integrating the missing styles to match the mockups as closely as possible. I was responsible for implementing an English version and a dark mode using HTML, CSS and JavaScript. I also wrote the blog articles and team member presentation texts. My work was to ensure every aspect of the site faithfully reflected our initial vision and was accessible to an English-speaking audience, while also ensuring that the features I added persisted when navigating between pages. I participated in hosting the pages progressively.",
+      "selfEvaluation": "Unlike semester 1, I was able to manage flexbox for styling and use media queries for better responsiveness. Mastering JavaScript allowed me to add interactive features to the site, improving the user experience. I also learned a proper way to implement the English version of the site. This helped me develop localization and adapted writing skills. I am proud of this project as it clearly shows my progress in integration, web development and content management since semester 1.",
       "shortDescription": "Agency website built with responsive design and JavaScript features.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "features": [
@@ -692,7 +802,10 @@
     },
     "fr": {
       "title": "Site de l'agence 1ris",
-      "description": "Ce projet collaboratif avait pour objectif de simuler la création d’un site pour une agence de communication, en reproduisant un contexte proche d’un projet réel avec contraintes et travail en équipe. Nous avons travaillé à partir de maquettes, ce qui m’a permis de mieux comprendre la traduction d’un design en code et les enjeux de fidélité visuelle. J’ai également participé à l’intégration de fonctionnalités interactives en JavaScript, ce qui a marqué une étape importante dans ma montée en compétences. Ce projet m’a aussi sensibilisée à la coordination en équipe, à la répartition des tâches et à la nécessité de maintenir une cohérence globale dans le code et le design. Il représente une première approche du travail collaboratif en développement web.",
+      "description": "Ce projet collaboratif avait pour objectif de simuler la création d'un site pour une agence de communication.",
+      "context": "Au semestre 2, j'ai participé au développement du site web pour une agence de communication fictive dans le cadre de la SAÉ 2.02 à l'IUT en groupe de 4. Le but était de créer un site fonctionnel et esthétiquement fidèle à nos maquettes. Le site comprenait plusieurs sections, une version anglaise, un mode interactif en JavaScript, et des articles de blog. Ce projet m'a permis d'appliquer mes compétences en développement Web, mais j'ai pu aussi apprendre à modéliser les données, et à utiliser un hébergeur pour le site.",
+      "role": "Je me suis occupée d'intégrer le style manquant pour correspondre au maximum aux maquettes. J'étais chargée de mettre en place une version anglaise et un mode sombre avec HTML, CSS et JavaScript. J'ai également rédigé les articles de blog et les textes de présentation des membres de l'équipe. Mon travail consistait à m'assurer que chaque aspect du site reflète fidèlement notre vision initiale et soit accessible à un public anglophone, mais aussi que les fonctionnalités que j'ai ajoutées se conservent lorsque l'on passe d'une page à l'autre. J'ai participé à l'hébergement des pages au fur et à mesure.",
+      "selfEvaluation": "Contrairement au semestre 1, j'ai été capable de gérer les flexbox pour le style et d'utiliser des media queries pour une meilleure responsivité. La maîtrise de JavaScript m'a permis d'ajouter des fonctionnalités interactives au site, améliorant ainsi l'expérience utilisateur. De plus, j'ai appris une manière correcte de réaliser la version anglaise du site. Cela m'a aidé à développer des compétences en localisation et en rédaction adaptée. Je suis fière de ce projet car il montre bien mes progrès en intégration, développement web et en gestion de contenu depuis le semestre 1.",
       "shortDescription": "Site d'agence avec responsivité et fonctionnalités JavaScript.",
       "technologies": ["HTML", "CSS", "JavaScript"],
       "features": [
@@ -713,7 +826,11 @@
     "color": "#4DB6AC",
     "en": {
       "title": "Porquerolles Festival Digital Strategy",
-      "description": "This project involved developing a digital communication strategy for the Porquerolles Film Festival, based on competitive analysis and trend monitoring. I worked on identifying the positioning of similar players in order to propose a differentiating strategy adapted to new uses, particularly on social media. The objective was to understand how a cultural event can gain visibility in a saturated digital environment. This project allowed me to develop a strategic approach, combining analysis, marketing thinking, and concrete proposals.",      "shortDescription": "Digital communication strategy for a film festival.",
+      "description": "This project involved developing a digital communication strategy for the Porquerolles Film Festival.",
+      "context": "At the beginning of semester 2, our group was tasked with rethinking the communication strategy for the Porquerolles film festival. After thorough digital monitoring, we established and presented our communication plan, with a focus on the 'Ecotubeurs'.",
+      "role": "I was responsible for designing the communication strategy for TikTok and Twitter social networks, in order to target young people for the 'Ecotubeurs'. My work consisted in developing content ideas and proposing strategic orientations to maximize the impact of their online presence.",
+      "selfEvaluation": "Thanks to the knowledge acquired in semester 2, I was able to develop effective strategies to promote the festival on TikTok, with a focus on target audiences, particularly environmentally conscious young people. This project helped me understand the importance of communication adapted to each platform to reach our specific audience and apply my theoretical skills to a real case. I was then able to apply this experience to the following project.",
+      "shortDescription": "Digital communication strategy for a film festival.",
       "technologies": ["Digital Strategy", "Social Media", "Communication Audit"],
       "features": [
         "Competitive digital analysis",
@@ -727,7 +844,10 @@
     },
     "fr": {
       "title": "Veille numérique – Festival de Porquerolles",
-      "description": "Ce projet consistait à élaborer une stratégie de communication digitale pour le festival de cinéma de Porquerolles, en s’appuyant sur une analyse concurrentielle et une veille des tendances. J’ai travaillé sur l’identification des positionnements des acteurs similaires, afin de proposer une stratégie différenciante et adaptée aux nouveaux usages, notamment sur les réseaux sociaux. L’objectif était de comprendre comment un événement culturel peut se rendre visible dans un environnement digital saturé. Ce projet m’a permis de développer une approche stratégique, en combinant analyse, réflexion marketing et propositions concrètes.",
+      "description": "Ce projet consistait à élaborer une stratégie de communication digitale pour le festival de cinéma de Porquerolles.",
+      "context": "Au début du semestre 2, notre groupe a été chargé de repenser la stratégie de communication pour le festival de cinéma de Porquerolles. Après une veille numérique approfondie, nous avons établi et présenté notre plan de communication, en mettant l'accent sur les « Ecotubeurs ».",
+      "role": "J'étais chargée de concevoir la stratégie de communication pour les réseaux sociaux TikTok et Twitter, afin de cibler les jeunes pour les « Ecotubeurs ». Mon travail consistait à développer des idées de contenu et à proposer des orientations stratégiques pour maximiser l'impact de leur présence en ligne.",
+      "selfEvaluation": "Grâce à mes connaissances acquises au semestre 2, j'ai pu élaborer des stratégies efficaces pour promouvoir le festival sur TikTok, en mettant l'accent sur les publics cibles, notamment les jeunes soucieux de l'environnement. Ce projet m'a permis de comprendre l'importance d'une communication adaptée à chaque plateforme pour toucher notre audience spécifique et d'appliquer mes compétences théoriques à un cas réel. J'ai ensuite pu appliquer cela pour la trace suivante.",
       "shortDescription": "Stratégie digitale pour un festival de cinéma.",
       "technologies": ["Stratégie Digitale", "Réseaux Sociaux", "Audit"],
       "features": [
@@ -748,7 +868,10 @@
     "color": "#FF7043",
     "en": {
       "title": "Merry Cashmas Reportage",
-      "description": "This video reportage project addresses the theme of commercial Christmas through a critical and narrative approach. The objective was to produce structured audiovisual content, combining interviews, illustrative images, and editing. I participated in the various stages of production: preparation, filming, framing, sound recording, and editing. This project allowed me to understand the constraints of the video format, particularly managing rhythm, narration, and visual coherence. It represents my first immersion in audiovisual production, developing both technical skills and a sensitivity to storytelling.",
+      "description": "This video reportage project addresses the theme of commercial Christmas through a critical and narrative approach.",
+      "context": "In semester 1, we had a practical session focused on video shooting with a DSLR. After an introduction to its technical settings and film grammar, we chose a reportage scenario and elaborated a technical breakdown as a team of three. Our theme was 'commercial Christmas'. We then shot for less than two hours. Post-production followed before screening the final result in the amphitheater. This was an opportunity for me to receive critical analysis on my first autonomous filming and editing experiences.",
+      "role": "I handled the filming: I set up the equipment and filmed our small interview, paying attention to people's movements and surrounding noises. I then carried out the editing. I had to learn to modulate sound and new Premiere Pro features to create fades between shots, add background music and reduce noise. I also came up with the wordplay and title of our video ('Merry Cashmas!').",
+      "selfEvaluation": "With my S2 knowledge, I would be able to improve the video visually so that certain shots look less 'cut' (by improving transitions). I would remove the 'Konbini' name under the logo, as it sometimes covers elements. I would also modify the questions asked and slightly lengthen their on-screen time, for better comprehension by viewers.",
       "shortDescription": "Video reportage about consumerism during Christmas.",
       "technologies": ["DSLR Filming", "Premiere Pro", "Video Editing"],
       "features": [
@@ -763,7 +886,10 @@
     },
     "fr": {
       "title": "Reportage vidéo Merry Cashmas",
-      "description": "Ce projet de reportage vidéo aborde la thématique du Noël commercial à travers une approche critique et narrative. L’objectif était de produire un contenu audiovisuel structuré, mêlant interviews, images d’illustration et montage. J’ai participé aux différentes étapes de production : préparation, tournage, cadrage, prise de son et montage. Ce projet m’a permis de comprendre les contraintes du format vidéo, notamment la gestion du rythme, de la narration et de la cohérence visuelle. Il représente une première immersion dans la production audiovisuelle, en développant à la fois des compétences techniques et une sensibilité au storytelling.",
+      "description": "Ce projet de reportage vidéo aborde la thématique du Noël commercial à travers une approche critique et narrative.",
+      "context": "Au semestre 1, nous avons eu un TP axé sur la prise de vue vidéo avec un DSLR. Après une introduction aux réglages techniques de celui-ci et à la grammaire filmique, nous avons choisi un scénario de reportage et élaboré un découpage technique par équipe de trois. Notre thème fut le « Noël commercial ». Ensuite, nous avons tourné durant moins de deux heures. Après, il restait la post-production à réaliser, avant de diffuser en amphithéâtre le rendu final. Ce fut pour moi l'occasion de recevoir des analyses critiques sur mes premières expériences de tournage et montages en autonomie.",
+      "role": "Je m'occupais du tournage : je me suis chargée de régler le matériel puis filmer notre petite interview en prêtant attention aux mouvements des personnes et aux bruits alentours. Ensuite, c'est moi qui ai réalisé le montage. J'ai dû apprendre à moduler le son et de nouvelles fonctionnalités de Premiere Pro, afin de faire des fondus sur les plans, rajouter une musique de fond et baisser le bruit entre autres. C'est aussi moi qui ai trouvé le jeu de mot et titre de notre vidéo (« Merry Cashmas ! »).",
+      "selfEvaluation": "Avec mes connaissances du S2, je serais en capacité d'améliorer la vidéo visuellement afin que certains plans paraissent moins « coupés » (en améliorant les transitions). Je retirerais le nom « Konbini », en dessous du logo, car cela cache parfois des éléments. Je modifierais aussi les questions posées et rallongerais légèrement leur temps d'apparition, pour une meilleure compréhension par les personnes visionnant la vidéo.",
       "shortDescription": "Reportage vidéo sur la consommation à Noël.",
       "technologies": ["Tournage DSLR", "Premiere Pro"],
       "features": [
@@ -784,7 +910,11 @@
     "color": "#BA68C8",
     "en": {
       "title": "MMI 30 Years Communication Project",
-      "description": "This project is part of the communication surrounding the 30th anniversary of the MMI training program. The objective was to produce editorial and visual content that would trace the evolution of the program. I worked on information research, content structuring, and graphic design. The challenge was to make the information clear, attractive, and accessible, while respecting the visual identity of the event. This project allowed me to develop my writing, summarizing, and layout skills in a context combining communication and design.",      "shortDescription": "Editorial and visual communication for MMI anniversary.",
+      "description": "This project is part of the communication surrounding the 30th anniversary of the MMI training program.",
+      "context": "During the 2nd semester, our class participated in a communication project to celebrate the 30th anniversary of the MMI program. The event, organized by the IUT of Toulon, brought together former students and professors around a moment of sharing. My role was to contribute to the communication by producing a visual support and an article on a topic (related to MMI) of my choosing.",
+      "role": "For this project, I wrote an article on the evolution of admission criteria in the MMI program (formerly SRC) over these 30 years. I conducted research and gathered testimonials from professors and former students to enrich the article. In addition, I designed a chronological timeline respecting the event's graphic charter to illustrate the major milestones in the evolution of entry criteria.",
+      "selfEvaluation": "I learned to better structure my writing to make it informative while remaining accessible. Creating the timeline also allowed me to improve my graphic design skills and adherence to visual guidelines. It was an opportunity to hear the perspectives of our teachers and see what former MMI students have become. This gave me an enriching perspective on the history of my training and prepared me to respond to real and varied briefs.",
+      "shortDescription": "Editorial and visual communication for MMI anniversary.",
       "technologies": ["InDesign", "Editorial Writing", "Graphic Design"],
       "features": [
         "Editorial article on program evolution",
@@ -797,13 +927,16 @@
     },
     "fr": {
       "title": "Communication – 30 ans MMI",
-      "description": "Ce projet s’inscrit dans le cadre de la communication autour des 30 ans de la formation MMI. L’objectif était de produire un contenu éditorial et visuel permettant de retracer l’évolution de la formation. J’ai travaillé sur la recherche d’informations, la structuration du contenu et la mise en forme graphique. L’enjeu était de rendre l’information claire, attractive et accessible, tout en respectant l’identité visuelle de l’événement. Ce projet m’a permis de développer mes compétences en rédaction, en synthèse et en mise en page, dans un contexte mêlant communication et design.",
+      "description": "Ce projet s'inscrit dans le cadre de la communication autour des 30 ans de la formation MMI.",
+      "context": "Durant le 2e semestre, notre promo a participé à un projet de communication pour célébrer les 30 ans de la formation MMI. L'événement, organisé par l'IUT de Toulon, rassemblait des anciens étudiants et des professeurs autour d'un moment de partage. Mon rôle consistait à contribuer à la communication de celui-ci en réalisant un support visuel et un article sur un thème (en lien avec MMI) que j'ai pu choisir.",
+      "role": "Pour ce projet, j'ai rédigé un article traitant de l'évolution des critères d'acceptation dans la formation MMI (anciennement SRC) au fil de ces 30 années. J'ai mené des recherches et recueilli des témoignages de professeurs et anciens étudiants pour enrichir l'article. En complément, j'ai conçu une frise chronologique respectant la charte graphique de l'événement afin d'illustrer les grandes étapes des changements de critères d'entrée.",
+      "selfEvaluation": "J'ai appris à mieux structurer mes écrits pour les rendre informatifs tout en restant accessibles. La création de la frise m'a également permis de m'améliorer dans la mise en forme graphique et le respect de lignes directrices visuelles. Ce fut l'occasion d'écouter les points de vue de nos enseignants, et voir ce que sont devenus les anciens MMI. Cela m'a offert une perspective enrichissante sur l'histoire de ma formation et m'a préparée à répondre à des briefs réels et variés.",
       "shortDescription": "Article et frise chronologique pour les 30 ans MMI.",
       "technologies": ["InDesign", "Rédaction", "Graphisme"],
       "features": [
-        "Rédaction d’un article",
+        "Rédaction d'un article",
         "Recherche et témoignages",
-        "Conception d’une frise chronologique"
+        "Conception d'une frise chronologique"
       ],
       "githubUrl": "",
       "liveUrl": null,
@@ -817,7 +950,10 @@
     "color": "#81C784",
     "en": {
       "title": "Scrum Learning Website",
-      "description": "This educational project aims to make the Scrum method accessible through an interactive website. The objective was to transform theoretical content into a clear and engaging learning experience. I worked on structuring the information, simplifying sometimes complex concepts and making them understandable through interactive media. This project allowed me to develop a user-centered approach in an educational context, emphasizing pedagogy, clarity, and the learning experience.",
+      "description": "This educational project aims to make the Scrum method accessible through an interactive website.",
+      "context": "In semester 3, we created a pedagogical website on the Scrum method with the goal of better assimilating it and making it a clear and interactive resource. This project was part of a learning-by-doing approach. We were still working with basic technical foundations in PHP, CSS and HTML.",
+      "role": "I participated in the site's architecture, designed some content pages (including the one on Scrum roles) and helped make the navigation more intuitive. I also ensured visual consistency and text readability, adapting the style to the educational web format. I also designed a mind map summarizing the course, as well as writing the practice and evaluation MCQs.",
+      "selfEvaluation": "Even though the site is technically simple, it allowed me to apply my theoretical knowledge of Scrum while consolidating my front-end foundations. In hindsight, I think I could have made the user experience more dynamic (animations, interactions) if I had had the tools learned in S4.",
       "shortDescription": "Interactive educational website about Scrum.",
       "technologies": ["PHP", "HTML", "CSS"],
       "features": [
@@ -832,7 +968,10 @@
     },
     "fr": {
       "title": "Site pédagogique Scrum",
-      "description": "Ce projet pédagogique vise à rendre accessible la méthode Scrum à travers un site interactif. L’objectif était de transformer un contenu théorique en une expérience d’apprentissage claire et engageante. J’ai travaillé sur la structuration des informations, en simplifiant des concepts parfois complexes et en les rendant compréhensibles grâce à des supports interactifs. Ce projet m’a permis de développer une approche centrée utilisateur dans un contexte éducatif, en mettant l’accent sur la pédagogie, la clarté et l’expérience d’apprentissage.",
+      "description": "Ce projet pédagogique vise à rendre accessible la méthode Scrum à travers un site interactif.",
+      "context": "Au semestre 3, nous avons réalisé un site pédagogique sur la méthode Scrum dans le but de mieux l'assimiler et d'en faire une ressource claire et interactive. Ce projet s'inscrivait dans une approche d'apprentissage par la pratique. Nous étions encore sur des bases techniques en PHP, CSS et HTML.",
+      "role": "J'ai participé à l'architecture du site, conçu certaines pages de contenu (dont celle sur les rôles Scrum) et aidé à rendre la navigation plus intuitive. J'ai aussi veillé à la cohérence visuelle et à la lisibilité du texte, en adaptant le style au format web éducatif. Je me suis aussi occupée de concevoir une carte mentale résumant ce cours, ainsi que la rédaction des QCM d'entraînements et d'évaluation.",
+      "selfEvaluation": "Même si le site est techniquement simple, il m'a permis d'appliquer mes connaissances théoriques sur Scrum tout en consolidant mes bases en front-end. Avec le recul, je pense que j'aurais pu rendre l'expérience utilisateur plus dynamique (animations, interactions) si j'avais eu les outils appris au S4.",
       "shortDescription": "Site pédagogique sur la méthode Scrum.",
       "technologies": ["PHP", "HTML", "CSS"],
       "features": [
@@ -845,7 +984,7 @@
       "liveUrl": null,
       "screenshots": ["/projects/scrum.png"]
     }
-  }, 
+  },
   {
     "slug": "logo-jingle-animation",
     "categories": ["school","design"],
@@ -854,6 +993,9 @@
     "en": {
       "title": "Logo Jingle Animation",
       "description": "Motion design project animating a logo with synchronized sound and visual transitions.",
+      "context": "In semester 3, we created a video jingle around an animated logo using Blender. The goal was to associate a visual and sound universe in coherence with the logo's identity. This work was part of learning motion design and multimedia production.",
+      "role": "I designed the logo animation, synchronized the visual effects with the sound, and applied dynamic transitions. I used Blender for the animation and Premiere Pro to finalize the whole piece.",
+      "selfEvaluation": "This production taught me the basics of motion design and helped me develop a sensitivity to image/sound rhythm. The result was satisfying, even though I would have liked to deepen the 3D effects and textures further.",
       "shortDescription": "Animated logo jingle using Blender.",
       "technologies": ["Blender", "Premiere Pro"],
       "features": [
@@ -869,6 +1011,9 @@
     "fr": {
       "title": "Jingle animé de logo",
       "description": "Projet de motion design consistant à animer un logo avec des effets visuels synchronisés avec le son.",
+      "context": "En semestre 3, nous avons réalisé un jingle vidéo autour d'un logo animé, via Blender. Il s'agissait d'associer un univers visuel et sonore en cohérence avec l'identité du logo. Ce travail s'inscrivait dans l'apprentissage du motion design et de la production multimédia.",
+      "role": "Je me suis chargée de concevoir l'animation du logo, de synchroniser les effets visuels au son et d'appliquer des transitions dynamiques. J'ai utilisé Blender pour l'animation et Premiere Pro pour finaliser l'ensemble.",
+      "selfEvaluation": "Cette production m'a permis d'apprendre les bases du motion design et de développer une sensibilité au rythme image/son. Le rendu était satisfaisant, même si j'aurais aimé approfondir davantage les effets 3D et les textures.",
       "shortDescription": "Animation de logo en motion design.",
       "technologies": ["Blender", "Premiere Pro"],
       "features": [
@@ -890,6 +1035,9 @@
     "en": {
       "title": "MMI LAN Event Organization",
       "description": "Participation in the organization and communication of the MMI LAN gaming event.",
+      "context": "I participated in the organization of the MMI LAN, a flagship event at the IUT bringing students together around video games, with activities and communication on social networks.",
+      "role": "I contributed to creating visuals (mockups, posts), managing the event's email campaign, and officiating as a referee on the day of the event. I also proposed ideas for interactions with participants to strengthen the community atmosphere.",
+      "selfEvaluation": "This project allowed me to discover event management in a semi-professional setting. I learned to adapt to unexpected situations, communicate effectively in a group, and maintain visual consistency across multiple media.",
       "shortDescription": "Student gaming event organization and communication.",
       "technologies": ["Event Communication", "Social Media", "Email Marketing"],
       "features": [
@@ -904,7 +1052,10 @@
     },
     "fr": {
       "title": "Organisation de la MMI LAN",
-      "description": "Participation à l'organisation et à la communication d'un événement gaming étudiant à l’IUT.",
+      "description": "Participation à l'organisation et à la communication d'un événement gaming étudiant à l'IUT.",
+      "context": "J'ai participé à l'organisation de la MMI LAN, un événement phare de l'IUT réunissant étudiants autour de jeux vidéo, avec des animations et de la communication sur les réseaux sociaux.",
+      "role": "J'ai contribué à la création des visuels (maquettes, posts), à la gestion de l'emailing de l'événement, ainsi qu'à l'arbitrage le jour J. J'ai également proposé des idées d'interactions avec les participants pour renforcer l'ambiance communautaire.",
+      "selfEvaluation": "Ce projet m'a permis de découvrir la gestion événementielle dans un cadre semi-professionnel. J'ai appris à m'adapter aux imprévus, à communiquer efficacement en groupe, et à garder une cohérence visuelle sur plusieurs supports.",
       "shortDescription": "Organisation et communication événementielle.",
       "technologies": ["Communication événementielle", "Emailing", "Réseaux sociaux"],
       "features": [
@@ -926,6 +1077,9 @@
     "en": {
       "title": "Website Competitive Audit",
       "description": "Competitive analysis of digital platforms during an internship to support communication strategy decisions.",
+      "context": "During my internship between semesters 3 and 4, I carried out audits of sites similar to the one the company wanted to develop. The objective was to provide a critical analysis to feed their future communication plan.",
+      "role": "I analyzed several competitor sites according to different criteria (SEO, ergonomics, accessibility, performance) and synthesized these audits into an internal deliverable. I then contributed to writing a communication plan based on these findings.",
+      "selfEvaluation": "This mission allowed me to put my analytical skills into practice in a professional context. I learned to justify concrete strategic choices. If I had had more time, I would have proposed a more in-depth comparative benchmarking.",
       "shortDescription": "Competitive website analysis.",
       "technologies": ["SEO Analysis", "UX Audit", "Performance Analysis"],
       "features": [
@@ -941,6 +1095,9 @@
     "fr": {
       "title": "Audit concurrentiel de sites web",
       "description": "Analyse concurrentielle de sites web réalisée en stage pour alimenter une stratégie de communication.",
+      "context": "Durant mon stage, entre les semestres 3 et 4, j'ai effectué des audits de sites similaires à celui que l'entreprise souhaitait développer. L'objectif était de fournir une analyse critique pour alimenter leur plan de communication futur.",
+      "role": "J'ai analysé plusieurs sites concurrents selon différents critères (SEO, ergonomie, accessibilité, performances) et synthétisé ces audits dans un livrable interne. J'ai ensuite contribué à la rédaction d'un plan de communication basé sur ces constats.",
+      "selfEvaluation": "Cette mission m'a permis de mettre en pratique mes compétences analytiques dans un contexte professionnel. J'ai appris à justifier des choix stratégiques concrets. Si j'avais eu plus de temps, j'aurais proposé une veille comparative plus approfondie.",
       "shortDescription": "Audit SEO et UX de sites concurrents.",
       "technologies": ["Audit SEO", "Analyse UX", "Analyse performance"],
       "features": [
@@ -962,6 +1119,9 @@
     "en": {
       "title": "Communication Plan Development",
       "description": "Development of a communication strategy based on prior competitive audits and audience analysis.",
+      "context": "As part of my internship, after completing audits on two competitor sites and reflecting on the target audience, I proposed a communication plan to launch the company's social networks as well as their website with good SEO positioning.",
+      "role": "After conducting the competitive audit, I defined the target audiences and proposed a communication plan for launching the company's social networks, as well as recommendations for their website's SEO. I also contributed to drafting the legal notices to be included.",
+      "selfEvaluation": "This experience helped me apply academic knowledge in a real professional context. Transitioning from audit to concrete recommendations was very formative. I would have liked more time to refine the social media content strategy and measure initial results.",
       "shortDescription": "Strategic communication planning.",
       "technologies": ["Communication Strategy", "Marketing"],
       "features": [
@@ -977,6 +1137,9 @@
     "fr": {
       "title": "Plan de communication",
       "description": "Conception d'un plan de communication basé sur l'analyse d'audits concurrents et la définition de cibles.",
+      "context": "Dans le cadre de mon stage, après avoir réalisé un audit sur deux sites et réfléchi à la cible, j'ai pensé un plan de communication pour lancer les réseaux sociaux de l'entreprise, ainsi que leur site web avec un bon référencement.",
+      "role": "Après avoir conduit l'audit concurrentiel, j'ai défini les cibles et proposé un plan de communication pour le lancement des réseaux sociaux de l'entreprise, ainsi que des recommandations pour le référencement de leur site. J'ai également contribué à la rédaction des mentions légales à intégrer.",
+      "selfEvaluation": "Cette expérience m'a permis d'appliquer les connaissances académiques dans un contexte professionnel réel. Le passage de l'audit aux recommandations concrètes a été très formateur. J'aurais aimé avoir plus de temps pour affiner la stratégie de contenu réseaux sociaux et mesurer les premiers résultats.",
       "shortDescription": "Stratégie de communication digitale.",
       "technologies": ["Stratégie de communication", "Marketing"],
       "features": [
