@@ -91,23 +91,23 @@ export default function ProjectDetailPage() {
             </div>
           )}
 
-          {/* Description */}
-          <div>
-            <h2 className="font-display font-bold text-xl text-white mb-4">
-              Description
-            </h2>
-            <p className="font-body text-white/60 leading-relaxed">{p.description}</p>
-          </div>
-
-          {/* Mon rôle */}
+          {/* Role */}
           {role && (
+            <div>
+              <h2 className="font-display font-bold text-xl text-white mb-4">
+                {lang === "fr" ? "Mon rôle" : "My role"}
+              </h2>
+              <p className="font-body text-white/60 leading-relaxed">{role}</p>
+            </div>
+          )}
+
+          {/* AutoEvaluation */}
           <div>
             <h2 className="font-display font-bold text-xl text-white mb-4">
-              {lang === "fr" ? "Mon rôle" : "My role"}
+              Auto-évaluation
             </h2>
-            <p className="font-body text-white/60 leading-relaxed">{role}</p>
+            <p className="font-body text-white/60 leading-relaxed">{selfEvaluation}</p>
           </div>
-        )}
 
             {/* Features */}
             <div>

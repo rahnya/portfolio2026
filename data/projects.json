@@ -9,7 +9,7 @@
       "description": "",
       "context": "I wanted to try my hand at using an API and real-time data visualization. And I took the opportunity to combine that with my passion for aeronautics. FlightFootprint is a project combining data processing, web development, and visualization to make the environmental impact of air traffic more understandable in real time. The application uses data from the OpenSky API to track aircraft flying over Europe, then applies estimation models to calculate fuel consumption and CO₂ emissions based on aircraft type and characteristics. It features an interactive map to visualize live data, along with a data exploration interface. The project is part of a broader reflection on environmental transparency and data accessibility.",
       "role": "I managed the API integration, data processing and display on the interface. I also worked on the calculation logic and the presentation of results to make them understandable.",
-      "selfEvaluation": "This project helped me better understand the use of APIs and the management of external data. Compared to BUT 2, I feel more comfortable structuring code and integrating third-party services. In hindsight, I could have improved error handling and optimized the user experience to make the application more robust.",
+      "selfEvaluation": "This project represents a significant step forward in my skills in data management and API integration. Compared to BUT 2, I am more comfortable with the overall structure and logic. Today, I would focus on improving robustness (errors, edge cases) and further enhancing the user experience to make the data more readable.",
       "shortDescription": "Real-time flight visualization and CO₂ impact estimation.",
       "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
       "features": [
@@ -28,7 +28,7 @@
       "description": "",
       "context": "Envie de m'essayer à l'utilisation d'une API et de la visualisation de données en temps réel. Et j'en ai profité pour mixer cela à ma passion pour l'aéronautique. FlightFootprint est un projet mêlant data, développement web et visualisation, visant à rendre plus compréhensible l'impact environnemental du trafic aérien en temps réel. L'application s'appuie sur des données issues de l'OpenSky API pour suivre les avions en vol au-dessus de l'Europe, puis applique des modèles d'estimation pour calculer leur consommation de carburant et leurs émissions de CO₂ en fonction du type d'appareil et de ses caractéristiques. Le projet propose une carte interactive permettant de visualiser ces données en direct, ainsi qu'un espace d'exploration pour analyser les informations collectées. Il s'inscrit dans une réflexion plus globale sur la transparence des données environnementales et l'accessibilité de l'information.",
       "role": "J'ai géré l'intégration de l'API, le traitement des données et leur affichage côté interface. J'ai également travaillé sur la logique de calcul et sur la présentation des résultats pour qu'ils soient compréhensibles.",
-      "selfEvaluation": "Ce projet m'a permis de mieux comprendre l'utilisation des API et la gestion des données externes. Par rapport au BUT 2, je suis plus à l'aise dans la structuration du code et l'intégration de services tiers. Avec le recul, j'aurais pu améliorer la gestion des erreurs et optimiser l'expérience utilisateur pour rendre l'application plus robuste.",
+      "selfEvaluation": "Ce projet marque une vraie montée en compétence sur la gestion de données et l’intégration d’API. Par rapport au BUT 2, je suis plus à l’aise avec la structuration et la logique globale. Aujourd’hui, j’améliorerais la robustesse (erreurs, edge cases) et pousserais davantage l’UX pour rendre les données plus lisibles.",
       "shortDescription": "Visualisation des vols et estimation des émissions CO₂.",
       "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
       "features": [
@@ -47,13 +47,13 @@
     "slug": "visio-conference-app",
     "categories": ["web","uxui","school"],
     "butSkills": ["développer", "concevoir"],
-    "color": "#183153",
+    "color": "#FFC72C",
     "en": {
       "title": "Web Video Conference Platform",
       "description": "A web-based video conferencing platform allowing users to create and join virtual meetings directly from their browser.",
       "context": "In semester 5, I participated in a SAÉ focused on developing a real-time video conferencing application. The goal was to design a functional solution allowing multiple users to communicate via audio and video, using modern web technologies. This project involved a higher level of complexity than previous ones, particularly due to real-time stream management and synchronized interactions between users. We worked with a tech stack composed of Node.js, Express, Socket.io and WebRTC, while integrating Docker for environment management.",
       "role": "I was mainly involved in setting up real-time communication between users. I participated in the server configuration with Express, as well as the integration of Socket.io to manage real-time data exchanges. I also contributed to the implementation of WebRTC for audio and video stream transmission, which required me to understand peer-to-peer connections and signaling mechanisms. Finally, I participated in testing and debugging phases, notably to resolve connection issues between users.",
-      "selfEvaluation": "This project marks a real step forward compared to my previous web development experiences. Unlike BUT 2 projects, I worked here on a more complex architecture integrating real-time and multimedia streams. I particularly developed my ability to understand advanced technologies like WebRTC, even if my command of them is still partial. In hindsight, with the skills acquired in BUT 3, I could have better structured the code and anticipated some connection management issues.",
+      "selfEvaluation": "This project confronted me with a complex, real-time architecture, far beyond my previous projects. It allowed me to develop a better understanding of distributed systems. With the benefit of hindsight from BUT 3, I could have better anticipated connection problems and structured the code more cleanly.",
       "shortDescription": "Browser-based video conferencing platform.",
       "technologies": ["Node.js", "Express", "Socket.io", "WebRTC", "Docker"],
       "features": [
@@ -70,9 +70,9 @@
     "fr": {
       "title": "Plateforme de visioconférence",
       "description": "Une plateforme web de visioconférence permettant de créer et rejoindre des réunions directement depuis le navigateur.",
-      "context": "Au semestre 5, j'ai participé à une SAÉ centrée sur le développement d'une application de visioconférence en temps réel. L'objectif était de concevoir une solution fonctionnelle permettant à plusieurs utilisateurs de communiquer via audio et vidéo, en s'appuyant sur des technologies modernes du web. Ce projet s'inscrivait dans une montée en complexité par rapport aux projets précédents, notamment en raison de la gestion des flux temps réel et des interactions synchronisées entre utilisateurs. Nous avons travaillé avec un stack technique composé de Node.js, Express, Socket.io et WebRTC, tout en intégrant Docker pour la gestion de l'environnement.",
-      "role": "Je me suis principalement impliquée dans la mise en place de la communication temps réel entre les utilisateurs. J'ai participé à la configuration du serveur avec Express, ainsi qu'à l'intégration de Socket.io pour gérer les échanges de données en temps réel. J'ai également contribué à l'implémentation de WebRTC pour la transmission des flux audio et vidéo, ce qui m'a demandé de comprendre le fonctionnement des connexions peer-to-peer et des mécanismes de signalisation. Enfin, j'ai participé aux phases de test et de débogage pour résoudre des problèmes de connexion entre utilisateurs.",
-      "selfEvaluation": "Ce projet marque une réelle progression par rapport à mes expériences précédentes en développement web. Contrairement aux projets de BUT 2, j'ai ici travaillé sur une architecture plus complexe intégrant du temps réel et des flux multimédias. J'ai particulièrement développé ma capacité à comprendre des technologies avancées comme WebRTC, même si leur prise en main reste encore partielle. Avec le recul, et grâce aux compétences acquises en BUT 3, j'aurais pu mieux structurer le code et anticiper certains problèmes liés à la gestion des connexions.",
+      "context": "Au semestre 5, j’ai participé à une SAÉ centrée sur le développement d’une application de visioconférence en temps réel. Ce projet avait une particularité importante : il s’agissait d’une reprise d’un projet réalisé par les étudiants de l’année précédente. Cependant, le projet initial présentait de nombreuses difficultés : certaines fonctionnalités ne fonctionnaient pas, des bugs étaient présents, et les spécifications fournies n’étaient pas cohérentes avec l’état réel de l’application.  L’objectif était donc double : comprendre l’existant, corriger les dysfonctionnements, mais aussi faire évoluer l’application en y ajoutant de nouvelles fonctionnalités. Nous avons également fait le choix de modifier une partie du projet en migrant vers React afin de moderniser l’interface et d’améliorer la maintenabilité. Le stack technique comprenait notamment Node.js, Express, Socket.io, WebRTC et Docker.",      
+      "role": "Dans ce projet, nous étions organisés de manière à travailler chacun sur un composant spécifique. J’étais en charge du composant “Équipes”, dont l’objectif était de permettre la création de groupes d’utilisateurs afin de faciliter les échanges (communication, organisation en groupes, partage de ressources). J’ai donc commencé par rédiger les spécifications fonctionnelles et techniques liées à ce composant, en définissant les comportements attendus, les interactions avec les autres parties de l’application et les données nécessaires. Par la suite, j’ai développé ce composant en m’intégrant dans l’architecture existante, tout en tenant compte des contraintes du projet initial. En parallèle, j’ai également participé à la reprise globale du projet de l’année précédente : analyse du code existant, identification des bugs, compréhension des choix techniques et corrections pour rendre l’application fonctionnelle.Cela m’a amenée à travailler sur la communication temps réel via Socket.io ainsi que sur l’intégration de WebRTC pour la gestion des flux audio et vidéo.",
+      "selfEvaluation":"Ce projet représente une étape importante dans ma progression, notamment parce qu’il ne s’agissait pas de partir de zéro mais de reprendre un projet existant, imparfait et parfois incohérent. Cela m’a obligée à développer ma capacité d’analyse, à lire et comprendre du code écrit par d’autres, et à m’adapter à une architecture déjà en place. Par rapport aux projets de BUT 2, j’ai gagné en maturité dans ma manière d’aborder un projet complexe, notamment en prenant le temps de rédiger des spécifications et de structurer mon travail en amont. Le développement du composant “Équipes” m’a également permis de mieux comprendre la gestion des interactions entre utilisateurs dans une application temps réel. Avec le recul, je pense que j’aurais pu améliorer l’organisation globale du code et proposer une refactorisation plus poussée du projet existant. J’aurais également pu mieux anticiper les problèmes liés à la communication entre les différents composants. Ce projet m’a permis de gagner en autonomie et de me rapprocher davantage des conditions réelles de développement, où il est fréquent de devoir reprendre et améliorer un projet déjà existant.",
       "shortDescription": "Application web de visioconférence.",
       "technologies": ["Node.js", "Express", "Socket.io", "WebRTC", "Docker"],
       "features": [
@@ -97,7 +97,7 @@
       "description": "Code Your Territory is a project carried out during the 2026 Code Night in collaboration with Crédit Agricole. The objective was to design a platform to promote local initiatives and strengthen the link between citizens and territorial projects.",
       "context": "This project was created during the 2026 Code Night in collaboration with Crédit Agricole. The objective was to design a platform to promote local initiatives and strengthen the link between citizens and territorial projects. We envisioned an interface centered on an interactive map, highlighting funded or ongoing projects, as well as a system allowing citizens to report local needs or issues.",
       "role": "I contributed to both UX/UI design and full-stack development. I worked on the interactive map integration, the citizen reporting interface, and the overall visual consistency of the platform. I also participated in the team coordination during the hackathon.",
-      "selfEvaluation": "This hackathon allowed me to work under pressure on a project with significant societal impact. The time constraint forced me to prioritize features and make quick decisions. In hindsight, I would have liked to refine the UX and add more filtering options on the map.",
+      "selfEvaluation": "This hackathon taught me how to work effectively under pressure. I improved my decision-making speed and prioritization skills. Now, with more UX experience, I would dedicate more time to structuring the user experience and developing more sophisticated features, particularly for data exploration.",
       "shortDescription": "Hackathon platform to visualize and support local community initiatives.",
       "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
       "features": [
@@ -116,7 +116,7 @@
       "description": "Code Ton Territoire est un projet réalisé lors de la Nuit du Code 2026 en collaboration avec le Crédit Agricole. L'objectif était de concevoir une plateforme permettant de valoriser les initiatives locales et de renforcer le lien entre citoyens et projets territoriaux.",
       "context": "Ce projet a été réalisé lors de la Nuit du Code 2026 en collaboration avec le Crédit Agricole. L'objectif était de concevoir une plateforme permettant de valoriser les initiatives locales et de renforcer le lien entre citoyens et projets territoriaux. Nous avons imaginé une interface centrée sur une carte interactive, mettant en avant les projets financés ou en cours, ainsi qu'un système permettant aux citoyens de signaler des besoins ou problématiques locales.",
       "role": "J'ai contribué à la fois à la conception UX/UI et au développement full-stack. J'ai travaillé sur l'intégration de la carte interactive, l'interface de signalement citoyen et la cohérence visuelle globale de la plateforme. J'ai également participé à la coordination de l'équipe durant le hackathon.",
-      "selfEvaluation": "Ce hackathon m'a permis de travailler sous pression sur un projet à fort enjeu sociétal. La contrainte de temps m'a obligée à prioriser les fonctionnalités et à prendre des décisions rapides. Avec le recul, j'aurais aimé affiner l'UX et ajouter davantage d'options de filtrage sur la carte.",
+      "selfEvaluation": "Ce hackathon m’a appris à travailler efficacement sous contrainte. J’ai gagné en rapidité de décision et en priorisation. Aujourd’hui, avec plus de recul UX, je prendrais davantage de temps pour structurer l’expérience utilisateur et proposer des fonctionnalités plus abouties, notamment sur l’exploration des données.",
       "shortDescription": "Plateforme hackathon pour visualiser et soutenir les initiatives locales.",
       "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
       "features": [
@@ -141,7 +141,7 @@
       "description": "This academic project explores the concept of collective intelligence between humans and machines through a structured research report.",
       "context": "This academic project takes the form of a research report exploring the concept of collective intelligence between humans and machines. The objective was to analyze how collaboration between human capabilities and artificial intelligence systems can enhance decision-making, productivity, and innovation. The work combines theoretical analysis with concrete examples from various sectors such as healthcare, industry, and everyday technologies. Carried out over a short period, which explains the somewhat brief development of the subject.",
       "role": "I co-authored the research report, contributing to the theoretical analysis sections and the critical reflection on limits and risks of AI collaboration. I also participated in the selection of real-world use cases and the structuring of the document.",
-      "selfEvaluation": "This project helped me develop a more critical eye on AI and its societal implications. I would have liked more time to deepen the study and explore more diverse case studies. The collaboration was rewarding and helped me structure a complex subject clearly.",
+      "selfEvaluation": "This project has allowed me to develop a critical perspective on AI. Compared to my early work, I structure my ideas and analyses better. Today, I would delve deeper into concrete examples and research, with a more analytical and reasoned approach.",
       "shortDescription": "Research report on human-machine collective intelligence.",
       "technologies": ["Research", "Writing", "Analysis", "Documentation"],
       "features": [
@@ -160,7 +160,7 @@
       "description": "Ce projet académique prend la forme d'un dossier de recherche explorant le concept d'intelligence collective entre humains et machines.",
       "context": "Ce projet académique prend la forme d'un dossier de recherche explorant le concept d'intelligence collective entre humains et machines. L'objectif était d'analyser comment la collaboration entre les capacités humaines et les systèmes d'intelligence artificielle peut améliorer la prise de décision, la productivité et l'innovation. Le travail combine une analyse théorique avec des exemples concrets issus de différents secteurs comme la santé, l'industrie ou les outils du quotidien. Réalisé sur une courte période, d'où le court développement du sujet qui aurait pu être bien plus approfondi.",
       "role": "J'ai co-rédigé le dossier de recherche, en contribuant aux sections d'analyse théorique et à la réflexion critique sur les limites et dérives de la collaboration IA. J'ai également participé à la sélection des études de cas et à la structuration du document.",
-      "selfEvaluation": "Ce projet m'a permis de développer un regard plus critique sur l'IA et ses implications sociétales. J'aurais aimé disposer de plus de temps pour approfondir le sujet et explorer des cas plus variés. La collaboration a été enrichissante et m'a aidée à structurer un sujet complexe de manière claire.",
+      "selfEvaluation": "Ce projet m’a permis de développer une réflexion critique sur l’IA. Par rapport à mes débuts, je structure mieux mes idées et mes analyses. Aujourd’hui, j’irais plus loin dans les cas concrets et la profondeur de recherche, avec une approche plus analytique et argumentée.",
       "shortDescription": "Dossier de recherche sur l'intelligence collective homme-machine.",
       "technologies": ["Recherche", "Rédaction", "Analyse", "Documentation"],
       "features": [
@@ -387,6 +387,230 @@
       "githubUrl": "",
       "liveUrl": "",
       "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
+    }
+  },
+  {
+    "slug": "alternance",
+    "categories": ["web", "professional"],
+    "butSkills": ["développer", "concevoir"],
+    "color": "#4A90E2",
+    "en": {
+      "title": "Work-study program",
+      "description": "",
+      "context": "As part of my third year of BUT, I am completing a work-study program within a company where I contribute to real projects combining web development, SEO and content creation. Unlike academic projects, this context involves real constraints related to client expectations, deadlines and performance objectives. ",
+      "role": "I work on several aspects of projects: WordPress development, content integration, SEO optimization and participation in interface design. I also collaborate with different profiles (design, marketing, clients), which requires me to adapt my communication and understand expressed needs. I also take part in professional events, allowing me to better understand the sector’s challenges.",
+      "selfEvaluation": "This experience represents an important step in my training as it exposes me to real professional situations. I have gained autonomy, rigor and adaptability. Compared to BUT 2, I feel more legitimate in my technical skills and more capable of proposing solutions. With hindsight, I could improve my time management and deepen certain technical aspects to be more efficient.",
+      "shortDescription": "Professional experience in web development, SEO and project management.",
+      "technologies": ["WordPress", "SEO", "HTML", "CSS", "JavaScript"],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Alternance",
+      "description": "",
+      "context": "Dans le cadre de mon année de BUT 3, j’effectue une alternance au sein d’une entreprise où je participe à des projets concrets mêlant développement web, SEO et création de contenu. Contrairement aux projets académiques, ce contexte implique des contraintes réelles liées aux attentes clients, aux délais et aux objectifs de performance.",
+      "role": "J’interviens sur plusieurs aspects des projets : développement de sites sous WordPress, intégration de contenus, optimisation SEO et participation à la conception d’interfaces. Je suis également amenée à collaborer avec différents profils (design, marketing, clients), ce qui m’oblige à adapter ma communication et à comprendre les besoins exprimés. Enfin, je participe à des événements professionnels, ce qui me permet d’observer et de comprendre les enjeux du secteur.",
+      "selfEvaluation": "Cette expérience représente une étape importante dans ma formation, car elle me confronte à des situations professionnelles concrètes. J’ai gagné en autonomie, en rigueur et en capacité d’adaptation. Par rapport au BUT 2, je me sens plus légitime dans mes compétences techniques et plus capable de proposer des solutions. Avec le recul, je pense pouvoir encore améliorer ma gestion du temps et approfondir certains aspects techniques pour être plus efficace et proactive dans les projets.",
+      "shortDescription": "Expérience professionnelle en développement web, SEO et gestion de projets.",
+      "technologies": ["WordPress", "SEO", "HTML", "CSS", "JavaScript"],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "snoozly",
+    "categories": ["entrepreneurship"],
+    "butSkills": ["concevoir", "analyser"],
+    "color": "#FF6F61",
+    "en": {
+      "title": "Snoozly",
+      "description": "",
+      "context": "As part of the Pépite program and a course project, I developed an entrepreneurial project called Snoozly. The objective was to build a product or service idea and structure it through a complete business plan.",
+      "role": "I contributed to defining the concept, identifying the target audience and analyzing the market. I also worked on the business model and the writing of the business plan, including value proposition, development strategy and financial aspects.",
+      "selfEvaluation": "This project allowed me to develop a broader vision of digital projects beyond the technical aspect. I learned how to structure an idea and reflect on its viability. Compared to BUT 2 projects, I took more into account economic and strategic challenges. With hindsight, I could have deepened the market study and provided a more precise competitor analysis.",
+      "shortDescription": "Entrepreneurial project with a full business plan.",
+      "technologies": [],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Snoozly",
+      "description": "",
+      "context": "Dans le cadre du dispositif Pépite et d’un projet pédagogique, j’ai développé un projet entrepreneurial nommé Snoozly. L’objectif était de construire une idée de produit/service, puis de la structurer à travers un business plan complet.",
+      "role": "J’ai participé à la définition du concept, à l’identification de la cible et à l’analyse du marché. J’ai également contribué à la construction du business model ainsi qu’à la rédaction du business plan. Cela incluait la réflexion sur la proposition de valeur, la stratégie de développement et les aspects financiers.",
+      "selfEvaluation": "Ce projet m’a permis de développer une vision plus globale des projets numériques, au-delà de l’aspect technique. J’ai appris à structurer une idée et à réfléchir à sa viabilité. Par rapport aux projets de BUT 2, j’ai davantage pris en compte les enjeux économiques et stratégiques. Avec le recul, je pense que j’aurais pu approfondir l’étude de marché et proposer une analyse plus précise des concurrents pour renforcer la crédibilité du projet.",
+      "shortDescription": "Projet entrepreneurial avec business plan complet.",
+      "technologies": [],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "pitch",
+    "categories": ["communication"],
+    "butSkills": ["communiquer"],
+    "color": "#9B59B6",
+    "en": {
+      "title": "Elevator Pitch",
+      "description": "",
+      "context": "During semester 5, as part of the PPP course, I created an elevator pitch aimed at presenting a project or my profile in a clear, concise and impactful way within a limited time.",
+      "role": "I worked on structuring the speech, selecting essential information and capturing attention. I also focused on oral delivery, including posture, tone and stress management.",
+      "selfEvaluation": "This experience allowed me to improve my ability to synthesize and highlight a project. Compared to presentations in BUT 2, I feel more comfortable speaking and more aware of audience expectations. With hindsight, I could further improve the impact of my speech by working more on storytelling and emphasizing my differentiating points.",
+      "shortDescription": "Short and impactful oral presentation.",
+      "technologies": [],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Elevator Pitch",
+      "description": "",
+      "context": "Au semestre 5, dans le cadre du PPP, j’ai réalisé un elevator pitch visant à présenter un projet ou mon profil de manière claire, concise et impactante en un temps limité.",
+      "role": "J’ai travaillé sur la structuration du discours, le choix des informations essentielles et la manière de capter l’attention. J’ai également porté une attention particulière à l’oral, notamment à la posture, au ton et à la gestion du stress.",
+      "selfEvaluation": "Cette expérience m’a permis de progresser dans ma capacité à synthétiser et à valoriser un projet. Par rapport aux présentations réalisées en BUT 2, je me sens plus à l’aise à l’oral et plus consciente des attentes d’un public. Avec le recul, je pense pouvoir encore améliorer l’impact de mon discours en travaillant davantage le storytelling et la mise en valeur de mes points différenciants.",
+      "shortDescription": "Présentation orale synthétique et impactante.",
+      "technologies": [],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "vr-ar",
+    "categories": ["innovation"],
+    "butSkills": ["concevoir"],
+    "color": "#00C9A7",
+    "en": {
+      "title": "Interactive devices VR/AR",
+      "description": "",
+      "context": "As part of an interactive devices project, we explored immersive technologies such as augmented reality with Zapworks and virtual reality through the creation of simple games.",
+      "role": "I contributed to learning the tools, designing interactions and developing prototypes. I also took part in testing phases to improve the user experience.",
+      "selfEvaluation": "This project allowed me to discover new development fields beyond traditional web development. I improved my ability to design user interactions in immersive environments. With hindsight, I could have further developed the UX aspect and proposed more advanced interactions based on concepts learned in BUT 2.",
+      "shortDescription": "Exploration of augmented and virtual reality.",
+      "technologies": ["Zapworks", "VR"],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Dispositifs interactifs VR/AR",
+      "description": "",
+      "context": "Dans le cadre d’un projet en dispositifs interactifs, nous avons exploré des technologies immersives comme la réalité augmentée avec Zapworks et la réalité virtuelle à travers la création de jeux simples.",
+      "role": "J’ai participé à la prise en main des outils, à la conception d’interactions et au développement de prototypes. J’ai également contribué aux phases de test afin d’améliorer l’expérience utilisateur.",
+      "selfEvaluation": "Ce projet m’a permis de découvrir de nouveaux domaines du développement, différents du web classique. J’ai développé ma capacité à concevoir des interactions utilisateur dans des environnements immersifs. Avec le recul, j’aurais pu approfondir davantage la dimension UX et proposer des interactions plus abouties en m’appuyant sur les notions vues en BUT 2.",
+      "shortDescription": "Exploration de la réalité augmentée et virtuelle.",
+      "technologies": ["Zapworks", "VR"],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "engagement-bde",
+    "categories": ["engagement"],
+    "butSkills": ["organiser", "collaborer"],
+    "color": "#F39C12",
+    "en": {
+      "title": "Student engagement",
+      "description": "",
+      "context": "Alongside my studies, I am involved in student life as a member of the BDE and an elected representative. This involves organizing events and participating in the management of the association.",
+      "role": "I take part in event organization, treasury management and coordination with other team members. I am also involved in communication with students.",
+      "selfEvaluation": "This engagement allowed me to develop strong organizational and interpersonal skills. Compared to academic projects, I learned to handle real situations with human and logistical constraints. With hindsight, I could improve my stress management and better anticipate unexpected situations.",
+      "shortDescription": "Student association involvement and event management.",
+      "technologies": [],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Engagement BDE",
+      "description": "",
+      "context": "En parallèle de mes études, je suis engagée dans la vie étudiante en tant que membre du BDE et élue. Cela m’amène à organiser des événements et à participer à la gestion de l’association.",
+      "role": "Je participe à l’organisation d’événements, à la gestion de la trésorerie et à la coordination avec les autres membres de l’équipe. Je suis également impliquée dans la communication auprès des étudiants.",
+      "selfEvaluation": "Cet engagement m’a permis de développer des compétences organisationnelles et relationnelles importantes. Par rapport aux projets académiques, j’ai appris à gérer des situations réelles avec des contraintes humaines et logistiques. Avec le recul, je pense pouvoir améliorer ma gestion du stress et anticiper davantage les imprévus lors de l’organisation d’événements.",
+      "shortDescription": "Engagement associatif et gestion de projets.",
+      "technologies": [],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "infra-cyber",
+    "categories": ["system"],
+    "butSkills": ["administrer", "sécuriser"],
+    "color": "#2C3E50",
+    "en": {
+      "title": "Infrastructure and cybersecurity",
+      "description": "",
+      "context": "As part of BUT 3 courses, I worked on advanced topics related to networks, cybersecurity and web infrastructure. We studied concepts such as virtual machines, security certificates, proxies, DMZ and the organization of web services using Docker containers like Apache, MariaDB and Zabbix.",
+      "role": "I participated in setting up and understanding these architectures. I handled virtualized environments and configured several services in Docker containers, including an Apache web server, a MariaDB database and a monitoring tool with Zabbix. I also studied proxies, DMZ and certificates to secure communications and contributed to monitoring configuration.",
+      "selfEvaluation": "This experience represents a major step forward in my understanding of web systems. I discovered the infrastructure layer behind applications. I developed a better understanding of security and performance issues. With hindsight, I could go further by automating deployments and improving service configuration.",
+      "shortDescription": "Network architecture, Docker and cybersecurity.",
+      "technologies": ["Docker", "Apache", "MariaDB", "Zabbix"],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Infrastructure et cybersécurité",
+      "description": "",
+      "context": "Dans le cadre des ressources de BUT 3, j’ai été amenée à travailler sur des notions avancées liées aux réseaux, à la cybersécurité et à l’infrastructure web. Nous avons abordé des concepts tels que les machines virtuelles, les certificats de sécurité, les proxys, les DMZ, ainsi que l’organisation de services web via des conteneurs Docker comme Apache, MariaDB et Zabbix.",
+      "role": "J’ai participé à la mise en place et à la compréhension de ces différentes architectures. J’ai manipulé des environnements virtualisés et configuré plusieurs services dans des conteneurs Docker, notamment un serveur web Apache, une base de données MariaDB et un outil de supervision avec Zabbix. J’ai également étudié le fonctionnement des proxys et des DMZ pour sécuriser les échanges ainsi que le rôle des certificats.",
+      "selfEvaluation": "Cette trace marque une évolution importante dans ma compréhension des systèmes web. J’ai découvert la couche infrastructure derrière une application. J’ai développé une meilleure compréhension des enjeux de sécurité et de performance. Avec le recul, je pourrais aller plus loin en automatisant les déploiements et en approfondissant la configuration des services.",
+      "shortDescription": "Architecture réseau, Docker et cybersécurité.",
+      "technologies": ["Docker", "Apache", "MariaDB", "Zabbix"],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "conception",
+    "categories": ["development"],
+    "butSkills": ["concevoir", "structurer"],
+    "color": "#1ABC9C",
+    "en": {
+      "title": "Software design",
+      "description": "",
+      "context": "As part of several projects in BUT 3, we designed mini-projects such as simple applications and games, focusing on writing technical specifications. The goal was to formalize application behavior before development.",
+      "role": "I contributed to writing specifications by defining classes, attributes and methods. I helped structure the overall logic and interactions between components for projects like a battleship game or a car game.",
+      "selfEvaluation": "This work helped me understand the importance of the design phase in development. Unlike previous projects, I learned to structure my thinking before coding. This allowed me to produce more organized and consistent code. With hindsight, I could improve by using UML diagrams and more standardized documentation.",
+      "shortDescription": "Technical specifications and application modeling.",
+      "technologies": [],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
+    },
+    "fr": {
+      "title": "Conception logicielle",
+      "description": "",
+      "context": "Dans le cadre de différents projets réalisés en BUT 3, nous avons conçu plusieurs mini-projets comme des jeux et applications simples en mettant l’accent sur la rédaction de spécifications techniques. L’objectif était de formaliser le fonctionnement des applications avant leur développement.",
+      "role": "J’ai participé à la rédaction des spécifications en définissant les classes, leurs attributs et leurs méthodes. J’ai contribué à structurer les projets en amont du développement en réfléchissant à la logique globale et aux interactions entre composants.",
+      "selfEvaluation": "Ce travail m’a permis de mieux comprendre l’importance de la phase de conception dans un projet de développement. J’ai appris à structurer ma réflexion avant de coder. Cela m’a aidée à produire un code plus organisé et cohérent. Avec le recul, je pourrais améliorer ces spécifications avec des diagrammes UML et une documentation plus formelle.",
+      "shortDescription": "Rédaction de spécifications et modélisation.",
+      "technologies": [],
+      "features": [],
+      "githubUrl": "",
+      "liveUrl": null,
+      "screenshots": []
     }
   },
   {
