@@ -138,7 +138,7 @@ function About() {
               </div>
               <div className="mt-8 pt-6 border-t border-white/8">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#FF3B8D] animate-pulse" />
+                  <div className="w-2 h-2 rounded-full bg-text-primary dark:bg-[#FF3B8D] animate-pulse" />
                   <span className="font-bebas text-xs text-white/40">Open to internships & collaborations</span>
                 </div>
               </div>
