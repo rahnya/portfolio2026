@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Couleurs mode sombre
         navy: "#183153",
         dark: "#373750",
         pink: {
@@ -20,37 +21,40 @@ const config: Config = {
         purple: "#8A6F9B",
         yellow: "#FFC72C",
         "deep-dark": "#0D1B2A",
+        
+        // Couleurs mode clair (sunset)
+        sunset: {
+          pink: "#EF9C9E",
+          orange: "#F9B97C",
+          purple: "#B888A0",
+          blue: "#99AABB",
+        },
+        
+        // Texte
+        text: {
+          primary: "#5B333A",
+          secondary: "#8B5F63",
+          muted: "#A67D7F",
+        },
       },
+      
       fontFamily: {
-        display: ["var(--font-syne)", "sans-serif"],
-        body: ["var(--font-dm-sans)", "sans-serif"],
-        mono: ["var(--font-dm-mono)", "monospace"],
+        display: ["'Bebas Neue'", "sans-serif"],
+        body: ["'DM Sans'", "sans-serif"],
       },
+      
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "noise": "url('/noise.svg')",
+        "sunset": "linear-gradient(180deg, #FFB5B1 0%, #EF9C9E 10%, #B888A0 50%, #99AABB 100%)",
       },
-      animation: {
-        "fade-up": "fadeUp 0.6s ease forwards",
-        "fade-in": "fadeIn 0.5s ease forwards",
-        "slide-left": "slideLeft 0.5s ease forwards",
-      },
-      keyframes: {
-        fadeUp: {
-          "0%": { opacity: "0", transform: "translateY(24px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        fadeIn: {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
-        },
-        slideLeft: {
-          "0%": { opacity: "0", transform: "translateX(24px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
-        },
+      
+      boxShadow: {
+        "sunset": "0 4px 16px rgba(249, 185, 124, 0.12)",
+        "sunset-lg": "0 8px 32px rgba(249, 185, 124, 0.15)",
       },
     },
   },
   plugins: [],
 };
+
 export default config;

@@ -21,7 +21,7 @@ export default function RecommendationsPage() {
 
         {/* Header */}
         <div className="mb-16">
-          <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
+          <p className="font-bebas text-xs dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
             — Testimonials
           </p>
           <h1 className="font-display font-extrabold text-5xl text-white mb-4">
@@ -49,7 +49,7 @@ export default function RecommendationsPage() {
                 </div>
                 <div>
                   <p className="font-display font-bold text-white">{rec.name}</p>
-                  <p className="font-mono text-xs text-white/40 mt-0.5">
+                  <p className="font-bebas text-xs text-white/40 mt-0.5">
                     {rec.role[lang as "en" | "fr"]}
                   </p>
                 </div>
@@ -62,7 +62,7 @@ export default function RecommendationsPage() {
               <a
                 href={`/cv/${rec.filename}`}
                 download
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF6B35]/10 dark:bg-[#FF3B8D]/10 hover:bg-[#FF6B35]/20 dark:hover:bg-[#FF3B8D]/20 border-[#FF6B35]/20 dark:border-[#FF3B8D]/20 hover:border-[#FF6B35]/40 dark:hover:border-[#FF3B8D]/40 text-[#FF6B35] dark:text-[#FF96B3] font-body font-medium text-sm rounded-xl transition-all duration-200"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-text-primary/10 dark:bg-[#FF3B8D]/10 hover:bg-text-primary/20 dark:hover:bg-[#FF3B8D]/20 border-text-primary/20 dark:border-[#FF3B8D]/20 hover:border-text-primary/40 dark:hover:border-[#FF3B8D]/40 text-white dark:text-[#FF96B3] font-body font-medium text-sm rounded-xl transition-all duration-200"
               >
                 <Download className="w-4 h-4" />
                 {t.recommendations.download}
@@ -75,7 +75,7 @@ export default function RecommendationsPage() {
         <div className="mt-12 text-center p-8 bg-[#183153]/20 border border-white/5 rounded-2xl">
           <p className="font-body text-white/50 mb-4">Looking for the full CV?</p>
           <a href="/cv/CV_Rahnya.pdf" download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF6B35] dark:bg-[#FF3B8D] hover:bg-[#FF6B35]/90 dark:hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200">
+            className="inline-flex items-center gap-2 px-6 py-3 bg-text-primary dark:bg-[#FF3B8D] hover:bg-text-primary/90 dark:hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200">
             <Download className="w-4 h-4" />
             {t.nav.cv}
           </a>

@@ -62,13 +62,13 @@ export default function LabPage() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16">
-          <p className="font-mono text-xs text-[#FF6B35] dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
+          <p className="font-bebas text-xs text-primary dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
             — Lab & Expérimentations
           </p>
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl text-white mb-4">
+          <h1 className="font-display font-extrabold text-5xl md:text-6xl dark:text-white mb-4">
             {lang === "en" ? "Lab" : "Labo"}
           </h1>
-          <p className="font-body text-white/50 text-lg max-w-2xl">
+          <p className="font-body dark:text-white/50 text-lg max-w-2xl">
             {lang === "en"
               ? "Explorations, learnings, and ongoing projects of a technology enthusiast."
               : "Explorations, apprentissages et projets en cours d'une passionnée de technologie."}
@@ -81,10 +81,10 @@ export default function LabPage() {
             <button
               key={f.key}
               onClick={() => setActive(f.key)}
-              className={`font-mono text-xs px-4 py-2 rounded-full border transition-all duration-200 whitespace-nowrap ${
+              className={`font-bebas text-xs px-4 py-2 rounded-full border transition-all duration-200 whitespace-nowrap ${
                 active === f.key
-                  ? "bg-[#FF3B8D] border-[#FF3B8D] text-white"
-                  : "border-white/10 text-white/50 hover:border-white/20 hover:text-white"
+                  ? "bg-text-primary dark:bg-pink border-text-primary dark:border-pink text-white"
+                  : "border-text-primary/10 dark:border-white/10 text-text-secondary dark:text-white/50 hover:border-text-primary/20 dark:hover:border-white/20 hover:text-text-primary dark:hover:text-white"
               }`}
             >
               {f.label}
@@ -100,7 +100,7 @@ export default function LabPage() {
               <Link
                 key={item.slug}
                 href={`/lab/${item.slug}`}
-                className="group relative bg-[#183153]/30 border border-white/8 rounded-2xl overflow-hidden hover:border-white/15 transition-all duration-300 hover:shadow-xl hover:shadow-[#FF3B8D]/10"
+                className="group relative bg-text-primary/30 dark:bg-[#183153]/30 border border-white/8 rounded-2xl overflow-hidden hover:border-white/15 transition-all duration-300 hover:shadow-xl hover:shadow-[#FF3B8D]/10"
               >
                 {/* Color accent bar */}
                 <div
@@ -121,7 +121,7 @@ export default function LabPage() {
                   {/* Type badge */}
                   <div className="mb-3">
                     <span
-                      className={`font-mono text-[10px] px-2 py-1 rounded-full ${getTypeColor(
+                      className={`font-bebas text-[10px] px-2 py-1 rounded-full ${getTypeColor(
                         item.type
                       )}`}
                     >
@@ -138,10 +138,10 @@ export default function LabPage() {
                   {item.progress && (
                     <div className="mb-4">
                       <div className="flex justify-between items-center mb-1">
-                        <span className="font-mono text-xs text-white/40">
+                        <span className="font-bebas text-xs text-white/40">
                           Progression
                         </span>
-                        <span className="font-mono text-xs text-[#FF3B8D]">
+                        <span className="font-bebas text-xs text-[#FF3B8D]">
                           {item.progress}%
                         </span>
                       </div>
@@ -162,7 +162,7 @@ export default function LabPage() {
                     {item.tags?.map((tag: string) => (
                       <span
                         key={tag}
-                        className="font-mono text-[10px] px-2 py-1 rounded-full bg-white/5 text-white/60 border border-white/10 hover:border-white/20 transition-colors"
+                        className="font-bebas text-[10px] px-2 py-1 rounded-full bg-white/5 text-white/60 border border-white/10 hover:border-white/20 transition-colors"
                       >
                         {tag}
                       </span>
@@ -173,7 +173,7 @@ export default function LabPage() {
                   <div className="flex items-center justify-between pt-3 border-t border-white/5">
                     {item.status && (
                       <span
-                        className={`font-mono text-[10px] px-2 py-1 rounded-full border ${getStatusColor(
+                        className={`font-bebas text-[10px] px-2 py-1 rounded-full border ${getStatusColor(
                           item.status
                         )}`}
                       >

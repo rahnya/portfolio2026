@@ -12,9 +12,6 @@ function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden px-6 pt-24">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FF3B8D]/8 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#8A6F9B]/10 rounded-full blur-[100px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#183153]/30 rounded-full blur-[80px]" />
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -39,23 +36,23 @@ function Hero() {
 
       <div className="relative max-w-7xl mx-auto w-full py-20">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#FF3B8D]/20 bg-[#FF3B8D]/5 mb-8 animate-fade-up">
-            <span className="w-2 h-2 rounded-full bg-[#FF3B8D] animate-pulse" />
-            <span className="font-mono text-xs text-[#FF96B3]">{t.hero.available}</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#5B333A] bg-[#5B333A]/5 dark:border border-[#FF3B8D]/20 dark:bg-[#FF3B8D]/5 mb-8 animate-fade-up">
+            <span className="w-2 h-2 rounded-full bg-[#5B333A] dark:bg-[#FF3B8D] animate-pulse" />
+            <span className="font-bebas text-xs text-[#5B333A] dark:text-[#FF96B3]">{t.hero.available}</span>
           </div>
           <p className="font-body text-white/50 text-lg mb-2 animate-fade-up delay-100">{t.hero.greeting}</p>
           <h1 className="font-display font-extrabold text-6xl md:text-8xl text-white leading-[0.95] mb-4 animate-fade-up delay-200">
             {t.hero.name}
           </h1>
           <div className="flex items-center gap-3 mb-8 animate-fade-up delay-300">
-            <div className="h-px w-12 bg-[#FF3B8D]" />
+            <div className="h-px w-12 bg-text-primary dark:bg-[#FF3B8D]" />
             <h2 className="font-display text-xl md:text-2xl gradient-text font-medium">{t.hero.title}</h2>
           </div>
           <p className="font-body text-white/60 text-lg md:text-xl max-w-2xl leading-relaxed mb-12 animate-fade-up delay-400">
             {t.hero.description}
           </p>
           <div className="flex flex-wrap gap-4 animate-fade-up delay-500">
-            <Link href="/projects" className="group inline-flex items-center gap-2 px-6 py-3 bg-[#FF3B8D] hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:shadow-[0_0_30px_rgba(255,59,141,0.3)]">
+            <Link href="/projects" className="group inline-flex items-center gap-2 px-6 py-3 bg-text-secondary hover:bg-text-primary dark:bg-[#FF3B8D] dark:hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:shadow-[0_0_30px_rgba(255,59,141,0.3)]">
               {t.hero.cta_projects}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
@@ -80,7 +77,7 @@ function Hero() {
             <div className="w-px h-4 bg-white/10" />
             <div className="flex items-center gap-2 text-white/25">
               <MapPin className="w-3.5 h-3.5" />
-              <span className="font-mono text-xs">Toulon, France</span>
+              <span className="font-bebas text-xs">Toulon, France</span>
             </div>
           </div>
         </div>
@@ -101,7 +98,7 @@ function About() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
-            <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">— {t.about.title}</p>
+            <p className="font-bebas text-xs text-white dark:text-[#FF3B8D] uppercase tracking-widest mb-4">— {t.about.title}</p>
             <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-8 leading-tight">
               Code, design &<br /><span className="gradient-text">endless curiosity.</span>
             </h2>
@@ -109,19 +106,19 @@ function About() {
               <p className="font-body text-white/60 text-base leading-relaxed">{t.about.paragraph1}</p>
               <p className="font-body text-white/60 text-base leading-relaxed">{t.about.paragraph2}</p>
               <p className="font-body text-white/60 text-base leading-relaxed flex items-start gap-3">
-                <Plane className="w-4 h-4 text-[#FFC72C] flex-shrink-0 mt-1" />
+                <Plane className="w-4 h-4 flex-shrink-0 mt-1" />
                 {t.about.paragraph3}
               </p>
             </div>
             <div className="mt-8 flex gap-4">
-              <Link href="/projects" className="font-body text-sm text-[#FF96B3] hover:text-[#FF3B8D] transition-colors duration-200 flex items-center gap-1 group">
+              <Link href="/projects" className="font-body text-sm hover:text-[#FF3B8D] transition-colors duration-200 flex items-center gap-1 group">
                 View my work
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
             </div>
           </div>
           <div className="relative">
-            <div className="relative bg-[#183153]/40 border border-white/8 rounded-2xl p-8 backdrop-blur-sm">
+            <div className="relative bg-text-secondary/40 dark:bg-[#183153]/40 border border-white/8 rounded-2xl p-8 backdrop-blur-sm">
               <div className="absolute top-0 right-0 w-20 h-20 bg-[#FF3B8D]/10 rounded-bl-[60px] rounded-tr-2xl" />
               <div className="space-y-6">
                 {[
@@ -142,7 +139,7 @@ function About() {
               <div className="mt-8 pt-6 border-t border-white/8">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-[#FF3B8D] animate-pulse" />
-                  <span className="font-mono text-xs text-white/40">Open to internships & collaborations</span>
+                  <span className="font-bebas text-xs text-white/40">Open to internships & collaborations</span>
                 </div>
               </div>
             </div>
@@ -170,12 +167,12 @@ function Skills() {
       </div>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">— {t.skills.title}</p>
+          <p className="font-bebas text-xs text-primary dark:text-[#FF3B8D] uppercase tracking-widest mb-4">— {t.skills.title}</p>
           <h2 className="font-display font-bold text-4xl md:text-5xl text-white">What I work with</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {skillGroups.map((group, gi) => (
-            <div key={gi} className="card-hover relative bg-[#183153]/30 border border-white/8 rounded-2xl p-8 overflow-hidden group">
+            <div key={gi} className="card-hover relative bg-text-secondary/30 dark:bg-[#183153]/30 border border-white/8 rounded-2xl p-8 overflow-hidden group">
               <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: `linear-gradient(90deg, ${group.color}, transparent)` }} />
               <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-6" style={{ backgroundColor: `${group.color}15`, color: group.color }}>
                 {group.icon}
@@ -183,7 +180,7 @@ function Skills() {
               <h3 className="font-display font-bold text-lg text-white mb-6">{group.label}</h3>
               <div className="flex flex-wrap gap-2">
                 {group.items.map((skill) => (
-                  <span key={skill} className="font-mono text-xs px-3 py-1.5 rounded-full border border-white/8 text-white/60 hover:text-white hover:border-white/20 transition-all duration-200">
+                  <span key={skill} className="font-bebas text-xs px-3 py-1.5 rounded-full border border-white/8 text-white/60 hover:text-white hover:border-white/20 transition-all duration-200">
                     {skill}
                   </span>
                 ))}
@@ -235,7 +232,7 @@ function LabyrinthTeaser() {
         {/* Header row */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
-            <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-3">{c.eyebrow}</p>
+            <p className="font-bebas text-xs dark:text-[#FF3B8D] uppercase tracking-widest mb-3">{c.eyebrow}</p>
             <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-3">{c.title}</h2>
             <p className="font-body text-white/50 text-base max-w-xl leading-relaxed">{c.subtitle}</p>
           </div>
@@ -243,7 +240,7 @@ function LabyrinthTeaser() {
             href="/lab/labyrinthe.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-[#FF3B8D]/30 bg-[#FF3B8D]/8 text-[#FF96B3] hover:bg-[#FF3B8D]/15 hover:border-[#FF3B8D]/50 font-body text-sm font-medium transition-all duration-200 group"
+            className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-text-primary/30 bg-text-primary/8 text-primary hover:bg-text-primary/15 hover:border-text-secondary/50 dark:border border-[#FF3B8D]/30 dark:bg-[#FF3B8D]/8 dark:text-[#FF96B3] dark:hover:bg-[#FF3B8D]/15 dark:hover:border-[#FF3B8D]/50 font-body text-sm font-medium transition-all duration-200 group"
           >
             <Maximize2 className="w-4 h-4" />
             {c.cta}
@@ -281,13 +278,13 @@ function LabyrinthTeaser() {
               <div className="w-16 h-16 rounded-full border border-[#FF3B8D]/40 bg-[#FF3B8D]/10 flex items-center justify-center group-hover:scale-110 group-hover:bg-[#FF3B8D]/20 transition-all duration-200">
                 <Gamepad2 className="w-7 h-7 text-[#FF3B8D]" />
               </div>
-              <span className="font-mono text-sm text-white/70 tracking-widest uppercase">{c.activate}</span>
+              <span className="font-bebas text-sm text-white/70 tracking-widest uppercase">{c.activate}</span>
             </button>
           )}
 
           {/* Hint bar bottom */}
           <div className="absolute bottom-0 left-0 right-0 z-10 px-4 py-2 bg-gradient-to-t from-[#050510]/80 to-transparent pointer-events-none">
-            <p className="font-mono text-[10px] text-white/30 text-center tracking-wider">{c.hint}</p>
+            <p className="font-bebas text-[10px] text-white/30 text-center tracking-wider">{c.hint}</p>
           </div>
         </div>
 
@@ -295,9 +292,9 @@ function LabyrinthTeaser() {
         <div className="mt-6 text-center">
           <Link
             href="/lab"
-            className="font-body text-sm text-white/30 hover:text-[#FF96B3] transition-colors duration-200 inline-flex items-center gap-1.5 group"
+            className="font-body text-sm text-white/50 dark:text-white/30 hover:text-text-secondary dark:hover:text-[#FF96B3] transition-colors duration-200 inline-flex items-center gap-1.5 group"
           >
-            {lang === "fr" ? "Voir tous mes experiments →" : "See all lab experiments →"}
+            {lang === "fr" ? "Voir tous mes experiments " : "See all lab experiments "}
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
           </Link>
         </div>
@@ -321,7 +318,7 @@ function Experience() {
     <section className="py-32 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <p className="font-mono text-xs text-[#FF3B8D] uppercase tracking-widest mb-4">— {t.experience.title}</p>
+          <p className="font-bebas text-xs dark:text-[#FF3B8D] uppercase tracking-widest mb-4">— {t.experience.title}</p>
           <h2 className="font-display font-bold text-4xl md:text-5xl text-white">My journey</h2>
         </div>
         <div className="relative">
@@ -331,14 +328,14 @@ function Experience() {
               <div key={i} className="relative pl-12 md:pl-24 pb-12 group">
                 <div className="absolute left-[13px] md:left-[29px] w-3 h-3 rounded-full border-2 border-current top-1.5 group-hover:scale-125 transition-transform duration-200" style={{ borderColor: item.color, backgroundColor: `${item.color}30` }} />
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="font-mono text-xs text-white/30 flex items-center gap-1.5">
+                  <span className="font-bebas text-xs text-white/30 flex items-center gap-1.5">
                     <Calendar className="w-3 h-3" />{item.date}
                   </span>
-                  <span className="font-mono text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: `${item.color}15`, color: item.color }}>{item.type}</span>
+                  <span className="font-bebas text-xs px-2 py-0.5 rounded-full" style={{ backgroundColor: `${item.color}15`, color: item.color }}>{item.type}</span>
                 </div>
                 <div className="bg-[#183153]/20 border border-white/5 rounded-xl p-6 hover:border-white/10 transition-colors duration-200">
                   <h3 className="font-display font-bold text-lg text-white mb-1">{item.title}</h3>
-                  <p className="font-mono text-xs text-white/40 mb-3">{item.subtitle}</p>
+                  <p className="font-bebas text-xs text-white/40 mb-3">{item.subtitle}</p>
                   <p className="font-body text-sm text-white/60 leading-relaxed">{item.description[lang as "en" | "fr"]}</p>
                 </div>
               </div>
@@ -361,12 +358,12 @@ function CTABanner() {
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#FFC72C]/8 rounded-full blur-3xl" />
           <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
-              <p className="font-mono text-xs text-[#FF96B3] uppercase tracking-widest mb-3">They recommended me →</p>
+              <p className="font-bebas text-xs text-[#FF96B3] uppercase tracking-widest mb-3">They recommended me →</p>
               <h2 className="font-display font-bold text-3xl md:text-4xl text-white">Read what people say</h2>
               <p className="font-body text-white/50 mt-2 max-w-md">Download recommendation letters from professors and colleagues.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-              <Link href="/recommendations" className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF3B8D] hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:shadow-[0_0_30px_rgba(255,59,141,0.3)]">
+              <Link href="/recommendations" className="inline-flex items-center gap-2 px-6 py-3 bg-text-secondary dark:bg-[#FF3B8D] hover:bg-text-primary dark:hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200 dark:hover:shadow-[0_0_30px_rgba(255,59,141,0.3)]">
                 {t.nav.recommendations}<ArrowRight className="w-4 h-4" />
               </Link>
               <a href="/cv/CV_Rahnya.pdf" download className="inline-flex items-center gap-2 px-6 py-3 border border-white/15 hover:border-white/30 text-white/80 hover:text-white font-body font-medium text-sm rounded-xl transition-all duration-200">

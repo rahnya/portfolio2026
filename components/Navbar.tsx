@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLang } from "./LangContext";
 import { Github, Linkedin, Menu, X } from "lucide-react";
-import { trackEvent } from "@/utils/trackEvent"
+import { trackEvent } from "@/utils/trackEvent";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const BehanceIcon = () => (
@@ -40,7 +40,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0D1B2A]/90 backdrop-blur-xl border-b border-white/5 py-3"
+          ? "bg-white/75 dark:bg-deep-dark/90 backdrop-blur-xl border-b border-text-primary/5 dark:border-white/5 py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -48,8 +48,8 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-2">
           <img src="/favicon2.png" alt="Rahnya" className="w-6 h-6 rounded" />
-          <span className="font-display font-bold text-xl text-white tracking-tight">
-            Rahnya<span className="text-[#FF3B8D]">.</span>
+          <span className="font-display text-xl text-text-primary dark:text-white tracking-tight">
+            Rahnya<span className="text-sunset-orange dark:text-pink">.</span>
           </span>
         </Link>
 
@@ -61,8 +61,8 @@ export default function Navbar() {
               href={link.href}
               className={`font-body text-sm transition-all duration-200 ${
                 isActive(link.href)
-                  ? "text-[#FF3B8D]"
-                  : "text-white/60 hover:text-white"
+                  ? "text-sunset-orange dark:text-pink"
+                  : "text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white"
               }`}
             >
               {link.label}
@@ -73,32 +73,59 @@ export default function Navbar() {
         {/* Right side */}
         <div className="hidden md:flex items-center gap-4">
           {/* Social icons */}
-          <a href="https://github.com/rahnya" target="_blank" rel="noopener noreferrer"
-            className="text-white/50 hover:text-white transition-colors duration-200"
-            onClick={() => trackEvent("open_github", "engagement", "navbar")}>
+          <a
+            href="https://github.com/rahnya"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200"
+            onClick={() => trackEvent("open_github", "engagement", "navbar")}
+          >
             <Github className="w-4 h-4" />
           </a>
-          <a href="www.linkedin.com/in/rahnya-lanyeri" target="_blank" rel="noopener noreferrer"
-            className="text-white/50 hover:text-white transition-colors duration-200"
-            onClick={() => trackEvent("open_linkedin", "engagement", "navbar")}>
+          <a
+            href="https://www.linkedin.com/in/rahnya-lanyeri"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200"
+            onClick={() => trackEvent("open_linkedin", "engagement", "navbar")}
+          >
             <Linkedin className="w-4 h-4" />
           </a>
-          <a href="https://www.behance.net/rahnya_lanyeri" target="_blank" rel="noopener noreferrer"
-            className="text-white/50 hover:text-white transition-colors duration-200"
-            onClick={() => trackEvent("open_behance", "engagement", "navbar")}>
+          <a
+            href="https://www.behance.net/rahnya_lanyeri"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200"
+            onClick={() => trackEvent("open_behance", "engagement", "navbar")}
+          >
             <BehanceIcon />
           </a>
 
           {/* Divider */}
-          <div className="w-px h-4 bg-white/10" />
+          <div className="w-px h-4 bg-text-primary/10 dark:bg-white/10" />
 
           {/* Lang switcher */}
-          <div className="flex items-center gap-1 bg-white/5 rounded-full px-1 py-1 border dark:border-white/10">
-            <button onClick={() => setLang("en")} className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
-                lang === "en" ? "bg-[#FF3B8D] text-white" : "text-white/50 hover:text-white"
-              }`} > EN </button>
-            <button onClick={() => setLang("fr")} className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
-                lang === "fr" ? "bg-[#FF3B8D] text-white" : "text-white/50 hover:text-white" }`} > FR </button>
+          <div className="flex items-center gap-1 bg-text-primary/5 dark:bg-white/5 rounded-full px-1 py-1 border border-text-primary/10 dark:border-white/10">
+            <button
+              onClick={() => setLang("en")}
+              className={`font-body text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+                lang === "en"
+                  ? "bg-sunset-orange dark:bg-pink text-white"
+                  : "text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white"
+              }`}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => setLang("fr")}
+              className={`font-body text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+                lang === "fr"
+                  ? "bg-sunset-orange dark:bg-pink text-white"
+                  : "text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white"
+              }`}
+            >
+              FR
+            </button>
           </div>
 
           <ThemeToggle />
@@ -106,7 +133,7 @@ export default function Navbar() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-white/70 hover:text-white"
+          className="md:hidden text-text-secondary dark:text-white/70 hover:text-text-primary dark:hover:text-white"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -115,8 +142,8 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#0D1B2A]/95 backdrop-blur-xl border-t border-white/5 px-6 py-6">
-          <div className="flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white/98 dark:bg-deep-dark/98 backdrop-blur-xl shadow-lg">
+          <div className="px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -124,31 +151,47 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className={`font-body text-base transition-all duration-200 ${
                   isActive(link.href)
-                    ? "text-[#FF3B8D]"
-                    : "text-white/60 hover:text-white"
+                    ? "text-sunset-orange dark:text-pink"
+                    : "text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-            <div className="flex items-center gap-4 pt-4 border-t border-white/10">
-              <a href="  https://github.com/rahnya" target="_blank" rel="noopener noreferrer"
-                className="text-white/50 hover:text-white transition-colors duration-200"
-                onClick={() => trackEvent("open_github", "engagement", "navbar")}>
+            <div className="flex items-center gap-4 pt-4 border-t border-text-primary/10 dark:border-white/10">
+              <a
+                href="https://github.com/rahnya"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200"
+                onClick={() => trackEvent("open_github", "engagement", "navbar")}
+              >
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/rahnya-lanyeri" target="_blank" rel="noopener noreferrer"
-                className="text-white/50 hover:text-white transition-colors duration-200"
-                onClick={() => trackEvent("open_linkedin", "engagement", "navbar")}>
+              <a
+                href="https://www.linkedin.com/in/rahnya-lanyeri"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200"
+                onClick={() => trackEvent("open_linkedin", "engagement", "navbar")}
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <div className="ml-auto flex items-center gap-1 bg-white/5 rounded-full px-1 py-1 border border-white/10">
-                <button onClick={() => setLang("en")}
-                  className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${lang === "en" ? "bg-[#FF3B8D] text-white" : "text-white/50"}`}>
+              <div className="ml-auto flex items-center gap-1 bg-text-primary/5 dark:bg-white/5 rounded-full px-1 py-1 border border-text-primary/10 dark:border-white/10">
+                <button
+                  onClick={() => setLang("en")}
+                  className={`font-body text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+                    lang === "en" ? "bg-sunset-orange dark:bg-pink text-white" : "text-text-secondary dark:text-white/50"
+                  }`}
+                >
                   EN
                 </button>
-                <button onClick={() => setLang("fr")}
-                  className={`font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${lang === "fr" ? "bg-[#FF3B8D] text-white" : "text-white/50"}`}>
+                <button
+                  onClick={() => setLang("fr")}
+                  className={`font-body text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+                    lang === "fr" ? "bg-sunset-orange dark:bg-pink text-white" : "text-text-secondary dark:text-white/50"
+                  }`}
+                >
                   FR
                 </button>
                 <ThemeToggle />

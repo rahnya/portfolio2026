@@ -32,8 +32,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <body className="transition-colors">
-      <ThemeProvider>
+      <head>
+        {/* 🎨 SCRIPT D'INIT DU THÈME - Évite le flash de couleur */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                }
+                // Par défaut : mode clair avec VOS couleurs
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className="transition-colors">
+        <ThemeProvider>
           <LangProvider>
             <AnalyticsTracker />
             <Navbar />
@@ -41,14 +57,7 @@ export default function RootLayout({
             <Footer />
           </LangProvider>
         </ThemeProvider>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function() {
-              const theme = localStorage.getItem('theme');
-              if (theme === 'dark') document.documentElement.classList.add('dark');
-            })();`,
-          }}
-        />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-N4DJGHWE6D"

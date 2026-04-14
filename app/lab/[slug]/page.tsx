@@ -76,7 +76,7 @@ export default function LabDetailPage() {
         {/* Back button */}
         <Link
           href="/lab"
-          className="inline-flex items-center gap-2 text-[#FF3B8D] hover:text-[#FF96B3] transition-colors mb-8"
+          className="inline-flex items-center gap-2 hover:text-text-secondary dark:text-[#FF3B8D] dark:hover:text-[#FF96B3] transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
           {lang === "en" ? "Back to Lab" : "Retour au Lab"}
@@ -90,29 +90,9 @@ export default function LabDetailPage() {
             style={{ backgroundColor: item.color }}
           />
 
-          <h1 className="font-display text-5xl md:text-6xl font-extrabold text-white mb-4">
+          <h1 className="font-bebas text-5xl md:text-6xl font-extrabold text-white mb-4">
             {content.title}
           </h1>
-
-          {/* Meta info */}
-          <div className="flex flex-wrap gap-3 mb-6">
-            <div
-              className={`font-mono text-sm px-3 py-1 rounded-lg border ${getTypeColor(
-                item.type
-              )}`}
-            >
-              {item.type}
-            </div>
-            {item.status && (
-              <div
-                className={`font-mono text-sm px-3 py-1 rounded-lg border ${getStatusColor(
-                  item.status
-                )}`}
-              >
-                {item.status}
-              </div>
-            )}
-          </div>
 
           {/* Description */}
           <p className="font-body text-lg text-white/70 leading-relaxed max-w-2xl">
@@ -122,12 +102,12 @@ export default function LabDetailPage() {
 
         {/* Progress section */}
         {item.progress && (
-          <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-8 mb-8">
+          <div className="bg-text-primary/30 dark:bg-[#183153]/30 border border-white/8 rounded-2xl p-8 mb-8">
             <div className="flex items-center justify-between mb-3">
               <h3 className="font-display font-bold text-white">
                 {lang === "en" ? "Progress" : "Progression"}
               </h3>
-              <span className="font-mono text-lg text-[#FF3B8D]">
+              <span className="font-bebas text-lg text-[#FF3B8D]">
                 {item.progress}%
               </span>
             </div>
@@ -145,7 +125,7 @@ export default function LabDetailPage() {
 
         {/* Skills section */}
         {content.skills && content.skills.length > 0 && (
-          <div className="bg-[#183153]/30 border border-white/8 rounded-2xl p-8 mb-8">
+          <div className="bg-text-primary/30 dark:bg-[#183153]/30 border border-white/8 rounded-2xl p-8 mb-8">
             <h3 className="font-display font-bold text-white mb-4 flex items-center gap-2">
               <Zap className="w-5 h-5 text-[#FF3B8D]" />
               {lang === "en"
@@ -156,7 +136,7 @@ export default function LabDetailPage() {
               {content.skills.map((skill: string) => (
                 <span
                   key={skill}
-                  className="font-mono text-sm px-3 py-2 rounded-lg bg-white/5 text-white/70 border border-white/10 hover:border-white/20 transition-colors"
+                  className="font-bebas text-sm px-3 py-2 rounded-lg bg-white/5 text-white/70 border border-white/10 hover:border-white/20 transition-colors"
                 >
                   {skill}
                 </span>
@@ -168,14 +148,14 @@ export default function LabDetailPage() {
         {/* Tags section */}
         {item.tags && item.tags.length > 0 && (
           <div className="mb-8">
-            <h3 className="font-mono text-xs text-white/50 uppercase tracking-widest mb-3">
+            <h3 className="font-bebas text-xs text-white/50 uppercase tracking-widest mb-3">
               {lang === "en" ? "Categories" : "Catégories"}
             </h3>
             <div className="flex flex-wrap gap-2">
               {item.tags.map((tag: string) => (
                 <span
                   key={tag}
-                  className="font-mono text-sm px-3 py-2 rounded-lg"
+                  className="font-bebas text-sm px-3 py-2 rounded-lg"
                   style={{
                     backgroundColor: `${item.color}25`,
                     color: item.color,
