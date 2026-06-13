@@ -73,7 +73,7 @@ export default function ContactPage() {
           <h1 className="font-display font-extrabold text-5xl md:text-6xl dark:text-white mb-4">
             {t.contact.title}
           </h1>
-          <p className="font-body dar:text-white/50 text-lg max-w-xl">
+          <p className="font-body text-text-secondary dark:text-white/50 text-lg max-w-xl">
             {t.contact.subtitle}
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
           <div className="bg-text-secondary/20 dark:bg-[#183153]/20 border border-white/8 rounded-2xl p-8">
             <div className="space-y-4">
               <div>
-                <label className="font-bebas text-xs text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.name}
                 </label>
                 <input
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="font-bebas text-xs text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.email}
                 </label>
                 <input
@@ -110,7 +110,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="font-bebas text-xs text-white/40 uppercase tracking-wider mb-2 block">
+                <label className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-wider mb-2 block">
                   {t.contact.message}
                 </label>
                 <textarea
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
           {/* Direct contacts */}
           <div className="flex flex-col justify-center space-y-4">
-            <p className="font-bebas text-xs text-white/40 uppercase tracking-widest mb-2">
+            <p className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-widest mb-2">
               {t.contact.or}
             </p>
 
@@ -164,10 +164,10 @@ export default function ContactPage() {
                   {c.icon}
                 </div>
                 <div>
-                  <p className="font-bebas text-xs text-white/40 dark:text-white/40  uppercase tracking-wider">
+                  <p className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-wider">
                     {c.label}
                   </p>
-                  <p className="font-body text-sm text-white/80 dark:text-white/80 group-hover:text-white transition-colors duration-200">
+                  <p className="font-body text-sm text-text-secondary dark:text-white/80 group-hover:text-text-primary dark:group-hover:text-white transition-colors duration-200">
                     {c.value}
                   </p>
                 </div>
@@ -180,7 +180,7 @@ export default function ContactPage() {
                 <div className="w-2 h-2 rounded-full bg-text-primary dark:bg-[#FF3B8D] animate-pulse" />
                 <span className="font-bebas text-xs dark:text-[#FF3B8D]">Currently Available</span>
               </div>
-              <p className="font-body text-xs text-white/40 leading-relaxed">
+              <p className="font-body text-xs text-text-secondary dark:text-white/40 leading-relaxed">
                 Open to internships, apprenticeships, and collaborative projects.
                 Typical response time: 24–48 hours.
               </p>

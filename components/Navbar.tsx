@@ -49,25 +49,31 @@ export default function Navbar() {
         <Link href="/" className="group flex items-center gap-2">
           <img src="/favicon2.png" alt="Rahnya" className="w-6 h-6 rounded" />
           <span className="font-display text-xl text-text-primary dark:text-white tracking-tight">
-            Rahnya<span className="text-sunset-orange dark:text-pink">.</span>
+            Rahnya<span className={`transition-colors duration-300 ${scrolled ? "text-sunset-orange dark:text-pink" : "text-text-primary dark:text-pink"}`}>.</span>
           </span>
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`font-body text-sm transition-all duration-200 ${
-                isActive(link.href)
-                  ? "text-sunset-orange dark:text-pink"
-                  : "text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <div className="hidden md:flex items-center gap-8" role="navigation" aria-label="Main">
+          {navLinks.map((link) => {
+            const active = isActive(link.href);
+            // Active link color: only switch to sunset-orange once the navbar has a white background
+            const activeColor = scrolled ? "text-sunset-orange dark:text-pink" : "text-text-primary font-medium dark:text-pink";
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                aria-current={active ? "page" : undefined}
+                className={`font-body text-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink focus-visible:ring-offset-2 rounded ${
+                  active
+                    ? activeColor
+                    : "text-text-secondary dark:text-white/70 hover:text-text-primary dark:hover:text-white"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Right side */}
@@ -77,25 +83,28 @@ export default function Navbar() {
             href="https://github.com/rahnya"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200"
+            aria-label="GitHub"
+            className="text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
             onClick={() => trackEvent("open_github", "engagement", "navbar")}
           >
-            <Github className="w-4 h-4" />
+            <Github className="w-4 h-4" aria-hidden="true" />
           </a>
           <a
             href="https://www.linkedin.com/in/rahnya-lanyeri"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200"
+            aria-label="LinkedIn"
+            className="text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
             onClick={() => trackEvent("open_linkedin", "engagement", "navbar")}
           >
-            <Linkedin className="w-4 h-4" />
+            <Linkedin className="w-4 h-4" aria-hidden="true" />
           </a>
           <a
             href="https://www.behance.net/rahnya_lanyeri"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200"
+            aria-label="Behance"
+            className="text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
             onClick={() => trackEvent("open_behance", "engagement", "navbar")}
           >
             <BehanceIcon />
@@ -105,23 +114,27 @@ export default function Navbar() {
           <div className="w-px h-4 bg-text-primary/10 dark:bg-white/10" />
 
           {/* Lang switcher */}
-          <div className="flex items-center gap-1 bg-text-primary/5 dark:bg-white/5 rounded-full px-1 py-1 border border-text-primary/10 dark:border-white/10">
+          <div className="flex items-center gap-1 bg-text-primary/5 dark:bg-white/5 rounded-full px-1 py-1 border border-text-primary/10 dark:border-white/10" role="group" aria-label="Language">
             <button
               onClick={() => setLang("en")}
-              className={`font-body text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+              aria-pressed={lang === "en"}
+              aria-label="English"
+              className={`font-body text-xs px-2 py-0.5 rounded-full transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink ${
                 lang === "en"
                   ? "bg-sunset-orange dark:bg-pink text-white"
-                  : "text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white"
+                  : "text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white"
               }`}
             >
               EN
             </button>
             <button
               onClick={() => setLang("fr")}
-              className={`font-body text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+              aria-pressed={lang === "fr"}
+              aria-label="Français"
+              className={`font-body text-xs px-2 py-0.5 rounded-full transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink ${
                 lang === "fr"
                   ? "bg-sunset-orange dark:bg-pink text-white"
-                  : "text-text-secondary dark:text-white/50 hover:text-text-primary dark:hover:text-white"
+                  : "text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white"
               }`}
             >
               FR
@@ -133,26 +146,30 @@ export default function Navbar() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-text-secondary dark:text-white/70 hover:text-text-primary dark:hover:text-white"
+          className="md:hidden text-text-secondary dark:text-white/80 hover:text-text-primary dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded p-1"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-menu"
+          aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
         >
-          {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          {mobileOpen ? <X className="w-5 h-5" aria-hidden="true" /> : <Menu className="w-5 h-5" aria-hidden="true" />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white/98 dark:bg-deep-dark/98 backdrop-blur-xl shadow-lg">
+        <div id="mobile-menu" className="md:hidden absolute top-full left-0 right-0 bg-white/98 dark:bg-deep-dark/98 backdrop-blur-xl shadow-lg" role="navigation" aria-label="Mobile">
           <div className="px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
+                aria-current={isActive(link.href) ? "page" : undefined}
                 onClick={() => setMobileOpen(false)}
                 className={`font-body text-base transition-all duration-200 ${
                   isActive(link.href)
                     ? "text-sunset-orange dark:text-pink"
-                    : "text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white"
+                    : "text-text-secondary dark:text-white/70 hover:text-text-primary dark:hover:text-white"
                 }`}
               >
                 {link.label}

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   icons:{
     icon: "/favicon.png"
   },
-  keywords: ["developer", "designer", "portfolio", "Next.js", "TypeScript", "UX/UI"],
+  keywords: ["developer", "designer", "portfolio", "Next.js", "TypeScript", "UX/UI", "BUT MMI", "Toulon"],
   verification: {
     google: "4iKVP3WeVNyL4RrwzOvYrg_sTVCj_KmGc0fhaUdMNoE"
   },
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning>
       <head>
         {/* 🎨 SCRIPT D'INIT DU THÈME - Évite le flash de couleur */}
         <script
@@ -49,11 +49,19 @@ export default function RootLayout({
         />
       </head>
       <body className="transition-colors">
+        {/* Skip to content link — appears on keyboard focus */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-text-primary focus:text-white focus:font-body focus:text-sm dark:focus:bg-pink"
+        >
+          Aller au contenu principal
+        </a>
+
         <ThemeProvider>
           <LangProvider>
             <AnalyticsTracker />
             <Navbar />
-            <main>{children}</main>
+            <main id="main-content">{children}</main>
             <Footer />
           </LangProvider>
         </ThemeProvider>

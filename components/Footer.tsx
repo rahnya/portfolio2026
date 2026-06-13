@@ -18,7 +18,7 @@ export default function Footer() {
             <span className="font-display text-2xl text-text-primary dark:text-white">
               Rahnya<span className="text-sunset-orange dark:text-pink">.</span>
             </span>
-            <p className="mt-3 text-text-muted dark:text-white/40 text-sm font-body leading-relaxed">
+            <p className="mt-3 text-text-secondary dark:text-white/60 text-sm font-body leading-relaxed">
               Developer & Interface Designer.
               <br />
               Building at the intersection of code and craft.
@@ -28,28 +28,31 @@ export default function Footer() {
                 href="https://github.com/rahnya"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-text-primary/10 dark:border-white/10 flex items-center justify-center text-text-muted dark:text-white/40 hover:text-text-primary dark:hover:text-white hover:border-text-primary/30 dark:hover:border-white/30 transition-all duration-200"
+                aria-label="GitHub"
+                className="w-9 h-9 rounded-full border border-text-primary/10 dark:border-white/10 flex items-center justify-center text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white hover:border-text-primary/30 dark:hover:border-white/30 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink"
                 onClick={() => trackEvent("open_github", "engagement", "footer")}
               >
-                <Github className="w-4 h-4" />
+                <Github className="w-4 h-4" aria-hidden="true" />
               </a>
               <a
                 href="https://www.linkedin.com/in/rahnya-lanyeri/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-text-primary/10 dark:border-white/10 flex items-center justify-center text-text-muted dark:text-white/40 hover:text-text-primary dark:hover:text-white hover:border-text-primary/30 dark:hover:border-white/30 transition-all duration-200"
+                aria-label="LinkedIn"
+                className="w-9 h-9 rounded-full border border-text-primary/10 dark:border-white/10 flex items-center justify-center text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white hover:border-text-primary/30 dark:hover:border-white/30 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink"
                 onClick={() => trackEvent("open_linkedin", "engagement", "footer")}
               >
-                <Linkedin className="w-4 h-4" />
+                <Linkedin className="w-4 h-4" aria-hidden="true" />
               </a>
               <a
                 href="https://www.behance.net/rahnya_lanyeri"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-text-primary/10 dark:border-white/10 flex items-center justify-center text-text-muted dark:text-white/40 hover:text-text-primary dark:hover:text-white hover:border-text-primary/30 dark:hover:border-white/30 transition-all duration-200"
+                aria-label="Behance"
+                className="w-9 h-9 rounded-full border border-text-primary/10 dark:border-white/10 flex items-center justify-center text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white hover:border-text-primary/30 dark:hover:border-white/30 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink"
                 onClick={() => trackEvent("open_behance", "engagement", "footer")}
               >
-                <span className="text-xs font-bold">Be</span>
+                <span className="text-xs font-bold" aria-hidden="true">Be</span>
               </a>
             </div>
           </div>
@@ -63,6 +66,7 @@ export default function Footer() {
               {[
                 { href: "/", label: t.nav.home },
                 { href: "/projects", label: t.nav.projects },
+                { href: "/pepite", label: t.nav.pepite },
                 { href: "/lab", label: t.nav.lab },
                 { href: "/appearances", label: t.nav.appearances },
                 { href: "/contact", label: t.nav.contact },
@@ -70,7 +74,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-body text-sm text-text-muted dark:text-white/40 hover:text-text-primary dark:hover:text-white transition-colors duration-200 w-fit"
+                  className="font-body text-sm text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white transition-colors duration-200 w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
                 >
                   {link.label}
                 </Link>
@@ -87,19 +91,19 @@ export default function Footer() {
               <a
                 href="/cv/CV_Rahnya.pdf"
                 download
-                className="font-body text-sm text-text-muted dark:text-white/40 hover:text-text-primary dark:hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit"
+                className="font-body text-sm text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
                 onClick={() => trackEvent("open_cv", "engagement", "footer")}
               >
                 {t.nav.cv}
-                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-y-0.5 group-hover:translate-y-0 translate-x-0.5 group-hover:translate-x-0 transition-all duration-200" />
+                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-y-0.5 group-hover:translate-y-0 translate-x-0.5 group-hover:translate-x-0 transition-all duration-200" aria-hidden="true" />
               </a>
               <Link
                 href="/recommendations"
-                className="font-body text-sm text-text-muted dark:text-white/40 hover:text-text-primary dark:hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit"
+                className="font-body text-sm text-text-secondary dark:text-white/60 hover:text-text-primary dark:hover:text-white transition-colors duration-200 flex items-center gap-1 group w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
                 onClick={() => trackEvent("open_recommendations", "engagement", "footer")}
               >
                 {t.nav.recommendations}
-                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-200" />
+                <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-200" aria-hidden="true" />
               </Link>
             </div>
           </div>
@@ -107,10 +111,10 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-text-primary/8 dark:border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-body text-xs text-text-muted dark:text-white/25">
+          <p className="font-body text-xs text-text-secondary dark:text-white/60">
             Crafted by Rahnya Lanyeri — © {year} {t.footer.rights}
           </p>
-          <p className="font-bebas text-xs text-text-muted/60 dark:text-white/20">
+          <p className="font-bebas text-xs text-text-muted dark:text-white/50">
             Built with Next.js & Tailwind CSS
           </p>
         </div>

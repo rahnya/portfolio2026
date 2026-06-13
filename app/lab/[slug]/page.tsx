@@ -3,186 +3,189 @@ import React from "react";
 import Link from "next/link";
 import { useLang } from "@/components/LangContext";
 import labData from "@/data/lab.json";
-import { ArrowLeft, Zap } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
+import { ArrowLeft, Zap, CheckCircle2 } from "lucide-react";
 import { useParams } from "next/navigation";
 
 export default function LabDetailPage() {
   const params = useParams();
-  const { t, lang } = useLang();
+  const { lang } = useLang();
   const slug = params?.slug as string;
-
   const item = labData.find((i: any) => i.slug === slug);
 
-  // Si l'item n'existe pas, affiche une page 404
   if (!item) {
     return (
-      <div className="min-h-screen pt-24 pb-20 px-6 flex items-center justify-center">
+      <main className="min-h-screen pt-24 pb-20 px-6 flex items-center justify-center">
         <div className="max-w-md text-center">
-          <h1 className="font-display text-4xl font-bold text-white mb-4">
+          <h1 className="font-display text-4xl text-text-primary dark:text-white mb-4">
             404
           </h1>
-          <p className="text-white/50 mb-6">
-            {lang === "en"
-              ? "This lab item does not exist."
-              : "Cet élément de lab n'existe pas."}
+          <p className="text-text-secondary dark:text-white/65 mb-6">
+            {lang === "en" ? "This lab item does not exist." : "Cet élément de lab n'existe pas."}
           </p>
           <Link
             href="/lab"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#FF3B8D] text-white hover:bg-[#FF96B3] transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-text-primary dark:bg-pink text-white hover:bg-text-secondary dark:hover:bg-pink/90 transition-colors"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-4 h-4" aria-hidden="true" />
             {lang === "en" ? "Back to Lab" : "Retour au Lab"}
           </Link>
         </div>
-      </div>
+      </main>
     );
   }
 
   const content = item[lang as "en" | "fr"];
-
-  const getTypeColor = (type: string) => {
-    switch (type) {
-      case "MOOC":
-        return "bg-purple-500/20 text-purple-400 border-purple-500/30";
-      case "Exercice":
-        return "bg-orange-500/20 text-orange-400 border-orange-500/30";
-      case "Prototype":
-        return "bg-pink-500/20 text-pink-400 border-pink-500/30";
-      case "Article":
-        return "bg-cyan-500/20 text-cyan-400 border-cyan-500/30";
-      case "Ressource":
-        return "bg-indigo-500/20 text-indigo-400 border-indigo-500/30";
-      default:
-        return "bg-white/5 text-white/60 border-white/10";
-    }
-  };
-
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case "Complété":
-        return "bg-green-500/20 text-green-400 border-green-500/30";
-      case "En cours":
-        return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30";
-      case "Publié":
-        return "bg-blue-500/20 text-blue-400 border-blue-500/30";
-      default:
-        return "bg-white/5 text-white/60 border-white/10";
-    }
-  };
+  const accent = item.color || "#FF96B3";
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6">
-      <div className="max-w-3xl mx-auto">
-        {/* Back button */}
+    <main className="min-h-screen pt-24 pb-20 px-6">
+      <div className="max-w-4xl mx-auto">
+        {/* Back */}
         <Link
           href="/lab"
-          className="inline-flex items-center gap-2 hover:text-text-secondary dark:text-[#FF3B8D] dark:hover:text-[#FF96B3] transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-text-secondary dark:text-white/55 hover:text-text-primary dark:hover:text-white font-body text-sm mb-12 transition-colors duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" aria-hidden="true" />
           {lang === "en" ? "Back to Lab" : "Retour au Lab"}
         </Link>
 
-        {/* Header */}
-        <div className="mb-8">
-          {/* Color bar */}
-          <div
-            className="h-1 w-12 mb-6 rounded-full"
-            style={{ backgroundColor: item.color }}
-          />
+        {/* Hero card */}
+        <ScrollReveal direction="up" distance={25}>
+          <header className="relative rounded-3xl overflow-hidden border border-text-primary/12 dark:border-white/10 bg-text-primary/8 dark:bg-navy/40 p-8 md:p-12 mb-12">
+            <div
+              className="absolute inset-0 opacity-80 pointer-events-none"
+              style={{
+                background: `radial-gradient(circle at 15% 25%, ${accent}40 0%, transparent 55%), radial-gradient(circle at 85% 75%, ${accent}20 0%, transparent 55%)`,
+              }}
+              aria-hidden="true"
+            />
+            <div className="relative">
+              <div className="flex flex-wrap items-center gap-3 mb-5">
+                {item.type && (
+                  <span
+                    className="inline-flex items-center gap-1.5 font-bebas text-[10px] uppercase tracking-widest px-3 py-1 rounded-full text-white"
+                    style={{ backgroundColor: accent }}
+                  >
+                    {item.type}
+                  </span>
+                )}
+                {item.status && (
+                  <span className="font-bebas text-[10px] uppercase tracking-widest text-text-secondary dark:text-white/65 px-3 py-1 rounded-full border border-text-primary/25 dark:border-white/15">
+                    {item.status}
+                  </span>
+                )}
+              </div>
+              <h1 className="font-display text-4xl md:text-5xl text-text-primary dark:text-white mb-4">
+                {content.title}
+              </h1>
+              <p className="font-body text-text-secondary dark:text-white/75 text-lg leading-relaxed max-w-2xl">
+                {content.description}
+              </p>
+            </div>
+            <div
+              className="absolute bottom-0 left-0 right-0 h-1"
+              style={{ background: `linear-gradient(90deg, ${accent}, transparent)` }}
+              aria-hidden="true"
+            />
+          </header>
+        </ScrollReveal>
 
-          <h1 className="font-bebas text-5xl md:text-6xl font-extrabold text-white mb-4">
-            {content.title}
-          </h1>
-
-          {/* Description */}
-          <p className="font-body text-lg text-white/70 leading-relaxed max-w-2xl">
-            {content.description}
-          </p>
-        </div>
-
-        {/* Progress section */}
+        {/* Progress */}
         {item.progress && (
-          <div className="bg-text-primary/30 dark:bg-[#183153]/30 border border-white/8 rounded-2xl p-8 mb-8">
-            <div className="flex items-center justify-between mb-3">
-              <h3 className="font-display font-bold text-white">
-                {lang === "en" ? "Progress" : "Progression"}
-              </h3>
-              <span className="font-bebas text-lg text-[#FF3B8D]">
-                {item.progress}%
-              </span>
-            </div>
-            <div className="h-3 bg-white/5 rounded-full overflow-hidden">
+          <ScrollReveal>
+            <section
+              aria-labelledby="lab-progress"
+              className="bg-text-primary/10 dark:bg-navy/40 border border-text-primary/15 dark:border-white/10 rounded-2xl p-8 mb-8"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <h2 id="lab-progress" className="font-display text-xl text-text-primary dark:text-white">
+                  {lang === "en" ? "Progress" : "Progression"}
+                </h2>
+                <span className="font-bebas text-lg" style={{ color: accent }}>
+                  {item.progress}%
+                </span>
+              </div>
               <div
-                className="h-full transition-all duration-500"
-                style={{
-                  width: `${item.progress}%`,
-                  backgroundColor: item.color,
-                }}
-              />
-            </div>
-          </div>
+                className="h-3 rounded-full overflow-hidden bg-text-primary/15 dark:bg-white/10"
+                role="progressbar"
+                aria-valuenow={item.progress}
+                aria-valuemin={0}
+                aria-valuemax={100}
+              >
+                <div
+                  className="h-full transition-all duration-700"
+                  style={{ width: `${item.progress}%`, backgroundColor: accent }}
+                />
+              </div>
+            </section>
+          </ScrollReveal>
         )}
 
-        {/* Skills section */}
+        {/* Skills */}
         {content.skills && content.skills.length > 0 && (
-          <div className="bg-text-primary/30 dark:bg-[#183153]/30 border border-white/8 rounded-2xl p-8 mb-8">
-            <h3 className="font-display font-bold text-white mb-4 flex items-center gap-2">
-              <Zap className="w-5 h-5 text-[#FF3B8D]" />
-              {lang === "en"
-                ? "Skills Developed"
-                : "Compétences développées"}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {content.skills.map((skill: string) => (
-                <span
-                  key={skill}
-                  className="font-bebas text-sm px-3 py-2 rounded-lg bg-white/5 text-white/70 border border-white/10 hover:border-white/20 transition-colors"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
+          <ScrollReveal>
+            <section
+              aria-labelledby="lab-skills"
+              className="bg-text-primary/10 dark:bg-navy/40 border border-text-primary/15 dark:border-white/10 rounded-2xl p-8 mb-8"
+            >
+              <h2 id="lab-skills" className="font-display text-xl text-text-primary dark:text-white mb-4 inline-flex items-center gap-2">
+                <Zap className="w-5 h-5" style={{ color: accent }} aria-hidden="true" />
+                {lang === "en" ? "Skills developed" : "Compétences développées"}
+              </h2>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {content.skills.map((skill: string, i: number) => (
+                  <li
+                    key={i}
+                    className="font-body text-sm text-text-secondary dark:text-white/75 inline-flex items-start gap-2"
+                  >
+                    <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: accent }} aria-hidden="true" />
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </ScrollReveal>
         )}
 
-        {/* Tags section */}
+        {/* Tags */}
         {item.tags && item.tags.length > 0 && (
-          <div className="mb-8">
-            <h3 className="font-bebas text-xs text-white/50 uppercase tracking-widest mb-3">
-              {lang === "en" ? "Categories" : "Catégories"}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {item.tags.map((tag: string) => (
-                <span
-                  key={tag}
-                  className="font-bebas text-sm px-3 py-2 rounded-lg"
-                  style={{
-                    backgroundColor: `${item.color}25`,
-                    color: item.color,
-                  }}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
+          <ScrollReveal>
+            <section aria-labelledby="lab-tags" className="mb-12">
+              <h2 id="lab-tags" className="font-bebas text-xs text-text-secondary dark:text-white/55 uppercase tracking-widest mb-3">
+                {lang === "en" ? "Categories" : "Catégories"}
+              </h2>
+              <ul className="flex flex-wrap gap-2">
+                {item.tags.map((tag: string) => (
+                  <li
+                    key={tag}
+                    className="font-bebas text-xs uppercase tracking-wider px-3 py-1.5 rounded-full text-text-primary dark:text-white border"
+                    style={{ backgroundColor: `${accent}22`, borderColor: `${accent}66` }}
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </ScrollReveal>
         )}
 
-        {/* CTA section */}
-        <div className="mt-12 pt-8 border-t border-white/10">
-          <p className="text-white/50 mb-4">
-            {lang === "en"
-              ? "Interested in this project?"
-              : "Intéressé par cette expérience ?"}
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#FF3B8D] text-white hover:bg-[#FF96B3] transition-colors font-body font-medium"
-          >
-            {lang === "en" ? "Contact me" : "Me contacter"} →
-          </Link>
-        </div>
+        {/* CTA */}
+        <ScrollReveal>
+          <div className="pt-8 border-t border-text-primary/15 dark:border-white/10">
+            <p className="font-body text-text-secondary dark:text-white/65 mb-4">
+              {lang === "en" ? "Interested in this experiment?" : "Cette expérience t'intéresse ?"}
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-sm font-body font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink"
+              style={{ backgroundColor: accent }}
+            >
+              {lang === "en" ? "Contact me" : "Me contacter"} →
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
-    </div>
+    </main>
   );
 }

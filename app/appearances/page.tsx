@@ -6,124 +6,109 @@ import appearancesData from "@/data/appearances.json";
 import { ArrowUpRight, Mic, Youtube, BookOpen, Award, Monitor } from "lucide-react";
 
 const typeIcons: Record<string, React.ReactNode> = {
-  article: <BookOpen className="w-4 h-4" />,
-  event: <Award className="w-4 h-4" />,
-  video: <Youtube className="w-4 h-4" />,
-  podcast: <Mic className="w-4 h-4" />,
-  installation: <Monitor className="w-4 h-4" />,
+  article: <BookOpen className="w-4 h-4" aria-hidden="true" />,
+  event: <Award className="w-4 h-4" aria-hidden="true" />,
+  video: <Youtube className="w-4 h-4" aria-hidden="true" />,
+  podcast: <Mic className="w-4 h-4" aria-hidden="true" />,
+  installation: <Monitor className="w-4 h-4" aria-hidden="true" />,
 };
 
-const typeColors: Record<string, string> = {
-  article: "#FF3B8D",
+// Palette charte unifiée (studio pour dark, sunset pour light)
+// On garde une teinte par type, mais sobre.
+const typeAccent: Record<string, string> = {
+  article: "#FF96B3",
   event: "#FFC72C",
-  video: "#FF3B8D",
-  podcast: "#8A6F9B",
-  installation: "#D0A8BC",
+  video: "#FF96B3",
+  podcast: "#7B638A",
+  installation: "#C9A9DC",
 };
 
-const patternColors = [
-  ["#183153", "#FF3B8D"],
-  ["#373750", "#FFC72C"],
-  ["#183153", "#8A6F9B"],
-  ["#0D1B2A", "#D0A8BC"],
-  ["#373750", "#FF96B3"],
-  ["#183153", "#FFC72C"],
-];
-
+// Cards : un fond uniforme par mode (marron transparent en light, navy en dark)
+// Le coloris d'accent vient juste du badge type.
 export default function AppearancesPage() {
   const { t, lang } = useLang();
 
+  const heights = ["h-72", "h-80", "h-64", "h-96", "h-72", "h-80"];
+
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6">
+    <main className="min-h-screen pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-16">
-          <p className="font-bebas text-xs text-primary dark:text-pink uppercase tracking-widest mb-4">
+        <header className="mb-16">
+          <p className="font-bebas text-xs text-text-primary dark:text-pink uppercase tracking-widest mb-4">
             — Press & Media
           </p>
           <h1 className="font-display text-5xl md:text-6xl text-text-primary dark:text-white mb-4">
             {t.appearances.title}
           </h1>
-          <p className="font-body text-text-secondary dark:text-white/50 text-lg max-w-2xl">
+          <p className="font-body text-text-secondary dark:text-white/70 text-lg max-w-2xl">
             {t.appearances.subtitle}
           </p>
-        </div>
+        </header>
 
         {/* Masonry grid */}
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
           {appearancesData.map((item, i) => {
             const a = item[lang as "en" | "fr"];
-            const [bg1, bg2] = patternColors[i % patternColors.length];
-            const typeColor = typeColors[item.type] || "#FF3B8D";
-            const heights = ["h-72", "h-80", "h-64", "h-96", "h-72", "h-80"];
+            const accent = typeAccent[item.type] || "#FF96B3";
             const h = heights[i % heights.length];
 
             return (
               <Link
                 key={item.slug}
                 href={`/appearances/${item.slug}`}
-                className={`card-hover group block break-inside-avoid rounded-2xl overflow-hidden border border-text-primary/10 dark:border-white/8 hover:border-text-primary/20 dark:hover:border-white/20 relative ${h}`}
+                aria-label={a.title}
+                className={`card-hover group block break-inside-avoid rounded-2xl overflow-hidden border border-text-primary/10 dark:border-white/10 hover:border-text-primary/25 dark:hover:border-white/25 relative ${h} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink`}
               >
-                {/* Placeholder image — grayscale by default, color on hover */}
-                <div
-                  className="absolute inset-0 transition-all duration-500"
-                  style={{
-                    background: `linear-gradient(135deg, ${bg1} 0%, ${bg2}40 100%)`,
-                    filter: "grayscale(1)",
-                  }}
-                >
-                  {/* Pattern overlay */}
-                  <div
-                    className="absolute inset-0 opacity-10"
-                    style={{
-                      backgroundImage: `repeating-linear-gradient(45deg, ${bg2} 0, ${bg2} 1px, transparent 0, transparent 50%)`,
-                      backgroundSize: "12px 12px",
-                    }}
-                  />
-                </div>
-                
-                {/* Color version shown on hover */}
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-                  style={{
-                    background: `linear-gradient(135deg, ${bg1} 0%, ${bg2}60 100%)`,
-                  }}
-                >
-                  <div
-                    className="absolute inset-0 scale-105 group-hover:scale-100 transition-transform duration-700"
-                    style={{
-                      background: `radial-gradient(circle at 40% 60%, ${typeColor}30 0%, transparent 60%)`,
-                    }}
-                  />
-                </div>
+                {/* Base background — marron transparent en light, navy en dark */}
+                <div className="absolute inset-0 bg-text-primary/15 dark:bg-[#183153]/60" aria-hidden="true" />
 
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-text-primary/80 via-text-primary/30 dark:from-deep-dark dark:via-deep-dark/40 to-transparent" />
+                {/* Soft accent halo (always visible, intensifies on hover) */}
+                <div
+                  className="absolute inset-0 opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{
+                    background: `radial-gradient(circle at 40% 60%, ${accent}30 0%, transparent 60%)`,
+                  }}
+                  aria-hidden="true"
+                />
+
+                {/* Subtle diagonal pattern */}
+                <div
+                  className="absolute inset-0 opacity-10"
+                  style={{
+                    backgroundImage: `repeating-linear-gradient(45deg, ${accent} 0, ${accent} 1px, transparent 0, transparent 50%)`,
+                    backgroundSize: "12px 12px",
+                  }}
+                  aria-hidden="true"
+                />
+
+                {/* Bottom readability scrim */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent dark:from-deep-dark dark:via-deep-dark/40 dark:to-transparent" aria-hidden="true" />
 
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-between p-6">
                   {/* Type badge */}
                   <div
-                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full w-fit"
-                    style={{ backgroundColor: `${typeColor}20`, color: typeColor }}
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full w-fit text-white"
+                    style={{ backgroundColor: `${accent}66`, border: `1px solid ${accent}` }}
                   >
                     {typeIcons[item.type]}
-                    <span className="font-bebas text-[10px] uppercase">{item.type}</span>
+                    <span className="font-bebas text-[10px] uppercase tracking-wider">{item.type}</span>
                   </div>
 
                   {/* Bottom */}
                   <div>
-                    <h2 className="font-display text-lg text-white mb-2 group-hover:text-sunset-pink dark:group-hover:text-pink-light transition-colors duration-300">
+                    <h2 className="font-display text-lg text-white mb-2 group-hover:text-white transition-colors duration-300">
                       {a.title}
                     </h2>
-                    <p className="font-body text-xs text-white/70 line-clamp-2 leading-relaxed">
+                    <p className="font-body text-xs text-white/80 line-clamp-2 leading-relaxed">
                       {a.description}
                     </p>
                     <div className="flex items-center gap-1 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="font-bebas text-xs text-sunset-pink dark:text-pink-light">
+                      <span className="font-bebas text-xs text-white">
                         {t.appearances.view}
                       </span>
-                      <ArrowUpRight className="w-3 h-3 text-sunset-pink dark:text-pink-light" />
+                      <ArrowUpRight className="w-3 h-3 text-white" aria-hidden="true" />
                     </div>
                   </div>
                 </div>
@@ -132,6 +117,6 @@ export default function AppearancesPage() {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -2,26 +2,54 @@
   {
     "slug": "iut-sculpture-2023",
     "type": "article",
-    "color": "#FF3B8D",
+    "color": "#FF96B3",
     "en": {
       "title": "Sculpture & Volume Workshop — IUT Toulon",
       "description": "During my first year in the MMI program, I took part in the Sculpture & Volume workshop, an experimental module focused on material exploration and spatial design. I created a personal sculpture project, working on form, balance, and visual storytelling with both a creative and conceptual approach. My work was particularly highlighted for its artistic direction and reflection on volume. Following this, the workshop coordinator invited me to give an oral presentation alongside our teacher Raphael Mahida-Vial, where I explained my creative process, inspirations, and design choices. This experience represents an important milestone in my journey, helping me develop my artistic sensitivity, conceptual thinking, and ability to present and defend a project.",
       "externalUrl": "https://www.univ-tln.fr/Une-plongee-dans-l-art-avec-l-atelier-Sculpture-et-Volume-de-l.html",
       "externalLabel": "Read Article",
-      "screenshots": ["/appearances/sculpture.jpg","/appearances/sculpture1.jpg","/appearances/sculpture2.jpg","/appearances/sculpture3.jpg","/appearances/sculpture4.jpg","/appearances/sculpture5.jpg","/appearances/sculpture6.jpg","/appearances/sculpture7.jpg","/appearances/sculpture8.jpg","/appearances/sculptureç.jpg","/appearances/sculpture10.jpg","/appearances/sculpture11.jpg","/appearances/sculpture12.jpg"]
+      "screenshots": [
+        "/appearances/sculpture.jpg",
+        "/appearances/sculpture1.jpg",
+        "/appearances/sculpture2.jpg",
+        "/appearances/sculpture3.jpg",
+        "/appearances/sculpture4.jpg",
+        "/appearances/sculpture5.jpg",
+        "/appearances/sculpture6.jpg",
+        "/appearances/sculpture7.jpg",
+        "/appearances/sculpture8.jpg",
+        "/appearances/sculptureç.jpg",
+        "/appearances/sculpture10.jpg",
+        "/appearances/sculpture11.jpg",
+        "/appearances/sculpture12.jpg"
+      ]
     },
     "fr": {
       "title": "Atelier Sculpture & Volume — IUT Toulon",
       "description": "Lors de ma première année en BUT MMI, j’ai participé à l’atelier Sculpture & Volume, un module orienté expérimentation artistique et travail de la matière. J’y ai conçu une sculpture personnelle en explorant les notions de forme, d’équilibre et de narration visuelle, avec une approche à la fois créative et conceptuelle. Ce projet a été particulièrement remarqué pour sa direction artistique et sa réflexion autour du volume. À la suite de cela, la coordinatrice de l’atelier m’a invitée à intervenir lors d’un témoignage oral aux côtés de notre enseignant Raphaël Mahida-Vial, afin de présenter ma démarche créative, mes inspirations et mon processus de conception. Cette expérience a marqué un premier moment fort de mon parcours, en me permettant de développer ma sensibilité artistique, ma capacité à conceptualiser un projet et à le défendre à l’oral.",
       "externalUrl": "https://www.univ-tln.fr/Une-plongee-dans-l-art-avec-l-atelier-Sculpture-et-Volume-de-l.html",
       "externalLabel": "Lire l'Article",
-      "screenshots": ["/appearances/sculpture.jpg","/appearances/sculpture1.jpg","/appearances/sculpture2.jpg","/appearances/sculpture3.jpg","/appearances/sculpture4.jpg","/appearances/sculpture5.jpg","/appearances/sculpture6.jpg","/appearances/sculpture7.jpg","/appearances/sculpture8.jpg","/appearances/sculptureç.jpg","/appearances/sculpture10.jpg","/appearances/sculpture11.jpg","/appearances/sculpture12.jpg"]
+      "screenshots": [
+        "/appearances/sculpture.jpg",
+        "/appearances/sculpture1.jpg",
+        "/appearances/sculpture2.jpg",
+        "/appearances/sculpture3.jpg",
+        "/appearances/sculpture4.jpg",
+        "/appearances/sculpture5.jpg",
+        "/appearances/sculpture6.jpg",
+        "/appearances/sculpture7.jpg",
+        "/appearances/sculpture8.jpg",
+        "/appearances/sculptureç.jpg",
+        "/appearances/sculpture10.jpg",
+        "/appearances/sculpture11.jpg",
+        "/appearances/sculpture12.jpg"
+      ]
     }
   },
   {
     "slug": "thotis-media",
     "type": "video",
-    "color": "#FFC72C",
+    "color": "#FFA755",
     "en": {
       "title": "Thotis Media — TikTok/Instagram/YouTube",
       "description": "I was featured in Thotis media content through short-form videos منتشر across TikTok, Instagram, and YouTube. This appearance is part of a broader initiative to highlight student journeys and digital skills. The content showcases my ability to create engaging digital content adapted to short formats, capturing attention while maintaining clarity and structure. This experience allowed me to reach a diverse audience and better understand visibility challenges, platform algorithms, and storytelling strategies in modern digital media. It also reflects my ability to present and promote my work in real media environments.",
@@ -40,7 +68,7 @@
   {
     "slug": "bde-tresorier-2024",
     "type": "event",
-    "color": "#62E0D5",
+    "color": "#C9A9DC",
     "en": {
       "title": "BDE MM'IN — Treasurer",
       "description": "Since the end of my first year, I have been serving as treasurer of the BDE MM'IN, a highly active student association within the university. This role involves full financial management, including budget tracking, expense management, and financial planning for events. I collaborate closely with the team to organize student events, ensuring both their financial viability and smooth execution. This experience has helped me develop strong skills in management, organization, and teamwork in a real-world context. It also reflects my ability to take on long-term responsibilities and actively contribute to student life.",
@@ -59,7 +87,7 @@
   {
     "slug": "toulan-lan-2023",
     "type": "event",
-    "color": "#A78BFA",
+    "color": "#7B638A",
     "en": {
       "title": "TOULAN Association — MMI LAN",
       "description": "During my second year, I served as secretary in the TOULAN association, contributing to the organization of the MMI LAN, a student gaming event gathering many participants. My responsibilities included sponsor research, logistical coordination, and organizational follow-up. This role allowed me to explore event management challenges such as partnership handling, planning, and communication. It highlights my ability to work on large-scale collaborative projects in dynamic environments.",
@@ -78,7 +106,7 @@
   {
     "slug": "nuit-du-code-2024",
     "type": "event",
-    "color": "#FF6B9D",
+    "color": "#FF96B3",
     "en": {
       "title": "La Nuit Du Code",
       "description": "Participated in La Nuit Du Code, a student hackathon-style event. Built collaborative web tools and competed alongside multiple teams to deliver innovative solutions under time constraints.",
@@ -97,7 +125,7 @@
   {
     "slug": "weproc-team-2024",
     "type": "company",
-    "color": "#FFD93D",
+    "color": "#FFA755",
     "en": {
       "title": "Weproc — Team Introduction",
       "description": "As part of my experience at Weproc, I work in a hybrid role combining SEO, content creation, design, and web development. I contribute to improving website visibility, producing optimized content, and implementing digital solutions tailored to client needs. I was also featured in an internal series introducing team members, highlighting their roles and contributions to company projects. This reflects both my integration into the team and my involvement in real-world projects. This experience allows me to develop a global vision of digital work, combining technical skills, strategy, and creativity..",

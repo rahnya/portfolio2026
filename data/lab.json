@@ -1,269 +1,463 @@
 [
-  
   {
     "slug": "epitech-coding-club",
-    "color": "#00AEEF",
-    "tags": ["Développement"],
+    "color": "#C9A9DC",
+    "tags": [
+      "Développement"
+    ],
     "type": "Prototype",
     "status": "Complété",
     "en": {
       "title": "Epitech Coding Club Participation",
       "description": "This experience reflects my early engagement with programming through the Epitech Coding Club in Rennes. After choosing to stop my NSI specialization in high school, I wanted to stay connected to coding, which led me to join these workshops. The Coding Club is a series of free, hands-on programming sessions led by Epitech students, designed to introduce young people to development through concrete projects such as games, web applications, or interactive programs. Participating in these sessions allowed me to maintain and strengthen my interest in programming in a more practical and collaborative environment. Recently, the Epitech team reached out again, and I am now considering getting involved either as a participant or by helping animate workshops, contributing to making tech more accessible to others.",
-      "skills": ["Python", "HTML", "CSS", "JavaScript"]
+      "skills": [
+        "Python",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
     },
     "fr": {
       "title": "Participation au Coding Club Epitech",
       "description": "Cette expérience correspond à mon premier engagement personnel dans le développement en dehors du cadre scolaire, à travers le Coding Club d’Epitech à Rennes. Après avoir arrêté la spécialité NSI au lycée, j’ai ressenti le besoin de continuer à pratiquer le code, ce qui m’a amenée à rejoindre ces ateliers. Les Coding Clubs sont des sessions gratuites et pratiques, animées par des étudiants d’Epitech, qui permettent de découvrir la programmation à travers des projets concrets comme des jeux, des sites web ou des programmes interactifs. Cette expérience m’a permis de maintenir mon intérêt pour le développement tout en découvrant une approche plus libre, collaborative et orientée pratique. Récemment, l’équipe Epitech m’a recontactée, et je suis aujourd’hui ouverte à y participer de nouveau ou à contribuer à l’animation des ateliers.",
-      "skills": ["Data Processing", "UX/UI Design", "Web Mapping", "Leaflet", "Mapbox", "Storytelling Visuel"]
+      "skills": [
+        "Data Processing",
+        "UX/UI Design",
+        "Web Mapping",
+        "Leaflet",
+        "Mapbox",
+        "Storytelling Visuel"
+      ]
     }
   },
   {
     "slug": "flightfootprint",
-    "color": "#FFD93D",
-    "tags": ["Aérien/Transport", "UX/IHM", "Data"],
+    "color": "#FFA755",
+    "tags": [
+      "Aérien/Transport",
+      "UX/IHM",
+      "Data"
+    ],
     "type": "Prototype",
-    "progress":90,
+    "progress": 90,
     "status": "Complété",
     "en": {
       "title": "FlightFootprint",
       "description": "Visualisation des impacts carbone du transport aérien. Carte interactive des vols, filtrable par distance, type d’avion ou compagnie.",
-      "skills": ["Data Processing", "UX/UI Design", "Web Mapping", "Leaflet", "Mapbox", "Storytelling Visuel"]
+      "skills": [
+        "Data Processing",
+        "UX/UI Design",
+        "Web Mapping",
+        "Leaflet",
+        "Mapbox",
+        "Storytelling Visuel"
+      ]
     },
     "fr": {
       "title": "FlightFootprint",
       "description": "Visualisation des impacts carbone du transport aérien. Carte interactive des vols, filtrable par distance, type d’avion ou compagnie.",
-      "skills": ["Data Processing", "UX/UI Design", "Web Mapping", "Leaflet", "Mapbox", "Storytelling Visuel"]
+      "skills": [
+        "Data Processing",
+        "UX/UI Design",
+        "Web Mapping",
+        "Leaflet",
+        "Mapbox",
+        "Storytelling Visuel"
+      ]
     }
   },
   {
     "slug": "multimodal-transport-simulator",
-    "color": "#62E0D5",
-    "tags": ["Développement", "UX/IHM", "Aérien/Transport"],
+    "color": "#C9A9DC",
+    "tags": [
+      "Développement",
+      "UX/IHM",
+      "Aérien/Transport"
+    ],
     "type": "Prototype",
     "status": "En cours",
     "en": {
       "title": "Multimodal Transport Simulator",
       "description": "Interface interactive pour simuler différents itinéraires en transport (train, bus, avion, vélo) et comparer temps, coûts et impacts environnementaux.",
-      "skills": ["UX/UI Design", "Data Visualization", "Shortest Path Algorithms", "API Integration", "Front-end Development"]
+      "skills": [
+        "UX/UI Design",
+        "Data Visualization",
+        "Shortest Path Algorithms",
+        "API Integration",
+        "Front-end Development"
+      ]
     },
     "fr": {
       "title": "Simulateur de trajet multimodal",
       "description": "Interface interactive pour simuler différents itinéraires en transport (train, bus, avion, vélo) et comparer temps, coûts et impacts environnementaux.",
-      "skills": ["UX/UI Design", "Data Visualization", "Calcul d’algorithmes de plus court chemin", "Intégration API transport", "Développement Front-end"]
+      "skills": [
+        "UX/UI Design",
+        "Data Visualization",
+        "Calcul d’algorithmes de plus court chemin",
+        "Intégration API transport",
+        "Développement Front-end"
+      ]
     }
   },
   {
     "slug": "project-dashboard",
-    "color": "#A78BFA",
-    "tags": ["Développement", "UX/IHM", "Aérien/Transport"],
+    "color": "#7B638A",
+    "tags": [
+      "Développement",
+      "UX/IHM",
+      "Aérien/Transport"
+    ],
     "type": "Prototype",
-    "progress":60,
+    "progress": 60,
     "status": "En cours",
     "en": {
       "title": "Interactive Project Dashboard",
       "description": "Tableau de bord web pour suivre l’avancement des tâches, deadlines et indicateurs clés, avec animations et filtres interactifs.",
-      "skills": ["React", "Vue", "State Management", "Charting", "UX/UI Design", "Interactive Front-end"]
+      "skills": [
+        "React",
+        "Vue",
+        "State Management",
+        "Charting",
+        "UX/UI Design",
+        "Interactive Front-end"
+      ]
     },
     "fr": {
       "title": "Dashboard interactif pour suivi de projets",
       "description": "Tableau de bord web pour suivre l’avancement des tâches, deadlines et indicateurs clés, avec animations et filtres interactifs.",
-      "skills": ["React", "Vue", "Gestion d’état", "Charting", "UX/UI Design", "Front-end interactif"]
+      "skills": [
+        "React",
+        "Vue",
+        "Gestion d’état",
+        "Charting",
+        "UX/UI Design",
+        "Front-end interactif"
+      ]
     }
   },
   {
     "slug": "hci-fundamentals",
-    "color": "#FF3B8D",
-    "tags": ["MOOC", "UX/IHM"],
+    "color": "#FF96B3",
+    "tags": [
+      "MOOC",
+      "UX/IHM"
+    ],
     "type": "MOOC",
-    "progress":100,
+    "progress": 100,
     "status": "Complété",
     "en": {
       "title": "Human-Computer Interaction I: Fundamentals and Design Principles",
       "description": "MOOC sur les principes fondamentaux de l’interaction homme-machine, conception centrée utilisateur et bonnes pratiques UX.",
-      "skills": ["UX/UI", "Design Principles", "HCI", "User-Centered Design"],
+      "skills": [
+        "UX/UI",
+        "Design Principles",
+        "HCI",
+        "User-Centered Design"
+      ],
       "link": "https://www.edx.org/learn/human-computer-interaction/the-georgia-institute-of-technology-human-computer-interaction-i-fundamentals-design-principles?irclickid=R8V20D2cFxyZWAzUwrzf6yKbUku1xjSUtWFzxU0&utm_source=affiliate&utm_medium=Class%20Central&utm_campaign=Harvard%27s%20Computer%20Science%20for%20Python%20Programming_&utm_content=TEXT_LINK&irgwc=1&afsrc=1"
     },
     "fr": {
       "title": "Interaction Homme-Machine I : Fondamentaux et principes de conception",
       "description": "MOOC sur les principes fondamentaux de l’interaction homme-machine, conception centrée utilisateur et bonnes pratiques UX.",
-      "skills": ["UX/UI", "Principes de design", "IHM", "Conception centrée utilisateur"],
+      "skills": [
+        "UX/UI",
+        "Principes de design",
+        "IHM",
+        "Conception centrée utilisateur"
+      ],
       "link": "https://www.edx.org/learn/human-computer-interaction/the-georgia-institute-of-technology-human-computer-interaction-i-fundamentals-design-principles?irclickid=R8V20D2cFxyZWAzUwrzf6yKbUku1xjSUtWFzxU0&utm_source=affiliate&utm_medium=Class%20Central&utm_campaign=Harvard%27s%20Computer%20Science%20for%20Python%20Programming_&utm_content=TEXT_LINK&irgwc=1&afsrc=1"
     }
   },
   {
     "slug": "ibm-data-science",
-    "color": "#FFC72C",
-    "tags": ["MOOC", "Data"],
+    "color": "#FFA755",
+    "tags": [
+      "MOOC",
+      "Data"
+    ],
     "type": "MOOC",
-    "progress":40,
+    "progress": 40,
     "status": "En cours",
     "en": {
       "title": "IBM Data Science Professional Certificate",
       "description": "Formation complète en science des données : Python, SQL, data analysis, data visualization et machine learning.",
-      "skills": ["Python", "SQL", "Data Analysis", "Data Visualization", "Machine Learning"],
+      "skills": [
+        "Python",
+        "SQL",
+        "Data Analysis",
+        "Data Visualization",
+        "Machine Learning"
+      ],
       "link": "https://www.coursera.org/professional-certificates/ibm-data-science?utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_ibm-data-science_ibm_ftcof_professional-certificates_cx_dr_bau_gg_sem_pr_s1_en_m_hyb_24-02_x"
     },
     "fr": {
       "title": "Certification Professionnelle Data Science IBM",
       "description": "Formation complète en science des données : Python, SQL, analyse et visualisation de données, apprentissage automatique.",
-      "skills": ["Python", "SQL", "Analyse de données", "Visualisation de données", "Machine Learning"],
+      "skills": [
+        "Python",
+        "SQL",
+        "Analyse de données",
+        "Visualisation de données",
+        "Machine Learning"
+      ],
       "link": "https://www.coursera.org/professional-certificates/ibm-data-science?utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_ibm-data-science_ibm_ftcof_professional-certificates_cx_dr_bau_gg_sem_pr_s1_en_m_hyb_24-02_x"
     }
   },
   {
     "slug": "uva-darden-designbiz",
-    "color": "#62E0D5",
-    "tags": ["MOOC"],
+    "color": "#C9A9DC",
+    "tags": [
+      "MOOC"
+    ],
     "type": "MOOC",
-    "progress":0,
+    "progress": 0,
     "status": "Prévu",
     "en": {
       "title": "Design Thinking for Business Innovation",
       "description": "Cours sur la méthodologie Design Thinking pour innover et prototyper des solutions centrées utilisateur.",
-      "skills": ["Design Thinking", "Innovation", "Prototyping"],
+      "skills": [
+        "Design Thinking",
+        "Innovation",
+        "Prototyping"
+      ],
       "link": "https://www.coursera.org/learn/uva-darden-designbiz"
     },
     "fr": {
       "title": "Design Thinking pour l’innovation business",
       "description": "Cours sur la méthodologie Design Thinking pour innover et prototyper des solutions centrées utilisateur.",
-      "skills": ["Design Thinking", "Innovation", "Prototypage"],
+      "skills": [
+        "Design Thinking",
+        "Innovation",
+        "Prototypage"
+      ],
       "link": "https://www.coursera.org/learn/uva-darden-designbiz"
     }
   },
   {
     "slug": "anthropic-ai",
-    "color": "#FF6B9D",
-    "tags": ["MOOC", "IA"],
+    "color": "#FF96B3",
+    "tags": [
+      "MOOC",
+      "IA"
+    ],
     "type": "MOOC",
-    "progress":30,
+    "progress": 30,
     "status": "En cours",
     "en": {
       "title": "Anthropic AI Training",
       "description": "Formations en ligne sur les fondamentaux de l’IA, sécurité et éthique des modèles.",
-      "skills": ["AI", "Ethics", "Safety"],
+      "skills": [
+        "AI",
+        "Ethics",
+        "Safety"
+      ],
       "link": "https://anthropic.skilljar.com"
     },
     "fr": {
       "title": "Formation IA Anthropic",
       "description": "Formations en ligne sur les fondamentaux de l’IA, sécurité et éthique des modèles.",
-      "skills": ["IA", "Éthique", "Sécurité"],
+      "skills": [
+        "IA",
+        "Éthique",
+        "Sécurité"
+      ],
       "link": "https://anthropic.skilljar.com"
     }
   },
   {
     "slug": "codepath",
-    "color": "#3A86FF",
-    "tags": ["MOOC", "Développement"],
+    "color": "#C9A9DC",
+    "tags": [
+      "MOOC",
+      "Développement"
+    ],
     "type": "MOOC",
-    "progress":0,
+    "progress": 0,
     "status": "Prévu",
     "en": {
       "title": "CodePath Courses",
       "description": "Programmes intensifs de développement mobile, web et sécurité pour développeurs.",
-      "skills": ["Web Development", "Mobile Development", "Security"],
+      "skills": [
+        "Web Development",
+        "Mobile Development",
+        "Security"
+      ],
       "link": "https://www.codepath.org"
     },
     "fr": {
       "title": "Cours CodePath",
       "description": "Programmes intensifs de développement mobile, web et sécurité pour développeurs.",
-      "skills": ["Développement Web", "Développement Mobile", "Sécurité"],
+      "skills": [
+        "Développement Web",
+        "Développement Mobile",
+        "Sécurité"
+      ],
       "link": "https://www.codepath.org"
     }
   },
   {
     "slug": "sustainable-aviation",
-    "color": "#FB5607",
-    "tags": ["MOOC", "Aérien/Transport"],
+    "color": "#FF8A65",
+    "tags": [
+      "MOOC",
+      "Aérien/Transport"
+    ],
     "type": "MOOC",
-    "progress":0,
+    "progress": 0,
     "status": "Prévu",
     "en": {
       "title": "Sustainable Aviation Futures Masterclass",
       "description": "Cours sur les stratégies et innovations pour un transport aérien durable.",
-      "skills": ["Sustainability", "Aviation", "Innovation"],
+      "skills": [
+        "Sustainability",
+        "Aviation",
+        "Innovation"
+      ],
       "link": "https://www.sustainableaviationfutures.com/training-courses/safmasterclass"
     },
     "fr": {
       "title": "Masterclass Aviation Durable",
       "description": "Cours sur les stratégies et innovations pour un transport aérien durable.",
-      "skills": ["Durabilité", "Aérien", "Innovation"],
+      "skills": [
+        "Durabilité",
+        "Aérien",
+        "Innovation"
+      ],
       "link": "https://www.sustainableaviationfutures.com/training-courses/safmasterclass"
     }
   },
   {
     "slug": "python-freecodecamp",
-    "color": "#06FFA5",
-    "tags": ["MOOC", "Développement", "Python"],
+    "color": "#C9A9DC",
+    "tags": [
+      "MOOC",
+      "Développement",
+      "Python"
+    ],
     "type": "MOOC",
-    "progress":20,
+    "progress": 20,
     "status": "En cours",
     "en": {
       "title": "Python Programming",
       "description": "Parcours FreeCodeCamp pour apprendre Python : syntaxe, structures de données, fonctions et projets pratiques.",
-      "skills": ["Python", "Data Structures", "Functions", "Algorithms", "Projects"],
+      "skills": [
+        "Python",
+        "Data Structures",
+        "Functions",
+        "Algorithms",
+        "Projects"
+      ],
       "link": "https://www.freecodecamp.org/learn/python-v9/"
     },
     "fr": {
       "title": "Apprentissage Python",
       "description": "Parcours FreeCodeCamp pour apprendre Python : syntaxe, structures de données, fonctions et projets pratiques.",
-      "skills": ["Python", "Structures de données", "Fonctions", "Algorithmes", "Projets"],
+      "skills": [
+        "Python",
+        "Structures de données",
+        "Fonctions",
+        "Algorithmes",
+        "Projets"
+      ],
       "link": "https://www.freecodecamp.org/learn/python-v9/"
     }
   },
   {
     "slug": "python-project",
-    "color": "#06FFA5",
-    "tags": ["Développement", "Python"],
+    "color": "#C9A9DC",
+    "tags": [
+      "Développement",
+      "Python"
+    ],
     "type": "Prototype",
-    "progress":0,
+    "progress": 0,
     "status": "En cours",
     "en": {
       "title": "Python Automation Script",
       "description": "Projet Python pour mettre en pratique les notions apprises : lecture/écriture de fichiers, traitement de données et automatisation de tâches.",
-      "skills": ["Python", "Data Processing", "Automation", "File Handling"]
+      "skills": [
+        "Python",
+        "Data Processing",
+        "Automation",
+        "File Handling"
+      ]
     },
     "fr": {
       "title": "Script Python d’automatisation",
       "description": "Projet Python pour mettre en pratique les notions apprises : lecture/écriture de fichiers, traitement de données et automatisation de tâches.",
-      "skills": ["Python", "Traitement de données", "Automatisation", "Lecture/Écriture de fichiers"]
+      "skills": [
+        "Python",
+        "Traitement de données",
+        "Automatisation",
+        "Lecture/Écriture de fichiers"
+      ]
     }
   },
   {
     "slug": "c-programming-openclassrooms",
-    "color": "#3A86FF",
-    "tags": ["MOOC", "Développement", "C"],
+    "color": "#C9A9DC",
+    "tags": [
+      "MOOC",
+      "Développement",
+      "C"
+    ],
     "type": "MOOC",
-    "progress":40,
+    "progress": 40,
     "status": "En cours",
     "en": {
       "title": "Learn C Programming",
       "description": "Cours OpenClassrooms pour apprendre les bases et concepts avancés de la programmation en C.",
-      "skills": ["C", "Algorithms", "Pointers", "Memory Management"],
+      "skills": [
+        "C",
+        "Algorithms",
+        "Pointers",
+        "Memory Management"
+      ],
       "link": "https://openclassrooms.com/fr/courses/1894236-apprenez-a-programmer-en-c"
     },
     "fr": {
       "title": "Apprendre à programmer en C",
       "description": "Cours OpenClassrooms pour apprendre les bases et concepts avancés de la programmation en C.",
-      "skills": ["C", "Algorithmes", "Pointeurs", "Gestion de mémoire"],
+      "skills": [
+        "C",
+        "Algorithmes",
+        "Pointeurs",
+        "Gestion de mémoire"
+      ],
       "link": "https://openclassrooms.com/fr/courses/1894236-apprenez-a-programmer-en-c"
     }
   },
   {
     "slug": "c-project",
-    "color": "#3A86FF",
-    "tags": ["Développement", "C"],
+    "color": "#C9A9DC",
+    "tags": [
+      "Développement",
+      "C"
+    ],
     "type": "Prototype",
-    "progress":0,
+    "progress": 0,
     "status": "En cours",
     "en": {
       "title": "Mini Game in C",
       "description": "Petit jeu en C pour mettre en pratique les connaissances : gestion de mémoire, structures, fonctions et logique algorithmique.",
-      "skills": ["C", "Algorithms", "Memory Management", "Structures", "Functions"]
+      "skills": [
+        "C",
+        "Algorithms",
+        "Memory Management",
+        "Structures",
+        "Functions"
+      ]
     },
     "fr": {
       "title": "Mini-jeu en C",
       "description": "Petit jeu en C pour mettre en pratique les connaissances : gestion de mémoire, structures, fonctions et logique algorithmique.",
-      "skills": ["C", "Algorithmes", "Gestion mémoire", "Structures", "Fonctions"]
+      "skills": [
+        "C",
+        "Algorithmes",
+        "Gestion mémoire",
+        "Structures",
+        "Fonctions"
+      ]
     }
   }
 ]

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { useParams } from "next/navigation";
 import { useLang } from "@/components/LangContext";
 import projectsData from "@/data/projects.json";
+import ScrollReveal from "@/components/ScrollReveal";
 import { ArrowLeft, Github, ExternalLink, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ProjectDetailPage() {
@@ -174,83 +175,96 @@ export default function ProjectDetailPage() {
           <div className="md:col-span-2 space-y-10">
             {/* Contexte */}
             {context && (
-              <div>
-                <h2 className="font-dm-sans text-xl text-text-primary dark:text-white mb-4">
-                  {lang === "fr" ? "Contexte" : "Context"}
-                </h2>
-                <p className="font-body text-text-secondary dark:text-white/60 leading-relaxed">
-                  {context}
-                </p>
-              </div>
+              <ScrollReveal>
+                <section aria-labelledby="ctx-title">
+                  <h2 id="ctx-title" className="font-display text-xl text-text-primary dark:text-white mb-4">
+                    {lang === "fr" ? "Contexte" : "Context"}
+                  </h2>
+                  <p className="font-body text-text-secondary dark:text-white/70 leading-relaxed whitespace-pre-line">
+                    {context}
+                  </p>
+                </section>
+              </ScrollReveal>
             )}
 
             {/* Role */}
             {role && (
-              <div>
-                <h2 className="font-display text-xl text-text-primary dark:text-white mb-4">
-                  {lang === "fr" ? "Mon rôle" : "My role"}
-                </h2>
-                <p className="font-body text-text-secondary dark:text-white/60 leading-relaxed">
-                  {role}
-                </p>
-              </div>
+              <ScrollReveal>
+                <section aria-labelledby="role-title">
+                  <h2 id="role-title" className="font-display text-xl text-text-primary dark:text-white mb-4">
+                    {lang === "fr" ? "Mon rôle" : "My role"}
+                  </h2>
+                  <p className="font-body text-text-secondary dark:text-white/70 leading-relaxed whitespace-pre-line">
+                    {role}
+                  </p>
+                </section>
+              </ScrollReveal>
             )}
 
             {/* AutoEvaluation */}
             {selfEvaluation && (
-              <div>
-                <h2 className="font-display text-xl text-text-primary dark:text-white mb-4">
-                  Auto-évaluation
-                </h2>
-                <p className="font-body text-text-secondary dark:text-white/60 leading-relaxed">
-                  {selfEvaluation}
-                </p>
-              </div>
+              <ScrollReveal>
+                <section aria-labelledby="eval-title">
+                  <h2 id="eval-title" className="font-display text-xl text-text-primary dark:text-white mb-4">
+                    {lang === "fr" ? "Auto-évaluation" : "Self-assessment"}
+                  </h2>
+                  <p className="font-body text-text-secondary dark:text-white/70 leading-relaxed whitespace-pre-line">
+                    {selfEvaluation}
+                  </p>
+                </section>
+              </ScrollReveal>
             )}
 
             {/* Features */}
-            <div>
-              <h2 className="font-display text-xl text-text-primary dark:text-white mb-4">
-                {t.projects.features}
-              </h2>
-              <ul className="space-y-3">
-                {p.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2
-                      className="w-4 h-4 flex-shrink-0 mt-0.5"
-                      style={{ color: project.color }}
-                    />
-                    <span className="font-body text-sm text-text-secondary dark:text-white/60">
-                      {feature}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {p.features && p.features.length > 0 && (
+              <ScrollReveal>
+                <section aria-labelledby="features-title">
+                  <h2 id="features-title" className="font-display text-xl text-text-primary dark:text-white mb-4">
+                    {t.projects.features}
+                  </h2>
+                  <ul className="space-y-3">
+                    {p.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle2
+                          className="w-4 h-4 flex-shrink-0 mt-0.5"
+                          style={{ color: project.color }}
+                          aria-hidden="true"
+                        />
+                        <span className="font-body text-sm text-text-secondary dark:text-white/70">
+                          {feature}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              </ScrollReveal>
+            )}
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
+          <aside className="space-y-6" aria-label={lang === "fr" ? "Informations projet" : "Project info"}>
             {/* Tech stack */}
-            <div className="bg-white/85 dark:bg-navy/30 border border-text-primary/8 dark:border-white/8 rounded-2xl p-6">
-              <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
-                {t.projects.technologies}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {p.technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="font-bebas text-xs px-2.5 py-1 rounded-full border border-text-primary/8 dark:border-white/8 text-text-secondary dark:text-white/60"
-                  >
-                    {tech}
-                  </span>
-                ))}
+            {p.technologies && p.technologies.length > 0 && (
+              <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/10 dark:border-white/8 rounded-2xl p-6">
+                <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
+                  {t.projects.technologies}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {p.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="font-bebas text-xs px-2.5 py-1 rounded-full border border-text-primary/10 dark:border-white/10 text-text-secondary dark:text-white/70"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Compétences BUT */}
             {butSkills.length > 0 && (
-              <div className="bg-white/85 dark:bg-navy/30 border border-text-primary/8 dark:border-white/8 rounded-2xl p-6">
+              <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/10 dark:border-white/8 rounded-2xl p-6">
                 <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
                   {lang === "fr" ? "Compétences BUT" : "BUT Skills"}
                 </h3>
@@ -258,62 +272,83 @@ export default function ProjectDetailPage() {
                   {butSkills.map((skill) => (
                     <span
                       key={skill}
-                      className="font-bebas text-xs px-3 py-1 rounded-full capitalize"
-                      style={{ backgroundColor: `${project.color}20`, color: project.color }}
+                      className="font-bebas text-xs px-3 py-1 rounded-full capitalize text-text-primary dark:text-white border"
+                      style={{ backgroundColor: `${project.color}25`, borderColor: `${project.color}80` }}
                     >
                       {skill}
                     </span>
                   ))}
                 </div>
+                <p className="font-body text-[11px] text-text-muted dark:text-white/40 mt-3 leading-snug">
+                  {lang === "fr"
+                    ? "Pluridisciplinarité mobilisée sur ce projet."
+                    : "Cross-skill scope mobilised on this project."}
+                </p>
               </div>
             )}
 
             {/* Links */}
-            <div className="bg-white/85 dark:bg-navy/30 border border-text-primary/8 dark:border-white/8 rounded-2xl p-6 space-y-3">
-              <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
-                Links
-              </h3>
-              {p.githubUrl && (
-                <a
-                  href={p.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-text-muted dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200 group"
-                >
-                  <Github className="w-4 h-4" />
-                  <span className="font-body text-sm">{t.projects.github}</span>
-                  <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                </a>
-              )}
-              {p.liveUrl && (
-                <a
-                  href={p.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-text-muted dark:text-white/50 hover:text-text-primary dark:hover:text-white transition-colors duration-200 group"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  <span className="font-body text-sm">{t.projects.live_demo}</span>
-                  <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                </a>
-              )}
-            </div>
-          </div>
+            {(p.githubUrl || p.liveUrl) && (
+              <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/8 dark:border-white/8 rounded-2xl p-6 space-y-3">
+                <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
+                  {lang === "fr" ? "Liens" : "Links"}
+                </h3>
+                {p.githubUrl && (
+                  <a
+                    href={p.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${t.projects.github} (${lang === "fr" ? "ouvre dans un nouvel onglet" : "opens in new tab"})`}
+                    className="flex items-center gap-3 text-text-secondary dark:text-white/70 hover:text-text-primary dark:hover:text-white transition-colors duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
+                  >
+                    <Github className="w-4 h-4" aria-hidden="true" />
+                    <span className="font-body text-sm">{t.projects.github}</span>
+                    <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" aria-hidden="true" />
+                  </a>
+                )}
+                {p.liveUrl && (
+                  <a
+                    href={p.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${t.projects.live_demo} (${lang === "fr" ? "ouvre dans un nouvel onglet" : "opens in new tab"})`}
+                    className="flex items-center gap-3 text-text-secondary dark:text-white/70 hover:text-text-primary dark:hover:text-white transition-colors duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
+                  >
+                    <ExternalLink className="w-4 h-4" aria-hidden="true" />
+                    <span className="font-body text-sm">{t.projects.live_demo}</span>
+                    <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" aria-hidden="true" />
+                  </a>
+                )}
+              </div>
+            )}
+          </aside>
         </div>
       </div>
 
       {/* Lightbox */}
       {lightbox !== null && screenshots.length > 0 && (
         <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={lang === "fr" ? "Aperçu image" : "Image preview"}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
           onClick={() => setLightbox(null)}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") setLightbox(null);
+            if (e.key === "ArrowLeft" && screenshots.length > 1)
+              setLightbox((prev) => (prev! - 1 + screenshots.length) % screenshots.length);
+            if (e.key === "ArrowRight" && screenshots.length > 1)
+              setLightbox((prev) => (prev! + 1) % screenshots.length);
+          }}
+          tabIndex={-1}
         >
           {/* Fermer */}
           <button
             onClick={() => setLightbox(null)}
-            className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors duration-200 z-10"
+            aria-label={lang === "fr" ? "Fermer l'aperçu" : "Close preview"}
+            className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors duration-200 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
-            ✕
+            <span aria-hidden="true">✕</span>
           </button>
 
           {/* Flèche gauche */}
@@ -323,16 +358,17 @@ export default function ProjectDetailPage() {
                 e.stopPropagation();
                 setLightbox((prev) => (prev! - 1 + screenshots.length) % screenshots.length);
               }}
-              className="absolute left-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-2xl transition-colors duration-200 z-10"
+              aria-label={lang === "fr" ? "Image précédente" : "Previous image"}
+              className="absolute left-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-2xl transition-colors duration-200 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
-              ‹
+              <span aria-hidden="true">‹</span>
             </button>
           )}
 
           {/* Image */}
           <img
             src={screenshots[lightbox]}
-            alt=""
+            alt={`${p.title} — ${lang === "fr" ? "capture" : "screenshot"} ${lightbox + 1}`}
             className="max-w-[90vw] max-h-[85vh] rounded-2xl object-contain shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
@@ -344,14 +380,15 @@ export default function ProjectDetailPage() {
                 e.stopPropagation();
                 setLightbox((prev) => (prev! + 1) % screenshots.length);
               }}
-              className="absolute right-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-2xl transition-colors duration-200 z-10"
+              aria-label={lang === "fr" ? "Image suivante" : "Next image"}
+              className="absolute right-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-2xl transition-colors duration-200 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
-              ›
+              <span aria-hidden="true">›</span>
             </button>
           )}
 
           {/* Compteur */}
-          <div className="absolute bottom-6 font-bebas text-xs text-white/40 z-10">
+          <div className="absolute bottom-6 font-bebas text-xs text-white/60 z-10" aria-live="polite">
             {lightbox + 1} / {screenshots.length}
           </div>
         </div>

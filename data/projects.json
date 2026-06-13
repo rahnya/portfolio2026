@@ -1,9 +1,16 @@
 [
   {
     "slug": "flightfootprint",
-    "categories": ["data", "uxui"],
-    "butSkills": ["développer", "concevoir"],
-    "color": "#FFC72C",
+    "categories": [
+      "data",
+      "uxui"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "développer"
+    ],
+    "color": "#FFA755",
     "en": {
       "title": "FlightFootprint",
       "description": "",
@@ -11,7 +18,13 @@
       "role": "I managed the API integration, data processing and display on the interface. I also worked on the calculation logic and the presentation of results to make them understandable.",
       "selfEvaluation": "This project represents a significant step forward in my skills in data management and API integration. Compared to BUT 2, I am more comfortable with the overall structure and logic. Today, I would focus on improving robustness (errors, edge cases) and further enhancing the user experience to make the data more readable.",
       "shortDescription": "Real-time flight visualization and CO₂ impact estimation.",
-      "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
+      "technologies": [
+        "Python",
+        "Flask",
+        "OpenSky API",
+        "Leaflet",
+        "Pandas"
+      ],
       "features": [
         "Live aircraft tracking over Europe",
         "Fuel burn estimation based on aircraft type",
@@ -21,7 +34,13 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/FlightFootPrint.png","projects/ffp1.png", "projects/ffp2.png", "projects/ffp3.png", "projects/ffp4.png"]
+      "screenshots": [
+        "/projects/FlightFootPrint.png",
+        "projects/ffp1.png",
+        "projects/ffp2.png",
+        "projects/ffp3.png",
+        "projects/ffp4.png"
+      ]
     },
     "fr": {
       "title": "FlightFootprint",
@@ -30,7 +49,13 @@
       "role": "J'ai géré l'intégration de l'API, le traitement des données et leur affichage côté interface. J'ai également travaillé sur la logique de calcul et sur la présentation des résultats pour qu'ils soient compréhensibles.",
       "selfEvaluation": "Ce projet marque une vraie montée en compétence sur la gestion de données et l’intégration d’API. Par rapport au BUT 2, je suis plus à l’aise avec la structuration et la logique globale. Aujourd’hui, j’améliorerais la robustesse (erreurs, edge cases) et pousserais davantage l’UX pour rendre les données plus lisibles.",
       "shortDescription": "Visualisation des vols et estimation des émissions CO₂.",
-      "technologies": ["Python", "Flask", "OpenSky API", "Leaflet", "Pandas"],
+      "technologies": [
+        "Python",
+        "Flask",
+        "OpenSky API",
+        "Leaflet",
+        "Pandas"
+      ],
       "features": [
         "Suivi des avions en temps réel",
         "Estimation de la consommation de carburant",
@@ -40,14 +65,28 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/FlightFootPrint.png","projects/ffp1.png", "projects/ffp2.png", "projects/ffp3.png", "projects/ffp4.png"]
+      "screenshots": [
+        "/projects/FlightFootPrint.png",
+        "projects/ffp1.png",
+        "projects/ffp2.png",
+        "projects/ffp3.png",
+        "projects/ffp4.png"
+      ]
     }
   },
   {
     "slug": "visio-conference-app",
-    "categories": ["web","uxui","school"],
-    "butSkills": ["développer", "concevoir"],
-    "color": "#FFC72C",
+    "categories": [
+      "web",
+      "uxui",
+      "school"
+    ],
+    "butSkills": [
+      "concevoir",
+      "développer",
+      "entreprendre"
+    ],
+    "color": "#FFA755",
     "en": {
       "title": "Web Video Conference Platform",
       "description": "A web-based video conferencing platform allowing users to create and join virtual meetings directly from their browser.",
@@ -55,7 +94,13 @@
       "role": "I was mainly involved in setting up real-time communication between users. I participated in the server configuration with Express, as well as the integration of Socket.io to manage real-time data exchanges. I also contributed to the implementation of WebRTC for audio and video stream transmission, which required me to understand peer-to-peer connections and signaling mechanisms. Finally, I participated in testing and debugging phases, notably to resolve connection issues between users.",
       "selfEvaluation": "This project confronted me with a complex, real-time architecture, far beyond my previous projects. It allowed me to develop a better understanding of distributed systems. With the benefit of hindsight from BUT 3, I could have better anticipated connection problems and structured the code more cleanly.",
       "shortDescription": "Browser-based video conferencing platform.",
-      "technologies": ["Node.js", "Express", "Socket.io", "WebRTC", "Docker"],
+      "technologies": [
+        "Node.js",
+        "Express",
+        "Socket.io",
+        "WebRTC",
+        "Docker"
+      ],
       "features": [
         "Peer-to-peer video communication",
         "Meeting room creation",
@@ -70,11 +115,17 @@
     "fr": {
       "title": "Plateforme de visioconférence",
       "description": "Une plateforme web de visioconférence permettant de créer et rejoindre des réunions directement depuis le navigateur.",
-      "context": "Au semestre 5, j’ai participé à une SAÉ centrée sur le développement d’une application de visioconférence en temps réel. Ce projet avait une particularité importante : il s’agissait d’une reprise d’un projet réalisé par les étudiants de l’année précédente. Cependant, le projet initial présentait de nombreuses difficultés : certaines fonctionnalités ne fonctionnaient pas, des bugs étaient présents, et les spécifications fournies n’étaient pas cohérentes avec l’état réel de l’application.  L’objectif était donc double : comprendre l’existant, corriger les dysfonctionnements, mais aussi faire évoluer l’application en y ajoutant de nouvelles fonctionnalités. Nous avons également fait le choix de modifier une partie du projet en migrant vers React afin de moderniser l’interface et d’améliorer la maintenabilité. Le stack technique comprenait notamment Node.js, Express, Socket.io, WebRTC et Docker.",      
+      "context": "Au semestre 5, j’ai participé à une SAÉ centrée sur le développement d’une application de visioconférence en temps réel. Ce projet avait une particularité importante : il s’agissait d’une reprise d’un projet réalisé par les étudiants de l’année précédente. Cependant, le projet initial présentait de nombreuses difficultés : certaines fonctionnalités ne fonctionnaient pas, des bugs étaient présents, et les spécifications fournies n’étaient pas cohérentes avec l’état réel de l’application.  L’objectif était donc double : comprendre l’existant, corriger les dysfonctionnements, mais aussi faire évoluer l’application en y ajoutant de nouvelles fonctionnalités. Nous avons également fait le choix de modifier une partie du projet en migrant vers React afin de moderniser l’interface et d’améliorer la maintenabilité. Le stack technique comprenait notamment Node.js, Express, Socket.io, WebRTC et Docker.",
       "role": "Dans ce projet, nous étions organisés de manière à travailler chacun sur un composant spécifique. J’étais en charge du composant “Équipes”, dont l’objectif était de permettre la création de groupes d’utilisateurs afin de faciliter les échanges (communication, organisation en groupes, partage de ressources). J’ai donc commencé par rédiger les spécifications fonctionnelles et techniques liées à ce composant, en définissant les comportements attendus, les interactions avec les autres parties de l’application et les données nécessaires. Par la suite, j’ai développé ce composant en m’intégrant dans l’architecture existante, tout en tenant compte des contraintes du projet initial. En parallèle, j’ai également participé à la reprise globale du projet de l’année précédente : analyse du code existant, identification des bugs, compréhension des choix techniques et corrections pour rendre l’application fonctionnelle.Cela m’a amenée à travailler sur la communication temps réel via Socket.io ainsi que sur l’intégration de WebRTC pour la gestion des flux audio et vidéo.",
-      "selfEvaluation":"Ce projet représente une étape importante dans ma progression, notamment parce qu’il ne s’agissait pas de partir de zéro mais de reprendre un projet existant, imparfait et parfois incohérent. Cela m’a obligée à développer ma capacité d’analyse, à lire et comprendre du code écrit par d’autres, et à m’adapter à une architecture déjà en place. Par rapport aux projets de BUT 2, j’ai gagné en maturité dans ma manière d’aborder un projet complexe, notamment en prenant le temps de rédiger des spécifications et de structurer mon travail en amont. Le développement du composant “Équipes” m’a également permis de mieux comprendre la gestion des interactions entre utilisateurs dans une application temps réel. Avec le recul, je pense que j’aurais pu améliorer l’organisation globale du code et proposer une refactorisation plus poussée du projet existant. J’aurais également pu mieux anticiper les problèmes liés à la communication entre les différents composants. Ce projet m’a permis de gagner en autonomie et de me rapprocher davantage des conditions réelles de développement, où il est fréquent de devoir reprendre et améliorer un projet déjà existant.",
+      "selfEvaluation": "Ce projet représente une étape importante dans ma progression, notamment parce qu’il ne s’agissait pas de partir de zéro mais de reprendre un projet existant, imparfait et parfois incohérent. Cela m’a obligée à développer ma capacité d’analyse, à lire et comprendre du code écrit par d’autres, et à m’adapter à une architecture déjà en place. Par rapport aux projets de BUT 2, j’ai gagné en maturité dans ma manière d’aborder un projet complexe, notamment en prenant le temps de rédiger des spécifications et de structurer mon travail en amont. Le développement du composant “Équipes” m’a également permis de mieux comprendre la gestion des interactions entre utilisateurs dans une application temps réel. Avec le recul, je pense que j’aurais pu améliorer l’organisation globale du code et proposer une refactorisation plus poussée du projet existant. J’aurais également pu mieux anticiper les problèmes liés à la communication entre les différents composants. Ce projet m’a permis de gagner en autonomie et de me rapprocher davantage des conditions réelles de développement, où il est fréquent de devoir reprendre et améliorer un projet déjà existant.",
       "shortDescription": "Application web de visioconférence.",
-      "technologies": ["Node.js", "Express", "Socket.io", "WebRTC", "Docker"],
+      "technologies": [
+        "Node.js",
+        "Express",
+        "Socket.io",
+        "WebRTC",
+        "Docker"
+      ],
       "features": [
         "Communication vidéo peer-to-peer",
         "Création de salles de réunion",
@@ -89,9 +140,17 @@
   },
   {
     "slug": "code-ton-territoire",
-    "categories": ["hackathon","uxui"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#2E7D32",
+    "categories": [
+      "hackathon",
+      "uxui"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer",
+      "entreprendre"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Code Ton Territoire",
       "description": "Code Your Territory is a project carried out during the 2026 Code Night in collaboration with Crédit Agricole. The objective was to design a platform to promote local initiatives and strengthen the link between citizens and territorial projects.",
@@ -99,7 +158,13 @@
       "role": "I contributed to both UX/UI design and full-stack development. I worked on the interactive map integration, the citizen reporting interface, and the overall visual consistency of the platform. I also participated in the team coordination during the hackathon.",
       "selfEvaluation": "This hackathon taught me how to work effectively under pressure. I improved my decision-making speed and prioritization skills. Now, with more UX experience, I would dedicate more time to structuring the user experience and developing more sophisticated features, particularly for data exploration.",
       "shortDescription": "Hackathon platform to visualize and support local community initiatives.",
-      "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express",
+        "Leaflet",
+        "MongoDB"
+      ],
       "features": [
         "Interactive map showing local initiatives and funded projects",
         "Citizen reporting system to suggest local needs or issues",
@@ -109,7 +174,12 @@
       ],
       "githubUrl": "https://github.com/rahnya/CAcode.git",
       "liveUrl": "https://ca-ndc.vercel.app",
-      "screenshots": ["projects/credit_agricole_technologies_et_services.png", "/projects/cacode2.png","/projects/cacode3.png","/projects/cacode4.png"]
+      "screenshots": [
+        "projects/credit_agricole_technologies_et_services.png",
+        "/projects/cacode2.png",
+        "/projects/cacode3.png",
+        "/projects/cacode4.png"
+      ]
     },
     "fr": {
       "title": "Code Ton Territoire",
@@ -118,7 +188,13 @@
       "role": "J'ai contribué à la fois à la conception UX/UI et au développement full-stack. J'ai travaillé sur l'intégration de la carte interactive, l'interface de signalement citoyen et la cohérence visuelle globale de la plateforme. J'ai également participé à la coordination de l'équipe durant le hackathon.",
       "selfEvaluation": "Ce hackathon m’a appris à travailler efficacement sous contrainte. J’ai gagné en rapidité de décision et en priorisation. Aujourd’hui, avec plus de recul UX, je prendrais davantage de temps pour structurer l’expérience utilisateur et proposer des fonctionnalités plus abouties, notamment sur l’exploration des données.",
       "shortDescription": "Plateforme hackathon pour visualiser et soutenir les initiatives locales.",
-      "technologies": ["React", "Node.js", "Express", "Leaflet", "MongoDB"],
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express",
+        "Leaflet",
+        "MongoDB"
+      ],
       "features": [
         "Carte interactive présentant les projets et initiatives locales",
         "Système permettant aux citoyens de signaler des besoins sur le territoire",
@@ -128,14 +204,25 @@
       ],
       "githubUrl": "https://github.com/rahnya/CAcode.git",
       "liveUrl": "https://ca-ndc.vercel.app",
-      "screenshots": ["projects/credit_agricole_technologies_et_services.png", "/projects/cacode2.png","/projects/cacode3.png","/projects/cacode4.png"]
+      "screenshots": [
+        "projects/credit_agricole_technologies_et_services.png",
+        "/projects/cacode2.png",
+        "/projects/cacode3.png",
+        "/projects/cacode4.png"
+      ]
     }
   },
   {
     "slug": "collective-intelligence-report",
-    "categories": ["school", "research"],
-    "butSkills": ["comprendre", "exprimer"],
-    "color": "#6C63FF",
+    "categories": [
+      "school",
+      "research"
+    ],
+    "butSkills": [
+      "comprendre",
+      "exprimer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Collective Intelligence: Humans & Machines",
       "description": "This academic project explores the concept of collective intelligence between humans and machines through a structured research report.",
@@ -143,7 +230,12 @@
       "role": "I co-authored the research report, contributing to the theoretical analysis sections and the critical reflection on limits and risks of AI collaboration. I also participated in the selection of real-world use cases and the structuring of the document.",
       "selfEvaluation": "This project has allowed me to develop a critical perspective on AI. Compared to my early work, I structure my ideas and analyses better. Today, I would delve deeper into concrete examples and research, with a more analytical and reasoned approach.",
       "shortDescription": "Research report on human-machine collective intelligence.",
-      "technologies": ["Research", "Writing", "Analysis", "Documentation"],
+      "technologies": [
+        "Research",
+        "Writing",
+        "Analysis",
+        "Documentation"
+      ],
       "features": [
         "Structured research report with multiple sections",
         "Analysis of real-world use cases (healthcare, industry, AI tools)",
@@ -153,7 +245,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "Dossier_intelligence_collective_entre hommes_et_machines.pdf",
-      "screenshots": ["projects/intelligence_collective_dossier.png"]
+      "screenshots": [
+        "projects/intelligence_collective_dossier.png"
+      ]
     },
     "fr": {
       "title": "Intelligence collective : humains & machines",
@@ -162,7 +256,12 @@
       "role": "J'ai co-rédigé le dossier de recherche, en contribuant aux sections d'analyse théorique et à la réflexion critique sur les limites et dérives de la collaboration IA. J'ai également participé à la sélection des études de cas et à la structuration du document.",
       "selfEvaluation": "Ce projet m’a permis de développer une réflexion critique sur l’IA. Par rapport à mes débuts, je structure mieux mes idées et mes analyses. Aujourd’hui, j’irais plus loin dans les cas concrets et la profondeur de recherche, avec une approche plus analytique et argumentée.",
       "shortDescription": "Dossier de recherche sur l'intelligence collective homme-machine.",
-      "technologies": ["Recherche", "Rédaction", "Analyse", "Documentation"],
+      "technologies": [
+        "Recherche",
+        "Rédaction",
+        "Analyse",
+        "Documentation"
+      ],
       "features": [
         "Dossier structuré (introduction, analyse, limites, encadrement)",
         "Études de cas concrets (santé, industrie, IA du quotidien)",
@@ -172,14 +271,24 @@
       ],
       "githubUrl": "",
       "liveUrl": "Dossier_intelligence_collective_entre hommes_et_machines.pdf",
-      "screenshots": ["projects/intelligence_collective_dossier.png"]
+      "screenshots": [
+        "projects/intelligence_collective_dossier.png"
+      ]
     }
   },
   {
     "slug": "epitech-coding-club",
-    "categories": ["community", "tech", "education"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#00AEEF",
+    "categories": [
+      "community",
+      "tech",
+      "education"
+    ],
+    "butSkills": [
+      "comprendre",
+      "exprimer",
+      "entreprendre"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Epitech Coding Club Participation",
       "description": "This experience reflects my early engagement with programming through the Epitech Coding Club in Rennes.",
@@ -187,7 +296,12 @@
       "role": "I participated in the hands-on workshops, discovering programming through practical projects. Recently, the Epitech team reached out again, and I am now considering getting involved either as a participant or by helping animate workshops, contributing to making tech more accessible to others.",
       "selfEvaluation": "This experience helped me maintain and strengthen my interest in programming in a more practical and collaborative environment. It confirmed my desire to pursue a technical path and opened me to a community-driven approach to learning.",
       "shortDescription": "Coding workshops at Epitech to explore programming outside school.",
-      "technologies": ["Python", "HTML", "CSS", "JavaScript"],
+      "technologies": [
+        "Python",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "features": [
         "Participation in hands-on coding workshops",
         "Discovery of programming through practical projects",
@@ -197,7 +311,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://www.epitech.eu/ecole-informatique-apres-bac/egalite-diversite-dans-la-tech/",
-      "screenshots": ["projects/epitech_club_coding.png"]
+      "screenshots": [
+        "projects/epitech_club_coding.png"
+      ]
     },
     "fr": {
       "title": "Participation au Coding Club Epitech",
@@ -206,7 +322,12 @@
       "role": "J'ai participé aux ateliers pratiques, en découvrant la programmation à travers des projets concrets. Récemment, l'équipe Epitech m'a recontactée, et je suis aujourd'hui ouverte à y participer de nouveau ou à contribuer à l'animation des ateliers.",
       "selfEvaluation": "Cette expérience m'a permis de maintenir mon intérêt pour le développement tout en découvrant une approche plus libre, collaborative et orientée pratique. Elle a confirmé mon envie de poursuivre une voie technique et m'a ouverte à un apprentissage en communauté.",
       "shortDescription": "Ateliers de code Epitech pour continuer à programmer hors lycée.",
-      "technologies": ["Python", "HTML", "CSS", "JavaScript"],
+      "technologies": [
+        "Python",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "features": [
         "Participation à des ateliers de programmation pratiques",
         "Découverte du code via des projets concrets",
@@ -216,14 +337,24 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://www.epitech.eu/ecole-informatique-apres-bac/egalite-diversite-dans-la-tech/",
-      "screenshots": ["projects/epitech_club_coding.png"]
+      "screenshots": [
+        "projects/epitech_club_coding.png"
+      ]
     }
   },
   {
     "slug": "ai-eprocurement-seo-article",
-    "categories": ["professional", "seo", "content"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#FF6F61",
+    "categories": [
+      "professional",
+      "seo",
+      "content"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer"
+    ],
+    "color": "#FF96B3",
     "en": {
       "title": "AI & e-Procurement SEO Article",
       "description": "As part of my work-study position as a Webmaster & SEO Content Manager, I wrote an in-depth article focused on the impact of artificial intelligence in e-procurement.",
@@ -231,7 +362,12 @@
       "role": "I researched the subject, structured the article and wrote the entire content. I worked on keyword targeting, search intent alignment and Hn hierarchy to optimize both readability and SEO performance. I then published and formatted the article on WordPress.",
       "selfEvaluation": "This mission strengthened my ability to translate complex technical topics into clear, engaging and optimized content. I became more comfortable working with SEO constraints while preserving editorial quality. I could have gone further in the internal linking strategy to improve page authority.",
       "shortDescription": "SEO article on AI applications in e-procurement.",
-      "technologies": ["SEO", "Content Writing", "Keyword Research", "WordPress"],
+      "technologies": [
+        "SEO",
+        "Content Writing",
+        "Keyword Research",
+        "WordPress"
+      ],
       "features": [
         "Writing long-form SEO-optimized content",
         "Popularization of complex AI concepts",
@@ -241,7 +377,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://blog.weproc.com/general/ia-eprocurement-guide/",
-      "screenshots": ["projects/article_weproc.png"]
+      "screenshots": [
+        "projects/article_weproc.png"
+      ]
     },
     "fr": {
       "title": "Article SEO – IA & e-procurement",
@@ -250,7 +388,12 @@
       "role": "J'ai réalisé la recherche sur le sujet, structuré l'article et rédigé l'intégralité du contenu. J'ai travaillé sur le ciblage des mots-clés, l'alignement avec les intentions de recherche et la hiérarchie des titres pour optimiser à la fois la lisibilité et le référencement. J'ai ensuite publié et mis en forme l'article sur WordPress.",
       "selfEvaluation": "Cette mission a renforcé ma capacité à vulgariser des sujets techniques complexes tout en produisant un contenu clair, engageant et optimisé. Je suis plus à l'aise avec les contraintes SEO sans sacrifier la qualité éditoriale. J'aurais pu aller plus loin dans la stratégie de maillage interne pour améliorer l'autorité de la page.",
       "shortDescription": "Article SEO sur l'IA appliquée à l'e-procurement.",
-      "technologies": ["SEO", "Rédaction web", "Recherche de mots-clés", "WordPress"],
+      "technologies": [
+        "SEO",
+        "Rédaction web",
+        "Recherche de mots-clés",
+        "WordPress"
+      ],
       "features": [
         "Rédaction d'un article long format optimisé SEO",
         "Vulgarisation de concepts complexes liés à l'IA",
@@ -260,14 +403,24 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://blog.weproc.com/general/ia-eprocurement-guide/",
-      "screenshots": ["projects/article_weproc.png"]
+      "screenshots": [
+        "projects/article_weproc.png"
+      ]
     }
   },
   {
     "slug": "internship-management-app",
-    "categories": ["school","web","uxui"],
-    "butSkills": ["développer", "concevoir"],
-    "color": "#3BA1FF",
+    "categories": [
+      "school",
+      "web",
+      "uxui"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Internship Management Application",
       "description": "This project aimed to design an application to efficiently manage university internships by structuring and utilizing data from a relational database.",
@@ -275,7 +428,13 @@
       "role": "I managed the front-end structure of forms and displays. In S4, I restructured the database to make it more functional, then implemented API calls to dynamically display internships. I also participated in the local project configuration and its organization via Git.",
       "selfEvaluation": "This project gave me a better understanding of server-side data processing logic and front-to-back communication. I particularly progressed in anticipating relationships between tables. If I were to do it again, I would think in terms of API from the very start.",
       "shortDescription": "Web platform for managing university internships.",
-      "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "features": [
         "Internship database management",
         "Dynamic data display with API calls",
@@ -284,7 +443,9 @@
       ],
       "githubUrl": "https://github.com/rahnya/APPLI-STAGE",
       "liveUrl": "",
-      "screenshots": ["/projects/appli-stage.png"]
+      "screenshots": [
+        "/projects/appli-stage.png"
+      ]
     },
     "fr": {
       "title": "Application de gestion des stages",
@@ -293,7 +454,13 @@
       "role": "J'ai géré la structure front-end des formulaires et affichages. Au S4, j'ai restructuré la base de données pour la rendre plus fonctionnelle, puis implémenté des appels API pour afficher dynamiquement les stages. J'ai aussi participé à la configuration locale du projet et à son organisation via Git.",
       "selfEvaluation": "Ce projet m'a donné une meilleure vision de la logique de traitement des données côté serveur et de la communication entre le front et le back. J'ai particulièrement progressé dans ma manière d'anticiper les relations entre tables. Si c'était à refaire, je penserais dès le départ en API.",
       "shortDescription": "Plateforme web de gestion des stages.",
-      "technologies": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "features": [
         "Gestion d'une base de données de stages",
         "Affichage dynamique via API",
@@ -302,14 +469,23 @@
       ],
       "githubUrl": "https://github.com/rahnya/APPLI-STAGE",
       "liveUrl": "",
-      "screenshots": ["/projects/appli-stage.png"]
+      "screenshots": [
+        "/projects/appli-stage.png"
+      ]
     }
   },
   {
     "slug": "ai-agents-workflow",
-    "categories": ["school","web"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#6B5CFF",
+    "categories": [
+      "school",
+      "web"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "développer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "AI Agents Workflow",
       "description": "This project explores the development of conversational agents capable of automating tasks through structured workflows.",
@@ -317,7 +493,12 @@
       "role": "I defined the conversational logic, developed the interface, and participated in script integration. I also tested the agents on several use cases to evaluate their clarity and usefulness, then iterated based on feedback. I conceived my agents as members of an MMI agency: a front developer, a back developer, a community manager, etc. This way, for quick tasks, I can automate part of the work to speed things up.",
       "selfEvaluation": "This project helped me deepen my understanding of rich user-side interactions. I felt comfortable with the development tools, but I could have anticipated more error cases to reinforce the user experience. My current work could still be improved: the agent's response currently includes all its reasoning before the actual answer, which could be improved for user experience.",
       "shortDescription": "Conversational AI agents for task automation.",
-      "technologies": ["Ollama", "n8n", "JavaScript", "AI Agents"],
+      "technologies": [
+        "Ollama",
+        "n8n",
+        "JavaScript",
+        "AI Agents"
+      ],
       "features": [
         "Multi-agent architecture",
         "Task automation workflows",
@@ -326,7 +507,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/agents.png"]
+      "screenshots": [
+        "/projects/agents.png"
+      ]
     },
     "fr": {
       "title": "Agents conversationnels IA",
@@ -335,7 +518,11 @@
       "role": "J'ai défini les logiques conversationnelles, développé l'interface, et participé à l'intégration des scripts. J'ai également testé les agents sur plusieurs cas d'usage pour en évaluer la clarté et l'utilité, puis itéré en fonction des retours. J'ai pensé mes agents comme les membres d'une agence MMI : un développeur front, un back, un CM etc. Ainsi pour des travaux rapides, je peux automatiser une partie pour accélérer.",
       "selfEvaluation": "Ce projet m'a permis d'approfondir ma compréhension des interactions riches côté utilisateur. Je me suis sentie à l'aise avec les outils de développement, mais j'aurais pu anticiper davantage les cas d'erreur pour renforcer l'expérience utilisateur. Mon travail actuel pourrait tout de même être amélioré : actuellement la réponse de mon agent comporte toute sa réflexion avant la réponse, ce qui pourrait être amélioré pour l'expérience utilisateur.",
       "shortDescription": "Agents IA conversationnels pour automatisation.",
-      "technologies": ["Ollama", "n8n", "JavaScript"],
+      "technologies": [
+        "Ollama",
+        "n8n",
+        "JavaScript"
+      ],
       "features": [
         "Architecture multi-agents",
         "Automatisation de tâches",
@@ -344,14 +531,22 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/agents.png"]
+      "screenshots": [
+        "/projects/agents.png"
+      ]
     }
   },
   {
     "slug": "laravel-blog-platform",
-    "categories": ["school","web"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#FF3B8D",
+    "categories": [
+      "school",
+      "web"
+    ],
+    "butSkills": [
+      "concevoir",
+      "développer"
+    ],
+    "color": "#FF96B3",
     "en": {
       "title": "Laravel Blog Platform",
       "description": "This project involved developing a complete blogging platform with a content management system.",
@@ -359,7 +554,12 @@
       "role": "This was an individual project. I therefore handled the entire backend development with Laravel, and then integrated Filament for a better visual experience. It was my first project with these tools, after getting to grips with them in the previous practical session. I also structured user roles in the administration. The database was linked to phpMyAdmin. Visitors can submit an article proposal, which the admin will then validate for publication.",
       "selfEvaluation": "This project helped me understand how modern frameworks work. I could have improved the code documentation to facilitate handover, but overall I am very proud of this project. Building this backend reminded me of a semester 2 project where we also had to create an admin space. I especially notice how much simpler the code is to maintain, and how much better the experience is too.",
       "shortDescription": "Full blog platform with Laravel and admin dashboard.",
-      "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Filament"
+      ],
       "features": [
         "Custom admin dashboard",
         "User roles and permissions",
@@ -368,7 +568,10 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
+      "screenshots": [
+        "/projects/laravel.png",
+        "/projects/picsou-blog.png"
+      ]
     },
     "fr": {
       "title": "Blog avec back-office Laravel",
@@ -377,7 +580,12 @@
       "role": "C'était un travail individuel. Je me suis donc chargée de l'entièreté du développement back avec Laravel, et de l'intégration de Filament ensuite pour un meilleur visuel. Pour ma part ce fut le premier projet réalisé avec ces outils, après les avoir pris en main au TP précédent. Il y a aussi eu la structuration des rôles utilisateurs dans l'administration. La base de données était liée à phpMyAdmin. Les visiteurs peuvent soumettre une proposition d'article, que l'admin validera par la suite pour qu'il soit publié.",
       "selfEvaluation": "Ce projet m'a permis de comprendre la façon dont fonctionnent les frameworks modernes. J'aurais pu améliorer la documentation du code pour faciliter la passation, mais sinon je suis très fière de ce projet. La réalisation de ce back m'a rappelé un projet du semestre 2 où nous avions dû faire un espace admin aussi. Je remarque surtout comme le code de celui-ci est bien plus simple à maintenir, et que l'expérience est meilleure elle aussi.",
       "shortDescription": "Blog avec interface d'administration personnalisée.",
-      "technologies": ["Laravel", "PHP", "MySQL", "Filament"],
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Filament"
+      ],
       "features": [
         "Back-office personnalisable",
         "Gestion des rôles utilisateurs",
@@ -386,68 +594,240 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/laravel.png", "/projects/picsou-blog.png"]
+      "screenshots": [
+        "/projects/laravel.png",
+        "/projects/picsou-blog.png"
+      ]
     }
   },
   {
     "slug": "alternance",
-    "categories": ["web", "professional"],
-    "butSkills": ["développer", "concevoir"],
-    "color": "#4A90E2",
+    "categories": [
+      "professional",
+      "web"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer",
+      "développer",
+      "entreprendre"
+    ],
+    "color": "#FFC72C",
     "en": {
-      "title": "Work-study program",
-      "description": "",
-      "context": "As part of my third year of BUT, I am completing a work-study program within a company where I contribute to real projects combining web development, SEO and content creation. Unlike academic projects, this context involves real constraints related to client expectations, deadlines and performance objectives. ",
-      "role": "I work on several aspects of projects: WordPress development, content integration, SEO optimization and participation in interface design. I also collaborate with different profiles (design, marketing, clients), which requires me to adapt my communication and understand expressed needs. I also take part in professional events, allowing me to better understand the sector’s challenges.",
-      "selfEvaluation": "This experience represents an important step in my training as it exposes me to real professional situations. I have gained autonomy, rigor and adaptability. Compared to BUT 2, I feel more legitimate in my technical skills and more capable of proposing solutions. With hindsight, I could improve my time management and deepen certain technical aspects to be more efficient.",
-      "shortDescription": "Professional experience in web development, SEO and project management.",
-      "technologies": ["WordPress", "SEO", "HTML", "CSS", "JavaScript"],
-      "features": [],
+      "title": "Weproc Apprenticeship — Editorial Webmaster & SEO Content Manager",
+      "shortDescription": "SEO overhaul, internationalisation and editorial strategy for a B2B SaaS (e-procurement) over 8 months of apprenticeship.",
+      "context": "My apprenticeship at Weproc (a French e-procurement SaaS vendor based in the PACA region) covers the full web-content chain: technical and editorial SEO, WordPress / Elementor integration, internationalisation (WPML), Semrush auditing, LinkedIn strategy, netlinking partnerships, and cross-team communication (marketing, product, sales).\n\nOver the period (Sept 2025 → July 2026), I was brought into the website overhaul from week one, with autonomy growing month by month — moving from cleanly-scoped tasks to taking initiative on GEO strategy (visibility in generative AI), long-form whitepaper writing, and coordinating external editorial partnerships (Indy, Batinfo).",
+      "role": "Editorial Webmaster & SEO Content Manager.\n\nConcretely, I own the website's content chain end-to-end: technical audits, strategic page redesigns, on-page SEO, multilingual translation, long-form writing, LinkedIn editorial planning, performance tracking and reporting. I built my own Notion workspace for task tracking, editorial calendar, and weekly reports.",
+      "selfEvaluation": "This is the densest trace of my BUT3 year. It mobilises the 5 MMI competences continuously, but more importantly it documents real skill growth over time:\n\n— Sept/Oct: getting hands-on with WordPress / WPML / Elementor, discovering Semrush, manual indexing via Search Console, first translations of menus in Italian and German.\n— November: autonomous work on the « Features » page strategy (supplier management, contracts, workflows, catalogues, punch-out…), design harmonisation, breadcrumbs and schema.org structured data.\n— December: end-to-end technical audit ownership — 301 redirect chains, 404/502 errors, hreflang conflicts, crawl depth. Site health score restored, internal redirect tutorial written.\n— January: full English translation of the site via WPML, understanding dynamic placeholders (<0>, <1>) to preserve interactive blocks, Spanish and German started. Sat in on a strategic SEO audit with an external consultant.\n— February: multilingual management at scale (4 languages), WPML bug fixing, duplicate-page cleanup, Core Web Vitals optimisation.\n— March: took the lead on two long-form pieces (an AI × e-procurement whitepaper, a netlinking partnership with Indy / mon-salaire-en-net.fr), Semrush score climbed from 72 to 85%.\n— April: opened up GEO strategy (Generative Engine Optimization — visibility in ChatGPT, Gemini, Perplexity), built competitor comparison pages, set up a Reddit Pro presence.\n\nIf I had to sum up the takeaway: moving from tool-by-tool execution to a real strategic vision of SEO and the content ecosystem, and learning to arbitrate between technical clean-up and editorial production.",
+      "technologies": [
+        "WordPress",
+        "Elementor & Elementor Pro",
+        "WPML (multilingual)",
+        "Yoast SEO",
+        "Semrush",
+        "Google Search Console",
+        "Google Analytics 4",
+        "Ahrefs",
+        "Bing Webmaster",
+        "Schema.org / Structured data",
+        "PageSpeed Insights",
+        "Notion",
+        "Canva / Figma",
+        "Reddit Pro",
+        "n8n (automations)"
+      ],
+      "features": [
+        "Full Semrush SEO audit (392 tracked keywords, On Page SEO Checker on 35+ key pages)",
+        "Redesign and optimisation of « Features » pages (supplier management, contracts, workflows, catalogues, punch-out, multi-companies, analytics)",
+        "Clean 301-redirect process and internal tutorial (404 handling, hreflang conflicts, redirect chains, sitemap)",
+        "Full English translation of the site via WPML, Spanish and German started — domain vocabulary across 4 languages",
+        "Schema.org structured-data integration (FAQ, customer reviews, breadcrumbs, Google stars) and Google Rich Results test pass",
+        "In-depth article on AI applied to e-procurement (guide / whitepaper format) + a second on combined purchasing and accounting for SMBs",
+        "Coordinated a netlinking partnership with Indy / mon-salaire-en-net.fr (cannibalisation review, writing, publishing, link tracking)",
+        "LinkedIn editorial strategy (planning, copywriting, visuals, product storytelling) with the comms team",
+        "Watch and rollout of a GEO strategy (visibility in generative AI — ChatGPT, Gemini, Perplexity) and Reddit Pro presence",
+        "Weekly Marketing-Sales-Product meetings with leads, conversion and ROI analysis"
+      ],
+      "liveUrl": "https://www.weproc.com",
+      "screenshots": [
+        "/projects/article_weproc.png"
+      ]
+    },
+    "fr": {
+      "title": "Alternance Weproc — Webmaster éditorial & Content Manager SEO",
+      "shortDescription": "Refonte SEO, internationalisation et stratégie éditoriale du site d'un SaaS B2B (e-procurement) sur 8 mois d'alternance.",
+      "context": "Mon alternance chez Weproc (éditeur d'un SaaS d'e-procurement basé en région PACA) couvre l'ensemble de la chaîne « contenu web » : SEO technique et éditorial, intégration WordPress / Elementor, internationalisation (WPML), audit Semrush, stratégie LinkedIn, partenariats netlinking, communication interne avec les pôles marketing, produit et sales.\n\nSur cette période (sept. 2025 → juillet 2026), j'ai été embarquée dès le premier mois sur la refonte progressive du site, avec une autonomie qui a grandi mois après mois — passant de l'exécution de missions cadrées à des prises d'initiative sur la stratégie GEO (visibilité dans les IA génératives), la rédaction de contenus longs type livre blanc, et la coordination de partenariats éditoriaux externes (Indy, Batinfo).",
+      "role": "Webmaster éditorial & Content Manager SEO.\n\nConcrètement, je porte toute la chaîne contenu du site : audit technique, refonte des pages stratégiques, optimisation SEO on-page, traduction multilingue, rédaction d'articles de fond, planification éditoriale LinkedIn, suivi des performances et reporting. J'ai construit pour ma propre organisation un espace Notion (suivi de tâches, calendrier éditorial, rapports hebdomadaires).",
+      "selfEvaluation": "Cette alternance est la trace la plus dense de mon parcours BUT3. Elle mobilise les 5 compétences MMI en continu, mais surtout elle documente une vraie montée en compétences sur la durée :\n\n— Septembre/Octobre : prise en main de WordPress / WPML / Elementor, découverte de Semrush, indexation manuelle dans Google Search Console, premières traductions de menus en italien et allemand.\n— Novembre : autonomie sur la stratégie de pages « Fonctionnalités » (gestion fournisseurs, contrats, workflows, catalogues, punch-out…), harmonisation du design, mise en place du fil d'Ariane et des données structurées schema.org.\n— Décembre : prise en main de l'audit technique complet — chaînes de redirections 301, erreurs 404/502, conflits hreflang, profondeur de crawl. Score de santé du site remonté de 75 % à un niveau exploitable, et création d'un tutoriel interne sur les redirections.\n— Janvier : pilotage de la traduction complète du site en anglais avec WPML, compréhension des placeholders dynamiques (<0>, <1>) pour conserver les blocs interactifs, début espagnol/allemand. Participation à un audit SEO stratégique externe avec une consultante.\n— Février : gestion multilingue à grande échelle (4 langues), correction de bugs WPML, pages duplicate, optimisations Core Web Vitals.\n— Mars : prise du lead sur deux contenus longs (un livre blanc IA × e-procurement, un partenariat netlinking avec Indy / mon-salaire-en-net.fr), score Semrush remonté de 72 à 85 %.\n— Avril : ouverture sur la stratégie GEO (Generative Engine Optimization — visibilité dans ChatGPT, Gemini, Perplexity), création de pages comparatives concurrents, mise en place d'une présence Reddit Pro.\n\nSi je devais résumer ce que je gagne : passer d'une exécution outil par outil à une vraie vision stratégique du référencement et de l'écosystème contenu, et apprendre à arbitrer entre assainissement technique et production éditoriale.",
+      "technologies": [
+        "WordPress",
+        "Elementor & Elementor Pro",
+        "WPML (multilingue)",
+        "Yoast SEO",
+        "Semrush",
+        "Google Search Console",
+        "Google Analytics 4",
+        "Ahrefs",
+        "Bing Webmaster",
+        "Schema.org / Données structurées",
+        "PageSpeed Insights",
+        "Notion",
+        "Canva / Figma",
+        "Reddit Pro",
+        "n8n (automatisations)"
+      ],
+      "features": [
+        "Audit SEO complet sur Semrush (392 mots-clés suivis, On Page SEO Checker sur 35+ pages clés)",
+        "Refonte et optimisation des pages « Fonctionnalités » (gestion fournisseurs, contrats, workflows, catalogues, punch-out, multi-sociétés, analytique)",
+        "Mise en place d'un processus propre de redirections 301 et d'un tutoriel interne (gestion des 404, conflits hreflang, chaînes de redirections, sitemap)",
+        "Traduction complète du site en anglais via WPML, début de l'espagnol et de l'allemand — vocabulaire métier dans 4 langues",
+        "Intégration des données structurées schema.org (FAQ, avis clients, fil d'Ariane, étoiles Google) et passage du test Google Rich Results",
+        "Rédaction d'un article approfondi sur l'IA appliquée à l'e-procurement (format guide / livre blanc) + un second sur la gestion combinée achats et comptabilité TPE/PME",
+        "Coordination d'un partenariat netlinking avec Indy / mon-salaire-en-net.fr (analyse anti-cannibalisation, rédaction, mise en ligne, suivi des liens)",
+        "Stratégie LinkedIn éditoriale (planification, rédaction, visuels, storytelling produit) en lien avec le service communication",
+        "Veille et mise en place d'une stratégie GEO (visibilité dans les IA génératives — ChatGPT, Gemini, Perplexity) et présence Reddit Pro",
+        "Participation hebdomadaire aux points Marketing-Sales-Produit avec analyse des leads, conversions et ROI"
+      ],
+      "liveUrl": "https://www.weproc.com",
+      "screenshots": [
+        "/projects/article_weproc.png"
+      ]
+    }
+  },
+  {
+    "slug": "rahnya-studio",
+    "categories": [
+      "professional",
+      "web",
+      "uxui"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer",
+      "entreprendre"
+    ],
+    "color": "#FFA755",
+    "en": {
+      "title": "Rahnya Studio — Freelance brand & site",
+      "description": "My freelance studio's brand identity, site and offer system.",
+      "context": "Rahnya Studio is the freelance practice I launched alongside my BUT to take on web design and development missions for mission-driven organisations (associations, NGOs, early-stage startups). Beyond client work, the studio itself is a fully thought-out project: brand identity, tone of voice, service offer, pricing logic, legal pages, and a Next.js showcase site that doubles as a working demo of what I produce.",
+      "role": "I handled everything end-to-end: positioning and offer design, brand identity (palette, typography, voice), site architecture and Next.js build, copywriting in two languages, legal pages (mentions légales, CGV, politique de confidentialité), and on-site SEO. The studio site links back into this portfolio for project depth — they're designed as two complementary surfaces.",
+      "selfEvaluation": "Building the studio forced me to combine every competence at once — entreprendre to set up the offer, concevoir for the identity, développer for the site, exprimer to write convincing copy in French and English. Compared to the BUT 1 product-creation exercises (VR chair), the gap is in how concretely I now have to consider operational reality (pricing, legal, sustainable rates). What I'd improve: bring real client testimonials and case studies as the practice grows.",
+      "shortDescription": "Brand, offer and Next.js site of my freelance studio.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "JavaScript",
+        "CSS",
+        "Framer Motion",
+        "Figma",
+        "Vercel"
+      ],
+      "features": [
+        "Brand identity (palette, typography, voice)",
+        "Service offer and pricing structure",
+        "Bilingual Next.js site (FR / EN)",
+        "Legal pages (mentions légales, CGV, RGPD)",
+        "Cross-linking with this portfolio"
+      ],
       "githubUrl": "",
-      "liveUrl": null,
+      "liveUrl": "https://rahnya-studio.vercel.app",
       "screenshots": []
     },
     "fr": {
-      "title": "Alternance",
-      "description": "",
-      "context": "Dans le cadre de mon année de BUT 3, j’effectue une alternance au sein d’une entreprise où je participe à des projets concrets mêlant développement web, SEO et création de contenu. Contrairement aux projets académiques, ce contexte implique des contraintes réelles liées aux attentes clients, aux délais et aux objectifs de performance.",
-      "role": "J’interviens sur plusieurs aspects des projets : développement de sites sous WordPress, intégration de contenus, optimisation SEO et participation à la conception d’interfaces. Je suis également amenée à collaborer avec différents profils (design, marketing, clients), ce qui m’oblige à adapter ma communication et à comprendre les besoins exprimés. Enfin, je participe à des événements professionnels, ce qui me permet d’observer et de comprendre les enjeux du secteur.",
-      "selfEvaluation": "Cette expérience représente une étape importante dans ma formation, car elle me confronte à des situations professionnelles concrètes. J’ai gagné en autonomie, en rigueur et en capacité d’adaptation. Par rapport au BUT 2, je me sens plus légitime dans mes compétences techniques et plus capable de proposer des solutions. Avec le recul, je pense pouvoir encore améliorer ma gestion du temps et approfondir certains aspects techniques pour être plus efficace et proactive dans les projets.",
-      "shortDescription": "Expérience professionnelle en développement web, SEO et gestion de projets.",
-      "technologies": ["WordPress", "SEO", "HTML", "CSS", "JavaScript"],
-      "features": [],
+      "title": "Rahnya Studio — Identité & site freelance",
+      "description": "L'identité, le site et l'offre de mon studio freelance.",
+      "context": "Rahnya Studio, c'est l'activité freelance que j'ai lancée en parallèle de mon BUT pour prendre des missions de design et de développement web auprès d'organisations à mission (associations, ONG, jeunes startups). Au-delà du travail client, le studio est un projet à part entière : identité de marque, ton, offre de services, logique de tarification, pages légales, et un site vitrine Next.js qui sert lui-même de démo de ce que je produis.",
+      "role": "J'ai géré tout le projet de bout en bout : positionnement et conception de l'offre, identité de marque (palette, typographie, voix), architecture et développement Next.js du site, rédaction bilingue, pages légales (mentions, CGV, politique de confidentialité), et SEO on-site. Le site du studio renvoie vers ce portfolio pour la profondeur projet — les deux surfaces sont pensées comme complémentaires.",
+      "selfEvaluation": "Monter le studio m'a obligée à combiner toutes les compétences en même temps : entreprendre pour structurer l'offre, concevoir l'identité, développer le site, exprimer pour écrire des contenus convaincants en français et en anglais. Comparé aux exercices de création produit du BUT 1 (chaise VR), je vois la marche franchie sur le fait de devoir maintenant penser opérationnel (tarification, juridique, soutenabilité des taux). Ce que j'améliorerai : intégrer de vrais témoignages clients et cas d'études au fur et à mesure que l'activité se développe.",
+      "shortDescription": "Identité, offre et site Next.js de mon studio freelance.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "JavaScript",
+        "CSS",
+        "Framer Motion",
+        "Figma",
+        "Vercel"
+      ],
+      "features": [
+        "Identité de marque (palette, typographie, voix)",
+        "Offre et structure tarifaire",
+        "Site Next.js bilingue (FR / EN)",
+        "Pages légales (mentions, CGV, RGPD)",
+        "Connexion croisée avec ce portfolio"
+      ],
       "githubUrl": "",
-      "liveUrl": null,
+      "liveUrl": "https://rahnya-studio.vercel.app",
       "screenshots": []
     }
   },
   {
     "slug": "snoozly",
-    "categories": ["entrepreneurship"],
-    "butSkills": ["concevoir", "analyser"],
-    "color": "#FF6F61",
+    "categories": [
+      "entrepreneurship"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer",
+      "entreprendre"
+    ],
+    "color": "#FF96B3",
     "en": {
-      "title": "Snoozly",
+      "title": "Snoozly — Connected recovery pods",
       "description": "",
-      "context": "As part of the Pépite program and a course project, I developed an entrepreneurial project called Snoozly. The objective was to build a product or service idea and structure it through a complete business plan.",
-      "role": "I contributed to defining the concept, identifying the target audience and analyzing the market. I also worked on the business model and the writing of the business plan, including value proposition, development strategy and financial aspects.",
-      "selfEvaluation": "This project allowed me to develop a broader vision of digital projects beyond the technical aspect. I learned how to structure an idea and reflect on its viability. Compared to BUT 2 projects, I took more into account economic and strategic challenges. With hindsight, I could have deepened the market study and provided a more precise competitor analysis.",
-      "shortDescription": "Entrepreneurial project with a full business plan.",
-      "technologies": [],
-      "features": [],
+      "context": "Snoozly is a student startup developed as a trio under the Pépite scheme. Premise: mental fatigue has become structural in modern work and study environments, and current solutions (gym, meditation, coffee) don't address the actual need — easy access to real recovery. Snoozly proposes modular, connected rest pods deployed in companies and universities, offering a 20-minute micro-nap that restores mental clarity. The project has gone through every stage: ideation, market study, business plan, brand identity, and a companion mobile app prototype (in progress).",
+      "role": "I'm CTO, in charge of the entire digital and technical product side: design of the companion mobile app (React Native / Expo + Node/Express/MongoDB backend), thinking about pod connectivity, contribution to visual identity and pitch. I also co-wrote the business plan with my two partners Mathilde (CRO) and Luis Miguel (CFO), which forced me to grow on financial and strategic topics that weren't familiar to me.",
+      "selfEvaluation": "Snoozly pushed me out of my technical comfort zone to think in terms of viable product, market and impact. Compared to my BUT 2 projects (notably the VR chair from S1), I see real maturity in how we anticipated every facet — economic, legal, operational. Looking back, I'll replace the still-partly-fictional BP figures with actual fieldwork when we launch the pilot, and I'll dig deeper into competitive analysis.",
+      "shortDescription": "Pépite student startup: sleep pods for companies and universities.",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Figma",
+        "Business Plan",
+        "Pitch deck"
+      ],
+      "features": [
+        "Product ideation and market identification",
+        "Full business plan (value prop, business model, finances)",
+        "Visual identity and pitch",
+        "Companion mobile app (v5 in progress)",
+        "Node/Express backend with MongoDB"
+      ],
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
     },
     "fr": {
-      "title": "Snoozly",
+      "title": "Snoozly — Cellules de récupération connectées",
       "description": "",
-      "context": "Dans le cadre du dispositif Pépite et d’un projet pédagogique, j’ai développé un projet entrepreneurial nommé Snoozly. L’objectif était de construire une idée de produit/service, puis de la structurer à travers un business plan complet.",
-      "role": "J’ai participé à la définition du concept, à l’identification de la cible et à l’analyse du marché. J’ai également contribué à la construction du business model ainsi qu’à la rédaction du business plan. Cela incluait la réflexion sur la proposition de valeur, la stratégie de développement et les aspects financiers.",
-      "selfEvaluation": "Ce projet m’a permis de développer une vision plus globale des projets numériques, au-delà de l’aspect technique. J’ai appris à structurer une idée et à réfléchir à sa viabilité. Par rapport aux projets de BUT 2, j’ai davantage pris en compte les enjeux économiques et stratégiques. Avec le recul, je pense que j’aurais pu approfondir l’étude de marché et proposer une analyse plus précise des concurrents pour renforcer la crédibilité du projet.",
-      "shortDescription": "Projet entrepreneurial avec business plan complet.",
-      "technologies": [],
-      "features": [],
+      "context": "Snoozly est un projet entrepreneurial développé en trio dans le cadre du dispositif Pépite. Le constat : la fatigue mentale est devenue structurelle dans les environnements de travail et d'études modernes, et les solutions actuelles (gym, méditation, café) n'adressent pas le besoin réel — un accès simple à de la vraie récupération. Snoozly propose des capsules de repos modulaires et connectées, déployées dans des entreprises et universités, pour offrir une micro-sieste de 20 minutes qui restaure la clarté mentale. Le projet est passé par toutes les étapes : idéation, étude de marché, business plan, identité de marque, et prototype d'application mobile compagnon (en cours).",
+      "role": "Je suis CTO du projet, en charge de toute la dimension produit numérique et technique : conception de l'application mobile compagnon (React Native / Expo + backend Node/Express/MongoDB), réflexion sur la connectivité des capsules, contribution à l'identité visuelle et au pitch. J'ai aussi co-rédigé le business plan avec mes deux associés Mathilde (CRO) et Luis Miguel (CFO), ce qui m'a obligée à monter en compétence sur les sujets financiers et stratégiques que je connaissais peu.",
+      "selfEvaluation": "Snoozly m'a fait sortir de ma zone de confort technique pour penser en termes de produit viable, de marché et d'impact. Par rapport à mes projets de BUT 2 (notamment la chaise VR du S1), je vois une vraie maturité dans la manière dont on a anticipé toutes les facettes — économique, juridique, opérationnelle. Avec le recul, je remplacerai les chiffres encore partiellement fictifs du BP par une vraie étude terrain quand on lancera le pilote, et je creuserai davantage l'étude concurrentielle.",
+      "shortDescription": "Projet entrepreneurial Pépite : capsules de sommeil pour entreprises et universités.",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Figma",
+        "Business Plan",
+        "Pitch deck"
+      ],
+      "features": [
+        "Idéation produit et identification du marché",
+        "Business plan complet (proposition de valeur, BM, finances)",
+        "Identité visuelle et pitch",
+        "Application mobile compagnon (v5 en cours)",
+        "Backend Node/Express avec MongoDB"
+      ],
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
@@ -455,9 +835,14 @@
   },
   {
     "slug": "pitch",
-    "categories": ["communication"],
-    "butSkills": ["communiquer"],
-    "color": "#9B59B6",
+    "categories": [
+      "communication"
+    ],
+    "butSkills": [
+      "exprimer",
+      "entreprendre"
+    ],
+    "color": "#7B638A",
     "en": {
       "title": "Elevator Pitch",
       "description": "",
@@ -487,9 +872,15 @@
   },
   {
     "slug": "vr-ar",
-    "categories": ["innovation"],
-    "butSkills": ["concevoir"],
-    "color": "#00C9A7",
+    "categories": [
+      "innovation"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Interactive devices VR/AR",
       "description": "",
@@ -497,7 +888,10 @@
       "role": "I contributed to learning the tools, designing interactions and developing prototypes. I also took part in testing phases to improve the user experience.",
       "selfEvaluation": "This project allowed me to discover new development fields beyond traditional web development. I improved my ability to design user interactions in immersive environments. With hindsight, I could have further developed the UX aspect and proposed more advanced interactions based on concepts learned in BUT 2.",
       "shortDescription": "Exploration of augmented and virtual reality.",
-      "technologies": ["Zapworks", "VR"],
+      "technologies": [
+        "Zapworks",
+        "VR"
+      ],
       "features": [],
       "githubUrl": "",
       "liveUrl": null,
@@ -510,7 +904,10 @@
       "role": "J’ai participé à la prise en main des outils, à la conception d’interactions et au développement de prototypes. J’ai également contribué aux phases de test afin d’améliorer l’expérience utilisateur.",
       "selfEvaluation": "Ce projet m’a permis de découvrir de nouveaux domaines du développement, différents du web classique. J’ai développé ma capacité à concevoir des interactions utilisateur dans des environnements immersifs. Avec le recul, j’aurais pu approfondir davantage la dimension UX et proposer des interactions plus abouties en m’appuyant sur les notions vues en BUT 2.",
       "shortDescription": "Exploration de la réalité augmentée et virtuelle.",
-      "technologies": ["Zapworks", "VR"],
+      "technologies": [
+        "Zapworks",
+        "VR"
+      ],
       "features": [],
       "githubUrl": "",
       "liveUrl": null,
@@ -519,9 +916,14 @@
   },
   {
     "slug": "engagement-bde",
-    "categories": ["engagement"],
-    "butSkills": ["organiser", "collaborer"],
-    "color": "#F39C12",
+    "categories": [
+      "engagement"
+    ],
+    "butSkills": [
+      "exprimer",
+      "entreprendre"
+    ],
+    "color": "#FFA755",
     "en": {
       "title": "Student engagement",
       "description": "",
@@ -551,9 +953,14 @@
   },
   {
     "slug": "infra-cyber",
-    "categories": ["system"],
-    "butSkills": ["administrer", "sécuriser"],
-    "color": "#2C3E50",
+    "categories": [
+      "system"
+    ],
+    "butSkills": [
+      "comprendre",
+      "développer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Infrastructure and cybersecurity",
       "description": "",
@@ -561,7 +968,12 @@
       "role": "I participated in setting up and understanding these architectures. I handled virtualized environments and configured several services in Docker containers, including an Apache web server, a MariaDB database and a monitoring tool with Zabbix. I also studied proxies, DMZ and certificates to secure communications and contributed to monitoring configuration.",
       "selfEvaluation": "This experience represents a major step forward in my understanding of web systems. I discovered the infrastructure layer behind applications. I developed a better understanding of security and performance issues. With hindsight, I could go further by automating deployments and improving service configuration.",
       "shortDescription": "Network architecture, Docker and cybersecurity.",
-      "technologies": ["Docker", "Apache", "MariaDB", "Zabbix"],
+      "technologies": [
+        "Docker",
+        "Apache",
+        "MariaDB",
+        "Zabbix"
+      ],
       "features": [],
       "githubUrl": "",
       "liveUrl": null,
@@ -574,7 +986,12 @@
       "role": "J’ai participé à la mise en place et à la compréhension de ces différentes architectures. J’ai manipulé des environnements virtualisés et configuré plusieurs services dans des conteneurs Docker, notamment un serveur web Apache, une base de données MariaDB et un outil de supervision avec Zabbix. J’ai également étudié le fonctionnement des proxys et des DMZ pour sécuriser les échanges ainsi que le rôle des certificats.",
       "selfEvaluation": "Cette trace marque une évolution importante dans ma compréhension des systèmes web. J’ai découvert la couche infrastructure derrière une application. J’ai développé une meilleure compréhension des enjeux de sécurité et de performance. Avec le recul, je pourrais aller plus loin en automatisant les déploiements et en approfondissant la configuration des services.",
       "shortDescription": "Architecture réseau, Docker et cybersécurité.",
-      "technologies": ["Docker", "Apache", "MariaDB", "Zabbix"],
+      "technologies": [
+        "Docker",
+        "Apache",
+        "MariaDB",
+        "Zabbix"
+      ],
       "features": [],
       "githubUrl": "",
       "liveUrl": null,
@@ -583,9 +1000,14 @@
   },
   {
     "slug": "conception",
-    "categories": ["development"],
-    "butSkills": ["concevoir", "structurer"],
-    "color": "#1ABC9C",
+    "categories": [
+      "development"
+    ],
+    "butSkills": [
+      "concevoir",
+      "développer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Software design",
       "description": "",
@@ -615,9 +1037,16 @@
   },
   {
     "slug": "tank-game-ui-unity",
-    "categories": ["school", "game"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#7EC8E3",
+    "categories": [
+      "school",
+      "game"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Tank Game UI & Unity Gameplay Adaptation",
       "description": "This academic project takes a dual approach: UX/UI design and a technical understanding of video game development.",
@@ -625,7 +1054,12 @@
       "role": "I analyzed the existing game to identify its limitations in terms of interface and user experience. I then proposed a new coherent art direction, building a complete visual universe and designing all interface screens on Figma. In a second phase, I worked on reconstructing the gameplay in Unity, implementing movement, shooting mechanics and win conditions.",
       "selfEvaluation": "This project taught me to bridge the gap between design and implementation, making me aware of the impact of UX choices on actual development. I would have liked to push the 3D effects and Unity interactions further, but the dual scope of the project was very enriching.",
       "shortDescription": "Game UI redesign and gameplay reconstruction using Unity.",
-      "technologies": ["Figma", "Unity", "C#", "Game Design"],
+      "technologies": [
+        "Figma",
+        "Unity",
+        "C#",
+        "Game Design"
+      ],
       "features": [
         "Complete UI mockups including loading screen, menu, tank selection, gameplay HUD and victory screens",
         "Creation of a cohesive playful underwater art direction with custom visual components",
@@ -636,7 +1070,13 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
-      "screenshots": [ "projects/tank-accueil.png","/projects/jeu-tank-unity.png", "/projects/maquette-jeu tank.png", "projects/tank1.png", "projects/tank2.png"]
+      "screenshots": [
+        "projects/tank-accueil.png",
+        "/projects/jeu-tank-unity.png",
+        "/projects/maquette-jeu tank.png",
+        "projects/tank1.png",
+        "projects/tank2.png"
+      ]
     },
     "fr": {
       "title": "UI de jeu de tanks & adaptation gameplay sur Unity",
@@ -645,7 +1085,12 @@
       "role": "J'ai analysé le jeu existant afin d'identifier ses limites en termes d'interface et d'expérience utilisateur. J'ai ensuite proposé une nouvelle direction artistique cohérente, construit un univers visuel complet et conçu tous les écrans d'interface sur Figma. Dans un second temps, j'ai travaillé à la reconstitution du gameplay sous Unity, en implémentant les déplacements, les mécaniques de tir et les conditions de victoire.",
       "selfEvaluation": "Ce projet m'a appris à faire le lien entre conception et implémentation, en prenant conscience des impacts des choix UX sur le développement réel. J'aurais aimé pousser davantage les effets 3D et les interactions Unity, mais la double dimension du projet était très enrichissante.",
       "shortDescription": "Refonte UI d'un jeu et reconstruction du gameplay sur Unity.",
-      "technologies": ["Figma", "Unity", "C#", "Game Design"],
+      "technologies": [
+        "Figma",
+        "Unity",
+        "C#",
+        "Game Design"
+      ],
       "features": [
         "Conception de maquettes complètes : écran de chargement, menu, sélection de tank, HUD de jeu, pause et écrans de victoire",
         "Création d'une direction artistique originale et cohérente dans un univers sous-marin ludique",
@@ -656,13 +1101,26 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://www.figma.com/proto/1N5xs4yGBVIpSn6ULVhNhp/BATTLE_GAME_LANYERI?node-id=13-574&starting-point-node-id=13%3A574&t=kBUHjxtAKKN9Ub8o-1",
-      "screenshots": [ "projects/tank-accueil.png","/projects/jeu-tank-unity.png", "/projects/maquette-jeu tank.png", "projects/tank1.png", "projects/tank2.png"]
+      "screenshots": [
+        "projects/tank-accueil.png",
+        "/projects/jeu-tank-unity.png",
+        "/projects/maquette-jeu tank.png",
+        "projects/tank1.png",
+        "projects/tank2.png"
+      ]
     }
   },
   {
     "slug": "personal-portfolio",
-    "categories": ["web"],
-    "butSkills": ["exprimer", "concevoir"],
+    "categories": [
+      "web"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer",
+      "entreprendre"
+    ],
     "color": "#FF96B3",
     "en": {
       "title": "Developer Portfolio",
@@ -671,7 +1129,12 @@
       "role": "I designed and developed the entire portfolio from scratch: architecture, design system, animations, bilingual routing and dynamic project pages. I also handled the data structure via a JSON file to make content management easier.",
       "selfEvaluation": "This project is the one I keep improving the most. It evolves regularly and reflects my current level at any given moment. I would like to integrate more immersive interactions (3D, scroll animations) to push the experience further.",
       "shortDescription": "Personal portfolio built with Next.js.",
-      "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
       "features": [
         "Project case studies",
         "Bilingual interface (EN / FR)",
@@ -690,7 +1153,12 @@
       "role": "J'ai conçu et développé l'intégralité du portfolio from scratch : architecture, design system, animations, routing bilingue et pages projets dynamiques. J'ai également géré la structure des données via un fichier JSON pour faciliter la gestion du contenu.",
       "selfEvaluation": "C'est le projet que j'améliore le plus régulièrement. Il évolue au fil du temps et reflète mon niveau à chaque instant. J'aimerais intégrer davantage d'interactions immersives (3D, animations au scroll) pour pousser l'expérience encore plus loin.",
       "shortDescription": "Portfolio personnel développé avec Next.js.",
-      "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
       "features": [
         "Présentation détaillée des projets",
         "Interface bilingue",
@@ -705,53 +1173,85 @@
   },
   {
     "slug": "seo-content-strategy",
-    "categories": ["professional"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#FE8A5A",
+    "categories": [
+      "professional"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer",
+      "entreprendre"
+    ],
+    "color": "#FFC72C",
     "en": {
-      "title": "SEO & Content Strategy",
+      "title": "SEO & Content Strategy — Weproc",
       "description": "This project brings together my professional experience in SEO and content strategy, developed in a real-world business context.",
-      "context": "As part of my alternance, I worked on website development under WordPress, content integration, SEO optimization and interface design. I was also led to collaborate with different profiles (design, marketing, clients), which required me to adapt my communication and understand expressed needs.",
-      "role": "I worked on keyword research, writing optimized content, and implementing technical optimizations to improve organic search rankings. I also monitored performance using analytical tools and participated in presenting results to teams and clients.",
-      "selfEvaluation": "This experience represents an important step in my training as it confronted me with concrete professional situations. I gained in autonomy, rigor and adaptability. I think I can still improve my time management and deepen certain technical aspects to be more efficient and proactive.",
-      "shortDescription": "SEO strategy and web content optimization.",
-      "technologies": ["SEO", "Google Analytics", "WordPress", "Content Strategy"],
+      "context": "As part of my apprenticeship at Weproc, a significant share of my role is structuring the site's SEO and content strategy. The goal: rank Weproc on high-intent purchase keywords in the e-procurement space, and grow qualified traffic on technical topics (procurement, AI, automation, compliance). This trace zooms in on the strategic side of the role — the \"Apprenticeship\" trace covers the broader webmaster mission.",
+      "role": "I run full SEO audits (on-page technical, semantic, internal linking), identify high-potential keyword opportunities via Semrush, write optimised content and monitor its performance over time. I then present the results and recommendations to the marketing teams to inform editorial trade-offs.",
+      "selfEvaluation": "This mission is where I've grown the most in strategic posture — making data-backed arguments, accepting that a piece of content can take weeks to bear fruit, prioritising between quick wins and long-term investments. The improvement I see: building a structured KPI dashboard tracked over time, to make reporting clearer.",
+      "shortDescription": "Search optimisation and editorial strategy in a B2B context.",
+      "technologies": [
+        "Semrush",
+        "Google Search Console",
+        "Google Analytics 4",
+        "WordPress",
+        "Content Strategy",
+        "On-page SEO"
+      ],
       "features": [
-        "Keyword research and SEO strategy",
-        "Content writing and optimization",
-        "Technical SEO improvements",
-        "Performance monitoring",
-        "Client presentations and reporting"
+        "On-page technical and semantic SEO audits",
+        "Keyword research and prioritisation",
+        "Optimised content writing (articles, pillar pages)",
+        "On-page optimisation (tags, linking, structure)",
+        "Performance tracking and reporting to teams"
       ],
       "githubUrl": null,
-      "liveUrl": null,
-      "screenshots": []
+      "liveUrl": "https://www.weproc.com/blog",
+      "screenshots": [
+        "/projects/article_weproc.png"
+      ]
     },
     "fr": {
-      "title": "Stratégie SEO & contenu",
+      "title": "Stratégie SEO & contenu — Weproc",
       "description": "Ce projet regroupe mon expérience professionnelle en SEO et stratégie de contenu, développée dans un contexte réel en entreprise.",
-      "context": "Dans le cadre de mon alternance, j'intervenais sur le développement de sites sous WordPress, l'intégration de contenus, l'optimisation SEO et la conception d'interfaces. J'étais également amenée à collaborer avec différents profils (design, marketing, clients), ce qui m'obligeait à adapter ma communication et à comprendre les besoins exprimés.",
-      "role": "J'ai travaillé sur la recherche de mots-clés, la rédaction de contenus optimisés, ainsi que sur des optimisations techniques visant à améliorer le référencement naturel des sites. J'ai également suivi les performances à l'aide d'outils analytiques et participé à la restitution des résultats auprès des équipes ou des clients.",
-      "selfEvaluation": "Cette expérience représente une étape importante dans ma formation car elle me confronte à des situations professionnelles concrètes. J'ai gagné en autonomie, en rigueur et en capacité d'adaptation. Je pense pouvoir encore améliorer ma gestion du temps et approfondir certains aspects techniques pour être plus efficace et proactive dans les projets.",
-      "shortDescription": "Optimisation SEO et stratégie de contenu.",
-      "technologies": ["SEO", "Google Analytics", "WordPress", "Content Strategy"],
+      "context": "Au sein de mon alternance chez Weproc, une partie significative de mon poste consiste à structurer la stratégie SEO et contenu du site. L'objectif : positionner Weproc sur des mots-clés à forte intention d'achat dans l'univers e-procurement, et augmenter le trafic qualifié sur des thématiques techniques (achats, IA, automatisation, conformité). Cette trace zoome sur le volet stratégique du poste — la trace \"Alternance\" couvre la mission de webmastering global.",
+      "role": "Je conduis des audits SEO complets (technique on-page, sémantique, maillage interne), identifie des opportunités de mots-clés à fort potentiel via Semrush, rédige des contenus optimisés et suis leurs performances dans le temps. Je présente ensuite les résultats et recommandations aux équipes marketing pour piloter les arbitrages éditoriaux.",
+      "selfEvaluation": "C'est sur cette mission que j'ai le plus progressé en posture stratégique — argumenter avec des données, accepter qu'un contenu mette des semaines à porter ses fruits, prioriser entre quick wins et investissements long terme. La marge d'amélioration que je vois : monter un dashboard structuré de suivi des KPIs sur la durée pour gagner en lisibilité dans les restitutions.",
+      "shortDescription": "Optimisation du référencement et stratégie éditoriale dans un contexte B2B.",
+      "technologies": [
+        "Semrush",
+        "Google Search Console",
+        "Google Analytics 4",
+        "WordPress",
+        "Content Strategy",
+        "SEO on-page"
+      ],
       "features": [
-        "Recherche de mots-clés",
-        "Rédaction web optimisée",
-        "Optimisation technique SEO",
-        "Suivi des performances",
-        "Présentation des résultats"
+        "Audits SEO techniques et sémantiques",
+        "Recherche et priorisation de mots-clés",
+        "Rédaction web optimisée (articles, pages piliers)",
+        "Optimisation on-page (balises, maillage, structure)",
+        "Suivi de performance et restitution aux équipes"
       ],
       "githubUrl": null,
-      "liveUrl": null,
-      "screenshots": []
+      "liveUrl": "https://www.weproc.com/blog",
+      "screenshots": [
+        "/projects/article_weproc.png"
+      ]
     }
   },
   {
     "slug": "ampa-animal-adoption",
-    "categories": ["web","design"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#25cdd0",
+    "categories": [
+      "web",
+      "design"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Ampa — Animal Adoption Platform",
       "description": "A digital platform designed to simplify the adoption of animals from shelters.",
@@ -759,7 +1259,13 @@
       "role": "I handled the UX/UI design phase entirely: user research, moodboard, design system, wireframes and final mockups on Figma. I also started the development with Next.js, focusing on the responsive architecture and the animal search interface.",
       "selfEvaluation": "This project is a key element of my portfolio as it combines UX/UI design, branding and development with a user-centered approach. I would like to continue developing it to reach a functional prototype that could be tested with real users.",
       "shortDescription": "UX/UI and web platform to improve animal adoption processes.",
-      "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
+      "technologies": [
+        "Figma",
+        "Next.js",
+        "React",
+        "Tailwind",
+        "Node.js"
+      ],
       "features": [
         "Animal search with filters (species, age, location)",
         "Detailed animal profiles with photos and health info",
@@ -778,7 +1284,13 @@
       "role": "J'ai pris en charge l'intégralité de la phase UX/UI design : recherche utilisateur, moodboard, design system, wireframes et maquettes finales sur Figma. J'ai également démarré le développement avec Next.js, en me concentrant sur l'architecture responsive et l'interface de recherche des animaux.",
       "selfEvaluation": "Ce projet est un élément clé de mon portfolio car il combine conception UX/UI, branding et développement avec une approche centrée utilisateur. J'aimerais continuer à le développer pour aboutir à un prototype fonctionnel testable avec de vrais utilisateurs.",
       "shortDescription": "Plateforme web UX/UI pour améliorer l'adoption d'animaux.",
-      "technologies": ["Figma", "Next.js", "React", "Tailwind", "Node.js"],
+      "technologies": [
+        "Figma",
+        "Next.js",
+        "React",
+        "Tailwind",
+        "Node.js"
+      ],
       "features": [
         "Recherche d'animaux avec filtres",
         "Fiches détaillées des animaux",
@@ -793,9 +1305,16 @@
   },
   {
     "slug": "inflation-dataviz",
-    "categories": ["school","data"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#FFC72C",
+    "categories": [
+      "school",
+      "data"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer"
+    ],
+    "color": "#FFA755",
     "en": {
       "title": "Inflation Data Visualization",
       "description": "This data journalism project aimed to make a complex economic phenomenon understandable: the impact of inflation on food consumption.",
@@ -803,7 +1322,11 @@
       "role": "I participated in writing the journalistic text for the poster and in creating visuals, both photographically and through graphic tools. For the video, I selected the data and worked on the animated illustration in After Effects. I was also responsible for the graphic and narrative consistency between the poster and the video.",
       "selfEvaluation": "This project allowed me to combine skills in journalism, graphic design, and data analysis. I became aware of the importance of adapting visual treatment to the target audience and developed my visual storytelling skills. In hindsight, I could have better anticipated the technical constraints of motion design to achieve smoother animation.",
       "shortDescription": "Data journalism project with infographic and motion design.",
-      "technologies": ["After Effects", "Illustration", "Data Visualization"],
+      "technologies": [
+        "After Effects",
+        "Illustration",
+        "Data Visualization"
+      ],
       "features": [
         "Journalistic infographic poster",
         "Data storytelling",
@@ -812,7 +1335,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/Affiche_Datavisualisation.png"]
+      "screenshots": [
+        "/projects/Affiche_Datavisualisation.png"
+      ]
     },
     "fr": {
       "title": "Datavisualisation de l'inflation",
@@ -821,7 +1346,11 @@
       "role": "J'ai participé à la rédaction du texte journalistique de l'affiche ainsi qu'à la création de visuels, que ce soit en photo ou via des outils graphiques. Pour la vidéo, j'ai sélectionné les données et travaillé sur l'illustration animée dans After Effects. J'ai aussi été responsable de la cohérence graphique et narrative entre l'affiche et la vidéo.",
       "selfEvaluation": "Ce projet m'a permis d'allier des compétences en journalisme, graphisme, et analyse de données. J'ai pris conscience de l'importance d'adapter le traitement visuel à l'audience cible et j'ai développé mes compétences en storytelling visuel. Avec le recul, j'aurais pu mieux anticiper les contraintes techniques du motion design pour gagner en fluidité dans l'animation.",
       "shortDescription": "Projet de datavisualisation journalistique.",
-      "technologies": ["After Effects", "Illustration", "Data Visualization"],
+      "technologies": [
+        "After Effects",
+        "Illustration",
+        "Data Visualization"
+      ],
       "features": [
         "Affiche journalistique",
         "Storytelling par les données",
@@ -830,14 +1359,22 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/Affiche_Datavisualisation.png"]
+      "screenshots": [
+        "/projects/Affiche_Datavisualisation.png"
+      ]
     }
   },
   {
     "slug": "crossy-road-ux-powerups",
-    "categories": ["school","uxui"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#FFD54F",
+    "categories": [
+      "school",
+      "uxui"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir"
+    ],
+    "color": "#FFA755",
     "en": {
       "title": "Crossy Road UX Power-ups",
       "description": "This project involves imagining new gameplay mechanics for Crossy Road, respecting the existing game logic while introducing new elements.",
@@ -845,7 +1382,10 @@
       "role": "I imagined the power-up concept, created the associated gameplay sketches. I also designed the slides to make my proposal as impactful as possible. I tested the game extensively in its different modes, characters and scenarios, then reflected on what my power-ups would look like, how to collect and activate them in ways that fit the game's existing habits. I used the UX Gaming course to ensure I wasn't disrupting the gameplay experience. I also created sprints to understand the character movement that would need to be developed.",
       "selfEvaluation": "This project made me work on a more playful target audience, which was very enriching. The format constraint (express pitch) taught me to get to the point, but I would have liked to add a clickable prototype to better illustrate my vision beyond the static images (even if the sprint helped).",
       "shortDescription": "UX concept for new game mechanics.",
-      "technologies": ["UX Design", "Game Design"],
+      "technologies": [
+        "UX Design",
+        "Game Design"
+      ],
       "features": [
         "New gameplay power-up concept",
         "Gameplay sketches and flow",
@@ -854,7 +1394,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://www.behance.net/gallery/246239095/Crossy-Road-ajout-de-super-pouvoirs",
-      "screenshots": ["/projects/crossy.png"]
+      "screenshots": [
+        "/projects/crossy.png"
+      ]
     },
     "fr": {
       "title": "Super-pouvoirs pour Crossy Road",
@@ -863,7 +1405,10 @@
       "role": "J'ai imaginé le concept du super-pouvoir, réalisé les croquis de gameplay associés. J'ai également conçu les slides pour rendre ma proposition la plus percutante possible. J'ai testé le jeu, les différents modes, personnages, scénarios, puis réfléchi à ce que prendraient mes super-pouvoirs, le moyen de les collecter et les activer en correspondant bien aux habitudes de ce jeu. J'ai réutilisé le cours d'UX Gaming pour vérifier que je ne perturbais pas l'expérience de jeu. Il a aussi fallu créer des sprints pour comprendre le mouvement du personnage qui devra être développé.",
       "selfEvaluation": "Ce projet m'a fait travailler sur une cible plus ludique, ce qui a été très enrichissant. La contrainte de format (appel d'offre express) m'a appris à aller à l'essentiel, mais j'aurais aimé ajouter un prototype cliquable pour mieux illustrer ma vision en dehors des images statiques (même si le sprint a aidé).",
       "shortDescription": "Concept UX pour un jeu mobile.",
-      "technologies": ["UX Design", "Game Design"],
+      "technologies": [
+        "UX Design",
+        "Game Design"
+      ],
       "features": [
         "Concept de gameplay",
         "Croquis d'interactions",
@@ -872,14 +1417,23 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://www.behance.net/gallery/246239095/Crossy-Road-ajout-de-super-pouvoirs",
-      "screenshots": ["/projects/crossy.png"]
+      "screenshots": [
+        "/projects/crossy.png"
+      ]
     }
   },
   {
     "slug": "weather-app-design",
-    "categories": ["school","uxui","design"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#64B5F6",
+    "categories": [
+      "school",
+      "uxui",
+      "design"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Weather App UX/UI Design",
       "description": "This UX/UI design project aimed to redesign a weather application by improving the hierarchy of information and the clarity of the interface.",
@@ -887,7 +1441,11 @@
       "role": "After consulting existing apps, I designed a moodboard and defined the app's graphic charter from it. I then listed the required elements for a weather app and the additional features I could add. I designed the main screens on Figma, created micro-animations for weather states (rain, sun, etc.) and an hour-by-hour view designed as a clickable clock. I also presented the application through a short promotional explainer video.",
       "selfEvaluation": "This experience helped me strengthen my UI skills and learn to visually prioritize weather information. Although I could have applied myself more on the aesthetics of certain elements (correct typography, finishing illustrations), I learned a lot about visual accessibility and how to create components and animations in Figma.",
       "shortDescription": "Weather app UX/UI redesign.",
-      "technologies": ["Figma", "UX Design", "UI Animation"],
+      "technologies": [
+        "Figma",
+        "UX Design",
+        "UI Animation"
+      ],
       "features": [
         "Complete weather app interface",
         "Design system and visual identity",
@@ -896,7 +1454,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/meteo.png"]
+      "screenshots": [
+        "/projects/meteo.png"
+      ]
     },
     "fr": {
       "title": "Application météo UX/UI",
@@ -905,7 +1465,11 @@
       "role": "Après avoir consulté ce qui se faisait déjà, j'ai conçu un premier moodboard et défini grâce à cela la charte graphique de l'application. Puis j'ai listé les éléments obligatoires à une application météo et les autres fonctionnalités que je pourrais ajouter. Ensuite seulement, je me suis occupée de concevoir les écrans principaux sur Figma et réalisé des micro-animations pour les états météo (pluie, soleil, etc.), et l'heure par heure que j'ai conçu comme une horloge cliquable. J'ai également présenté l'application par une petite publicité / explainer vidéo.",
       "selfEvaluation": "Cette expérience m'a permis de renforcer mes compétences UI et d'apprendre à hiérarchiser visuellement l'information météo. Bien que j'aurais pu m'appliquer un peu plus sur l'esthétique des éléments (application des bonnes typographies, bien terminer les dessins etc), j'ai beaucoup appris sur l'accessibilité visuelle et la façon de créer des composants et des animations sur Figma.",
       "shortDescription": "Maquettes UX/UI d'une application météo.",
-      "technologies": ["Figma", "UX Design", "UI Animation"],
+      "technologies": [
+        "Figma",
+        "UX Design",
+        "UI Animation"
+      ],
       "features": [
         "Maquettes complètes d'application",
         "Charte graphique",
@@ -914,14 +1478,23 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/meteo.png"]
+      "screenshots": [
+        "/projects/meteo.png"
+      ]
     }
   },
   {
     "slug": "virtual-travel-chair",
-    "categories": ["school","hackathon"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#8A6F9B",
+    "categories": [
+      "school",
+      "hackathon"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer"
+    ],
+    "color": "#7B638A",
     "en": {
       "title": "Virtual Travel Chair",
       "description": "This design project explores the creation of an innovative object intended to enhance the virtual reality experience.",
@@ -929,7 +1502,11 @@
       "role": "In this project, I took charge of the pitch section concerning the application potential, distribution methods and communication strategies. My role was to analyze the different outlets for our innovative object, define the most appropriate distribution channels, and present the communication methods we considered most effective to promote our product.",
       "selfEvaluation": "This experience allowed me to put my knowledge of communication strategy and marketing into practice. However, I think I could have deepened my research on market trends and consumer needs to refine our strategies. With semester 2 knowledge, I could have better used data analysis tools to make more informed decisions about our product's business model.",
       "shortDescription": "Concept design of a VR-enhanced chair.",
-      "technologies": ["Concept Design", "Product Design", "Business Model"],
+      "technologies": [
+        "Concept Design",
+        "Product Design",
+        "Business Model"
+      ],
       "features": [
         "Concept for a VR-compatible chair",
         "Product positioning and distribution strategy",
@@ -938,7 +1515,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/vr-chair.png"]
+      "screenshots": [
+        "/projects/vr-chair.png"
+      ]
     },
     "fr": {
       "title": "Virtual Travel Chair",
@@ -947,7 +1526,11 @@
       "role": "Dans ce projet, j'ai pris en charge la partie du pitch concernant le potentiel d'application, les moyens de distribution et les stratégies de communication. Mon rôle était d'analyser les différents débouchés pour notre objet innovant, de définir les canaux de distribution les plus appropriés, et de présenter les moyens de communication nous paraissant les plus efficaces pour promouvoir notre produit.",
       "selfEvaluation": "Cette expérience m'a permis de mettre en pratique mes connaissances en stratégie de communication et marketing. Cependant, je pense que j'aurais pu approfondir mes recherches sur les tendances du marché et les besoins des consommateurs pour affiner nos stratégies. Avec les connaissances du semestre 2, j'aurais pu mieux utiliser les outils d'analyse de données pour prendre des décisions plus éclairées concernant le business model de notre produit.",
       "shortDescription": "Concept de chaise immersive pour la VR.",
-      "technologies": ["Concept Design", "Product Design", "Business Model"],
+      "technologies": [
+        "Concept Design",
+        "Product Design",
+        "Business Model"
+      ],
       "features": [
         "Conception d'un objet VR innovant",
         "Étude des applications et débouchés",
@@ -956,14 +1539,23 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/vr-chair.png"]
+      "screenshots": [
+        "/projects/vr-chair.png"
+      ]
     }
   },
   {
     "slug": "mmi-decouvertes",
-    "categories": ["school","web"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#D0A8BC",
+    "categories": [
+      "school",
+      "web"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer"
+    ],
+    "color": "#FF96B3",
     "en": {
       "title": "MMI Découvertes Website",
       "description": "This project represents my first concrete experience in web development, undertaken at the beginning of my Multimedia and Internet Technology (MMI) degree.",
@@ -971,7 +1563,10 @@
       "role": "I was responsible for the 'Options' tab and the English version of the website, as well as the Contact page that my classmate had not completed. I handled the integration of the interactive map for the travel location on the form of that page.",
       "selfEvaluation": "With my S2 knowledge, I could have managed flexbox better, for example. The responsiveness of our pages would also have been better. But I think my work was suited to what was expected for a first-year S1 student.",
       "shortDescription": "First web project: travel agency website built with HTML and CSS.",
-      "technologies": ["HTML", "CSS"],
+      "technologies": [
+        "HTML",
+        "CSS"
+      ],
       "features": [
         "Travel destinations and offers pages",
         "Interactive contact page with embedded map",
@@ -980,7 +1575,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/mmi-decouvertes.png"]
+      "screenshots": [
+        "/projects/mmi-decouvertes.png"
+      ]
     },
     "fr": {
       "title": "Site web MMI Découvertes",
@@ -989,7 +1586,10 @@
       "role": "J'étais responsable de l'onglet « Options » et de la version anglaise du site web, ainsi que de la page Contact que mon camarade n'avait pas achevée. Je me suis occupée de l'intégration de la carte interactive pour le lieu de voyage sur le formulaire de cette page.",
       "selfEvaluation": "Avec mes connaissances du S2, j'aurais pu mieux gérer les flexbox par exemple. La responsivité de nos pages aurait été meilleure aussi. Mais je pense que mon travail était adapté à ce qui était demandé pour une première année S1.",
       "shortDescription": "Premier site web réalisé en HTML et CSS.",
-      "technologies": ["HTML", "CSS"],
+      "technologies": [
+        "HTML",
+        "CSS"
+      ],
       "features": [
         "Pages destinations et offres",
         "Formulaire de contact avec carte interactive",
@@ -998,14 +1598,23 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/mmi-decouvertes.png"]
+      "screenshots": [
+        "/projects/mmi-decouvertes.png"
+      ]
     }
   },
   {
     "slug": "1ris-agency-website",
-    "categories": ["school","web"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#C58AFF",
+    "categories": [
+      "school",
+      "web"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer",
+      "développer"
+    ],
+    "color": "#7B638A",
     "en": {
       "title": "1ris Communication Agency Website",
       "description": "This collaborative project aimed to simulate the creation of a website for a communications agency.",
@@ -1013,7 +1622,11 @@
       "role": "I handled integrating the missing styles to match the mockups as closely as possible. I was responsible for implementing an English version and a dark mode using HTML, CSS and JavaScript. I also wrote the blog articles and team member presentation texts. My work was to ensure every aspect of the site faithfully reflected our initial vision and was accessible to an English-speaking audience, while also ensuring that the features I added persisted when navigating between pages. I participated in hosting the pages progressively.",
       "selfEvaluation": "Unlike semester 1, I was able to manage flexbox for styling and use media queries for better responsiveness. Mastering JavaScript allowed me to add interactive features to the site, improving the user experience. I also learned a proper way to implement the English version of the site. This helped me develop localization and adapted writing skills. I am proud of this project as it clearly shows my progress in integration, web development and content management since semester 1.",
       "shortDescription": "Agency website built with responsive design and JavaScript features.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "features": [
         "Responsive layout with Flexbox and media queries",
         "Dark mode implementation",
@@ -1022,7 +1635,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/agence-1ris-site.png"]
+      "screenshots": [
+        "/projects/agence-1ris-site.png"
+      ]
     },
     "fr": {
       "title": "Site de l'agence 1ris",
@@ -1031,7 +1646,11 @@
       "role": "Je me suis occupée d'intégrer le style manquant pour correspondre au maximum aux maquettes. J'étais chargée de mettre en place une version anglaise et un mode sombre avec HTML, CSS et JavaScript. J'ai également rédigé les articles de blog et les textes de présentation des membres de l'équipe. Mon travail consistait à m'assurer que chaque aspect du site reflète fidèlement notre vision initiale et soit accessible à un public anglophone, mais aussi que les fonctionnalités que j'ai ajoutées se conservent lorsque l'on passe d'une page à l'autre. J'ai participé à l'hébergement des pages au fur et à mesure.",
       "selfEvaluation": "Contrairement au semestre 1, j'ai été capable de gérer les flexbox pour le style et d'utiliser des media queries pour une meilleure responsivité. La maîtrise de JavaScript m'a permis d'ajouter des fonctionnalités interactives au site, améliorant ainsi l'expérience utilisateur. De plus, j'ai appris une manière correcte de réaliser la version anglaise du site. Cela m'a aidé à développer des compétences en localisation et en rédaction adaptée. Je suis fière de ce projet car il montre bien mes progrès en intégration, développement web et en gestion de contenu depuis le semestre 1.",
       "shortDescription": "Site d'agence avec responsivité et fonctionnalités JavaScript.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "features": [
         "Design responsive avec Flexbox et media queries",
         "Mode sombre",
@@ -1040,14 +1659,22 @@
       ],
       "githubUrl": "",
       "liveUrl": "",
-      "screenshots": ["/projects/agence-1ris-site.png"]
+      "screenshots": [
+        "/projects/agence-1ris-site.png"
+      ]
     }
   },
   {
     "slug": "porquerolles-digital-watch",
-    "categories": ["school"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#4DB6AC",
+    "categories": [
+      "school"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Porquerolles Festival Digital Strategy",
       "description": "This project involved developing a digital communication strategy for the Porquerolles Film Festival.",
@@ -1055,7 +1682,11 @@
       "role": "I was responsible for designing the communication strategy for TikTok and Twitter social networks, in order to target young people for the 'Ecotubeurs'. My work consisted in developing content ideas and proposing strategic orientations to maximize the impact of their online presence.",
       "selfEvaluation": "Thanks to the knowledge acquired in semester 2, I was able to develop effective strategies to promote the festival on TikTok, with a focus on target audiences, particularly environmentally conscious young people. This project helped me understand the importance of communication adapted to each platform to reach our specific audience and apply my theoretical skills to a real case. I was then able to apply this experience to the following project.",
       "shortDescription": "Digital communication strategy for a film festival.",
-      "technologies": ["Digital Strategy", "Social Media", "Communication Audit"],
+      "technologies": [
+        "Digital Strategy",
+        "Social Media",
+        "Communication Audit"
+      ],
       "features": [
         "Competitive digital analysis",
         "Social media strategy for TikTok and Twitter",
@@ -1064,7 +1695,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/porquerolles-festival.png"]
+      "screenshots": [
+        "/projects/porquerolles-festival.png"
+      ]
     },
     "fr": {
       "title": "Veille numérique – Festival de Porquerolles",
@@ -1073,7 +1706,11 @@
       "role": "J'étais chargée de concevoir la stratégie de communication pour les réseaux sociaux TikTok et Twitter, afin de cibler les jeunes pour les « Ecotubeurs ». Mon travail consistait à développer des idées de contenu et à proposer des orientations stratégiques pour maximiser l'impact de leur présence en ligne.",
       "selfEvaluation": "Grâce à mes connaissances acquises au semestre 2, j'ai pu élaborer des stratégies efficaces pour promouvoir le festival sur TikTok, en mettant l'accent sur les publics cibles, notamment les jeunes soucieux de l'environnement. Ce projet m'a permis de comprendre l'importance d'une communication adaptée à chaque plateforme pour toucher notre audience spécifique et d'appliquer mes compétences théoriques à un cas réel. J'ai ensuite pu appliquer cela pour la trace suivante.",
       "shortDescription": "Stratégie digitale pour un festival de cinéma.",
-      "technologies": ["Stratégie Digitale", "Réseaux Sociaux", "Audit"],
+      "technologies": [
+        "Stratégie Digitale",
+        "Réseaux Sociaux",
+        "Audit"
+      ],
       "features": [
         "Analyse concurrentielle",
         "Stratégie TikTok et Twitter",
@@ -1082,14 +1719,20 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/porquerolles-festival.png"]
+      "screenshots": [
+        "/projects/porquerolles-festival.png"
+      ]
     }
   },
   {
     "slug": "merry-cashmas-reportage",
-    "categories": ["school"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#FF7043",
+    "categories": [
+      "school"
+    ],
+    "butSkills": [
+      "exprimer"
+    ],
+    "color": "#FF8A65",
     "en": {
       "title": "Merry Cashmas Reportage",
       "description": "This video reportage project addresses the theme of commercial Christmas through a critical and narrative approach.",
@@ -1097,7 +1740,11 @@
       "role": "I handled the filming: I set up the equipment and filmed our small interview, paying attention to people's movements and surrounding noises. I then carried out the editing. I had to learn to modulate sound and new Premiere Pro features to create fades between shots, add background music and reduce noise. I also came up with the wordplay and title of our video ('Merry Cashmas!').",
       "selfEvaluation": "With my S2 knowledge, I would be able to improve the video visually so that certain shots look less 'cut' (by improving transitions). I would remove the 'Konbini' name under the logo, as it sometimes covers elements. I would also modify the questions asked and slightly lengthen their on-screen time, for better comprehension by viewers.",
       "shortDescription": "Video reportage about consumerism during Christmas.",
-      "technologies": ["DSLR Filming", "Premiere Pro", "Video Editing"],
+      "technologies": [
+        "DSLR Filming",
+        "Premiere Pro",
+        "Video Editing"
+      ],
       "features": [
         "Interview filming",
         "Video editing and sound mixing",
@@ -1106,7 +1753,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/konbini.png"]
+      "screenshots": [
+        "/projects/konbini.png"
+      ]
     },
     "fr": {
       "title": "Reportage vidéo Merry Cashmas",
@@ -1115,7 +1764,10 @@
       "role": "Je m'occupais du tournage : je me suis chargée de régler le matériel puis filmer notre petite interview en prêtant attention aux mouvements des personnes et aux bruits alentours. Ensuite, c'est moi qui ai réalisé le montage. J'ai dû apprendre à moduler le son et de nouvelles fonctionnalités de Premiere Pro, afin de faire des fondus sur les plans, rajouter une musique de fond et baisser le bruit entre autres. C'est aussi moi qui ai trouvé le jeu de mot et titre de notre vidéo (« Merry Cashmas ! »).",
       "selfEvaluation": "Avec mes connaissances du S2, je serais en capacité d'améliorer la vidéo visuellement afin que certains plans paraissent moins « coupés » (en améliorant les transitions). Je retirerais le nom « Konbini », en dessous du logo, car cela cache parfois des éléments. Je modifierais aussi les questions posées et rallongerais légèrement leur temps d'apparition, pour une meilleure compréhension par les personnes visionnant la vidéo.",
       "shortDescription": "Reportage vidéo sur la consommation à Noël.",
-      "technologies": ["Tournage DSLR", "Premiere Pro"],
+      "technologies": [
+        "Tournage DSLR",
+        "Premiere Pro"
+      ],
       "features": [
         "Tournage d'interview",
         "Montage vidéo et mixage audio",
@@ -1124,14 +1776,21 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/konbini.png"]
+      "screenshots": [
+        "/projects/konbini.png"
+      ]
     }
   },
   {
     "slug": "mmi-30-years-communication",
-    "categories": ["school"],
-    "butSkills": ["exprimer", "concevoir"],
-    "color": "#BA68C8",
+    "categories": [
+      "school"
+    ],
+    "butSkills": [
+      "concevoir",
+      "exprimer"
+    ],
+    "color": "#7B638A",
     "en": {
       "title": "MMI 30 Years Communication Project",
       "description": "This project is part of the communication surrounding the 30th anniversary of the MMI training program.",
@@ -1139,7 +1798,11 @@
       "role": "For this project, I wrote an article on the evolution of admission criteria in the MMI program (formerly SRC) over these 30 years. I conducted research and gathered testimonials from professors and former students to enrich the article. In addition, I designed a chronological timeline respecting the event's graphic charter to illustrate the major milestones in the evolution of entry criteria.",
       "selfEvaluation": "I learned to better structure my writing to make it informative while remaining accessible. Creating the timeline also allowed me to improve my graphic design skills and adherence to visual guidelines. It was an opportunity to hear the perspectives of our teachers and see what former MMI students have become. This gave me an enriching perspective on the history of my training and prepared me to respond to real and varied briefs.",
       "shortDescription": "Editorial and visual communication for MMI anniversary.",
-      "technologies": ["InDesign", "Editorial Writing", "Graphic Design"],
+      "technologies": [
+        "InDesign",
+        "Editorial Writing",
+        "Graphic Design"
+      ],
       "features": [
         "Editorial article on program evolution",
         "Historical timeline design",
@@ -1147,7 +1810,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/30-ans-mmi.png"]
+      "screenshots": [
+        "/projects/30-ans-mmi.png"
+      ]
     },
     "fr": {
       "title": "Communication – 30 ans MMI",
@@ -1156,7 +1821,11 @@
       "role": "Pour ce projet, j'ai rédigé un article traitant de l'évolution des critères d'acceptation dans la formation MMI (anciennement SRC) au fil de ces 30 années. J'ai mené des recherches et recueilli des témoignages de professeurs et anciens étudiants pour enrichir l'article. En complément, j'ai conçu une frise chronologique respectant la charte graphique de l'événement afin d'illustrer les grandes étapes des changements de critères d'entrée.",
       "selfEvaluation": "J'ai appris à mieux structurer mes écrits pour les rendre informatifs tout en restant accessibles. La création de la frise m'a également permis de m'améliorer dans la mise en forme graphique et le respect de lignes directrices visuelles. Ce fut l'occasion d'écouter les points de vue de nos enseignants, et voir ce que sont devenus les anciens MMI. Cela m'a offert une perspective enrichissante sur l'histoire de ma formation et m'a préparée à répondre à des briefs réels et variés.",
       "shortDescription": "Article et frise chronologique pour les 30 ans MMI.",
-      "technologies": ["InDesign", "Rédaction", "Graphisme"],
+      "technologies": [
+        "InDesign",
+        "Rédaction",
+        "Graphisme"
+      ],
       "features": [
         "Rédaction d'un article",
         "Recherche et témoignages",
@@ -1164,14 +1833,23 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/30-ans-mmi.png"]
+      "screenshots": [
+        "/projects/30-ans-mmi.png"
+      ]
     }
   },
   {
     "slug": "scrum-learning-platform",
-    "categories": ["school","web"],
-    "butSkills": ["comprendre", "exprimer"],
-    "color": "#81C784",
+    "categories": [
+      "school",
+      "web"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Scrum Learning Website",
       "description": "This educational project aims to make the Scrum method accessible through an interactive website.",
@@ -1179,7 +1857,11 @@
       "role": "I participated in the site's architecture, designed some content pages (including the one on Scrum roles) and helped make the navigation more intuitive. I also ensured visual consistency and text readability, adapting the style to the educational web format. I also designed a mind map summarizing the course, as well as writing the practice and evaluation MCQs.",
       "selfEvaluation": "Even though the site is technically simple, it allowed me to apply my theoretical knowledge of Scrum while consolidating my front-end foundations. In hindsight, I think I could have made the user experience more dynamic (animations, interactions) if I had had the tools learned in S4.",
       "shortDescription": "Interactive educational website about Scrum.",
-      "technologies": ["PHP", "HTML", "CSS"],
+      "technologies": [
+        "PHP",
+        "HTML",
+        "CSS"
+      ],
       "features": [
         "Scrum methodology explanation pages",
         "Interactive quizzes",
@@ -1188,7 +1870,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/scrum.png"]
+      "screenshots": [
+        "/projects/scrum.png"
+      ]
     },
     "fr": {
       "title": "Site pédagogique Scrum",
@@ -1197,7 +1881,11 @@
       "role": "J'ai participé à l'architecture du site, conçu certaines pages de contenu (dont celle sur les rôles Scrum) et aidé à rendre la navigation plus intuitive. J'ai aussi veillé à la cohérence visuelle et à la lisibilité du texte, en adaptant le style au format web éducatif. Je me suis aussi occupée de concevoir une carte mentale résumant ce cours, ainsi que la rédaction des QCM d'entraînements et d'évaluation.",
       "selfEvaluation": "Même si le site est techniquement simple, il m'a permis d'appliquer mes connaissances théoriques sur Scrum tout en consolidant mes bases en front-end. Avec le recul, je pense que j'aurais pu rendre l'expérience utilisateur plus dynamique (animations, interactions) si j'avais eu les outils appris au S4.",
       "shortDescription": "Site pédagogique sur la méthode Scrum.",
-      "technologies": ["PHP", "HTML", "CSS"],
+      "technologies": [
+        "PHP",
+        "HTML",
+        "CSS"
+      ],
       "features": [
         "Pages explicatives Scrum",
         "QCM d'entraînement",
@@ -1206,13 +1894,20 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/scrum.png"]
+      "screenshots": [
+        "/projects/scrum.png"
+      ]
     }
   },
   {
     "slug": "logo-jingle-animation",
-    "categories": ["school","design"],
-    "butSkills": ["exprimer", "concevoir"],
+    "categories": [
+      "school",
+      "design"
+    ],
+    "butSkills": [
+      "exprimer"
+    ],
     "color": "#FF8A65",
     "en": {
       "title": "Logo Jingle Animation",
@@ -1221,7 +1916,10 @@
       "role": "I designed the logo animation, synchronized the visual effects with the sound, and applied dynamic transitions. I used Blender for the animation and Premiere Pro to finalize the whole piece.",
       "selfEvaluation": "This production taught me the basics of motion design and helped me develop a sensitivity to image/sound rhythm. The result was satisfying, even though I would have liked to deepen the 3D effects and textures further.",
       "shortDescription": "Animated logo jingle using Blender.",
-      "technologies": ["Blender", "Premiere Pro"],
+      "technologies": [
+        "Blender",
+        "Premiere Pro"
+      ],
       "features": [
         "3D logo animation",
         "Visual effects synchronization",
@@ -1230,7 +1928,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/jingle.png"]
+      "screenshots": [
+        "/projects/jingle.png"
+      ]
     },
     "fr": {
       "title": "Jingle animé de logo",
@@ -1239,7 +1939,10 @@
       "role": "Je me suis chargée de concevoir l'animation du logo, de synchroniser les effets visuels au son et d'appliquer des transitions dynamiques. J'ai utilisé Blender pour l'animation et Premiere Pro pour finaliser l'ensemble.",
       "selfEvaluation": "Cette production m'a permis d'apprendre les bases du motion design et de développer une sensibilité au rythme image/son. Le rendu était satisfaisant, même si j'aurais aimé approfondir davantage les effets 3D et les textures.",
       "shortDescription": "Animation de logo en motion design.",
-      "technologies": ["Blender", "Premiere Pro"],
+      "technologies": [
+        "Blender",
+        "Premiere Pro"
+      ],
       "features": [
         "Animation 3D du logo",
         "Transitions visuelles dynamiques",
@@ -1248,14 +1951,23 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/jingle.png"]
+      "screenshots": [
+        "/projects/jingle.png"
+      ]
     }
   },
   {
     "slug": "mmi-lan-event",
-    "categories": ["school","professional"],
-    "butSkills": ["entreprendre", "comprendre"],
-    "color": "#9575CD",
+    "categories": [
+      "school",
+      "professional"
+    ],
+    "butSkills": [
+      "comprendre",
+      "exprimer",
+      "entreprendre"
+    ],
+    "color": "#7B638A",
     "en": {
       "title": "MMI LAN Event Organization",
       "description": "Participation in the organization and communication of the MMI LAN gaming event.",
@@ -1263,7 +1975,11 @@
       "role": "I contributed to creating visuals (mockups, posts), managing the event's email campaign, and officiating as a referee on the day of the event. I also proposed ideas for interactions with participants to strengthen the community atmosphere.",
       "selfEvaluation": "This project allowed me to discover event management in a semi-professional setting. I learned to adapt to unexpected situations, communicate effectively in a group, and maintain visual consistency across multiple media.",
       "shortDescription": "Student gaming event organization and communication.",
-      "technologies": ["Event Communication", "Social Media", "Email Marketing"],
+      "technologies": [
+        "Event Communication",
+        "Social Media",
+        "Email Marketing"
+      ],
       "features": [
         "Event communication strategy",
         "Email campaign creation",
@@ -1272,7 +1988,11 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/mmi-lan-2.png","/projects/site-lan.png","/projects/mmi-lan-3.png"]
+      "screenshots": [
+        "/projects/mmi-lan-2.png",
+        "/projects/site-lan.png",
+        "/projects/mmi-lan-3.png"
+      ]
     },
     "fr": {
       "title": "Organisation de la MMI LAN",
@@ -1281,7 +2001,11 @@
       "role": "J'ai contribué à la création des visuels (maquettes, posts), à la gestion de l'emailing de l'événement, ainsi qu'à l'arbitrage le jour J. J'ai également proposé des idées d'interactions avec les participants pour renforcer l'ambiance communautaire.",
       "selfEvaluation": "Ce projet m'a permis de découvrir la gestion événementielle dans un cadre semi-professionnel. J'ai appris à m'adapter aux imprévus, à communiquer efficacement en groupe, et à garder une cohérence visuelle sur plusieurs supports.",
       "shortDescription": "Organisation et communication événementielle.",
-      "technologies": ["Communication événementielle", "Emailing", "Réseaux sociaux"],
+      "technologies": [
+        "Communication événementielle",
+        "Emailing",
+        "Réseaux sociaux"
+      ],
       "features": [
         "Communication de l'événement",
         "Création d'emailing",
@@ -1290,14 +2014,25 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/mmi-lan-2.png", "/projects/site-lan.png","/projects/mmi-lan-3.png"]
+      "screenshots": [
+        "/projects/mmi-lan-2.png",
+        "/projects/site-lan.png",
+        "/projects/mmi-lan-3.png"
+      ]
     }
   },
   {
     "slug": "website-competitive-audit",
-    "categories": ["school","professional","web"],
-    "butSkills": ["entreprendre", "comprendre"],
-    "color": "#90A4AE",
+    "categories": [
+      "school",
+      "professional",
+      "web"
+    ],
+    "butSkills": [
+      "comprendre",
+      "entreprendre"
+    ],
+    "color": "#C9A9DC",
     "en": {
       "title": "Website Competitive Audit",
       "description": "Competitive analysis of digital platforms during an internship to support communication strategy decisions.",
@@ -1305,7 +2040,11 @@
       "role": "I analyzed several competitor sites according to different criteria (SEO, ergonomics, accessibility, performance) and synthesized these audits into an internal deliverable. I then contributed to writing a communication plan based on these findings.",
       "selfEvaluation": "This mission allowed me to put my analytical skills into practice in a professional context. I learned to justify concrete strategic choices. If I had had more time, I would have proposed a more in-depth comparative benchmarking.",
       "shortDescription": "Competitive website analysis.",
-      "technologies": ["SEO Analysis", "UX Audit", "Performance Analysis"],
+      "technologies": [
+        "SEO Analysis",
+        "UX Audit",
+        "Performance Analysis"
+      ],
       "features": [
         "Competitive website review",
         "SEO and UX analysis",
@@ -1314,7 +2053,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/stage3.png"]
+      "screenshots": [
+        "/projects/stage3.png"
+      ]
     },
     "fr": {
       "title": "Audit concurrentiel de sites web",
@@ -1323,7 +2064,11 @@
       "role": "J'ai analysé plusieurs sites concurrents selon différents critères (SEO, ergonomie, accessibilité, performances) et synthétisé ces audits dans un livrable interne. J'ai ensuite contribué à la rédaction d'un plan de communication basé sur ces constats.",
       "selfEvaluation": "Cette mission m'a permis de mettre en pratique mes compétences analytiques dans un contexte professionnel. J'ai appris à justifier des choix stratégiques concrets. Si j'avais eu plus de temps, j'aurais proposé une veille comparative plus approfondie.",
       "shortDescription": "Audit SEO et UX de sites concurrents.",
-      "technologies": ["Audit SEO", "Analyse UX", "Analyse performance"],
+      "technologies": [
+        "Audit SEO",
+        "Analyse UX",
+        "Analyse performance"
+      ],
       "features": [
         "Analyse de sites concurrents",
         "Étude SEO et ergonomie",
@@ -1332,14 +2077,23 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/stage3.png"]
+      "screenshots": [
+        "/projects/stage3.png"
+      ]
     }
   },
   {
     "slug": "communication-plan-project",
-    "categories": ["school","professional"],
-    "butSkills": ["entreprendre", "comprendre"],
-    "color": "#F06292",
+    "categories": [
+      "school",
+      "professional"
+    ],
+    "butSkills": [
+      "comprendre",
+      "concevoir",
+      "exprimer"
+    ],
+    "color": "#FF96B3",
     "en": {
       "title": "Communication Plan Development",
       "description": "Development of a communication strategy based on prior competitive audits and audience analysis.",
@@ -1347,7 +2101,10 @@
       "role": "After conducting the competitive audit, I defined the target audiences and proposed a communication plan for launching the company's social networks, as well as recommendations for their website's SEO. I also contributed to drafting the legal notices to be included.",
       "selfEvaluation": "This experience helped me apply academic knowledge in a real professional context. Transitioning from audit to concrete recommendations was very formative. I would have liked more time to refine the social media content strategy and measure initial results.",
       "shortDescription": "Strategic communication planning.",
-      "technologies": ["Communication Strategy", "Marketing"],
+      "technologies": [
+        "Communication Strategy",
+        "Marketing"
+      ],
       "features": [
         "Audience analysis",
         "Social media launch strategy",
@@ -1356,7 +2113,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/stage2.png"]
+      "screenshots": [
+        "/projects/stage2.png"
+      ]
     },
     "fr": {
       "title": "Plan de communication",
@@ -1365,7 +2124,10 @@
       "role": "Après avoir conduit l'audit concurrentiel, j'ai défini les cibles et proposé un plan de communication pour le lancement des réseaux sociaux de l'entreprise, ainsi que des recommandations pour le référencement de leur site. J'ai également contribué à la rédaction des mentions légales à intégrer.",
       "selfEvaluation": "Cette expérience m'a permis d'appliquer les connaissances académiques dans un contexte professionnel réel. Le passage de l'audit aux recommandations concrètes a été très formateur. J'aurais aimé avoir plus de temps pour affiner la stratégie de contenu réseaux sociaux et mesurer les premiers résultats.",
       "shortDescription": "Stratégie de communication digitale.",
-      "technologies": ["Stratégie de communication", "Marketing"],
+      "technologies": [
+        "Stratégie de communication",
+        "Marketing"
+      ],
       "features": [
         "Analyse des cibles",
         "Stratégie réseaux sociaux",
@@ -1374,7 +2136,9 @@
       ],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": ["/projects/stage2.png"]
+      "screenshots": [
+        "/projects/stage2.png"
+      ]
     }
   }
 ]

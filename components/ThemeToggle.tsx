@@ -33,14 +33,15 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full dark:border-white/10 hover:bg-gray-100/10 dark:hover:bg-white/5 transition-colors"
-      aria-label="Toggle theme"
+      className="p-2 rounded-full border border-transparent hover:border-text-primary/10 dark:hover:border-white/10 hover:bg-text-primary/5 dark:hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink"
+      aria-label={theme === "dark" ? "Passer en mode clair" : "Passer en mode sombre"}
+      aria-pressed={theme === "dark"}
       title={theme === "dark" ? "Mode clair" : "Mode sombre"}
     >
       {theme === "dark" ? (
-        <Sun className="w-5 h-5 text-[#FF6B35]" />
+        <Sun className="w-5 h-5 text-yellow" aria-hidden="true" />
       ) : (
-        <Moon className="w-5 h-5 text-text-primary/30" />
+        <Moon className="w-5 h-5 text-text-primary/60" aria-hidden="true" />
       )}
     </button>
   );
