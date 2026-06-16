@@ -1,9 +1,382 @@
 [
   {
+    "slug": "babylon-airport-game",
+    "year": "BUT3",
+    "color": "#FF8A65",
+    "categories": [
+      "ar-vr-3d",
+      "school"
+    ],
+    "butSkills": [
+      "développer"
+    ],
+    "acs": [
+      "AC34.03",
+      "AC34.04",
+      "AC22.01"
+    ],
+    "fr": {
+      "title": "Mini-jeu d'atterrissage Babylon.js",
+      "shortDescription": "Petit dispositif interactif 3D : autoriser les avions à atterrir dans le bon ordre pour éviter les crashs.",
+      "context": "Découverte de Babylon.js en BUT3 sur un TP étalé sur quelques séances. L'objectif : produire un mini-jeu 3D fonctionnel répondant à un cahier des attendus précis (modélisation, contrôles, conditions de victoire / défaite). On a choisi un scénario aéroportuaire : le joueur dispose de boutons pour autoriser ou non l'atterrissage des avions ; si l'ordre est mauvais, deux appareils peuvent se croiser et se crasher en approche ou sur la piste.",
+      "role": "Conception du gameplay (séquence d'apparition des appareils, fenêtres d'atterrissage, état de la piste), modélisation simple, intégration des contrôles et logique de collision/erreur.",
+      "selfEvaluation": "Première vraie prise en main d'un moteur 3D web. Le plus instructif n'a pas été l'API Babylon en soi, mais l'écriture des règles : il a fallu spécifier précisément l'état de chaque appareil et les transitions possibles, sans quoi le jeu devenait soit injouable soit trivial. Trace utile pour montrer comment je passe du brief au gameplay.",
+      "technologies": [
+        "Babylon.js",
+        "JavaScript",
+        "HTML5",
+        "Blender"
+      ],
+      "features": [
+        "Plusieurs avions en approche simultanée avec fenêtres d'atterrissage",
+        "Boutons d'autorisation par appareil",
+        "Conditions de crash (mauvais ordre, piste occupée, collision en roulage)"
+      ],
+      "screenshots": []
+    },
+    "en": {
+      "title": "Babylon.js airport mini-game",
+      "shortDescription": "Small 3D interactive piece: clear planes to land in the right order to avoid crashes.",
+      "context": "First contact with Babylon.js in BUT3 over a few-session TP. Goal: ship a working 3D mini-game meeting a clear brief (modeling, controls, win/lose conditions). We picked an airport scenario: the player has buttons to allow planes to land or not; with the wrong ordering, two aircraft can cross paths and crash either in approach or while taxiing.",
+      "role": "Gameplay design (plane spawn cadence, landing windows, runway state), lightweight modeling, controls integration and collision/error logic.",
+      "selfEvaluation": "First proper hands-on with a web 3D engine. The big learning wasn't the Babylon API itself but writing the rules: each aircraft state and its valid transitions had to be spelled out, otherwise the game went unplayable or trivial. Useful to show how I go from a brief to actual gameplay.",
+      "technologies": [
+        "Babylon.js",
+        "JavaScript",
+        "HTML5",
+        "Blender"
+      ],
+      "features": [
+        "Several planes inbound simultaneously with landing windows",
+        "Per-aircraft authorisation buttons",
+        "Crash conditions (wrong order, occupied runway, taxiing collision)"
+      ],
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "magicien-escape",
+    "year": "BUT3",
+    "color": "#C9A9DC",
+    "categories": [
+      "ar-vr-3d",
+      "school"
+    ],
+    "butSkills": [
+      "développer"
+    ],
+    "acs": [
+      "AC34.03",
+      "AC34.04",
+      "AC22.01",
+      "AC22.02"
+    ],
+    "fr": {
+      "title": "Magicien Escape — projet VR",
+      "shortDescription": "Mini escape game en réalité virtuelle conçu en équipe en BUT3 : interactions immersives et énigmes scénarisées.",
+      "context": "Dans le module Dispositifs interactifs du BUT3, nous avons conçu un escape game en VR sur le thème du magicien. L'objectif pédagogique : sortir des interfaces 2D classiques pour penser des interactions spatiales — gestes, déplacement dans la pièce, manipulation d'objets virtuels, déclencheurs.",
+      "role": "J'ai participé à la conception du scénario d'énigmes et au développement des interactions VR (déclencheurs, déplacement, manipulation d'objets). Travail sur les boucles d'usage et les tests itératifs pour ajuster la difficulté et la lisibilité des indices dans l'espace 3D.",
+      "selfEvaluation": "Cette trace m'a permis de découvrir la conception en environnement immersif : les règles UX classiques ne suffisent pas, il faut penser feedback haptique, signalisation visuelle volumétrique, fatigue oculaire. Avec le recul, j'aurais creusé davantage les playtests externes pour ajuster le rythme, et je pousserais la lisibilité des indices.",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Meta Quest",
+        "Blender"
+      ],
+      "features": [
+        "Scénario d'escape avec 3 énigmes physiques en VR",
+        "Système de déclencheurs et de manipulation d'objets",
+        "Tests utilisateurs itératifs pour ajuster la difficulté"
+      ],
+      "screenshots": []
+    },
+    "en": {
+      "title": "Magicien Escape — VR project",
+      "shortDescription": "VR escape game built as a team in BUT3: immersive interactions and scripted puzzles.",
+      "context": "In the BUT3 Interactive Devices module, we built a magician-themed VR escape game. Pedagogical goal: step out of classic 2D interfaces and design spatial interactions — gestures, room-scale movement, virtual object manipulation, triggers.",
+      "role": "I took part in the puzzle scenario design and VR interaction development (triggers, locomotion, object manipulation). Iterative testing to adjust difficulty and how readable hints felt in 3D space.",
+      "selfEvaluation": "This trace got me into immersive-environment design: classic UX rules aren't enough — you have to think about haptic feedback, volumetric wayfinding, eye fatigue. Looking back, I'd run more external playtests to tune pacing, and push the hint readability further.",
+      "technologies": [
+        "Unity",
+        "C#",
+        "Meta Quest",
+        "Blender"
+      ],
+      "features": [
+        "Escape scenario with 3 in-VR physical puzzles",
+        "Trigger and object-manipulation system",
+        "Iterative user testing to balance difficulty"
+      ],
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "aurora-sola",
+    "year": "BUT3",
+    "color": "#7B638A",
+    "categories": [
+      "web",
+      "visuels",
+      "professional"
+    ],
+    "butSkills": [
+      "développer",
+      "entreprendre"
+    ],
+    "acs": [
+      "AC34.01",
+      "AC34.04",
+      "AC34.05",
+      "AC35.01",
+      "AC35.04",
+      "AC23.04",
+      "AC25.04",
+      "AC13.02",
+      "AC23.02"
+    ],
+    "fr": {
+      "title": "Hackathon AURORA — Cellule SOLA",
+      "shortDescription": "Site narratif sci-fi pour le programme spatial Aurora, équipe de 3, sprint hackathon avec multiples livrables (site, vidéos, visuels, rédaction).",
+      "context": "AURORA est un hackathon MMI 2026 organisé en équipe de 3, sur un format intense de sprint. Le brief : produire l'écosystème de communication d'une cellule fictive d'un programme spatial appelée SOLA, en lien avec une mission narrative (CONTACT-A, incidents EVT02-B / EVT09-D, message de la Terre). Au-delà du site, il fallait livrer un dossier complet : vidéos, supports visuels, narration, archives, identité graphique cohérente (DA « SOLA » : palette lavande, marine, doré ; typographies Cinzel + Montserrat).",
+      "role": "Je me suis chargée principalement du développement (site GitHub Pages, architecture HTML/CSS/JS modulaire, intégration responsive, scrollspy, navigation mobile, accessibilité, mini-jeu interactif « Le Message de la Terre ») et de tous les rendus support rédactionnels (archives, dossiers narratifs, vocabulaire). L'une des coéquipières a porté les visuels demandés, l'autre s'est chargé des vidéos. Chacun·e s'est aussi entraîné·e sur les missions des autres pour permettre l'avancée parallèle.",
+      "selfEvaluation": "C'est sans doute la trace la plus représentative de ma capacité à fonctionner sous contrainte de temps et avec une équipe pluri-profils. Le format hackathon m'a obligée à faire des choix d'architecture rapides, à concevoir des composants logiciels réutilisables et à arbitrer entre ambition narrative et faisabilité. Avec le recul, le mini-jeu et la navigation mobile sont les morceaux dont je suis la plus fière côté code ; côté coordination, le découpage clair par profil dès le départ et le fait qu'on ait monté un vocabulaire partagé propre à la mission ont énormément aidé. Une trace utile aussi pour défendre la dimension « entreprendre » : piloter une équipe sur un délai contraint, c'est ça aussi.",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "GitHub Pages",
+        "Figma"
+      ],
+      "features": [
+        "Architecture HTML/CSS/JS modulaire déployée sur GitHub Pages",
+        "Design system « DA SOLA » (palette lavande/marine/doré, typographies Cinzel + Montserrat)",
+        "Page « Le Message de la Terre » : mini-jeu interactif (puzzle narratif mission CONTACT-A)",
+        "Sections narratives évolutives : journal d'incident EVT02-B, découverte EVT09-D, archives",
+        "Navigation mobile complète, scrollspy, accessibilité (focus visibles, ARIA)",
+        "Production des supports rédactionnels du dossier (archives, vocabulaire mission)"
+      ],
+      "liveUrl": "https://rahnya.github.io/aurora-sola/",
+      "githubUrl": "https://github.com/rahnya/aurora-sola",
+      "screenshots": []
+    },
+    "en": {
+      "title": "AURORA Hackathon — SOLA Cell",
+      "shortDescription": "Sci-fi narrative site for the fictional Aurora space programme, team of 3, hackathon sprint with multiple deliverables (site, videos, visuals, writing).",
+      "context": "AURORA is a 2026 MMI hackathon organised in teams of 3, in an intense sprint format. Brief: produce the full communication ecosystem of a fictional cell inside a space programme called SOLA, tied to a narrative mission (CONTACT-A, incidents EVT02-B / EVT09-D, the Message of the Earth). Beyond the website we had to ship a full dossier: videos, visual supports, narrative writing, archives, and a coherent visual identity (\"SOLA\" art direction: lavender/navy/gold palette, Cinzel + Montserrat typography).",
+      "role": "I took the development lead (GitHub Pages site, modular HTML/CSS/JS architecture, responsive integration, scrollspy, mobile nav, accessibility, interactive \"Message of the Earth\" mini-game) and ownership of all writing-based deliverables (archives, narrative dossiers, vocabulary). One teammate took the visuals lead, the other took the videos. Everyone trained on the others' areas to keep the project moving in parallel.",
+      "selfEvaluation": "Probably the most representative trace of my ability to deliver under time pressure with a multi-profile team. The hackathon format forced fast architecture choices, reusable component design, and constant arbitration between narrative ambition and feasibility. Looking back, the mini-game and the mobile navigation are the parts I'm proudest of on the code side; on coordination, the clear role split from day one and the shared mission-specific vocabulary we built made everything easier. Also a useful trace for the entrepreneurship side: leading a team against a tight deadline counts.",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "GitHub Pages",
+        "Figma"
+      ],
+      "features": [
+        "Modular HTML/CSS/JS architecture deployed on GitHub Pages",
+        "\"SOLA\" design system (lavender/navy/gold palette, Cinzel + Montserrat type)",
+        "\"Message of the Earth\" page: interactive puzzle mini-game (CONTACT-A mission)",
+        "Evolving narrative sections: incident log EVT02-B, EVT09-D discovery, archives",
+        "Full mobile nav, scrollspy, accessibility (focus rings, ARIA)",
+        "Wrote all dossier deliverables (archives, mission vocabulary)"
+      ],
+      "liveUrl": "https://rahnya.github.io/aurora-sola/",
+      "githubUrl": "https://github.com/rahnya/aurora-sola",
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "snoozly-business-plan",
+    "year": "BUT3",
+    "color": "#FF96B3",
+    "categories": [
+      "visuels",
+      "school"
+    ],
+    "butSkills": [
+      "entreprendre"
+    ],
+    "acs": [
+      "AC35.01",
+      "AC35.03",
+      "AC15.02",
+      "AC15.04",
+      "AC15.03",
+      "AC25.06"
+    ],
+    "fr": {
+      "title": "Business plan Snoozly — cours Entrepreneuriat",
+      "shortDescription": "Production d'un business plan complet dans le cadre du module Entrepreneuriat BUT3 : nous avons choisi de l'appliquer à Snoozly.",
+      "context": "Dans le cours d'Entrepreneuriat du semestre 5, l'attendu était de produire un business plan complet pour une activité/entreprise au choix. En trio, nous avons choisi d'utiliser Snoozly comme support pédagogique — c'était pratique pour moi vu mon projet Pépite, mais le travail rendu ici est strictement un livrable scolaire, distinct du dossier Pépitizy réel. Certains chiffres sont volontairement projectifs et ont depuis été affinés côté projet réel.",
+      "role": "Je m'étais déjà occupée de la définition du concept, de l'identification de la cible et de l'analyse de marché. Sur ce cours, j'ai surtout contribué à la construction du business model et à la rédaction du business plan lui-même : proposition de valeur, stratégie de développement, projections financières.",
+      "selfEvaluation": "Ce projet m'a fait gagner une vision plus globale des projets numériques, au-delà de la pure technique : structurer une idée, réfléchir à sa viabilité, articuler proposition de valeur et stratégie. Par rapport aux projets de BUT2, j'ai bien plus pris en compte les enjeux économiques. Avec le recul, j'aurais approfondi l'étude de marché et l'analyse concurrentielle pour gagner en crédibilité — ce que je fais désormais sur le projet Pépite réel. Trace utile car elle marque clairement la frontière « exercice scolaire » vs « projet entrepreneurial vivant ».",
+      "technologies": [
+        "Notion",
+        "Canva",
+        "Google Docs"
+      ],
+      "features": [
+        "Business plan complet (proposition de valeur, marché, stratégie, finances)",
+        "Modèle économique projeté (LLD + tarif solidaire campus)",
+        "Analyse cibles et personae",
+        "Premières projections chiffrées (depuis affinées hors cours)"
+      ],
+      "screenshots": []
+    },
+    "en": {
+      "title": "Snoozly business plan — Entrepreneurship class",
+      "shortDescription": "Full business plan produced for the BUT3 Entrepreneurship module: we chose Snoozly as the case.",
+      "context": "In the semester-5 Entrepreneurship class, the assignment was to write a full business plan for any business of our choice. In a trio we picked Snoozly as the case — convenient for me given my own Pépite project, but the deliverable here is strictly a school output, distinct from the real Pépitizy application. Some numbers are intentionally projected and have since been refined on the real project.",
+      "role": "I had already handled concept definition, target identification and market analysis. On this class I mostly contributed to building the business model and writing the business plan itself: value proposition, growth strategy, financial projections.",
+      "selfEvaluation": "Gave me a broader view of digital projects beyond pure technical work: structuring an idea, thinking about viability, articulating value proposition vs strategy. Compared to BUT2 projects I weighed economics much more. Looking back, I would have pushed the market study and competitive analysis further for credibility — which I now do on the real Pépite track. Useful trace because it clearly draws the line between \"school exercise\" and \"live entrepreneurial project\".",
+      "technologies": [
+        "Notion",
+        "Canva",
+        "Google Docs"
+      ],
+      "features": [
+        "Full business plan (value, market, strategy, financials)",
+        "Projected economic model (long-term lease + solidarity campus rate)",
+        "Target and persona analysis",
+        "First financial projections (since refined outside the class)"
+      ],
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "snoozly-maquettes",
+    "year": "BUT3",
+    "color": "#FF96B3",
+    "categories": [
+      "uxui",
+      "visuels",
+      "professional",
+      "entrepreneurship"
+    ],
+    "butSkills": [
+      "entreprendre"
+    ],
+    "acs": [
+      "AC22.01",
+      "AC22.02",
+      "AC23.03",
+      "AC15.05",
+      "AC11.06",
+      "AC13.05"
+    ],
+    "fr": {
+      "title": "Maquettes Snoozly — design produit",
+      "shortDescription": "Conception des maquettes de l'application Snoozly, accélérées pour un entretien d'admission en master CODUX (Limoges).",
+      "context": "Volet design produit du projet Snoozly. Les maquettes ont d'abord été esquissées dans le cadre de la définition du produit, puis accélérées et présentées finalisées pour un entretien d'admission en master CODUX à Limoges. C'est un effort qui appartient à ma pratique freelance / entrepreneuriale plutôt qu'à l'académique.",
+      "role": "Direction artistique, conception UX (trois personas : urgence / découverte / rituel ; règle des « deux tapotements pour réserver »), wireframes, maquettes haute fidélité Figma, design système (palette, typographies, composants, états).",
+      "selfEvaluation": "Trace forte sur la facette UX/UI : c'est en formalisant les maquettes que beaucoup des choix produit Snoozly se sont arrêtés (parcours rapide, hiérarchie d'écran, personnalisation d'ambiance). L'usage secondaire — support d'entretien CODUX — a accéléré le travail et obligé à raconter le projet visuellement en quelques écrans, exercice très formateur. Liée à la trace dev de l'app et au projet Pépite.",
+      "technologies": [
+        "Figma",
+        "FigJam",
+        "Notion"
+      ],
+      "features": [
+        "Trois personas produits Snoozly (Sofia, Théo, Camille) avec parcours dédiés",
+        "Wireframes basse-fidélité puis maquettes haute-fidélité Figma",
+        "Design system minimal (palette, typo, composants, états)",
+        "Storyboard d'entretien CODUX synthétisant le projet en quelques écrans clés"
+      ],
+      "screenshots": []
+    },
+    "en": {
+      "title": "Snoozly mockups — product design",
+      "shortDescription": "Snoozly app mockups, accelerated for a master CODUX (Limoges) admission interview.",
+      "context": "Product-design side of the Snoozly project. The mockups first emerged during product definition and were then accelerated and presented finalised for a CODUX master admission interview in Limoges. This effort belongs to my freelance/entrepreneurial practice rather than the academic track.",
+      "role": "Art direction, UX design (three personas: urgent / discovery / ritual; the \"two taps to book\" rule), wireframes, high-fidelity Figma mockups, design system (palette, typography, components, states).",
+      "selfEvaluation": "Strong trace on the UX/UI side: many Snoozly product choices were locked in by formalising the mockups (fast paths, screen hierarchy, ambiance personalisation). The secondary use — CODUX interview support — sped up the work and forced me to tell the project visually in a few screens, which was very formative. Connected to the app-dev trace and the Pépite project page.",
+      "technologies": [
+        "Figma",
+        "FigJam",
+        "Notion"
+      ],
+      "features": [
+        "Three Snoozly product personas (Sofia, Théo, Camille) with dedicated flows",
+        "Low-fi wireframes then high-fi Figma mockups",
+        "Minimal design system (palette, type, components, states)",
+        "CODUX interview storyboard distilling the project into a few key screens"
+      ],
+      "screenshots": []
+    }
+  },
+  {
+    "slug": "snoozly-app-dev",
+    "year": "BUT3",
+    "color": "#FF96B3",
+    "categories": [
+      "web",
+      "professional",
+      "entrepreneurship"
+    ],
+    "butSkills": [
+      "développer",
+      "entreprendre"
+    ],
+    "acs": [
+      "AC34.01",
+      "AC34.02",
+      "AC34.04",
+      "AC34.05",
+      "AC35.01"
+    ],
+    "fr": {
+      "title": "Développement de l'application Snoozly",
+      "shortDescription": "App mobile React Native / Expo + backend Node.js / MongoDB pour la réservation, l'accès et la personnalisation des capsules Snoozly. MVP V1 en local fonctionnel.",
+      "context": "Volet développement du projet Snoozly. L'objectif : avoir un MVP fonctionnel — réservation, authentification, accès via QR code, personnalisation d'ambiance — pour démontrer le concept à des pilotes potentiels (entreprises, campus, mutuelles). Lié au projet Pépite et aux maquettes Snoozly (voir traces correspondantes).",
+      "role": "Architecture full-stack : application mobile React Native / Expo côté client, backend Node.js / Express / MongoDB côté serveur. Travail sur l'authentification, la persistance, le flux de réservation, l'environnement de développement local, le debug (connexion MongoDB, index dupliqués, bundling Expo web).",
+      "selfEvaluation": "C'est la trace dev la plus complète de mon BUT3, parce qu'elle traverse les cinq AC du bloc Développer (front, back, dispositif interactif mobile, composants modulaires, déploiement local). Elle complète bien l'alternance et la visioconférence : ici, c'est *mon* code de bout en bout, *mon* archi, *mon* projet. Avec le recul, ce qui m'a le plus fait progresser c'est la résolution de bugs d'environnement, pas le code métier — les heures perdues à débuguer MongoDB ou Expo m'ont appris autant que les features.",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "JWT"
+      ],
+      "features": [
+        "App mobile React Native / Expo : auth, réservation, personnalisation",
+        "Backend Node.js / Express : routes REST, validation, JWT",
+        "Persistance MongoDB / Mongoose : modèles utilisateur, capsule, session",
+        "Flux de réservation complet (création, accès QR code, fin de session)",
+        "Environnement de développement local stable (debug bundling web Expo, index Mongo)"
+      ],
+      "screenshots": []
+    },
+    "en": {
+      "title": "Snoozly app development",
+      "shortDescription": "Mobile app (React Native / Expo) + Node.js / MongoDB backend for capsule booking, access and ambiance personalisation. Working local MVP V1.",
+      "context": "Development side of Snoozly. Goal: a working MVP — booking, auth, QR-code access, ambiance personalisation — to demo the concept to potential pilots (companies, campuses, mutuals). Connected to the Pépite project and the Snoozly mockups (see related traces).",
+      "role": "Full-stack architecture: React Native / Expo on the client side, Node.js / Express / MongoDB on the server side. Authentication, persistence, booking flow, local dev environment, debugging (Mongo connection, duplicate indexes, Expo web bundling).",
+      "selfEvaluation": "The most complete dev trace of my BUT3 because it spans the five AC of the Develop block (front, back, mobile interactive device, modular components, deployment). Nicely complements the apprenticeship and the videoconf project: here it's *my* code end to end, *my* architecture, *my* project. Looking back, what taught me the most wasn't the feature code but the environment debugging — the hours lost to MongoDB and Expo issues taught me as much as the features did.",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "JWT"
+      ],
+      "features": [
+        "React Native / Expo mobile app: auth, booking, personalisation",
+        "Node.js / Express backend: REST routes, validation, JWT",
+        "MongoDB / Mongoose persistence: user, capsule and session models",
+        "Full booking flow (create, QR-code access, end of session)",
+        "Stable local dev environment (Expo web bundling and Mongo index fixes)"
+      ],
+      "screenshots": []
+    }
+  },
+  {
     "slug": "flightfootprint",
     "categories": [
-      "data",
-      "uxui"
+      "uxui",
+      "visuels"
     ],
     "butSkills": [
       "comprendre",
@@ -72,17 +445,25 @@
         "projects/ffp3.png",
         "projects/ffp4.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC24.01",
+      "AC24.03",
+      "AC24.04",
+      "AC21.03",
+      "AC23.06",
+      "AC11.03"
+    ]
   },
   {
     "slug": "visio-conference-app",
     "categories": [
-      "web",
       "uxui",
+      "web",
       "school"
     ],
     "butSkills": [
-      "concevoir",
       "développer",
       "entreprendre"
     ],
@@ -92,7 +473,7 @@
       "description": "A web-based video conferencing platform allowing users to create and join virtual meetings directly from their browser.",
       "context": "In semester 5, I participated in a SAÉ focused on developing a real-time video conferencing application. The goal was to design a functional solution allowing multiple users to communicate via audio and video, using modern web technologies. This project involved a higher level of complexity than previous ones, particularly due to real-time stream management and synchronized interactions between users. We worked with a tech stack composed of Node.js, Express, Socket.io and WebRTC, while integrating Docker for environment management.",
       "role": "I was mainly involved in setting up real-time communication between users. I participated in the server configuration with Express, as well as the integration of Socket.io to manage real-time data exchanges. I also contributed to the implementation of WebRTC for audio and video stream transmission, which required me to understand peer-to-peer connections and signaling mechanisms. Finally, I participated in testing and debugging phases, notably to resolve connection issues between users.",
-      "selfEvaluation": "This project confronted me with a complex, real-time architecture, far beyond my previous projects. It allowed me to develop a better understanding of distributed systems. With the benefit of hindsight from BUT 3, I could have better anticipated connection problems and structured the code more cleanly.",
+      "selfEvaluation": "This project confronted me with a complex, real-time architecture, far beyond my previous projects. It allowed me to develop a better understanding of distributed systems. With the benefit of hindsight from BUT 3, I could have better anticipated connection problems and structured the code more cleanly.\n\nA decisive part of this project — and of my BUT3 year in general — was specification writing. Before any piece of code I'd write specs: classes, attributes, methods, interactions between components, success criteria. The rule was: if an AI could implement the component from my specs without asking a question, the specs were good; otherwise, something was missing. This discipline (also applied to side-projects like battleship or a car-race game) structured the way I approach code from now on.",
       "shortDescription": "Browser-based video conferencing platform.",
       "technologies": [
         "Node.js",
@@ -109,7 +490,7 @@
         "Dockerized backend deployment"
       ],
       "githubUrl": "",
-      "liveUrl": null,
+      "liveUrl": "http://visioconf.xyz/",
       "screenshots": []
     },
     "fr": {
@@ -117,7 +498,7 @@
       "description": "Une plateforme web de visioconférence permettant de créer et rejoindre des réunions directement depuis le navigateur.",
       "context": "Au semestre 5, j’ai participé à une SAÉ centrée sur le développement d’une application de visioconférence en temps réel. Ce projet avait une particularité importante : il s’agissait d’une reprise d’un projet réalisé par les étudiants de l’année précédente. Cependant, le projet initial présentait de nombreuses difficultés : certaines fonctionnalités ne fonctionnaient pas, des bugs étaient présents, et les spécifications fournies n’étaient pas cohérentes avec l’état réel de l’application.  L’objectif était donc double : comprendre l’existant, corriger les dysfonctionnements, mais aussi faire évoluer l’application en y ajoutant de nouvelles fonctionnalités. Nous avons également fait le choix de modifier une partie du projet en migrant vers React afin de moderniser l’interface et d’améliorer la maintenabilité. Le stack technique comprenait notamment Node.js, Express, Socket.io, WebRTC et Docker.",
       "role": "Dans ce projet, nous étions organisés de manière à travailler chacun sur un composant spécifique. J’étais en charge du composant “Équipes”, dont l’objectif était de permettre la création de groupes d’utilisateurs afin de faciliter les échanges (communication, organisation en groupes, partage de ressources). J’ai donc commencé par rédiger les spécifications fonctionnelles et techniques liées à ce composant, en définissant les comportements attendus, les interactions avec les autres parties de l’application et les données nécessaires. Par la suite, j’ai développé ce composant en m’intégrant dans l’architecture existante, tout en tenant compte des contraintes du projet initial. En parallèle, j’ai également participé à la reprise globale du projet de l’année précédente : analyse du code existant, identification des bugs, compréhension des choix techniques et corrections pour rendre l’application fonctionnelle.Cela m’a amenée à travailler sur la communication temps réel via Socket.io ainsi que sur l’intégration de WebRTC pour la gestion des flux audio et vidéo.",
-      "selfEvaluation": "Ce projet représente une étape importante dans ma progression, notamment parce qu’il ne s’agissait pas de partir de zéro mais de reprendre un projet existant, imparfait et parfois incohérent. Cela m’a obligée à développer ma capacité d’analyse, à lire et comprendre du code écrit par d’autres, et à m’adapter à une architecture déjà en place. Par rapport aux projets de BUT 2, j’ai gagné en maturité dans ma manière d’aborder un projet complexe, notamment en prenant le temps de rédiger des spécifications et de structurer mon travail en amont. Le développement du composant “Équipes” m’a également permis de mieux comprendre la gestion des interactions entre utilisateurs dans une application temps réel. Avec le recul, je pense que j’aurais pu améliorer l’organisation globale du code et proposer une refactorisation plus poussée du projet existant. J’aurais également pu mieux anticiper les problèmes liés à la communication entre les différents composants. Ce projet m’a permis de gagner en autonomie et de me rapprocher davantage des conditions réelles de développement, où il est fréquent de devoir reprendre et améliorer un projet déjà existant.",
+      "selfEvaluation": "Ce projet représente une étape importante dans ma progression, notamment parce qu’il ne s’agissait pas de partir de zéro mais de reprendre un projet existant, imparfait et parfois incohérent. Cela m’a obligée à développer ma capacité d’analyse, à lire et comprendre du code écrit par d’autres, et à m’adapter à une architecture déjà en place. Par rapport aux projets de BUT 2, j’ai gagné en maturité dans ma manière d’aborder un projet complexe, notamment en prenant le temps de rédiger des spécifications et de structurer mon travail en amont. Le développement du composant “Équipes” m’a également permis de mieux comprendre la gestion des interactions entre utilisateurs dans une application temps réel. Avec le recul, je pense que j’aurais pu améliorer l’organisation globale du code et proposer une refactorisation plus poussée du projet existant. J’aurais également pu mieux anticiper les problèmes liés à la communication entre les différents composants. Ce projet m’a permis de gagner en autonomie et de me rapprocher davantage des conditions réelles de développement, où il est fréquent de devoir reprendre et améliorer un projet déjà existant.\n\nUn pan déterminant de cette SAÉ — et plus largement de mon BUT3 — a été la rédaction de spécifications. Avant chaque morceau de code, je rédigeais des specs : classes, attributs, méthodes, interactions entre composants, conditions de réussite. La règle du jeu : si une IA pouvait implémenter le composant en partant de mes specs sans poser de question, c'est que les specs étaient bonnes ; sinon, c'est qu'il manquait quelque chose. Cette discipline (appliquée aussi à des mini-projets type bataille navale, jeu de course) a structuré ma manière d'aborder le code.",
       "shortDescription": "Application web de visioconférence.",
       "technologies": [
         "Node.js",
@@ -134,15 +515,25 @@
         "Backend dockerisé"
       ],
       "githubUrl": "",
-      "liveUrl": null,
+      "liveUrl": "http://visioconf.xyz/",
       "screenshots": []
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC34.01",
+      "AC34.02",
+      "AC34.03",
+      "AC34.04",
+      "AC34.05",
+      "AC35.01",
+      "AC35.02"
+    ]
   },
   {
     "slug": "code-ton-territoire",
     "categories": [
-      "hackathon",
-      "uxui"
+      "uxui",
+      "web"
     ],
     "butSkills": [
       "concevoir",
@@ -210,13 +601,21 @@
         "/projects/cacode3.png",
         "/projects/cacode4.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC24.01",
+      "AC24.03",
+      "AC22.01",
+      "AC23.04",
+      "AC25.04"
+    ]
   },
   {
     "slug": "collective-intelligence-report",
     "categories": [
-      "school",
-      "research"
+      "visuels",
+      "school"
     ],
     "butSkills": [
       "comprendre",
@@ -274,14 +673,21 @@
       "screenshots": [
         "projects/intelligence_collective_dossier.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC23.01",
+      "AC21.01",
+      "AC21.04",
+      "AC23.04",
+      "AC11.04"
+    ]
   },
   {
     "slug": "epitech-coding-club",
     "categories": [
-      "community",
-      "tech",
-      "education"
+      "visuels",
+      "web"
     ],
     "butSkills": [
       "comprendre",
@@ -340,20 +746,21 @@
       "screenshots": [
         "projects/epitech_club_coding.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC25.03",
+      "AC25.04",
+      "AC15.06"
+    ]
   },
   {
     "slug": "ai-eprocurement-seo-article",
     "categories": [
-      "professional",
-      "seo",
-      "content"
+      "visuels",
+      "professional"
     ],
-    "butSkills": [
-      "comprendre",
-      "concevoir",
-      "exprimer"
-    ],
+    "butSkills": [],
     "color": "#FF96B3",
     "en": {
       "title": "AI & e-Procurement SEO Article",
@@ -406,14 +813,20 @@
       "screenshots": [
         "projects/article_weproc.png"
       ]
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC23.01",
+      "AC22.04",
+      "AC25.05"
+    ]
   },
   {
     "slug": "internship-management-app",
     "categories": [
-      "school",
+      "uxui",
       "web",
-      "uxui"
+      "school"
     ],
     "butSkills": [
       "concevoir",
@@ -472,13 +885,21 @@
       "screenshots": [
         "/projects/appli-stage.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC24.01",
+      "AC24.02",
+      "AC24.04",
+      "AC22.01",
+      "AC22.02"
+    ]
   },
   {
     "slug": "ai-agents-workflow",
     "categories": [
-      "school",
-      "web"
+      "web",
+      "school"
     ],
     "butSkills": [
       "comprendre",
@@ -534,13 +955,20 @@
       "screenshots": [
         "/projects/agents.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC24.01",
+      "AC24.02",
+      "AC24.03",
+      "AC22.01"
+    ]
   },
   {
     "slug": "laravel-blog-platform",
     "categories": [
-      "school",
-      "web"
+      "web",
+      "school"
     ],
     "butSkills": [
       "concevoir",
@@ -598,18 +1026,23 @@
         "/projects/laravel.png",
         "/projects/picsou-blog.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC24.01",
+      "AC24.02",
+      "AC24.04",
+      "AC24.06",
+      "AC14.06"
+    ]
   },
   {
     "slug": "alternance",
     "categories": [
-      "professional",
-      "web"
+      "web",
+      "professional"
     ],
     "butSkills": [
-      "comprendre",
-      "concevoir",
-      "exprimer",
       "développer",
       "entreprendre"
     ],
@@ -619,7 +1052,7 @@
       "shortDescription": "SEO overhaul, internationalisation and editorial strategy for a B2B SaaS (e-procurement) over 8 months of apprenticeship.",
       "context": "My apprenticeship at Weproc (a French e-procurement SaaS vendor based in the PACA region) covers the full web-content chain: technical and editorial SEO, WordPress / Elementor integration, internationalisation (WPML), Semrush auditing, LinkedIn strategy, netlinking partnerships, and cross-team communication (marketing, product, sales).\n\nOver the period (Sept 2025 → July 2026), I was brought into the website overhaul from week one, with autonomy growing month by month — moving from cleanly-scoped tasks to taking initiative on GEO strategy (visibility in generative AI), long-form whitepaper writing, and coordinating external editorial partnerships (Indy, Batinfo).",
       "role": "Editorial Webmaster & SEO Content Manager.\n\nConcretely, I own the website's content chain end-to-end: technical audits, strategic page redesigns, on-page SEO, multilingual translation, long-form writing, LinkedIn editorial planning, performance tracking and reporting. I built my own Notion workspace for task tracking, editorial calendar, and weekly reports.",
-      "selfEvaluation": "This is the densest trace of my BUT3 year. It mobilises the 5 MMI competences continuously, but more importantly it documents real skill growth over time:\n\n— Sept/Oct: getting hands-on with WordPress / WPML / Elementor, discovering Semrush, manual indexing via Search Console, first translations of menus in Italian and German.\n— November: autonomous work on the « Features » page strategy (supplier management, contracts, workflows, catalogues, punch-out…), design harmonisation, breadcrumbs and schema.org structured data.\n— December: end-to-end technical audit ownership — 301 redirect chains, 404/502 errors, hreflang conflicts, crawl depth. Site health score restored, internal redirect tutorial written.\n— January: full English translation of the site via WPML, understanding dynamic placeholders (<0>, <1>) to preserve interactive blocks, Spanish and German started. Sat in on a strategic SEO audit with an external consultant.\n— February: multilingual management at scale (4 languages), WPML bug fixing, duplicate-page cleanup, Core Web Vitals optimisation.\n— March: took the lead on two long-form pieces (an AI × e-procurement whitepaper, a netlinking partnership with Indy / mon-salaire-en-net.fr), Semrush score climbed from 72 to 85%.\n— April: opened up GEO strategy (Generative Engine Optimization — visibility in ChatGPT, Gemini, Perplexity), built competitor comparison pages, set up a Reddit Pro presence.\n\nIf I had to sum up the takeaway: moving from tool-by-tool execution to a real strategic vision of SEO and the content ecosystem, and learning to arbitrate between technical clean-up and editorial production.",
+      "selfEvaluation": "This is the densest trace of my BUT3 year. It mobilises the 5 MMI competences continuously, but more importantly it documents real skill growth over time:\n\n— Sept/Oct: getting hands-on with WordPress / WPML / Elementor, discovering Semrush, manual indexing via Search Console, first translations of menus in Italian and German.\n— November: autonomous work on the « Features » page strategy (supplier management, contracts, workflows, catalogues, punch-out…), design harmonisation, breadcrumbs and schema.org structured data.\n— December: end-to-end technical audit ownership — 301 redirect chains, 404/502 errors, hreflang conflicts, crawl depth. Site health score restored, internal redirect tutorial written.\n— January: full English translation of the site via WPML, understanding dynamic placeholders (<0>, <1>) to preserve interactive blocks, Spanish and German started. Sat in on a strategic SEO audit with an external consultant.\n— February: multilingual management at scale (4 languages), WPML bug fixing, duplicate-page cleanup, Core Web Vitals optimisation.\n— March: took the lead on two long-form pieces (an AI × e-procurement whitepaper, a netlinking partnership with Indy / mon-salaire-en-net.fr), Semrush score climbed from 72 to 85%.\n— April: opened up GEO strategy (Generative Engine Optimization — visibility in ChatGPT, Gemini, Perplexity), built competitor comparison pages, set up a Reddit Pro presence.\n\nIf I had to sum up the takeaway: moving from tool-by-tool execution to a real strategic vision of SEO and the content ecosystem, and learning to arbitrate between technical clean-up and editorial production.\n\nAlongside the SEO/content track I also ran a softer internal-and-external communication leg. I organised Weproc's participation in the Nice No Finish Line race — assembling the runners, on-the-day logistics, post-event LinkedIn piece (a more human-toned story than usual). In parallel I led a merch line (sports tees for the race + thicker cotton tees for the office): visual design, shortlisting printers, costed proposals to Steven, budget arbitration. LinkedIn editorial overall goes through me too — copy, schedule, Figma visuals.",
       "technologies": [
         "WordPress",
         "Elementor & Elementor Pro",
@@ -647,7 +1080,10 @@
         "Coordinated a netlinking partnership with Indy / mon-salaire-en-net.fr (cannibalisation review, writing, publishing, link tracking)",
         "LinkedIn editorial strategy (planning, copywriting, visuals, product storytelling) with the comms team",
         "Watch and rollout of a GEO strategy (visibility in generative AI — ChatGPT, Gemini, Perplexity) and Reddit Pro presence",
-        "Weekly Marketing-Sales-Product meetings with leads, conversion and ROI analysis"
+        "Weekly Marketing-Sales-Product meetings with leads, conversion and ROI analysis",
+        "Organised Weproc's participation in the Nice No Finish Line 2025 race (internal team, communications, human-toned LinkedIn post)",
+        "Designed a merch line (sports tees + premium cotton office tees): Figma design, printer outreach, budget proposals",
+        "LinkedIn editorial ownership (copywriting, schedule, Figma visuals)"
       ],
       "liveUrl": "https://www.weproc.com",
       "screenshots": [
@@ -659,7 +1095,7 @@
       "shortDescription": "Refonte SEO, internationalisation et stratégie éditoriale du site d'un SaaS B2B (e-procurement) sur 8 mois d'alternance.",
       "context": "Mon alternance chez Weproc (éditeur d'un SaaS d'e-procurement basé en région PACA) couvre l'ensemble de la chaîne « contenu web » : SEO technique et éditorial, intégration WordPress / Elementor, internationalisation (WPML), audit Semrush, stratégie LinkedIn, partenariats netlinking, communication interne avec les pôles marketing, produit et sales.\n\nSur cette période (sept. 2025 → juillet 2026), j'ai été embarquée dès le premier mois sur la refonte progressive du site, avec une autonomie qui a grandi mois après mois — passant de l'exécution de missions cadrées à des prises d'initiative sur la stratégie GEO (visibilité dans les IA génératives), la rédaction de contenus longs type livre blanc, et la coordination de partenariats éditoriaux externes (Indy, Batinfo).",
       "role": "Webmaster éditorial & Content Manager SEO.\n\nConcrètement, je porte toute la chaîne contenu du site : audit technique, refonte des pages stratégiques, optimisation SEO on-page, traduction multilingue, rédaction d'articles de fond, planification éditoriale LinkedIn, suivi des performances et reporting. J'ai construit pour ma propre organisation un espace Notion (suivi de tâches, calendrier éditorial, rapports hebdomadaires).",
-      "selfEvaluation": "Cette alternance est la trace la plus dense de mon parcours BUT3. Elle mobilise les 5 compétences MMI en continu, mais surtout elle documente une vraie montée en compétences sur la durée :\n\n— Septembre/Octobre : prise en main de WordPress / WPML / Elementor, découverte de Semrush, indexation manuelle dans Google Search Console, premières traductions de menus en italien et allemand.\n— Novembre : autonomie sur la stratégie de pages « Fonctionnalités » (gestion fournisseurs, contrats, workflows, catalogues, punch-out…), harmonisation du design, mise en place du fil d'Ariane et des données structurées schema.org.\n— Décembre : prise en main de l'audit technique complet — chaînes de redirections 301, erreurs 404/502, conflits hreflang, profondeur de crawl. Score de santé du site remonté de 75 % à un niveau exploitable, et création d'un tutoriel interne sur les redirections.\n— Janvier : pilotage de la traduction complète du site en anglais avec WPML, compréhension des placeholders dynamiques (<0>, <1>) pour conserver les blocs interactifs, début espagnol/allemand. Participation à un audit SEO stratégique externe avec une consultante.\n— Février : gestion multilingue à grande échelle (4 langues), correction de bugs WPML, pages duplicate, optimisations Core Web Vitals.\n— Mars : prise du lead sur deux contenus longs (un livre blanc IA × e-procurement, un partenariat netlinking avec Indy / mon-salaire-en-net.fr), score Semrush remonté de 72 à 85 %.\n— Avril : ouverture sur la stratégie GEO (Generative Engine Optimization — visibilité dans ChatGPT, Gemini, Perplexity), création de pages comparatives concurrents, mise en place d'une présence Reddit Pro.\n\nSi je devais résumer ce que je gagne : passer d'une exécution outil par outil à une vraie vision stratégique du référencement et de l'écosystème contenu, et apprendre à arbitrer entre assainissement technique et production éditoriale.",
+      "selfEvaluation": "Cette alternance est la trace la plus dense de mon parcours BUT3. Elle mobilise les 5 compétences MMI en continu, mais surtout elle documente une vraie montée en compétences sur la durée :\n\n— Septembre/Octobre : prise en main de WordPress / WPML / Elementor, découverte de Semrush, indexation manuelle dans Google Search Console, premières traductions de menus en italien et allemand.\n— Novembre : autonomie sur la stratégie de pages « Fonctionnalités » (gestion fournisseurs, contrats, workflows, catalogues, punch-out…), harmonisation du design, mise en place du fil d'Ariane et des données structurées schema.org.\n— Décembre : prise en main de l'audit technique complet — chaînes de redirections 301, erreurs 404/502, conflits hreflang, profondeur de crawl. Score de santé du site remonté de 75 % à un niveau exploitable, et création d'un tutoriel interne sur les redirections.\n— Janvier : pilotage de la traduction complète du site en anglais avec WPML, compréhension des placeholders dynamiques (<0>, <1>) pour conserver les blocs interactifs, début espagnol/allemand. Participation à un audit SEO stratégique externe avec une consultante.\n— Février : gestion multilingue à grande échelle (4 langues), correction de bugs WPML, pages duplicate, optimisations Core Web Vitals.\n— Mars : prise du lead sur deux contenus longs (un livre blanc IA × e-procurement, un partenariat netlinking avec Indy / mon-salaire-en-net.fr), score Semrush remonté de 72 à 85 %.\n— Avril : ouverture sur la stratégie GEO (Generative Engine Optimization — visibilité dans ChatGPT, Gemini, Perplexity), création de pages comparatives concurrents, mise en place d'une présence Reddit Pro.\n\nSi je devais résumer ce que je gagne : passer d'une exécution outil par outil à une vraie vision stratégique du référencement et de l'écosystème contenu, et apprendre à arbitrer entre assainissement technique et production éditoriale.\n\nEn parallèle de la chaîne contenu/SEO, j'ai aussi piloté un volet communication interne et externe plus humain. J'ai monté l'organisation de la participation Weproc à la No Finish Line Nice — recrutement de l'équipe interne (les sportifs de la team), démarche, post LinkedIn de fin d'événement plus incarné que d'habitude. Dans la foulée, j'ai aussi pris en main la conception d'une ligne de merch (t-shirts de sport pour la course + t-shirts coton qualité pour le bureau) : design, démarchage et comparaison de plusieurs imprimeurs, propositions chiffrées à Steven, adaptation au budget. Toute la communication LinkedIn passe aussi par moi (rédaction, planning éditorial, visuels Figma).",
       "technologies": [
         "WordPress",
         "Elementor & Elementor Pro",
@@ -687,24 +1123,42 @@
         "Coordination d'un partenariat netlinking avec Indy / mon-salaire-en-net.fr (analyse anti-cannibalisation, rédaction, mise en ligne, suivi des liens)",
         "Stratégie LinkedIn éditoriale (planification, rédaction, visuels, storytelling produit) en lien avec le service communication",
         "Veille et mise en place d'une stratégie GEO (visibilité dans les IA génératives — ChatGPT, Gemini, Perplexity) et présence Reddit Pro",
-        "Participation hebdomadaire aux points Marketing-Sales-Produit avec analyse des leads, conversions et ROI"
+        "Participation hebdomadaire aux points Marketing-Sales-Produit avec analyse des leads, conversions et ROI",
+        "Organisation de la participation Weproc à la No Finish Line Nice 2025 (équipe interne, communication, post LinkedIn humain)",
+        "Conception d'une ligne de merch (t-shirts sport + coton qualité bureau) : design Figma, démarchage imprimeurs, propositions budgétaires",
+        "Pilotage éditorial LinkedIn (rédaction posts, calendrier, visuels Figma)"
       ],
       "liveUrl": "https://www.weproc.com",
       "screenshots": [
         "/projects/article_weproc.png"
       ]
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC34.01",
+      "AC34.02",
+      "AC34.05",
+      "AC35.01",
+      "AC35.02",
+      "AC35.04",
+      "AC24.05",
+      "AC22.04",
+      "AC22.05",
+      "AC23.03",
+      "AC23.05",
+      "AC25.04",
+      "AC25.05",
+      "AC14.06"
+    ]
   },
   {
     "slug": "rahnya-studio",
     "categories": [
-      "professional",
+      "uxui",
       "web",
-      "uxui"
+      "professional"
     ],
     "butSkills": [
-      "concevoir",
-      "exprimer",
       "développer",
       "entreprendre"
     ],
@@ -762,17 +1216,25 @@
       "githubUrl": "",
       "liveUrl": "https://rahnya-studio.vercel.app",
       "screenshots": []
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC35.01",
+      "AC35.03",
+      "AC35.04",
+      "AC34.01",
+      "AC34.05",
+      "AC23.03",
+      "AC15.05"
+    ]
   },
   {
     "slug": "snoozly",
     "categories": [
+      "web",
       "entrepreneurship"
     ],
     "butSkills": [
-      "comprendre",
-      "concevoir",
-      "exprimer",
       "entreprendre"
     ],
     "color": "#FF96B3",
@@ -831,15 +1293,25 @@
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC35.01",
+      "AC35.03",
+      "AC35.04",
+      "AC25.02",
+      "AC25.03",
+      "AC15.04",
+      "AC15.05",
+      "AC15.03"
+    ]
   },
   {
     "slug": "pitch",
     "categories": [
-      "communication"
+      "visuels"
     ],
     "butSkills": [
-      "exprimer",
       "entreprendre"
     ],
     "color": "#7B638A",
@@ -868,16 +1340,20 @@
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC35.04",
+      "AC25.05",
+      "AC15.07"
+    ]
   },
   {
     "slug": "vr-ar",
     "categories": [
-      "innovation"
+      "ar-vr-3d"
     ],
     "butSkills": [
-      "concevoir",
-      "exprimer",
       "développer"
     ],
     "color": "#C9A9DC",
@@ -912,15 +1388,21 @@
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC34.03",
+      "AC34.04",
+      "AC24.03",
+      "AC22.01"
+    ]
   },
   {
     "slug": "engagement-bde",
     "categories": [
-      "engagement"
+      "visuels"
     ],
     "butSkills": [
-      "exprimer",
       "entreprendre"
     ],
     "color": "#FFA755",
@@ -949,15 +1431,23 @@
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC15.02",
+      "AC15.06",
+      "AC25.04",
+      "AC25.05",
+      "AC35.01",
+      "AC15.03"
+    ]
   },
   {
     "slug": "infra-cyber",
     "categories": [
-      "system"
+      "web"
     ],
     "butSkills": [
-      "comprendre",
       "développer"
     ],
     "color": "#C9A9DC",
@@ -996,54 +1486,71 @@
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC34.05",
+      "AC24.06",
+      "AC14.04"
+    ]
   },
   {
     "slug": "conception",
     "categories": [
-      "development"
+      "web"
     ],
     "butSkills": [
-      "concevoir",
       "développer"
     ],
     "color": "#C9A9DC",
     "en": {
-      "title": "Software design",
+      "title": "Technical specifications writing",
       "description": "",
-      "context": "As part of several projects in BUT 3, we designed mini-projects such as simple applications and games, focusing on writing technical specifications. The goal was to formalize application behavior before development.",
-      "role": "I contributed to writing specifications by defining classes, attributes and methods. I helped structure the overall logic and interactions between components for projects like a battleship game or a car game.",
-      "selfEvaluation": "This work helped me understand the importance of the design phase in development. Unlike previous projects, I learned to structure my thinking before coding. This allowed me to produce more organized and consistent code. With hindsight, I could improve by using UML diagrams and more standardized documentation.",
-      "shortDescription": "Technical specifications and application modeling.",
-      "technologies": [],
+      "context": "Beyond the videoconf SAE, much of BUT3 was about writing specifications before any code. Across several mini-projects (battleship, car race, various mini-games), the rule was always the same: write specs precise enough that someone — or an AI — could implement the project without asking questions. If the implementation didn't hold up, the specs weren't good.",
+      "role": "On each project: identifying system entities, attributes and methods, component interactions, success criteria, edge cases. Sometimes formalised as simple diagrams, sometimes as structured prose.",
+      "selfEvaluation": "This discipline changed the way I approach code. Before, I'd code and adjust; now I write first, check that the writing holds up, and only then implement. It's also what made working with AI genuinely useful: a good spec = a good prompt. Looking back, I could push further with formal UML diagrams and more structured documentation.",
+      "shortDescription": "Cross-cutting BUT3 practice: writing specifications (classes, methods, interactions) before any code — battleship, car race, mini-game projects.",
+      "technologies": [
+        "Notion",
+        "Mermaid",
+        "Markdown"
+      ],
       "features": [],
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
     },
     "fr": {
-      "title": "Conception logicielle",
+      "title": "Rédaction de spécifications techniques",
       "description": "",
-      "context": "Dans le cadre de différents projets réalisés en BUT 3, nous avons conçu plusieurs mini-projets comme des jeux et applications simples en mettant l’accent sur la rédaction de spécifications techniques. L’objectif était de formaliser le fonctionnement des applications avant leur développement.",
-      "role": "J’ai participé à la rédaction des spécifications en définissant les classes, leurs attributs et leurs méthodes. J’ai contribué à structurer les projets en amont du développement en réfléchissant à la logique globale et aux interactions entre composants.",
-      "selfEvaluation": "Ce travail m’a permis de mieux comprendre l’importance de la phase de conception dans un projet de développement. J’ai appris à structurer ma réflexion avant de coder. Cela m’a aidée à produire un code plus organisé et cohérent. Avec le recul, je pourrais améliorer ces spécifications avec des diagrammes UML et une documentation plus formelle.",
-      "shortDescription": "Rédaction de spécifications et modélisation.",
-      "technologies": [],
+      "context": "Au-delà du gros projet visioconférence, le BUT3 a beaucoup tourné autour de la rédaction de spécifications avant développement. Sur plusieurs mini-projets (bataille navale, jeu de course de voitures, autres mini-jeux), la consigne tournait toujours autour du même principe : écrire des specs suffisamment précises pour que quelqu'un (ou une IA) puisse implémenter le projet sans poser de questions. Si l'implémentation ne tenait pas, les specs n'étaient pas bonnes.",
+      "role": "Sur chaque projet : identification des entités du système, attributs et méthodes, interactions entre composants, conditions de réussite, cas limites. Formalisation parfois par diagrammes simples, parfois en prose structurée.",
+      "selfEvaluation": "Cette discipline a transformé ma manière d'aborder le code. Avant, je codais et j'ajustais ; maintenant, j'écris d'abord, je vérifie que mon écrit tient debout, et seulement après j'implémente. C'est aussi ce qui a rendu la collaboration avec l'IA réellement utile : une bonne spec = un bon prompt. Avec le recul, je pourrais aller plus loin avec des diagrammes UML formels et une documentation plus structurée.",
+      "shortDescription": "Pratique transversale du BUT3 : écrire les spécifications (classes, méthodes, interactions) avant tout code — bataille navale, course de voitures, projets mini-jeux.",
+      "technologies": [
+        "Notion",
+        "Mermaid",
+        "Markdown"
+      ],
       "features": [],
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC34.04",
+      "AC22.01",
+      "AC25.02"
+    ]
   },
   {
     "slug": "tank-game-ui-unity",
     "categories": [
-      "school",
-      "game"
+      "ar-vr-3d",
+      "school"
     ],
     "butSkills": [
-      "concevoir",
-      "exprimer",
       "développer"
     ],
     "color": "#C9A9DC",
@@ -1108,7 +1615,14 @@
         "projects/tank1.png",
         "projects/tank2.png"
       ]
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC34.03",
+      "AC34.04",
+      "AC22.01",
+      "AC23.06"
+    ]
   },
   {
     "slug": "personal-portfolio",
@@ -1169,17 +1683,23 @@
       "githubUrl": "",
       "liveUrl": "",
       "screenshots": []
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC24.01",
+      "AC24.06",
+      "AC15.05",
+      "AC23.03",
+      "AC23.05"
+    ]
   },
   {
     "slug": "seo-content-strategy",
     "categories": [
+      "web",
       "professional"
     ],
     "butSkills": [
-      "comprendre",
-      "concevoir",
-      "exprimer",
       "entreprendre"
     ],
     "color": "#FFC72C",
@@ -1238,13 +1758,20 @@
       "screenshots": [
         "/projects/article_weproc.png"
       ]
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC22.04",
+      "AC23.01",
+      "AC22.05",
+      "AC25.05"
+    ]
   },
   {
     "slug": "ampa-animal-adoption",
     "categories": [
-      "web",
-      "design"
+      "visuels",
+      "web"
     ],
     "butSkills": [
       "concevoir",
@@ -1301,13 +1828,21 @@
       "githubUrl": "",
       "liveUrl": null,
       "screenshots": []
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC24.01",
+      "AC24.02",
+      "AC24.06",
+      "AC23.03",
+      "AC14.06"
+    ]
   },
   {
     "slug": "inflation-dataviz",
     "categories": [
-      "school",
-      "data"
+      "visuels",
+      "school"
     ],
     "butSkills": [
       "comprendre",
@@ -1362,13 +1897,20 @@
       "screenshots": [
         "/projects/Affiche_Datavisualisation.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC21.03",
+      "AC23.06",
+      "AC23.04",
+      "AC11.03"
+    ]
   },
   {
     "slug": "crossy-road-ux-powerups",
     "categories": [
-      "school",
-      "uxui"
+      "uxui",
+      "school"
     ],
     "butSkills": [
       "comprendre",
@@ -1420,14 +1962,22 @@
       "screenshots": [
         "/projects/crossy.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC21.01",
+      "AC21.05",
+      "AC22.02",
+      "AC11.02",
+      "AC11.06"
+    ]
   },
   {
     "slug": "weather-app-design",
     "categories": [
-      "school",
       "uxui",
-      "design"
+      "visuels",
+      "school"
     ],
     "butSkills": [
       "concevoir",
@@ -1481,13 +2031,20 @@
       "screenshots": [
         "/projects/meteo.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC22.01",
+      "AC22.02",
+      "AC23.05",
+      "AC13.05"
+    ]
   },
   {
     "slug": "virtual-travel-chair",
     "categories": [
-      "school",
-      "hackathon"
+      "web",
+      "school"
     ],
     "butSkills": [
       "comprendre",
@@ -1542,13 +2099,21 @@
       "screenshots": [
         "/projects/vr-chair.png"
       ]
-    }
+    },
+    "year": "BUT1",
+    "acs": [
+      "AC12.01",
+      "AC12.02",
+      "AC12.03",
+      "AC12.04",
+      "AC15.02"
+    ]
   },
   {
     "slug": "mmi-decouvertes",
     "categories": [
-      "school",
-      "web"
+      "web",
+      "school"
     ],
     "butSkills": [
       "concevoir",
@@ -1601,13 +2166,21 @@
       "screenshots": [
         "/projects/mmi-decouvertes.png"
       ]
-    }
+    },
+    "year": "BUT1",
+    "acs": [
+      "AC14.01",
+      "AC14.02",
+      "AC14.03",
+      "AC14.04",
+      "AC11.01"
+    ]
   },
   {
     "slug": "1ris-agency-website",
     "categories": [
-      "school",
-      "web"
+      "web",
+      "school"
     ],
     "butSkills": [
       "concevoir",
@@ -1662,11 +2235,24 @@
       "screenshots": [
         "/projects/agence-1ris-site.png"
       ]
-    }
+    },
+    "year": "BUT1",
+    "acs": [
+      "AC14.01",
+      "AC14.02",
+      "AC14.04",
+      "AC14.05",
+      "AC23.03",
+      "AC11.01",
+      "AC13.02",
+      "AC23.02",
+      "AC14.06"
+    ]
   },
   {
     "slug": "porquerolles-digital-watch",
     "categories": [
+      "web",
       "school"
     ],
     "butSkills": [
@@ -1722,11 +2308,19 @@
       "screenshots": [
         "/projects/porquerolles-festival.png"
       ]
-    }
+    },
+    "year": "BUT1",
+    "acs": [
+      "AC12.01",
+      "AC12.02",
+      "AC12.04",
+      "AC11.05"
+    ]
   },
   {
     "slug": "merry-cashmas-reportage",
     "categories": [
+      "web",
       "school"
     ],
     "butSkills": [
@@ -1779,11 +2373,19 @@
       "screenshots": [
         "/projects/konbini.png"
       ]
-    }
+    },
+    "year": "BUT1",
+    "acs": [
+      "AC13.01",
+      "AC13.03",
+      "AC13.04",
+      "AC13.06"
+    ]
   },
   {
     "slug": "mmi-30-years-communication",
     "categories": [
+      "web",
       "school"
     ],
     "butSkills": [
@@ -1836,13 +2438,20 @@
       "screenshots": [
         "/projects/30-ans-mmi.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC23.01",
+      "AC23.04",
+      "AC23.05",
+      "AC11.04"
+    ]
   },
   {
     "slug": "scrum-learning-platform",
     "categories": [
-      "school",
-      "web"
+      "web",
+      "school"
     ],
     "butSkills": [
       "comprendre",
@@ -1897,13 +2506,19 @@
       "screenshots": [
         "/projects/scrum.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC25.01",
+      "AC22.01",
+      "AC23.04"
+    ]
   },
   {
     "slug": "logo-jingle-animation",
     "categories": [
-      "school",
-      "design"
+      "visuels",
+      "school"
     ],
     "butSkills": [
       "exprimer"
@@ -1954,17 +2569,22 @@
       "screenshots": [
         "/projects/jingle.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC23.03",
+      "AC23.05",
+      "AC23.06"
+    ]
   },
   {
     "slug": "mmi-lan-event",
     "categories": [
-      "school",
-      "professional"
+      "web",
+      "professional",
+      "school"
     ],
     "butSkills": [
-      "comprendre",
-      "exprimer",
       "entreprendre"
     ],
     "color": "#7B638A",
@@ -2019,14 +2639,21 @@
         "/projects/site-lan.png",
         "/projects/mmi-lan-3.png"
       ]
-    }
+    },
+    "year": "BUT3",
+    "acs": [
+      "AC15.01",
+      "AC15.06",
+      "AC25.04",
+      "AC23.03"
+    ]
   },
   {
     "slug": "website-competitive-audit",
     "categories": [
-      "school",
+      "web",
       "professional",
-      "web"
+      "school"
     ],
     "butSkills": [
       "comprendre",
@@ -2080,13 +2707,21 @@
       "screenshots": [
         "/projects/stage3.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC21.01",
+      "AC21.02",
+      "AC22.04",
+      "AC11.02"
+    ]
   },
   {
     "slug": "communication-plan-project",
     "categories": [
-      "school",
-      "professional"
+      "web",
+      "professional",
+      "school"
     ],
     "butSkills": [
       "comprendre",
@@ -2139,6 +2774,13 @@
       "screenshots": [
         "/projects/stage2.png"
       ]
-    }
+    },
+    "year": "BUT2",
+    "acs": [
+      "AC21.01",
+      "AC22.03",
+      "AC22.05",
+      "AC25.05"
+    ]
   }
 ]

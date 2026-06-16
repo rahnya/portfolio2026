@@ -10,31 +10,33 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Couleurs mode sombre
+        // Couleurs mode sombre — rose adouci par défaut (#FF96B3 au lieu de #FF3B8D)
         navy: "#183153",
         dark: "#373750",
         pink: {
-          DEFAULT: "#FF3B8D",
-          light: "#FF96B3",
+          DEFAULT: "#FF96B3",   // rose clair par défaut (avant #FF3B8D, trop vif)
+          vivid: "#FF3B8D",     // accent vif disponible si besoin (boutons CTA dark)
+          light: "#FFB6CB",
           muted: "#D0A8BC",
         },
         purple: "#8A6F9B",
         yellow: "#FFC72C",
         "deep-dark": "#0D1B2A",
-        
-        // Couleurs mode clair (sunset)
+
+        // Couleurs mode clair (sunset) — alignées sur le PDF portfolio
         sunset: {
-          pink: "#EF9C9E",
-          orange: "#F9B97C",
+          pink: "#F4ADAE",
+          orange: "#E8AC95",
+          peach: "#F5C794",
           purple: "#B888A0",
-          blue: "#99AABB",
+          blue: "#9DA9BC",
         },
-        
-        // Texte
+
+        // Texte mode clair — marron foncé d'appui
         text: {
-          primary: "#5B333A",
-          secondary: "#8B5F63",
-          muted: "#A67D7F",
+          primary: "#3A1B22",
+          secondary: "#5B333A",
+          muted: "#7F4C53",
         },
       },
       

@@ -538,7 +538,7 @@ function CTABanner() {
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
               <Link
                 href="/recommendations"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 border border-white/15 hover:border-white/30 text-white font-body font-medium text-sm rounded-xl transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#5B333A] hover:bg-[#3A1B22] text-white font-body font-medium text-sm rounded-xl transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
               >
                 {t.nav.recommendations}<ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>

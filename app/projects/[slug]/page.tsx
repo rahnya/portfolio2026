@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { useParams } from "next/navigation";
 import { useLang } from "@/components/LangContext";
 import projectsData from "@/data/projects.json";
+import acLibrary from "@/data/ac-library.json";
 import ScrollReveal from "@/components/ScrollReveal";
 import { ArrowLeft, Github, ExternalLink, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -30,6 +31,8 @@ export default function ProjectDetailPage() {
   const role: string = (p as any).role ?? "";
   const selfEvaluation: string = (p as any).selfEvaluation ?? "";
   const butSkills: string[] = (project as any).butSkills ?? [];
+  const acs: string[] = (project as any).acs ?? [];
+  const year: string = (project as any).year ?? "";
 
   // Auto-play carousel
   useEffect(() => {
@@ -267,6 +270,11 @@ export default function ProjectDetailPage() {
               <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/10 dark:border-white/8 rounded-2xl p-6">
                 <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
                   {lang === "fr" ? "Compétences BUT" : "BUT Skills"}
+                  {year && (
+                    <span className="ml-2 font-bebas text-[10px] text-text-secondary dark:text-white/55 normal-case tracking-widest">
+                      · {year}
+                    </span>
+                  )}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {butSkills.map((skill) => (
@@ -279,11 +287,38 @@ export default function ProjectDetailPage() {
                     </span>
                   ))}
                 </div>
-                <p className="font-body text-[11px] text-text-muted dark:text-white/40 mt-3 leading-snug">
+                <p className="font-body text-[11px] text-text-muted dark:text-white/50 mt-3 leading-snug">
                   {lang === "fr"
-                    ? "Pluridisciplinarité mobilisée sur ce projet."
-                    : "Cross-skill scope mobilised on this project."}
+                    ? "Compétences MMI mobilisées sur ce projet."
+                    : "MMI competences mobilised on this project."}
                 </p>
+              </div>
+            )}
+
+            {/* Apprentissages Critiques (AC) */}
+            {acs.length > 0 && (
+              <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/10 dark:border-white/8 rounded-2xl p-6">
+                <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
+                  {lang === "fr" ? "Apprentissages critiques" : "Critical learnings"}
+                </h3>
+                <ul className="space-y-2.5">
+                  {acs.map((ac) => {
+                    const label = (acLibrary as Record<string, string>)[ac] || "";
+                    return (
+                      <li key={ac} className="flex gap-2 text-xs leading-snug">
+                        <span
+                          className="font-bebas flex-shrink-0 px-1.5 rounded text-text-primary dark:text-white border"
+                          style={{ backgroundColor: `${project.color}25`, borderColor: `${project.color}80` }}
+                        >
+                          {ac}
+                        </span>
+                        <span className="font-body text-text-secondary dark:text-white/70">
+                          {label}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             )}
 

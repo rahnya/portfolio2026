@@ -12,19 +12,26 @@
   --font-bebas: 'Bebas Neue', sans-serif;
   --font-dm-sans: 'DM Sans', sans-serif;
 
-  /* ─── MODE CLAIR (défaut) — Coucher de soleil ─── */
-  --bg-primary: linear-gradient(180deg,#EF9C9E 60%, #B888A0 100%);
-  --text-primary: #4A2329;
-  --text-secondary: #6B3E45;
-  --text-muted: #875258;
+  /* ─── MODE CLAIR (défaut) — Coucher de soleil (fidèle PDF portfolio) ─── */
+  --bg-primary: linear-gradient(180deg,
+    #F4ADAE 0%,        /* rose poudré chaud en haut */
+    #F2A29C 22%,
+    #E8AC95 45%,       /* peach */
+    #C49EA8 72%,       /* mauve doux */
+    #9DA9BC 100%       /* bleu poudré en bas */
+  );
+  --text-primary: #3A1B22;   /* marron très foncé — couleur d'appui PDF */
+  --text-secondary: #5B333A; /* marron classique */
+  --text-muted: #7F4C53;
 
-  /* Couleurs sunset */
-  --sunset-pink: #EF9C9E;
-  --sunset-orange: #F9B97C;
+  /* Couleurs sunset (alignées avec le PDF) */
+  --sunset-pink: #F4ADAE;
+  --sunset-orange: #E8AC95;
   --sunset-purple: #B888A0;
-  --sunset-blue: #99AABB;
+  --sunset-blue: #9DA9BC;
+  --sunset-gold: #F5C794;   /* doré chaud du bas du PDF */
 
-  /* Accents (alignés avec la DA Rahnya Studio) */
+  /* Accents (DA Rahnya Studio — utilisés surtout en mode sombre) */
   --accent-pink: #FF96B3;
   --accent-orange: #FFA755;
   --accent-yellow: #FFC72C;
@@ -32,35 +39,34 @@
   --accent-lavender: #C9A9DC;
   --accent-red: #FF375F;
 
-  /* Surfaces */
-  --surface: rgba(255, 255, 255, 0.85);
-  --surface-hover: rgba(255, 255, 255, 0.95);
+  /* Surfaces — marron transparent en mode clair (pas blanc) */
+  --surface: rgba(58, 27, 34, 0.10);
+  --surface-hover: rgba(58, 27, 34, 0.16);
 
   /* Bordures */
-  --border: rgba(91, 51, 58, 0.08);
-  --border-hover: rgba(91, 51, 58, 0.12);
+  --border: rgba(58, 27, 34, 0.14);
+  --border-hover: rgba(58, 27, 34, 0.28);
 
   /* Ombres */
-  --shadow: 0 4px 16px rgba(249, 185, 124, 0.12);
-  --shadow-lg: 0 8px 32px rgba(249, 185, 124, 0.15);
+  --shadow: 0 4px 16px rgba(58, 27, 34, 0.08);
+  --shadow-lg: 0 8px 32px rgba(58, 27, 34, 0.12);
 
   /* Focus ring */
-  --focus-ring: #F9B97C;
+  --focus-ring: #5B333A;
 }
 
 /* ─── MODE SOMBRE ─── */
 .dark {
-  /* Fond bleu nuit conservé, légère vibration vers le navy */
   --bg-primary: #0D1B2A;
   --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.65);
-  --text-muted: rgba(255, 255, 255, 0.45);
+  --text-secondary: rgba(255, 255, 255, 0.72);
+  --text-muted: rgba(255, 255, 255, 0.50);
 
   --surface: rgba(24, 49, 83, 0.3);
   --surface-hover: rgba(24, 49, 83, 0.5);
 
-  --border: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.15);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-hover: rgba(255, 255, 255, 0.18);
 
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 25px 70px rgba(0, 0, 0, 0.5);
@@ -99,12 +105,12 @@ body {
   min-height: 100vh;
 }
 
-/* Fond — Mode clair par défaut : dégradé sunset + glows doux pour donner de la profondeur (équivalent du dark mode) */
+/* Fond — Mode clair par défaut : sunset + glows doux (palette PDF portfolio) */
 body {
   background:
-    radial-gradient(ellipse at top right, rgba(255,167,85,0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at bottom left, rgba(184,136,160,0.20) 0%, transparent 55%),
-    radial-gradient(circle at 30% 40%, rgba(255,255,255,0.10) 0%, transparent 40%),
+    radial-gradient(ellipse at top right, rgba(245, 199, 148, 0.30) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom left, rgba(184, 136, 160, 0.25) 0%, transparent 60%),
+    radial-gradient(circle at 30% 40%, rgba(244, 173, 174, 0.20) 0%, transparent 45%),
     var(--bg-primary);
   background-attachment: fixed;
 }

@@ -27,6 +27,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/projects", label: t.nav.projects },
+    { href: "/competences", label: lang === "fr" ? "Compétences" : "Skills" },
     { href: "/lab", label: t.nav.lab },
     { href: "/pepite", label: t.nav.pepite },
     { href: "/appearances", label: t.nav.appearances },
