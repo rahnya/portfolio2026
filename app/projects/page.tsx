@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useLang } from "@/components/LangContext";
@@ -12,7 +12,7 @@ type ButSkill = "tous" | "comprendre" | "concevoir" | "exprimer" | "développer"
 
 const ALLOWED_SKILLS: ButSkill[] = ["tous", "comprendre", "concevoir", "exprimer", "développer", "entreprendre"];
 
-export default function ProjectsPage() {
+function ProjectsContent() {
   const { t, lang } = useLang();
   const searchParams = useSearchParams();
   const [track, setTrack] = useState<Track>("all");
@@ -302,5 +302,13 @@ export default function ProjectsPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function ProjectsPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen pt-24 pb-20 px-6" />}>
+      <ProjectsContent />
+    </Suspense>
   );
 }
