@@ -1,86 +1,47 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import { useLang } from "@/components/LangContext";
-import recommendationsData from "@/data/recommendations.json";
-import { Download, Quote, ArrowLeft } from "lucide-react";
+import recommendations from "@/data/recommendations.json";
+import ScrollReveal from "@/components/ScrollReveal";
+import { Quote } from "lucide-react";
 
 export default function RecommendationsPage() {
-  const { t, lang } = useLang();
+  const { lang } = useLang();
+  const L = (fr: string, en: string) => (lang === "fr" ? fr : en);
+  const items = recommendations as any[];
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6">
-      <div className="max-w-4xl mx-auto">
-
-        {/* Back */}
-        <Link href="/"
-          className="inline-flex items-center gap-2 text-text-secondary dark:text-white/40 hover:text-text-primary dark:hover:text-white font-body text-sm mb-12 transition-colors duration-200 group">
-          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" />
-          Home
-        </Link>
-
-        {/* Header */}
-        <div className="mb-16">
-          <p className="font-bebas text-xs dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
-            — Testimonials
-          </p>
-          <h1 className="font-display font-extrabold text-5xl text-white mb-4">
-            {t.recommendations.title}
+    <main className="min-h-screen pt-28 pb-24 px-6 md:px-12">
+      <div className="max-w-[1400px] mx-auto">
+        <header className="mb-14 max-w-3xl">
+          <p className="font-display text-xs uppercase tracking-widest mb-4 text-rose dark:text-pink">— {L("Recommandations","Recommendations")}</p>
+          <h1 className="font-display text-huge text-text-primary dark:text-white leading-[1.05]">
+            {L("Ce qu'on dit de mon travail.","What others say.")}
           </h1>
-          <p className="font-body text-text-secondary dark:text-white/50 text-lg">
-            {t.recommendations.subtitle}
+          <p className="mt-5 font-body text-lg text-text-secondary dark:text-white/75 leading-relaxed">
+            {L("Retours de professeurs et de collaborateurs qui ont travaillé avec moi.","From professors and collaborators who worked with me.")}
           </p>
-        </div>
+        </header>
 
-        {/* Cards */}
-        <div className="space-y-6">
-          {recommendationsData.map((rec, i) => (
-            <div key={i}
-              className="bg-[#183153]/30 border border-white/8 rounded-2xl p-8 relative overflow-hidden group hover:border-white/15 transition-colors duration-300">
-              {/* Quote icon */}
-              <Quote className="absolute top-6 right-6 w-8 h-8 text-[#FF6B35]/15 dark:text-[#FF3B8D]/15" />
-
-              <div className="flex items-start gap-4 mb-6">
-                {/* Avatar placeholder */}
-                <div className="w-12 h-12 rounded-full bg-white/5 dark:bg-white/10 backdrop-blur-md flex-shrink-0 flex items-center justify-center">
-                  <span className="font-display font-bold text-text-secondary dark:text-white/60 text-sm">
-                    {rec.name.charAt(0)}
-                  </span>
-                </div>
-                <div>
-                  <p className="font-display font-bold text-white">{rec.name}</p>
-                  <p className="font-bebas text-xs text-text-secondary dark:text-white/40 mt-0.5">
-                    {rec.role[lang as "en" | "fr"]}
-                  </p>
-                </div>
-              </div>
-
-              <blockquote className="font-body text-text-secondary dark:text-white/70 leading-relaxed italic mb-8">
-                &ldquo;{rec.text[lang as "en" | "fr"]}&rdquo;
-              </blockquote>
-
-              <a
-                href={`/cv/${rec.filename}`}
-                download
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-text-primary/10 dark:bg-[#FF3B8D]/10 hover:bg-text-primary/20 dark:hover:bg-[#FF3B8D]/20 border-text-primary/20 dark:border-[#FF3B8D]/20 hover:border-text-primary/40 dark:hover:border-[#FF3B8D]/40 text-white dark:text-[#FF96B3] font-body font-medium text-sm rounded-xl transition-all duration-200"
-              >
-                <Download className="w-4 h-4" />
-                {t.recommendations.download}
-              </a>
-            </div>
-          ))}
-        </div>
-
-        {/* CV Download CTA */}
-        <div className="mt-12 text-center p-8 bg-[#183153]/20 border border-white/5 rounded-2xl">
-          <p className="font-body text-text-secondary dark:text-white/50 mb-4">Looking for the full CV?</p>
-          <a href="/cv/CV_Rahnya.pdf" download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-text-primary dark:bg-[#FF3B8D] hover:bg-text-primary/90 dark:hover:bg-[#FF3B8D]/90 text-white font-body font-medium text-sm rounded-xl transition-all duration-200">
-            <Download className="w-4 h-4" />
-            {t.nav.cv}
-          </a>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {items.map((r, i) => {
+            const text = r.text?.[lang] ?? r.text?.fr ?? "";
+            const role = r.role?.[lang] ?? r.role?.fr ?? "";
+            return (
+              <ScrollReveal key={i} delay={(i%4)*0.05}>
+                <blockquote className="p-6 rounded-2xl border border-text-primary/12 dark:border-white/10 bg-text-primary/5 dark:bg-white/3 h-full">
+                  <Quote className="w-5 h-5 text-rose dark:text-pink mb-3" />
+                  <p className="font-body text-text-primary dark:text-white/90 leading-relaxed mb-4 italic">« {text} »</p>
+                  <footer className="pt-4 border-t border-text-primary/10 dark:border-white/10">
+                    <p className="font-display text-lg text-text-primary dark:text-white">{r.name}</p>
+                    <p className="font-body text-xs text-text-secondary dark:text-white/60">{role}</p>
+                  </footer>
+                </blockquote>
+              </ScrollReveal>
+            );
+          })}
         </div>
       </div>
-    </div>
+    </main>
   );
 }

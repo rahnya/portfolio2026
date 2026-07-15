@@ -1,7 +1,6 @@
 {
   "en": {
     "nav": {
-    "home": "Home",
     "projects": "Projects",
     "lab": "Lab",
     "pepite": "Pépite",
@@ -87,7 +86,6 @@
   },
   "fr": {
     "nav": {
-    "home": "Accueil",
     "projects": "Projets",
     "lab": "Lab",
     "pepite": "Pépite",

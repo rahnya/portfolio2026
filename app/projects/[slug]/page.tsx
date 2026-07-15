@@ -1,433 +1,265 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import { useParams } from "next/navigation";
+import { useParams, notFound } from "next/navigation";
 import { useLang } from "@/components/LangContext";
 import projectsData from "@/data/projects.json";
 import acLibrary from "@/data/ac-library.json";
 import ScrollReveal from "@/components/ScrollReveal";
-import { ArrowLeft, Github, ExternalLink, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Github, ExternalLink, CheckCircle2, ChevronLeft, ChevronRight, X as XIcon, ZoomIn } from "lucide-react";
 
-export default function ProjectDetailPage() {
+export default function ProjectDetail() {
   const params = useParams<{ slug: string }>();
-  const { lang, t } = useLang();
-  const [currentImage, setCurrentImage] = useState(0);
-  const [lightbox, setLightbox] = useState<number | null>(null);
+  const { lang } = useLang();
+  const slug = params?.slug as string;
+  const idx = (projectsData as any[]).findIndex((p) => p.slug === slug);
+  if (idx === -1) notFound();
+  const project = (projectsData as any[])[idx];
+  const prev = (projectsData as any[])[(idx - 1 + projectsData.length) % projectsData.length];
+  const next = (projectsData as any[])[(idx + 1) % projectsData.length];
 
-  const project = projectsData.find((p) => p.slug === params.slug);
-  if (!project) notFound();
+  const p = project[lang as "fr" | "en"] ?? project.fr;
+  const L = (fr: string, en: string) => (lang === "fr" ? fr : en);
+  const accent: string = project.color || "#B03A50";
+  const screenshots: string[] = Array.isArray(p?.screenshots) ? p.screenshots : [];
+  const acs: string[] = project.acs || [];
+  const butSkills: string[] = project.butSkills || [];
+  const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
 
-  const p = project[lang as "en" | "fr"];
+  const openLightbox = useCallback((i: number) => setLightboxIdx(i), []);
+  const closeLightbox = useCallback(() => setLightboxIdx(null), []);
+  const nextImage = useCallback(() => setLightboxIdx((i) => (i === null ? null : (i + 1) % screenshots.length)), [screenshots.length]);
+  const prevImage = useCallback(() => setLightboxIdx((i) => (i === null ? null : (i - 1 + screenshots.length) % screenshots.length)), [screenshots.length]);
 
-  const categories = Array.isArray((project as any).categories)
-    ? (project as any).categories
-    : (project as any).category
-    ? [(project as any).category]
-    : [];
-
-  const screenshots: string[] = Array.isArray(p.screenshots) ? p.screenshots : [];
-  const context: string = (p as any).context ?? "";
-  const role: string = (p as any).role ?? "";
-  const selfEvaluation: string = (p as any).selfEvaluation ?? "";
-  const butSkills: string[] = (project as any).butSkills ?? [];
-  const acs: string[] = (project as any).acs ?? [];
-  const year: string = (project as any).year ?? "";
-
-  // Auto-play carousel
   useEffect(() => {
-    if (screenshots.length <= 1) return;
-    
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % screenshots.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [screenshots.length]);
-
-  const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % screenshots.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImage((prev) => (prev - 1 + screenshots.length) % screenshots.length);
-  };
+    if (lightboxIdx === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft") prevImage();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightboxIdx, closeLightbox, nextImage, prevImage]);
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6">
-      <div className="max-w-4xl mx-auto">
-        {/* Back */}
-        <Link
-          href="/projects"
-          className="inline-flex items-center gap-2 text-text-muted dark:text-white/40 hover:text-text-primary dark:hover:text-white font-body text-sm mb-12 transition-colors duration-200 group"
-        >
-          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" />
-          {t.projects.title}
+    <main className="min-h-screen pt-24 pb-20 px-6 md:px-12">
+      <div className="max-w-[1400px] mx-auto">
+        <Link href="/projects" className="group inline-flex items-center gap-2 font-body text-sm text-text-secondary dark:text-white/65 hover:text-text-primary dark:hover:text-white mb-10 transition-colors">
+          <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+          {L("Tous les projets", "All projects")}
         </Link>
 
-        {/* Hero avec Carousel d'images */}
-        <div className="relative rounded-3xl h-96 md:h-[28rem] mb-12 overflow-hidden border border-text-primary/8 dark:border-white/8 group cursor-pointer"
-          onClick={() => screenshots.length > 0 && setLightbox(currentImage)}
-        >
-          {/* Images en fond */}
-          {screenshots.length > 0 ? (
-            <>
-              {screenshots.map((screenshot, index) => (
-                <div
-                  key={index}
-                  className={`absolute inset-0 transition-opacity duration-1000 ${
-                    index === currentImage ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <img
-                    src={screenshot}
-                    alt={`${p.title} ${index + 1}`}
-                    className="w-full h-full object-cover object-top"
-                  />
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-text-primary dark:from-deep-dark via-text-primary/50 dark:via-deep-dark/50 to-transparent" />
-                </div>
-              ))}
-
-              {/* Navigation carousel */}
-              {screenshots.length > 1 && (
-                <>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      prevImage();
-                    }}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 dark:bg-black/30 backdrop-blur-sm flex items-center justify-center text-white opacity-0 group-hover:opacity-100 hover:bg-white/20 dark:hover:bg-black/40 transition-all duration-200"
-                  >
-                    <ChevronLeft className="w-5 h-5" />
-                  </button>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      nextImage();
-                    }}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 dark:bg-black/30 backdrop-blur-sm flex items-center justify-center text-white opacity-0 group-hover:opacity-100 hover:bg-white/20 dark:hover:bg-black/40 transition-all duration-200"
-                  >
-                    <ChevronRight className="w-5 h-5" />
-                  </button>
-
-                  {/* Indicateurs */}
-                  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-                    {screenshots.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setCurrentImage(index);
-                        }}
-                        className={`transition-all duration-300 rounded-full ${
-                          index === currentImage
-                            ? "w-8 h-2 bg-white"
-                            : "w-2 h-2 bg-white/40 hover:bg-white/60"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </>
-              )}
-            </>
-          ) : (
-            // Fallback si pas d'images
-            <div
-              className="absolute inset-0"
-              style={{
-                background: `radial-gradient(circle at 20% 50%, ${project.color}35 0%, transparent 65%), radial-gradient(circle at 80% 20%, ${project.color}15 0%, transparent 50%)`,
-                backgroundColor: `${project.color}12`,
-              }}
-            />
-          )}
-
-          {/* Barre de couleur en bas */}
-          <div
-            className="absolute bottom-0 left-0 right-0 h-1"
-            style={{ background: `linear-gradient(90deg, ${project.color}, transparent)` }}
-          />
-
-          {/* Contenu du hero */}
-          <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
-            <div className="flex flex-wrap gap-2 mb-3">
-              {categories.map((cat: string) => (
-                <span
-                  key={cat}
-                  className="font-bebas text-xs px-3 py-1 rounded-full w-fit backdrop-blur-sm"
-                  style={{ backgroundColor: `${project.color}40`, color: "white" }}
-                >
-                  {cat.toUpperCase()}
+        <ScrollReveal>
+          <header className="mb-12 lg:mb-16 max-w-4xl">
+            <div className="flex flex-wrap items-center gap-2 mb-5">
+              {project.year && (
+                <span className="font-display text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full text-white" style={{ backgroundColor: accent }}>
+                  {project.year}
                 </span>
+              )}
+              {(project.categories || []).filter((c: string) => !["school","professional","entrepreneurship"].includes(c)).slice(0, 3).map((c: string) => (
+                <span key={c} className="font-display text-[10px] uppercase tracking-widest text-text-secondary dark:text-white/70 px-2.5 py-1 rounded-full border border-text-primary/20 dark:border-white/15">{c}</span>
               ))}
             </div>
-            <h1 className="font-bebas text-4xl md:text-5xl text-white drop-shadow-lg">
-              {p.title}
-            </h1>
-            {screenshots.length > 0 && (
-              <p className="font-bebas text-xs text-white/60 mt-3">
-                Cliquez pour agrandir • {currentImage + 1}/{screenshots.length}
-              </p>
-            )}
-          </div>
-        </div>
+            <h1 className="font-display text-huge text-text-primary dark:text-white leading-[1.02] mb-5">{p.title}</h1>
+            <p className="font-body text-lg text-text-secondary dark:text-white/75 max-w-3xl leading-relaxed">{p.shortDescription}</p>
+          </header>
+        </ScrollReveal>
 
-        {/* Content grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Main */}
-          <div className="md:col-span-2 space-y-10">
-            {/* Contexte */}
-            {context && (
-              <ScrollReveal>
-                <section aria-labelledby="ctx-title">
-                  <h2 id="ctx-title" className="font-display text-xl text-text-primary dark:text-white mb-4">
-                    {lang === "fr" ? "Contexte" : "Context"}
-                  </h2>
-                  <p className="font-body text-text-secondary dark:text-white/70 leading-relaxed whitespace-pre-line">
-                    {context}
-                  </p>
-                </section>
-              </ScrollReveal>
-            )}
+        {screenshots[0] && (
+          <ScrollReveal direction="fade">
+            <button
+              onClick={() => openLightbox(0)}
+              className="group relative block w-full mb-16 lg:mb-20 rounded-2xl overflow-hidden border border-text-primary/12 dark:border-white/10 bg-text-primary/8 dark:bg-white/3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-secondary dark:focus-visible:ring-pink"
+              aria-label={L("Agrandir l'image principale","Enlarge main image")}
+            >
+              <div className="aspect-[16/9] md:aspect-[16/8] relative overflow-hidden">
+                <img src={screenshots[0]} alt={p.title} className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]" loading="eager" />
+                <span className="absolute top-4 right-4 w-11 h-11 rounded-full bg-cream/95 dark:bg-deep-dark/90 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ZoomIn className="w-5 h-5 text-text-primary dark:text-white" aria-hidden="true" />
+                </span>
+              </div>
+            </button>
+          </ScrollReveal>
+        )}
 
-            {/* Role */}
-            {role && (
-              <ScrollReveal>
-                <section aria-labelledby="role-title">
-                  <h2 id="role-title" className="font-display text-xl text-text-primary dark:text-white mb-4">
-                    {lang === "fr" ? "Mon rôle" : "My role"}
-                  </h2>
-                  <p className="font-body text-text-secondary dark:text-white/70 leading-relaxed whitespace-pre-line">
-                    {role}
-                  </p>
-                </section>
-              </ScrollReveal>
-            )}
-
-            {/* AutoEvaluation */}
-            {selfEvaluation && (
-              <ScrollReveal>
-                <section aria-labelledby="eval-title">
-                  <h2 id="eval-title" className="font-display text-xl text-text-primary dark:text-white mb-4">
-                    {lang === "fr" ? "Auto-évaluation" : "Self-assessment"}
-                  </h2>
-                  <p className="font-body text-text-secondary dark:text-white/70 leading-relaxed whitespace-pre-line">
-                    {selfEvaluation}
-                  </p>
-                </section>
-              </ScrollReveal>
-            )}
-
-            {/* Features */}
-            {p.features && p.features.length > 0 && (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+          <div className="lg:col-span-8 space-y-14">
+            {(p as any).context && <ScrollReveal><Section title={L("Contexte", "Context")} body={(p as any).context} /></ScrollReveal>}
+            {(p as any).role && <ScrollReveal><Section title={L("Mon rôle", "My role")} body={(p as any).role} /></ScrollReveal>}
+            {(p as any).selfEvaluation && <ScrollReveal><Section title={L("Auto-évaluation", "Self-assessment")} body={(p as any).selfEvaluation} /></ScrollReveal>}
+            {(p as any).features && (p as any).features.length > 0 && (
               <ScrollReveal>
                 <section aria-labelledby="features-title">
-                  <h2 id="features-title" className="font-display text-xl text-text-primary dark:text-white mb-4">
-                    {t.projects.features}
+                  <h2 id="features-title" className="font-display text-big text-text-primary dark:text-white mb-6">
+                    {L("Réalisations", "Deliverables")}
                   </h2>
                   <ul className="space-y-3">
-                    {p.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <CheckCircle2
-                          className="w-4 h-4 flex-shrink-0 mt-0.5"
-                          style={{ color: project.color }}
-                          aria-hidden="true"
-                        />
-                        <span className="font-body text-sm text-text-secondary dark:text-white/70">
-                          {feature}
-                        </span>
+                    {(p as any).features.map((f: string, i: number) => (
+                      <li key={i} className="flex items-start gap-3 font-body text-base text-text-secondary dark:text-white/75">
+                        <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-1.5" style={{ color: accent }} aria-hidden="true" />
+                        <span className="leading-relaxed">{f}</span>
                       </li>
                     ))}
                   </ul>
                 </section>
               </ScrollReveal>
             )}
+            {screenshots.length > 1 && (
+              <ScrollReveal>
+                <section aria-labelledby="gallery-title">
+                  <div className="flex items-baseline justify-between flex-wrap gap-3 mb-6">
+                    <h2 id="gallery-title" className="font-display text-big text-text-primary dark:text-white">
+                      {L("Galerie", "Gallery")}
+                    </h2>
+                    <p className="font-body text-xs text-text-secondary dark:text-white/60">
+                      {screenshots.length - 1} {L("visuels","visuals")} · {L("cliquer pour agrandir","click to enlarge")}
+                    </p>
+                  </div>
+                  <div className="gallery-masonry">
+                    {screenshots.slice(1).map((src, i) => (
+                      <button key={i} onClick={() => openLightbox(i + 1)}
+                        className="group block w-full rounded-xl overflow-hidden border border-text-primary/12 dark:border-white/10 hover:border-text-primary/30 dark:hover:border-white/25 transition-all card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-secondary dark:focus-visible:ring-pink relative"
+                        aria-label={`${L("Agrandir l'image","Enlarge image")} ${i + 2}`}
+                      >
+                        <img src={src} alt={`${p.title} ${i + 2}`} loading="lazy" className="w-full h-auto block" />
+                        <span className="absolute top-2 right-2 w-8 h-8 rounded-full bg-cream/95 dark:bg-deep-dark/90 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                          <ZoomIn className="w-3.5 h-3.5 text-text-primary dark:text-white" aria-hidden="true" />
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </section>
+              </ScrollReveal>
+            )}
           </div>
 
-          {/* Sidebar */}
-          <aside className="space-y-6" aria-label={lang === "fr" ? "Informations projet" : "Project info"}>
-            {/* Tech stack */}
-            {p.technologies && p.technologies.length > 0 && (
-              <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/10 dark:border-white/8 rounded-2xl p-6">
-                <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
-                  {t.projects.technologies}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {p.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="font-bebas text-xs px-2.5 py-1 rounded-full border border-text-primary/10 dark:border-white/10 text-text-secondary dark:text-white/70"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+          <aside className="lg:col-span-4 space-y-5" aria-label={L("Informations","Information")}>
+            {(p as any).technologies && (p as any).technologies.length > 0 && (
+              <ScrollReveal direction="right" distance={16}>
+                <div className="bg-text-primary/6 dark:bg-white/3 border border-text-primary/12 dark:border-white/10 rounded-2xl p-6">
+                  <h3 className="font-display text-xs uppercase tracking-widest text-text-secondary dark:text-white/65 mb-4">{L("Technologies","Technologies")}</h3>
+                  <div className="flex flex-wrap gap-1.5">
+                    {(p as any).technologies.map((t: string) => (
+                      <span key={t} className="font-body text-xs px-2 py-1 rounded text-text-secondary dark:text-white/75 border border-text-primary/15 dark:border-white/10">{t}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </ScrollReveal>
             )}
 
-            {/* Compétences BUT */}
             {butSkills.length > 0 && (
-              <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/10 dark:border-white/8 rounded-2xl p-6">
-                <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
-                  {lang === "fr" ? "Compétences BUT" : "BUT Skills"}
-                  {year && (
-                    <span className="ml-2 font-bebas text-[10px] text-text-secondary dark:text-white/55 normal-case tracking-widest">
-                      · {year}
-                    </span>
-                  )}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {butSkills.map((skill) => (
-                    <span
-                      key={skill}
-                      className="font-bebas text-xs px-3 py-1 rounded-full capitalize text-text-primary dark:text-white border"
-                      style={{ backgroundColor: `${project.color}25`, borderColor: `${project.color}80` }}
-                    >
-                      {skill}
-                    </span>
-                  ))}
+              <ScrollReveal direction="right" distance={16} delay={0.06}>
+                <div className="bg-text-primary/6 dark:bg-white/3 border border-text-primary/12 dark:border-white/10 rounded-2xl p-6">
+                  <h3 className="font-display text-xs uppercase tracking-widest text-text-secondary dark:text-white/65 mb-4">
+                    {L("Compétences BUT","BUT skills")}
+                    {project.year && <span className="ml-2 opacity-75">· {project.year}</span>}
+                  </h3>
+                  <div className="flex flex-wrap gap-1.5">
+                    {butSkills.map((s) => (
+                      <span key={s} className="font-body text-xs px-2.5 py-1 rounded-full text-text-primary dark:text-white border capitalize" style={{ backgroundColor: `${accent}20`, borderColor: `${accent}66` }}>{s}</span>
+                    ))}
+                  </div>
                 </div>
-                <p className="font-body text-[11px] text-text-muted dark:text-white/50 mt-3 leading-snug">
-                  {lang === "fr"
-                    ? "Compétences MMI mobilisées sur ce projet."
-                    : "MMI competences mobilised on this project."}
-                </p>
-              </div>
+              </ScrollReveal>
             )}
 
-            {/* Apprentissages Critiques (AC) */}
             {acs.length > 0 && (
-              <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/10 dark:border-white/8 rounded-2xl p-6">
-                <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
-                  {lang === "fr" ? "Apprentissages critiques" : "Critical learnings"}
-                </h3>
-                <ul className="space-y-2.5">
-                  {acs.map((ac) => {
-                    const label = (acLibrary as Record<string, string>)[ac] || "";
-                    return (
-                      <li key={ac} className="flex gap-2 text-xs leading-snug">
-                        <span
-                          className="font-bebas flex-shrink-0 px-1.5 rounded text-text-primary dark:text-white border"
-                          style={{ backgroundColor: `${project.color}25`, borderColor: `${project.color}80` }}
-                        >
-                          {ac}
-                        </span>
-                        <span className="font-body text-text-secondary dark:text-white/70">
-                          {label}
-                        </span>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
+              <ScrollReveal direction="right" distance={16} delay={0.10}>
+                <div className="bg-text-primary/6 dark:bg-white/3 border border-text-primary/12 dark:border-white/10 rounded-2xl p-6">
+                  <h3 className="font-display text-xs uppercase tracking-widest text-text-secondary dark:text-white/65 mb-4">
+                    {L("Apprentissages critiques","Critical learnings")}
+                  </h3>
+                  <ul className="space-y-2.5">
+                    {acs.map((ac) => {
+                      const label = (acLibrary as Record<string, string>)[ac] || "";
+                      return (
+                        <li key={ac} className="flex gap-2 text-xs leading-snug">
+                          <span className="font-display flex-shrink-0 px-1.5 rounded text-text-primary dark:text-white border" style={{ backgroundColor: `${accent}1a`, borderColor: `${accent}66` }}>{ac}</span>
+                          <span className="font-body text-text-secondary dark:text-white/70">{label}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </ScrollReveal>
             )}
 
-            {/* Links */}
             {(p.githubUrl || p.liveUrl) && (
-              <div className="bg-text-primary/10 dark:bg-navy/30 border border-text-primary/8 dark:border-white/8 rounded-2xl p-6 space-y-3">
-                <h3 className="font-display text-sm text-text-primary dark:text-white mb-4 uppercase tracking-wider">
-                  {lang === "fr" ? "Liens" : "Links"}
-                </h3>
-                {p.githubUrl && (
-                  <a
-                    href={p.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${t.projects.github} (${lang === "fr" ? "ouvre dans un nouvel onglet" : "opens in new tab"})`}
-                    className="flex items-center gap-3 text-text-secondary dark:text-white/70 hover:text-text-primary dark:hover:text-white transition-colors duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
-                  >
-                    <Github className="w-4 h-4" aria-hidden="true" />
-                    <span className="font-body text-sm">{t.projects.github}</span>
-                    <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" aria-hidden="true" />
-                  </a>
-                )}
-                {p.liveUrl && (
-                  <a
-                    href={p.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${t.projects.live_demo} (${lang === "fr" ? "ouvre dans un nouvel onglet" : "opens in new tab"})`}
-                    className="flex items-center gap-3 text-text-secondary dark:text-white/70 hover:text-text-primary dark:hover:text-white transition-colors duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink rounded"
-                  >
-                    <ExternalLink className="w-4 h-4" aria-hidden="true" />
-                    <span className="font-body text-sm">{t.projects.live_demo}</span>
-                    <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" aria-hidden="true" />
-                  </a>
-                )}
-              </div>
+              <ScrollReveal direction="right" distance={16} delay={0.14}>
+                <div className="bg-text-primary/6 dark:bg-white/3 border border-text-primary/12 dark:border-white/10 rounded-2xl p-6 space-y-3">
+                  <h3 className="font-display text-xs uppercase tracking-widest text-text-secondary dark:text-white/65 mb-1">{L("Liens","Links")}</h3>
+                  {p.githubUrl && (
+                    <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2.5 font-body text-sm text-text-primary dark:text-white">
+                      <Github className="w-4 h-4" aria-hidden="true" />
+                      <span className="border-b border-text-primary/30 dark:border-white/30 group-hover:border-text-primary dark:group-hover:border-white">GitHub</span>
+                      <ExternalLink className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                  )}
+                  {p.liveUrl && (
+                    <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2.5 font-body text-sm text-text-primary dark:text-white">
+                      <ExternalLink className="w-4 h-4" aria-hidden="true" />
+                      <span className="border-b border-text-primary/30 dark:border-white/30 group-hover:border-text-primary dark:group-hover:border-white">{L("Voir en ligne", "Live demo")}</span>
+                      <ArrowUpRight className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                  )}
+                </div>
+              </ScrollReveal>
             )}
           </aside>
         </div>
+
+        <nav aria-label={L("Navigation entre projets","Project navigation")} className="mt-20 pt-8 border-t border-text-primary/12 dark:border-white/10 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Link href={`/projects/${prev.slug}`} className="group flex items-center gap-3 p-4 rounded-xl border border-text-primary/12 dark:border-white/10 hover:border-text-primary/30 dark:hover:border-white/25 transition-colors">
+            <ChevronLeft className="w-5 h-5 text-text-secondary dark:text-white/65 transition-transform group-hover:-translate-x-1" />
+            <div>
+              <p className="font-display text-[10px] uppercase tracking-widest text-text-secondary dark:text-white/55">{L("Précédent","Previous")}</p>
+              <p className="font-body text-sm text-text-primary dark:text-white">{prev[lang as "fr"|"en"]?.title ?? prev.fr.title}</p>
+            </div>
+          </Link>
+          <Link href={`/projects/${next.slug}`} className="group flex items-center gap-3 p-4 rounded-xl border border-text-primary/12 dark:border-white/10 hover:border-text-primary/30 dark:hover:border-white/25 transition-colors md:justify-end md:text-right">
+            <div className="md:order-1">
+              <p className="font-display text-[10px] uppercase tracking-widest text-text-secondary dark:text-white/55">{L("Suivant","Next")}</p>
+              <p className="font-body text-sm text-text-primary dark:text-white">{next[lang as "fr"|"en"]?.title ?? next.fr.title}</p>
+            </div>
+            <ChevronRight className="w-5 h-5 text-text-secondary dark:text-white/65 transition-transform group-hover:translate-x-1 md:order-2" />
+          </Link>
+        </nav>
       </div>
 
-      {/* Lightbox */}
-      {lightbox !== null && screenshots.length > 0 && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-label={lang === "fr" ? "Aperçu image" : "Image preview"}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
-          onClick={() => setLightbox(null)}
-          onKeyDown={(e) => {
-            if (e.key === "Escape") setLightbox(null);
-            if (e.key === "ArrowLeft" && screenshots.length > 1)
-              setLightbox((prev) => (prev! - 1 + screenshots.length) % screenshots.length);
-            if (e.key === "ArrowRight" && screenshots.length > 1)
-              setLightbox((prev) => (prev! + 1) % screenshots.length);
-          }}
-          tabIndex={-1}
-        >
-          {/* Fermer */}
-          <button
-            onClick={() => setLightbox(null)}
-            aria-label={lang === "fr" ? "Fermer l'aperçu" : "Close preview"}
-            className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors duration-200 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-          >
-            <span aria-hidden="true">✕</span>
+      {lightboxIdx !== null && (
+        <div role="dialog" aria-modal="true" aria-label={L("Image agrandie","Enlarged image")} className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex items-center justify-center p-6">
+          <button onClick={closeLightbox} className="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors" aria-label={L("Fermer","Close")}>
+            <XIcon className="w-5 h-5" />
           </button>
-
-          {/* Flèche gauche */}
           {screenshots.length > 1 && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setLightbox((prev) => (prev! - 1 + screenshots.length) % screenshots.length);
-              }}
-              aria-label={lang === "fr" ? "Image précédente" : "Previous image"}
-              className="absolute left-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-2xl transition-colors duration-200 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-            >
-              <span aria-hidden="true">‹</span>
-            </button>
+            <>
+              <button onClick={prevImage} className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors" aria-label={L("Précédent","Previous")}>
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button onClick={nextImage} className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors" aria-label={L("Suivant","Next")}>
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </>
           )}
-
-          {/* Image */}
-          <img
-            src={screenshots[lightbox]}
-            alt={`${p.title} — ${lang === "fr" ? "capture" : "screenshot"} ${lightbox + 1}`}
-            className="max-w-[90vw] max-h-[85vh] rounded-2xl object-contain shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          />
-
-          {/* Flèche droite */}
+          <img src={screenshots[lightboxIdx]} alt="" className="max-w-full max-h-[85vh] object-contain rounded-lg" />
           {screenshots.length > 1 && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setLightbox((prev) => (prev! + 1) % screenshots.length);
-              }}
-              aria-label={lang === "fr" ? "Image suivante" : "Next image"}
-              className="absolute right-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-2xl transition-colors duration-200 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-            >
-              <span aria-hidden="true">›</span>
-            </button>
+            <p className="absolute bottom-6 left-1/2 -translate-x-1/2 font-body text-xs text-white/70 tabular">
+              {lightboxIdx + 1} / {screenshots.length}
+            </p>
           )}
-
-          {/* Compteur */}
-          <div className="absolute bottom-6 font-bebas text-xs text-white/60 z-10" aria-live="polite">
-            {lightbox + 1} / {screenshots.length}
-          </div>
         </div>
       )}
-    </div>
+    </main>
+  );
+}
+
+function Section({ title, body }: { title: string; body: string }) {
+  return (
+    <section>
+      <h2 className="font-display text-big text-text-primary dark:text-white mb-4">{title}</h2>
+      <div className="font-body text-base lg:text-lg text-text-secondary dark:text-white/75 leading-[1.75] whitespace-pre-line prose-relaxed">{body}</div>
+    </section>
   );
 }

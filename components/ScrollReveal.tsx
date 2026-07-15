@@ -3,23 +3,18 @@ import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
 type Direction = "up" | "left" | "right" | "fade" | "scale";
-
-interface ScrollRevealProps {
+interface Props {
   children: React.ReactNode;
   delay?: number;
   duration?: number;
   direction?: Direction;
   className?: string;
-  /** Distance en pixels du décalage initial (par défaut 30) */
   distance?: number;
-  /** Si true, l'animation se déclenche uniquement à la première vue (par défaut true) */
   once?: boolean;
-  /** Marge négative pour déclencher l'animation un peu avant l'arrivée à l'écran */
   rootMargin?: string;
-  as?: keyof JSX.IntrinsicElements;
 }
 
-const directionMap = (dir: Direction, d: number) => {
+const init = (dir: Direction, d: number) => {
   switch (dir) {
     case "up":    return { y: d, x: 0, scale: 1, opacity: 0 };
     case "left":  return { x: -d, y: 0, scale: 1, opacity: 0 };
@@ -29,42 +24,21 @@ const directionMap = (dir: Direction, d: number) => {
   }
 };
 
-/**
- * ScrollReveal — wraps any block of content and animates it into view on scroll.
- * Honours `prefers-reduced-motion`: when the user prefers reduced motion, content
- * is shown statically with no movement.
- */
 export default function ScrollReveal({
-  children,
-  delay = 0,
-  duration = 0.6,
-  direction = "up",
-  className,
-  distance = 30,
-  once = true,
-  rootMargin = "-60px",
-  as = "div",
-}: ScrollRevealProps) {
+  children, delay = 0, duration = 0.7, direction = "up",
+  className, distance = 24, once = true, rootMargin = "-60px",
+}: Props) {
   const reduce = useReducedMotion();
-  const MotionTag = motion[as as "div"] as typeof motion.div;
-
-  if (reduce) {
-    return <div className={className}>{children}</div>;
-  }
-
+  if (reduce) return <div className={className}>{children}</div>;
   return (
-    <MotionTag
+    <motion.div
       className={className}
-      initial={directionMap(direction, distance)}
+      initial={init(direction, distance)}
       whileInView={{ x: 0, y: 0, scale: 1, opacity: 1 }}
-      transition={{
-        duration,
-        delay,
-        ease: [0.21, 0.47, 0.32, 0.98], // smooth ease-out
-      }}
+      transition={{ duration, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
       viewport={{ once, margin: rootMargin }}
     >
       {children}
-    </MotionTag>
+    </motion.div>
   );
 }

@@ -1,193 +1,117 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { useLang } from "@/components/LangContext";
-import { Github, Linkedin, Mail, Send, CheckCircle2, AlertCircle } from "lucide-react";
-import emailjs from '@emailjs/browser';
+import ScrollReveal from "@/components/ScrollReveal";
+import { Send, Linkedin, Github, Clock, CheckCircle2, AlertCircle, ArrowUpRight } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
-const BehanceIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-    <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 1.202.483 1.953 1.944 1.953.599 0 1.172-.246 1.38-.76h2.432zm-5.101-7.5c-1.313 0-2.141.7-2.304 2h4.404c-.057-.982-.686-2-2.1-2zM9 14H5.67v1.98H9c1.087 0 1.752-.482 1.752-1.037C10.752 14.393 10.085 14 9 14zm.667-3.33c0-.47-.333-.87-1.182-.87H5.67V11.2h2.726c.832 0 1.271-.34 1.271-.868v-.662zM3 19h6.386c2.47 0 3.814-1.329 3.814-3.35 0-1.513-.878-2.64-2.22-3.002C12.046 12.12 12.764 11.1 12.764 9.7c0-2.01-1.353-3.7-3.804-3.7H3v13z"/>
-  </svg>
-);
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
 
 export default function ContactPage() {
-  const { t } = useLang();
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
-  const [loading, setLoading] = useState(false);
+  const { lang } = useLang();
+  const L = (fr: string, en: string) => (lang === "fr" ? fr : en);
+  const [status, setStatus] = useState<"idle"|"sending"|"success"|"error">("idle");
+  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e: React.MouseEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.message) {
-      setStatus("error");
+    setStatus("sending");
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
+      window.location.href = `mailto:rahnyapro@gmail.com?subject=${encodeURIComponent(form.subject)}&body=${body}`;
+      setStatus("success");
       return;
     }
-  
-    setLoading(true);   // 🔹 on active le loader
-    setStatus("idle");  // 🔹 on reset le status
-  
-    emailjs.send(
-      'service_i9see4n', // ton service
-      'template_b45cwb9', // ton template
-      form,
-      'KOxrqs9MrABdI4Qqb' // ton clé publique
-    )
-    
-    .then(() => {
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        from_name: form.name, from_email: form.email,
+        subject: form.subject, message: form.message,
+      }, { publicKey: PUBLIC_KEY });
       setStatus("success");
-      setForm({ name: "", email: "", message: "" });
-    })
-    .catch(() => {
-      setStatus("error");
-    })
-    .finally(() => {
-      setLoading(false);  // 🔹 on désactive le loader
-    });
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } catch { setStatus("error"); }
   };
 
-  const contacts = [
-    { icon: <Mail className="w-5 h-5" />, label: "Email", value: "rahnyapro@gmail.com", href: "mailto:rahnyapro@gmail.com", color: "#5B333A", darkColor: "#FF3B8D" },
-    { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", value: "https://www.linkedin.com/in/rahnya-lanyeri/", href: "https://www.linkedin.com/in/rahnya-lanyeri", color: "#0077B5" },
-    { icon: <Github className="w-5 h-5" />, label: "GitHub", value: "github.com/rahnya", href: "  https://github.com/rahnya", color: "#ffffff" },
-    { icon: <BehanceIcon />, label: "Behance", value: "behance.net/rahnya_lanyeri", href: "https://www.behance.net/rahnya_lanyeri", color: "#1769FF" },
-  ];
-
-  const inputClass = "w-full bg-text-primary/30 dark:bg-[#183153]/30 border border-white/10 rounded-xl px-4 py-3 font-body text-sm text-white placeholder-white/25 " +
-  "focus:outline-none " +
-  "focus:border-text-primary dark:focus:border-[#FF3B8D] " +
-  "focus:bg-[#183153]/50 dark:focus:bg-[#183153]/50 transition-all duration-200";
-
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6">
-      <div className="max-w-6xl mx-auto">
-
-        {/* Header */}
-        <div className="mb-16">
-          <p className="font-bebas text-xs dark:text-[#FF3B8D] uppercase tracking-widest mb-4">
-            — {t.contact.title}
-          </p>
-          <h1 className="font-display font-extrabold text-5xl md:text-6xl dark:text-white mb-4">
-            {t.contact.title}
+    <main className="min-h-screen pt-28 pb-24 px-6 md:px-12">
+      <div className="max-w-[1400px] mx-auto">
+        <header className="mb-14 max-w-3xl">
+          <p className="font-display text-xs uppercase tracking-widest mb-4 text-rose dark:text-pink">— Contact</p>
+          <h1 className="font-display text-huge text-text-primary dark:text-white leading-[1.05]">
+            {L("On échange ?","Let's talk?")}
           </h1>
-          <p className="font-body text-text-secondary dark:text-white/50 text-lg max-w-xl">
-            {t.contact.subtitle}
+          <p className="mt-5 font-body text-lg text-text-secondary dark:text-white/75 leading-relaxed">
+            {L("Site, app, identité, audit, accompagnement — ou juste un café visio. Réponse sous 48h.","Site, app, identity, audit, advisory — or just a video coffee. Reply within 48h.")}
           </p>
-        </div>
+        </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-
-          {/* Form */}
-          <div className="bg-text-secondary/20 dark:bg-[#183153]/20 border border-white/8 rounded-2xl p-8">
-            <div className="space-y-4">
-              <div>
-                <label className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-wider mb-2 block">
-                  {t.contact.name}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <ScrollReveal direction="left" className="lg:col-span-7">
+            <form onSubmit={submit} className="space-y-5 bg-text-primary/5 dark:bg-white/3 border border-text-primary/12 dark:border-white/10 rounded-2xl p-6 md:p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <label className="block">
+                  <span className="block font-display text-[11px] uppercase tracking-widest text-text-secondary dark:text-white/65 mb-2">{L("Nom","Name")}</span>
+                  <input required value={form.name} onChange={(e) => setForm({...form, name: e.target.value})}
+                    className="w-full bg-cream dark:bg-white/6 border border-text-primary/15 dark:border-white/12 rounded-lg px-4 py-2.5 text-text-primary dark:text-white font-body text-sm focus:outline-none focus:border-text-secondary dark:focus:border-pink transition-colors" />
                 </label>
-                <input
-                  name="name"
-                  type="text"
-                  value={form.name}
-                  onChange={handleChange}
-                  placeholder={t.contact.placeholder_name}
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-wider mb-2 block">
-                  {t.contact.email}
+                <label className="block">
+                  <span className="block font-display text-[11px] uppercase tracking-widest text-text-secondary dark:text-white/65 mb-2">Email</span>
+                  <input required type="email" value={form.email} onChange={(e) => setForm({...form, email: e.target.value})}
+                    className="w-full bg-cream dark:bg-white/6 border border-text-primary/15 dark:border-white/12 rounded-lg px-4 py-2.5 text-text-primary dark:text-white font-body text-sm focus:outline-none focus:border-text-secondary dark:focus:border-pink transition-colors" />
                 </label>
-                <input
-                  name="email"
-                  type="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder={t.contact.placeholder_email}
-                  className={inputClass}
-                />
               </div>
-              <div>
-                <label className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-wider mb-2 block">
-                  {t.contact.message}
-                </label>
-                <textarea
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  placeholder={t.contact.placeholder_message}
-                  rows={6}
-                  className={`${inputClass} resize-none`}
-                />
-              </div>
-
-              {/* Status messages */}
-              {status === "success" && (
-                <div className="flex items-center gap-2 text-green-400 text-sm font-body">
-                  <CheckCircle2 className="w-4 h-4" />
-                  {t.contact.success}
-                </div>
-              )}
-              {status === "error" && (
-                <div className="flex items-center gap-2 text-red-400 text-sm font-body">
-                  <AlertCircle className="w-4 h-4" />
-                  {t.contact.error}
-                </div>
-              )}
-
-              <button
-                onClick={handleSubmit}
-                disabled={loading}
-                className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-text-primary dark:bg-[#FF3B8D] hover:bg-text-primary/90 dark:hover:bg-[#FF3B8D]/90  text-white font-body font-medium text-sm rounded-xl transition-all duration-200 hover:shadow-[0_0_30px_rgba(255,59,141,0.25)] group mt-2 ${loading ? "opacity-60 cursor-not-allowed" : ""}`}
-              >
-                {loading ? (
-                  <span className="animate-spin border-2 border-white/50 border-t-white w-4 h-4 rounded-full" />
-                ) : (
-                  <Send className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+              <label className="block">
+                <span className="block font-display text-[11px] uppercase tracking-widest text-text-secondary dark:text-white/65 mb-2">{L("Sujet","Subject")}</span>
+                <input required value={form.subject} onChange={(e) => setForm({...form, subject: e.target.value})}
+                  className="w-full bg-cream dark:bg-white/6 border border-text-primary/15 dark:border-white/12 rounded-lg px-4 py-2.5 text-text-primary dark:text-white font-body text-sm focus:outline-none focus:border-text-secondary dark:focus:border-pink transition-colors" />
+              </label>
+              <label className="block">
+                <span className="block font-display text-[11px] uppercase tracking-widest text-text-secondary dark:text-white/65 mb-2">Message</span>
+                <textarea required rows={6} value={form.message} onChange={(e) => setForm({...form, message: e.target.value})}
+                  className="w-full bg-cream dark:bg-white/6 border border-text-primary/15 dark:border-white/12 rounded-lg px-4 py-2.5 text-text-primary dark:text-white font-body text-sm focus:outline-none focus:border-text-secondary dark:focus:border-pink transition-colors resize-y" />
+              </label>
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <button type="submit" disabled={status === "sending"} className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-text-primary dark:bg-pink text-cream dark:text-deep-dark font-body text-sm font-medium hover:bg-text-secondary dark:hover:bg-pink/85 transition-colors disabled:opacity-50">
+                  <Send className="w-4 h-4" />
+                  {status === "sending" ? L("Envoi…","Sending…") : L("Envoyer","Send")}
+                </button>
+                {status === "success" && (
+                  <span className="inline-flex items-center gap-1.5 font-body text-sm text-emerald-600 dark:text-emerald-400">
+                    <CheckCircle2 className="w-4 h-4" /> {L("Envoyé, merci !","Sent, thanks!")}
+                  </span>
                 )}
-                {t.contact.send}
-              </button>
-            </div>
-          </div>
-
-          {/* Direct contacts */}
-          <div className="flex flex-col justify-center space-y-4">
-            <p className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-widest mb-2">
-              {t.contact.or}
-            </p>
-
-            {contacts.map((c, i) => (
-              <a key={i} href={c.href} target="_blank" rel="noopener noreferrer" className="card-hover group flex items-center gap-4 bg-text-primary/20 dark:bg-[#183153]/20 border border-white/8 rounded-xl p-5 hover:border-white/15">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover:scale-110" style={{ backgroundColor: `${c.color}15`, color: c.color }} >
-                  {c.icon}
-                </div>
-                <div>
-                  <p className="font-bebas text-xs text-text-secondary dark:text-white/40 uppercase tracking-wider">
-                    {c.label}
-                  </p>
-                  <p className="font-body text-sm text-text-secondary dark:text-white/80 group-hover:text-text-primary dark:group-hover:text-white transition-colors duration-200">
-                    {c.value}
-                  </p>
-                </div>
-              </a>
-            ))}
-
-            {/* Availability note */}
-            <div className="mt-6 p-5 bg-text-primary/5 dark:bg-[#FF3B8D]/5 border border-text-primary/15 border dark:border-[#FF3B8D]/15 rounded-xl">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="w-2 h-2 rounded-full bg-text-primary dark:bg-[#FF3B8D] animate-pulse" />
-                <span className="font-bebas text-xs dark:text-[#FF3B8D]">Currently Available</span>
+                {status === "error" && (
+                  <span className="inline-flex items-center gap-1.5 font-body text-sm text-rose dark:text-pink">
+                    <AlertCircle className="w-4 h-4" /> {L("Erreur — essaie l'email direct","Error — try direct email")}
+                  </span>
+                )}
               </div>
-              <p className="font-body text-xs text-text-secondary dark:text-white/40 leading-relaxed">
-                Open to internships, apprenticeships, and collaborative projects.
-                Typical response time: 24–48 hours.
-              </p>
+            </form>
+          </ScrollReveal>
+
+          <ScrollReveal direction="right" className="lg:col-span-5 space-y-6">
+            <div>
+              <p className="font-display text-[11px] uppercase tracking-widest text-text-secondary dark:text-white/65 mb-2">Email</p>
+              <a href="mailto:rahnyapro@gmail.com" className="group inline-flex items-baseline gap-2 font-display text-2xl md:text-3xl text-text-primary dark:text-white">
+                rahnyapro@gmail.com
+                <ArrowUpRight className="w-5 h-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </a>
             </div>
-          </div>
+            <div className="space-y-3 pt-5 border-t border-text-primary/12 dark:border-white/10">
+              <a href="https://www.linkedin.com/in/rahnya-lanyeri" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 font-body text-text-primary dark:text-white hover:opacity-70 transition-opacity">
+                <Linkedin className="w-4 h-4" /> LinkedIn
+              </a>
+              <a href="https://github.com/rahnya" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 font-body text-text-primary dark:text-white hover:opacity-70 transition-opacity">
+                <Github className="w-4 h-4" /> GitHub
+              </a>
+              <p className="flex items-center gap-3 font-body text-text-secondary dark:text-white/70"><Clock className="w-4 h-4" /> {L("Réponse sous 48h","Reply within 48h")}</p>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

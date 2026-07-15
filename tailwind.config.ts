@@ -10,49 +10,55 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Couleurs mode sombre — rose adouci par défaut (#FF96B3 au lieu de #FF3B8D)
         navy: "#183153",
         dark: "#373750",
+        "deep-dark": "#0D1B2A",
         pink: {
-          DEFAULT: "#FF96B3",   // rose clair par défaut (avant #FF3B8D, trop vif)
-          vivid: "#FF3B8D",     // accent vif disponible si besoin (boutons CTA dark)
+          DEFAULT: "#FF96B3",
+          vivid: "#FF3B8D",
           light: "#FFB6CB",
-          muted: "#D0A8BC",
         },
         purple: "#8A6F9B",
         yellow: "#FFC72C",
-        "deep-dark": "#0D1B2A",
 
-        // Couleurs mode clair (sunset) — alignées sur le PDF portfolio
-        sunset: {
-          pink: "#F4ADAE",
-          orange: "#E8AC95",
-          peach: "#F5C794",
-          purple: "#B888A0",
-          blue: "#9DA9BC",
+        cream: "#F5EBD9",
+        peach: "#E8D2C3",
+
+        // Accents mode clair (foncés pour contraste sur cream)
+        rose:    { DEFAULT: "#B03A50", light: "#C9556A" },
+        copper:  { DEFAULT: "#A05F2A", light: "#B8763F" },
+        gold:    { DEFAULT: "#8F6A1E", light: "#B08327" },
+        plum:    { DEFAULT: "#6E4A5D", light: "#8B6079" },
+
+        text: {
+          primary:   "#2B0F16",
+          secondary: "#4A2329",
+          muted:     "#7A4F55",
         },
 
-        // Texte mode clair — marron foncé d'appui
-        text: {
-          primary: "#3A1B22",
-          secondary: "#5B333A",
-          muted: "#7F4C53",
+        snoozly: {
+          navy:   "#1F3450",
+          copper: "#C97B4A",
+          cream:  "#F4ECDF",
+          sage:   "#A4B89F",
         },
       },
-      
       fontFamily: {
         display: ["'Bebas Neue'", "sans-serif"],
-        body: ["'DM Sans'", "sans-serif"],
+        body:    ["'DM Sans'", "sans-serif"],
       },
-      
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "sunset": "linear-gradient(180deg, #FFB5B1 0%, #EF9C9E 10%, #B888A0 50%, #99AABB 100%)",
+      fontSize: {
+        "hero":   ["clamp(3rem, 8vw, 6.5rem)",   { lineHeight: "0.95", letterSpacing: "0.01em" }],
+        "huge":   ["clamp(2.25rem, 5vw, 4rem)",  { lineHeight: "1.05", letterSpacing: "0.01em" }],
+        "big":    ["clamp(1.75rem, 3vw, 2.75rem)", { lineHeight: "1.1",  letterSpacing: "0.01em" }],
       },
-      
+      letterSpacing: {
+        "widest-2": "0.24em",
+        "widest-3": "0.32em",
+      },
       boxShadow: {
-        "sunset": "0 4px 16px rgba(249, 185, 124, 0.12)",
-        "sunset-lg": "0 8px 32px rgba(249, 185, 124, 0.15)",
+        "soft":    "0 2px 12px rgba(43, 15, 22, 0.06)",
+        "soft-lg": "0 20px 50px rgba(43, 15, 22, 0.14)",
       },
     },
   },

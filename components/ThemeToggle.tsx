@@ -1,48 +1,23 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Moon, Sun } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "@/components/ThemeContext";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const { theme, toggleTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-    
-    // Récupère le thème actuel du DOM
-    const isDark = document.documentElement.classList.contains("dark");
-    setTheme(isDark ? "dark" : "light");
-  }, []);
-
-  const toggleTheme = () => {
-    const html = document.documentElement;
-    const newTheme = theme === "dark" ? "light" : "dark";
-
-    if (newTheme === "dark") {
-      html.classList.add("dark");
-    } else {
-      html.classList.remove("dark");
-    }
-
-    localStorage.setItem("theme", newTheme);
-    setTheme(newTheme);
-  };
-
-  if (!mounted) return null; // Évite hydration mismatch
-
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return <div className="w-9 h-9" aria-hidden="true" />;
+  const isDark = theme === "dark";
   return (
     <button
+      type="button"
       onClick={toggleTheme}
-      className="p-2 rounded-full border border-transparent hover:border-text-primary/10 dark:hover:border-white/10 hover:bg-text-primary/5 dark:hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sunset-orange dark:focus-visible:ring-pink"
-      aria-label={theme === "dark" ? "Passer en mode clair" : "Passer en mode sombre"}
-      aria-pressed={theme === "dark"}
-      title={theme === "dark" ? "Mode clair" : "Mode sombre"}
+      aria-label={isDark ? "Passer en mode clair" : "Passer en mode sombre"}
+      aria-pressed={isDark}
+      className="w-9 h-9 rounded-full inline-flex items-center justify-center border border-text-primary/15 dark:border-white/15 hover:border-text-primary/40 dark:hover:border-white/35 text-text-primary dark:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-secondary dark:focus-visible:ring-pink"
     >
-      {theme === "dark" ? (
-        <Sun className="w-5 h-5 text-yellow" aria-hidden="true" />
-      ) : (
-        <Moon className="w-5 h-5 text-text-primary/60" aria-hidden="true" />
-      )}
+      {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
     </button>
   );
 }
