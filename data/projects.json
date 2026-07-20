@@ -1323,8 +1323,8 @@
       "technologies": [],
       "features": [],
       "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": []
+      "liveUrl": "Lanyeri_Elevator_pitch.pdf",
+      "screenshots": ["/projects/Elevator_pitch.png"]
     },
     "fr": {
       "title": "Elevator Pitch",
@@ -1336,8 +1336,8 @@
       "technologies": [],
       "features": [],
       "githubUrl": "",
-      "liveUrl": null,
-      "screenshots": []
+      "liveUrl": "Lanyeri_Elevator_pitch.pdf",
+      "screenshots": ["/projects/Elevator_pitch.png"]
     },
     "year": "BUT3",
     "acs": [
@@ -1659,7 +1659,7 @@
         "Dark modern UI"
       ],
       "githubUrl": "",
-      "liveUrl": "",
+      "liveUrl": "https://rahnya.github.io/portfolio/",
       "screenshots": []
     },
     "fr": {
@@ -1683,10 +1683,10 @@
         "Interface moderne"
       ],
       "githubUrl": "",
-      "liveUrl": "",
+      "liveUrl": "https://rahnya.github.io/portfolio/",
       "screenshots": []
     },
-    "year": "BUT2",
+    "year": "BUT3",
     "acs": [
       "AC24.01",
       "AC24.06",

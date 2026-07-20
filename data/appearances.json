@@ -85,7 +85,7 @@
     }
   },
   {
-    "slug": "toulan-lan-2023",
+    "slug": "toulan-lan-2024",
     "type": "event",
     "color": "#7B638A",
     "en": {
@@ -104,7 +104,7 @@
     }
   },
   {
-    "slug": "nuit-du-code-2024",
+    "slug": "nuit-du-code-2026",
     "type": "event",
     "color": "#FF96B3",
     "en": {
@@ -112,18 +112,18 @@
       "description": "Participated in La Nuit Du Code, a student hackathon-style event. Built collaborative web tools and competed alongside multiple teams to deliver innovative solutions under time constraints.",
       "externalUrl": "https://isen-mediterranee.fr/la-nuit-du-code-2026-prend-de-lampleur-au-palais-neptune/",
       "externalLabel": "View Event",
-      "screenshots": []
+      "screenshots": ["/appearances/ndc.jpeg"]
     },
     "fr": {
       "title": "La Nuit Du Code",
       "description": "I participated in La Nuit du Code, an intensive student hackathon where teams must design and build a functional solution within a limited timeframe. I contributed to both the design and development of a web project, collaborating with technical and creative profiles. This experience strengthened my skills in development, teamwork, and time management under pressure. It demonstrates my ability to adapt quickly, deliver concrete solutions, and perform efficiently in high-pressure environments.",
       "externalUrl": "https://isen-mediterranee.fr/la-nuit-du-code-2026-prend-de-lampleur-au-palais-neptune/",
       "externalLabel": "Voir l'Événement",
-      "screenshots": []
+      "screenshots": ["/appearances/ndc.jpeg"]
     }
   },
   {
-    "slug": "weproc-team-2024",
+    "slug": "weproc-team-2025",
     "type": "company",
     "color": "#FFA755",
     "en": {
