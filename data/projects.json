@@ -88,7 +88,9 @@
         "Système de déclencheurs",
         "Tests utilisateurs itératifs"
       ],
-      "screenshots": []
+      "screenshots": [
+        "/projects/magician-escape.png"
+      ]
     },
     "en": {
       "title": "Magicien Escape — VR project",
@@ -107,7 +109,9 @@
         "Trigger and object system",
         "Iterative user testing"
       ],
-      "screenshots": []
+      "screenshots": [
+        "/projects/magician-escape.png"
+      ]
     }
   },
   {
@@ -154,9 +158,10 @@
         "Sections narratives évolutives",
         "Navigation mobile complète"
       ],
-      "liveUrl": "https://rahnya.github.io/aurora-sola/",
+      "liveUrl": "https://rahnya.github.io/aurora-sola/archives.html",
       "githubUrl": "https://github.com/rahnya/aurora-sola",
-      "screenshots": []
+      "driveUrl": "https://drive.google.com/drive/folders/1C3A1fOnHzu95n7esmqsZPUc-wXKGqb2c?usp=sharing",
+      "screenshots": ["projects/site_cellule_sola.png"]
     },
     "en": {
       "title": "AURORA Hackathon — SOLA Cell",
@@ -178,9 +183,10 @@
         "Evolving narrative sections",
         "Full mobile nav"
       ],
-      "liveUrl": "https://rahnya.github.io/aurora-sola/",
+      "liveUrl": "https://rahnya.github.io/aurora-sola/archives.html",
       "githubUrl": "https://github.com/rahnya/aurora-sola",
-      "screenshots": []
+      "driveUrl": "https://drive.google.com/drive/folders/1C3A1fOnHzu95n7esmqsZPUc-wXKGqb2c?usp=sharing",
+      "screenshots": ["projects/site_cellule_sola.png"]
     }
   },
   {
@@ -1176,7 +1182,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://rahnya-studio.vercel.app",
-      "screenshots": []
+      "screenshots": [
+        "/projects/site-freelance.png"
+      ]
     },
     "fr": {
       "title": "Rahnya Studio — Identité & site freelance",
@@ -1203,7 +1211,9 @@
       ],
       "githubUrl": "",
       "liveUrl": "https://rahnya-studio.vercel.app",
-      "screenshots": []
+      "screenshots": [
+        "/projects/site-freelance.png"
+      ]
     },
     "year": "BUT3",
     "acs": [
@@ -1405,7 +1415,13 @@
       "features": [],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": []
+      "screenshots": [
+        "/projects/salon.jpeg",
+        "/projects/printempsbatpi.jpeg",
+        "/projects/noelbatpi.jpeg",
+        "/projects/orga_noel.jpeg",
+        "/projects/forma_wef.png"
+      ]
     },
     "fr": {
       "title": "Engagement BDE",
@@ -1418,7 +1434,13 @@
       "features": [],
       "githubUrl": "",
       "liveUrl": null,
-      "screenshots": []
+      "screenshots": [
+        "/projects/salon.jpeg",
+        "/projects/printempsbatpi.jpeg",
+        "/projects/noelbatpi.jpeg",
+        "/projects/orga_noel.jpeg",
+        "/projects/forma_wef.png"
+      ]
     },
     "year": "BUT3",
     "acs": [
@@ -1851,7 +1873,9 @@
       "githubUrl": "",
       "liveUrl": "",
       "screenshots": [
-        "/projects/Affiche_Datavisualisation.png"
+        "/projects/Affiche_Datavisualisation.png",
+        "/projects/creadataviz.jpg",
+        "/projects/photodataviz.jpg"
       ]
     },
     "fr": {
@@ -1875,7 +1899,9 @@
       "githubUrl": "",
       "liveUrl": "",
       "screenshots": [
-        "/projects/Affiche_Datavisualisation.png"
+        "/projects/Affiche_Datavisualisation.png",
+        "/projects/creadataviz.jpg",
+        "/projects/photodataviz.jpg"
       ]
     },
     "year": "BUT2",
