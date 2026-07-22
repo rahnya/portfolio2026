@@ -32,7 +32,14 @@
         "Boutons d'autorisation",
         "Conditions de crash"
       ],
-      "screenshots": []
+      "screenshots": [
+        "/projects/atterrir_avion_debut.png",
+        "/projects/atterrir_avion_autoriser1.png",
+        "/projects/atterrir_avion_autoriser2.png",
+        "/projects/atterrir_avion_collision.png",
+        "/projects/atterrir_avion_tous_park.png",
+        "/projects/atterrir_avion_win.png"
+      ]
     },
     "en": {
       "title": "Babylon.js airport mini-game",
@@ -51,7 +58,14 @@
         "Per-aircraft authorisation",
         "Crash conditions"
       ],
-      "screenshots": []
+      "screenshots": [
+        "/projects/atterrir_avion_debut.png",
+        "/projects/atterrir_avion_autoriser1.png",
+        "/projects/atterrir_avion_autoriser2.png",
+        "/projects/atterrir_avion_collision.png",
+        "/projects/atterrir_avion_tous_park.png",
+        "/projects/atterrir_avion_win.png"
+      ]
     }
   },
   {
